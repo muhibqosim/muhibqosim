@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initinitial-scale">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content=" ">
+    <meta name="keywords" content=" ">
+    <meta name="author" content=" "> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css" integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    
+    
+    <!--css link-->
+     <link rel="stylesheet" href="css/main.css">
+     <!-- fonts-->
+     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Geologica&display=swap" rel="stylesheet">
+    <title>my website</title>
+   <style>
+   
+    /* Background image for homepage: mobile and desktop*/
+    @media (max-width:699px) {
+            .header-lg {
+                background-image: url('img/library.jpg');
+                height: 30vh;
+            }
+    }
+        @media (min-width:700px) {
+            .header-lg {
+                background-image: url('img/library.jpg');
+                height: 25vh;
+            }
+        }
+
+
+  </style>
+  </head>
+  <!-- body starts here-->
+<body>
+   <header class="header Navy-blue py-3 md:py-6 w-full">
+    <!-- Navigation menu -->
+    <nav class=" ">
+      <div class=" ">
+        <div class="flex justify-between">
+          <div class="flex">
+            <a href="#" class="flex items-center ">
+              <!-- <img src="" alt="logo"> -->
+              <span class="text-white text-gradient-to-br from-gray-300 to-gray-200 text-xl md:text-5xl garamond pl-2 font-bold" style="">MuhibQosim</span>
+            </a>
+          </div>
+          <!-- desktop menu bar-->
+          <div class="hidden garamond md:flex items-center md:justify-center mx-auto lg:pl-48 space-x-1 md:text-3xl">
+            <a href="#" class="py-4 px-2 text-white font-semibold hover:text-gray-900">Home</a>
+            <a href="publications.html" class="py-4 px-2 text-white font-semibold hover:text-gray-900">Publications</a>
+            <!--<a href="portfolio.html" class="py-4 px-2 text-white font-semibold hover:text-gray-900">Portfolio</a>-->
+            <a href="resources.html" class="py-4 px-2 text-white font-semibold hover:text-gray-900">Resources</a>
+            <a href="#footer" class="py-4 px-2 text-white font-semibold hover:text-gray-900">Contact</a>
+          </div>
+          <div class="md:hidden flex items-center pr-3">
+            <button type="button"
+              class="cursor-pointer text-gray-500 hover:text-white focus:outline-none focus:text-white"
+              aria-label="toggle menu" onclick="toggleMenu()">
+              <div class="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- mobile menu bar -->
+      <div class="hidden md:hidden justify-between  bg-blue-800  " id="mobile-menu">
+        <a href="#" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Home</a>
+        <a href="publications.html" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Publications</a>
+        <!--<a href="portfolio.html" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Portfolio</a>-->
+        <a href="resources.html" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Resources</a>
+        <a href="#footer" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Contact</a>
+      </div>
+    </nav>
+  </header>
+  <!-- header ends here-->
+  <!-- image background and introduction-->
+    <section class="bg-gray-800 bg-center header-lg py-20 md:py-32"> 
+        <div class="px-3 md:pt-14 md:px-10  xl:px-32">
+            <div class="w-full text-white ">
+                <!--<div class="text-sm font-light md:text-3xl lg:text-5xl animate__animated animate__fadeIn animate__slow animate__delay-1.5s ">
+                    <span class="block leading-none">Welcome To</span>
+                </div>-->
+                <div
+                    class="text-4xl garamond md:text-7xl animate__animated animate__fadeIn animate__slow animate__delay-1s tracking-tight">
+                    <span class="block leading-none font-semibold ">Articles & Publications</span>
+                </div>
+          <div class="hidden " id="typed-strings">
+            <h2 class="text-9xl">Legal Articles</h2>
+            <h2 class="text-9xl">Legal Opinions</h2>
+            <h2 class="text-9xl">Case Analysis</h2>
+            <h2 class="text-9xl"> Islamic Publications</h2>
+          </div>
+          <span class="text-shadow text-lg text-white md:text-5xl " id="typed" style=" "></span>
+  </section> 
+  
+  <!-- Search button -->
+  <section class="bg-white ">
+    <!--<h1 class="text-xs md:text-2xl pt-2 px-2 text-gray-500 mb-4"> <a href="../my.html" class=""> Home </a> | <a class="" href=" "> Publications</a></h1>-->
+    <button class="bg-red-800 text-center text-base text-white py-1 md:text-2xl px-2 garamond font-bold" >  CATEGORIES:</button>
+
+<!-- TABLE -->
+  <div class="mb-4 px-4 pt-2.5 md:pt-6 pb-5 border-b-2 border-gray-200 text-dark">
+    <ul class="flex flex-wrap items-center justify-center text-sm font-normal text-center garamond" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
+      <li class="cursor-pointer inline-block   mr-2  text-base md:text-3xl font-bold" role="presentation"><a class="p-1 border-b-2 border-red-800 hover:text-white hover:bg-gray-100" id="all-tab" data-tabs-target="#legal-updates" type="button" role="tab" aria-controls="legal-updates" aria-selected="false"> Legal Updates </a>|</li>
+      <li class="mr-2 text-base md:text-3xl font-bold" role="presentation"><a class="cursor-pointer inline-block p-1 hover:text-white hover:bg-gray-100 no-outline " id="legal-articles-tab" data-tabs-target="#legal-articles" type="button" role="tab" aria-controls="legal-articles" aria-selected="false">Law Articles </a> | </li>
+     <!--<li class="mr-2 text-base md:text-3xl font-bold " role="presentation"> <a class="cursor-pointer inline-block p-1 hover:text-white hover:bg-gray-100 " id="publications-tab" data-tabs-target="#publications" type="button" role="tab" aria-controls="publications" aria-selected="false"> Publications </a>|</li>-->
+      <li class="mr-2 text-base md:text-3xl font-bold" role="presentation"><a class="cursor-pointer inline-block p-1 hover:text-white hover:bg-gray-100 " id="legal-opinions-tab" data-tabs-target="#legal-opinions" type="button" role="tab" aria-controls="legal-opinions" aria-selected="false">Legal Opinions </a>|</li>
+      <li class="mr-2 text-base md:text-3xl font-bold " role="presentation"><a class="cursor-pointer inline-block p-1 hover:text-white hover:bg-gray-100 " id="islamic-publications-tab" data-tabs-target="#islamic-publications" type="button" role="tab" aria-controls="islamic-publications" aria-selected="false">Islamic Law Publications</a></li>
+   </ul>
+</div>
+<!--search button--> 
+    <div class="container mt-6 mx-auto px-5 pb-8 md:px-10">
+      <div class="flex md:text-3xl">
+        <input type="text" id="searchInput" placeholder="Enter your search term" class="border rounded-l-lg px-4 py-2 w-full">
+        <button id="searchButton" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-r-lg">
+        Search
+        </button>
+      </div>
+      <div id="searchResults" class="mt-4">
+      </div>
+    </div>
+<div id="myTabContent">
+<!-- LEGAL UPDATES-->
+<div class="hidden p-4 rounded-lg bg-gray-200 dark:bg-gray-800" id="legal-updates" role="tabpanel" aria-labelledby="all-tab">
+ <p class="mt-4 max-w-3xl text-3xl tx-lg text-gray-700  mb-4 garamond">Legal Updates —</p>
+<article class="grid grid-cols-1 md:grid-cols-2 gap-4 py-5 md:grid-span-2">
+     <!-- article one -->
+      <div data-aos="fade-down" class="bg-white shadow-lg w-full rounded-lg mb-3">
+        <div class="md:w-full md:h-50 overflow-hidden rounded-t">
+          <img src="img/publications/fhr-jurisdiction.jpg" alt="publication caption" class="w-full ">
+        </div> 
+        <!--title, abstract & read more-->
+        <div class="px-5 ">
+           <p class="text-sm pt-5 md:text-lg font-semibold text-justify text-gray-600"> March 8, 2023 </p>
+          <h3 class="text-base md:text-2xl py-8 font-bold tracking-tight uppercase"> CONCURRENT JURISDICTION OF FEDERAL HIGH Court and States High Court over Applications for the Enforcement of Fundamental Rights  </h3> 
+         <p class="text-sm mb-8 md:text-2xl tracking-tight text-justify "> It is settled law that, going by section 46(1) of the 1999 Constitution (as amended), a High Court existing within the territorial jurisdiction of a state where a contravention of any of the provisions of the Chapter 4 of the Constitution is alleged has the power...</p>
+         <p class="text-sm md:text-2xl text-justify mb-5 text-blue-900 font-semibold "><a href="https://solacebuk.blogspot.com/2023/01/does-police-invitation-and-detention.html?m=1" class=""> READ MORE » </a> </p> 
+        </div>
+    </div> 
+     <!-- article two -->
+     <div data-aos="fade-down" class="md:grid-span-2 bg-white shadow-lg w-full rounded-lg mb-3">
+        <div class="md:w-full h-50  rounded-t">
+          <img src="img/publications/functus.jpeg" alt="publication caption" class="w-full ">
+        </div> 
+        <!--title, abstract & read more-->
+        <div class="px-5 ">
+           <p class="text-sm pt-5 md:text-lg font-semibold text-justify text-gray-600"> February 23, 2023 </p>
+          <h3 class="text-base md:text-2xl py-8 font-bold tracking-tight uppercase"> ON WHEN A COURT BECOMES FUNCTUS OFFICIO, ITS EFFECT & EXCEPTION(S) THEREOF</h3> 
+         <p class="text-sm mb-8 md:text-2xl tracking-tight text-justify "> It is a cardinal principle of jurisprudence that, when a court has made a decision in respect of a matter brought under its inherent power, such a court becomes, by operation of the law, functus officio. The principle of functus officio has been defined in the...</p>
+         <p class="text-sm md:text-2xl text-justify text-blue-900 font-semibold mb-5 "><a href="https://solacebuk.blogspot.com/2023/01/does-police-invitation-and-detention.html?m=1" class=""> READ MORE » </a> </p> 
+        </div>
+    </div> 
+     <!-- article three-->
+     <div data-aos="fade-down" class="md:grid-span-2 bg-white shadow-lg w-full rounded-lg mb-3">
+        <div class="md:w-full overflow-hidden rounded-t">
+          <img src="img/publications/invitation.jpg" alt="publication caption" class="w-full h-full object-cover object-center">
+        </div> 
+        <!--title, abstract & read more-->
+        <div class="px-5 ">
+           <p class="text-sm pt-5 md:text-lg font-semibold text-justify text-gray-600"> January 30, 2023 </p>
+          <h3 class="text-base md:text-2xl py-8 font-bold tracking-tight uppercase"> DOES POLICE INVITATION AND DETENTION FOR THE PURPOSE OF INVESTIGATION AMOUNTS TO AN INFRINGEMENT OF FUNDAMENTAL RIGHTS? </h3> 
+         <p class="text-sm mb-8 md:text-2xl tracking-tight text-justify "> It is trite position of the law that fundamental rights are sacrosanct and immutable to the extent of the immutability of the Constitution itself. However, as a principle of law, fundamental rights accruing to human persons, although sacrosanct, is not absolute...</p>
+         <p class="text-sm md:text-2xl text-justify mb-5 text-blue-900 font-semibold "><a href="https://solacebuk.blogspot.com/2023/01/does-police-invitation-and-detention.html?m=1" class=""> READ MORE » </a> </p> 
+        </div>
+    </div> 
+     <!-- article 4-->
+<div data-aos="fade-up" class="md:grid-span-2 bg-white shadow-lg w-full rounded-lg mb-3">
+        <div class="md:w-full overflow-hidden rounded-t">
+          <img src="img/legal-research.jpg" alt="publication caption" class="w-full h-full object-cover object-center">
+        </div> 
+        <!--title, abstract & read more-->
+        <div class="px-5 ">
+           <p class="text-sm pt-5 md:text-lg font-semibold text-justify text-gray-600"> January 26, 2023 </p>
+          <h3 class="text-base md:text-2xl py-8 font-bold tracking-tight uppercase"> AN APPEAL AGAINST THE DECISION OF THE LPDC LIES NOT DIRECTLY TO THE SUPREME COURT </h3> 
+         <p class="text-sm mb-8 md:text-2xl tracking-tight text-justify "> Before the Supreme Court decision in ALADEJOBI V. NIGERIA BAR ASSOCIATION (2013) LPELR-SC.121/2011, the position of the law as established in OKIKE V. LPDC (2005) 15 NWLR (Pt. 949) 471 was that an appeal against the direction of the Legal Practitioner Disciplinary Committee (LPDC) lies directly before the Supreme Court. However,...</p>
+         <p class="text-sm md:text-2xl text-justify mb-5 text-blue-900 font-semibold "><a href="https://solacebuk.blogspot.com/2023/01/does-police-invitation-and-detention.html?m=1" class=""> READ MORE » </a> </p> 
+        </div>
+    </div> 
+    
+<!-- important div close-->
+</div>
+</article>
+</div> 
+
+   <!-- legal article content -->
+   <div class="hidden p-4 rounded-lg bg-gray-200" id="legal-articles" role="tabpanel" aria-labelledby="legal-articles-tab">
+     <p class="mt-4 max-w-3xl text-3xl tx-lg text-gray-700 md:mx-auto md:text-center mb-4 garamond">Legal Articles—</p>
+     <article class="grid grid-cols-1 md:grid-cols-2 gap-4 py-5 md:grid-span-2">
+     <!-- article one -->
+      <div data-aos="fade-down" class="bg-white shadow-lg w-full rounded-lg mb-3">
+        <div class="md:w-full overflow-hidden rounded-t">
+          <img src="img/publications/polygamous.jpg" alt="publication caption" class="w-full h-full object-cover object-center">
+        </div> 
+        <!--title, abstract & read more-->
+        <div class="px-5 ">
+           <p class="text-sm pt-5 md:text-lg font-semibold text-justify text-gray-600"> January 26, 2023 </p>
+          <h3 class="text-base md:text-2xl py-8 font-bold tracking-tight uppercase"> POLYGAMOUS MARRIAGE UNDER THE NIGERIAN LAW: WHAT THE LAW HAS TO SAY </h3> 
+         <p class="text-sm mb-8 md:text-2xl tracking-tight text-justify "> Marriage is, indeed, the legitimate means of securing the right to cohabitate between opposite sexes in an "ideal" territory, Nigeria inclusive. And as a matter of fact, in Nigerian law, there are essentially two types of marriage: monogamous (which wholly depicts one man and one wife) and polygamous (which permits more than one wife married to just one man). It is also worth noting that the character...</p>
+         <p class="text-sm md:text-2xl text-justify mb-5 text-blue-900 font-semibold "><a href="https://solacebuk.blogspot.com/2023/01/does-police-invitation-and-detention.html?m=1" class=""> READ MORE » </a> </p> 
+        </div>
+    </div> 
+     <!-- ARTICLE TWO -->
+     <div data-aos="fade-down" class="md:grid-span-2 bg-white shadow-lg w-full rounded-lg mb-3">
+        <div class="md:w-full overflow-hidden rounded-t">
+          <img src="img/publications/ai-liability.jpg" alt="publication caption" class="w-full h-75 object-cover object-center">
+        </div> 
+        <!--title, abstract & read more-->
+        <div class="px-5 ">
+           <p class="text-sm pt-5 md:text-lg font-semibold text-justify text-gray-600"> January 26, 2023 </p>
+          <h3 class="text-base md:text-2xl py-8 font-bold tracking-tight uppercase"> ARTIFICIAL INTELLIGENCE VIS-À-VIS ITS PROSPECTS AND CHALLENGES:LEGAL RIGHTS AND LIABILITIES </h3> 
+         <p class="text-sm mb-8 md:text-2xl tracking-tight text-justify "> It is very obvious today that the most successful enterprise have embraced Artificial Intelligence (AI) to improve their operations over their competitors. Some advance countries have adopted the use of AI in their restaurant, mode of transportation etc. AI is a tool to enhance development in a domain. Experts regard AI as a factor of production...</p>
+         <p class="text-sm md:text-2xl text-justify mb-5 text-blue-900 font-semibold "><a href="https://solacebuk.blogspot.com/2023/01/does-police-invitation-and-detention.html?m=1" class=""> READ MORE » </a> </p> 
+        </div>
+    </div> 
+     <!-- ARTICLE THREE-->
+     <div data-aos="fade-down" class="md:grid-span-2 bg-white shadow-lg w-full rounded-lg mb-3">
+        <div class="md:w-full overflow-hidden rounded-t">
+          <img src="img/publications/legal-clinic.jpg" alt="publication caption" class="w-full h-full object-cover object-center">
+        </div> 
+        <!--title, abstract & read more-->
+        <div class="px-5 ">
+           <p class="text-sm pt-5 md:text-lg font-semibold text-justify text-gray-600"> March 4, 2023 </p>
+          <h3 class="text-base md:text-2xl py-8 font-bold tracking-tight uppercase"> A BLUEPRINT FOR SUSTAINABLE UTILIZATION OF CLINICAL LEGAL EDUCATION AS A PANACEA FOR THE REBIRTH OF THE LEGAL PROFESSION IN NIGERIA </h3> 
+         <p class="text-sm mb-8 md:text-2xl tracking-tight text-justify "> Legal practice is a profession which is distinguished with advocacy and drafting. Every aspirant to the bar is required to undergo rigorous training on both advocacy and drafting skills. Both are two complementary skills which apply also to non-adjudicatory method of resolving dispute – Alternative Disputes Resolution – such as arbitration and mediation as well as, what lawyers do generally...</p>
+         <p class="text-sm md:text-2xl text-justify mb-5 text-blue-900 font-semibold "><a href="https://solacebuk.blogspot.com/2023/01/does-police-invitation-and-detention.html?m=1" class=""> READ MORE » </a> </p> 
+        </div>
+    </div> 
+    
+     <!-- article 4-->
+<div data-aos="fade-up" class="md:grid-span-2 bg-white shadow-lg w-full rounded-lg mb-3">
+        <div class="md:w-full overflow-hidden rounded-t">
+          <img src="img/publications/jungle-justice.jpg" alt="publication caption" class="w-full h-full object-cover object-center">
+        </div> 
+        <!--title, abstract & read more-->
+        <div class="px-5 ">
+           <p class="text-sm pt-5 md:text-lg font-semibold text-justify text-gray-600"> March 4, 2023 </p>
+          <h3 class="text-base md:text-2xl py-8 font-bold tracking-tight uppercase"> JUNGLE JUSTICE IN THE NIGERIA LEGAL SYSTEM </h3>
+         <p class="text-sm mb-8 md:text-2xl tracking-tight text-justify "> Of several unsatisfactory and illegal means of resolving disputes, jungle Justice - otherwise known as mob justice or street justice - could not escape such. There have been, in each given society, a several methods and dimensions in which adjudication is exercised on a given specific matter or issue. Some of these methods enjoy legal backing, and while others were rendered illegal...</p>
+         <p class="text-sm md:text-2xl text-justify mb-5 text-blue-900 font-semibold "><a href="jungle-justice.html" class=""> READ MORE » </a> </p> 
+        </div>
+    </div> 
+    
+<!-- important div close-->
+</div>
+</article>
+  
+  </div>
+<!-- PUBLICATIONS -->
+<div class="hidden p-4 rounded-lg bg-gray-200 dark:bg-gray-800" id="publications" role="tabpanel" aria-labelledby="publications-tab">
+   <p class="mt-4 max-w-3xl text-3xl tx-lg text-gray-700 md:mx-auto md:text-center mb-4 garamond"> Publications —</p>
+   <article class="grid grid-cols-1 md:grid-cols-2 gap-4 py-5 md:grid-span-2">
+     <!-- article one -->
+      <div data-aos="fade-down" class="bg-white shadow-lg w-full rounded-lg mb-3">
+        <div class="md:w-full overflow-hidden rounded-t">
+          <img src="img/publications/fhr-jurisdiction.jpg" alt="publication caption" class="w-full h-full object-cover object-center">
+        </div> 
+        <!--title, abstract & read more-->
+        <div class="px-5 ">
+           <p class="text-sm pt-5 md:text-lg font-semibold text-justify text-gray-600"> March 8, 2023 </p>
+          <h3 class="text-base md:text-2xl py-8 font-bold tracking-tight uppercase"> CONCURRENT JURISDICTION OF FEDERAL HIGH Court and States High Court over Applications for the Enforcement of Fundamental Rights  </h3> 
+         <p class="text-sm mb-8 md:text-2xl tracking-tight text-justify "> It is settled law that, going by section 46(1) of the 1999 Constitution (as amended), a High Court existing within the territorial jurisdiction of a state where a contravention of any of the provisions of the Chapter 4 of the Constitution is alleged has the power...</p>
+         <p class="text-sm md:text-2xl text-justify mb-5 text-blue-900 font-semibold "><a href="https://solacebuk.blogspot.com/2023/01/does-police-invitation-and-detention.html?m=1" class=""> READ MORE » </a> </p> 
+        </div>
+        <!-- other part-->
+        <!--<div class="mt-7">
+          <hr class="border-t-2 border-gray-300 ">
+          <p class="text-sm py-2 md:text-lg px-5 text-justify text-gray-800"> January 29, 2023 </p>
+        </div> -->
+    </div> 
+     <!-- article two -->
+     <div data-aos="fade-down" class="md:grid-span-2 bg-white shadow-lg w-full rounded-lg mb-3">
+        <div class="md:w-full overflow-hidden rounded-t">
+          <img src="img/legal-research.jpg" alt="publication caption" class="w-full h-full object-cover object-center">
+        </div> 
+        <!--title, abstract & read more-->
+        <div class="px-5 ">
+           <p class="text-sm pt-5 md:text-lg font-semibold text-justify text-gray-600"> February 23, 2023 </p>
+          <h3 class="text-base md:text-2xl py-8 font-bold tracking-tight uppercase"> ON WHEN A COURT BECOMES FUNCTUS OFFICIO, ITS EFFECT & EXCEPTION(S) THEREOF</h3> 
+         <p class="text-sm mb-8 md:text-2xl tracking-tight text-justify "> It is a cardinal principle of jurisprudence that, when a court has made a decision in respect of a matter brought under its inherent power, such a court becomes, by operation of the law, functus officio. The principle of functus officio has been defined in the...</p>
+         <p class="text-sm md:text-2xl text-justify text-blue-900 font-semibold mb-5 "><a href="https://solacebuk.blogspot.com/2023/01/does-police-invitation-and-detention.html?m=1" class=""> READ MORE » </a> </p> 
+        </div>
+    </div> 
+     <!-- article three-->
+     <div data-aos="fade-down" class="md:grid-span-2 bg-white shadow-lg w-full rounded-lg mb-3">
+        <div class="md:w-full overflow-hidden rounded-t">
+          <img src="img/publications/invitation.jpg" alt="publication caption" class="w-full h-full object-cover object-center">
+        </div> 
+        <!--title, abstract & read more-->
+        <div class="px-5 ">
+           <p class="text-sm pt-5 md:text-lg font-semibold text-justify text-gray-600"> January 30, 2023 </p>
+          <h3 class="text-base md:text-2xl py-8 font-bold tracking-tight uppercase"> DOES POLICE INVITATION AND DETENTION FOR THE PURPOSE OF INVESTIGATION AMOUNTS TO AN INFRINGEMENT OF FUNDAMENTAL RIGHTS? </h3> 
+         <p class="text-sm mb-8 md:text-2xl tracking-tight text-justify "> It is trite position of the law that fundamental rights are sacrosanct and immutable to the extent of the immutability of the Constitution itself. However, as a principle of law, fundamental rights accruing to human persons, although sacrosanct, is not absolute...</p>
+         <p class="text-sm md:text-2xl text-justify mb-5 text-blue-900 font-semibold "><a href="https://solacebuk.blogspot.com/2023/01/does-police-invitation-and-detention.html?m=1" class=""> READ MORE » </a> </p> 
+        </div>
+    </div> 
+     <!-- article 4-->
+<div data-aos="fade-up" class="md:grid-span-2 bg-white shadow-lg w-full rounded-lg mb-3">
+        <div class="md:w-full overflow-hidden rounded-t">
+          <img src="img/legal-research.jpg" alt="publication caption" class="w-full h-full object-cover object-center">
+        </div> 
+        <!--title, abstract & read more-->
+        <div class="px-5 ">
+           <p class="text-sm pt-5 md:text-lg font-semibold text-justify text-gray-600"> January 26, 2023 </p>
+          <h3 class="text-base md:text-2xl py-8 font-bold tracking-tight uppercase"> AN APPEAL AGAINST THE DECISION OF THE LPDC LIES NOT DIRECTLY TO THE SUPREME COURT </h3> 
+         <p class="text-sm mb-8 md:text-2xl tracking-tight text-justify "> Before the Supreme Court decision in ALADEJOBI V. NIGERIA BAR ASSOCIATION (2013) LPELR-SC.121/2011, the position of the law as established in OKIKE V. LPDC (2005) 15 NWLR (Pt. 949) 471 was that an appeal against the direction of the Legal Practitioner Disciplinary Committee (LPDC) lies directly before the Supreme Court. However,...</p>
+         <p class="text-sm md:text-2xl text-justify mb-5 text-blue-900 font-semibold "><a href="https://solacebuk.blogspot.com/2023/01/does-police-invitation-and-detention.html?m=1" class=""> READ MORE » </a> </p> 
+        </div>
+    </div> 
+    
+<!-- important div close-->
+</div>
+</article>
+</div>
+
+<!-- legal opinions-->
+<div class="hidden p-4 rounded-lg bg-gray-200 dark:bg-gray-800" id="legal-opinions" role="tabpanel" aria-labelledby="legal-opinions-tab">
+   <p class="mt-4 max-w-3xl text-3xl tx-lg text-gray-700 md:mx-auto md:text-center mb-4 garamond">Legal Opinions—</p>
+<article class="grid grid-cols-1 md:grid-cols-2 gap-4 py-5 md:grid-span-2">
+     <!-- article one -->
+      <div data-aos="fade-down" class="bg-white shadow-lg w-full rounded-lg mb-3">
+        <div class="md:w-full overflow-hidden md:h-64 rounded-t">
+          <img src="img/publications/same-sex.jpg" alt="publication caption" class="w-full object-cover object-center">
+        </div> 
+        <!--title, abstract & read more-->
+        <div class="px-5 ">
+           <p class="text-sm pt-5 md:text-lg font-semibold text-justify text-gray-600"> February 23, 2023 </p>
+          <h3 class="text-base md:text-2xl py-8 font-bold tracking-tight uppercase"> REPLY TO MR. CHUKKOL ON THE TWO SKEPTICAL SIDES OF HOMOSEXUALITY UNDER NIGERIAN LAWS </h3> 
+         <p class="text-sm mb-8 md:text-2xl tracking-tight text-justify "> On the 20th day of August, 2021, an article written by a renowned legal writer, Mr. O.G. Chukkol (hereafter “the writer”) got published and circulated on different social media handles. The article is titled: “Homosexuality is Lawful under Lagos Criminal Law but a Crime under Same-Sex Marriage Act: Reconciling the Conflict”. For ease of reference, the link to the article is herein provided:...</p>
+         <p class="text-sm md:text-2xl text-justify mb-5 text-blue-900 font-semibold "><a href="https://solacebuk.blogspot.com/2023/01/does-police-invitation-and-detention.html?m=1" class=""> READ MORE » </a> </p> 
+        </div>
+    </div> 
+     <!-- article one -->
+     <div data-aos="fade-down" class="md:grid-span-2 bg-white shadow-lg w-full rounded-lg mb-3">
+        <div class="md:w-full h-48 md:h-64 overflow-hidden rounded-t">
+          <img src="img/publications/arabic-inscription.jpg" alt="publication caption" class="w-full object-cover object-center">
+        </div> 
+        <!--title, abstract & read more-->
+        <div class="px-5 ">
+           <p class="text-sm pt-5 md:text-lg font-semibold text-justify text-gray-600"> February 23, 2023 </p>
+          <h3 class="text-base md:text-2xl py-8 font-bold tracking-tight uppercase"> THE POSITION OF LAW ON THE ARABIC INSCRIPTION ON NAIRA NOTES: WHETHER IT IS INCONSISTENT WITH SECTIONS 10 AND 55 OF THE 1999 CONSTITUTION </h3> 
+         <p class="text-sm mb-8 md:text-2xl tracking-tight text-justify "> This article is in respect to a suit challenging the Arabic inscriptions on Nigerian naira notes filed by a Lagos-based lawyer, Chief Malcolm Omirhobo who contended that the Arabic inscriptions on the naira notes portrays Nigeria as an Islamic state, and that such inscription is inconsistent with section 10 and 55 of the Constitution. In this...</p>
+         <p class="text-sm md:text-2xl text-justify mb-5 text-blue-900 font-semibold "><a href="https://solacebuk.blogspot.com/2023/01/does-police-invitation-and-detention.html?m=1" class=""> READ MORE » </a> </p> 
+        </div>
+    </div> 
+     
+<!-- important div close-->
+</div>
+</article>
+</div> 
+<!--islamic publications--> 
+<div class="hidden p-4 rounded-lg bg-gray-200 dark:bg-gray-800" id="islamic-publications" role="tabpanel" aria-labelledby="islamic-publications-tab">
+ <p class="mt-4 max-w-3xl text-3xl md:text-4xl tx-lg text-gray-700 mb-4 garamond md:uppercase">Islamic Law Publications—</p>
+<article class="grid grid-cols-1 md:grid-cols-2 gap-4 py-5 md:grid-span-2">
+     <!-- article one -->
+      <div data-aos="fade-down" class="bg-white shadow-lg w-full rounded-lg mb-3">
+        <div class="md:w-full overflow-hidden rounded-t">
+          <img src="img/publications/adoption.jpg" alt="publication caption" class="w-full h-full object-cover object-center">
+        </div> 
+        <!--title, abstract & read more-->
+        <div class="px-5 ">
+           <p class="text-sm pt-5 md:text-lg font-semibold text-justify text-gray-600"> February 23, 2023 </p>
+          <h3 class="text-base md:text-2xl py-8 font-bold tracking-tight uppercase"> ILLEGALITY OR OTHERWISE OF ADOPTION PRACTICES UNDER THE LENSE OF ISLAMIC LAW?</h3> 
+         <p class="text-sm mb-8 md:text-2xl tracking-tight text-justify "> Protection of lineage is so fundamental in Islamic law otherwise known as the “Sharii`ah”. Hence, it forms an integral part of the five core objectives of Islamic law, vis-à-vis: protection of life; protection of property; protection of intellect; protection of religion, and protection of lineage. These five core objectives are what the divine Islamic code seeks to regulate through its various working principles and mechanisms. In addendum, the objectives of Islamic law cut across the personal affairs of Islamic faith adherents as well as, their public affairs...</p>
+         <p class="text-sm md:text-2xl text-justify mb-5 text-blue-900 font-semibold "><a href="https://solacebuk.blogspot.com/2023/01/does-police-invitation-and-detention.html?m=1" class=""> READ MORE » </a> </p> 
+        </div>
+    </div> 
+     <!-- article two -->
+     <div data-aos="fade-down" class="md:grid-span-2 bg-white shadow-lg w-full rounded-lg mb-3">
+        <div class="md:w-full md:h-50 overflow-hidden rounded-t">
+          <img src="img/publications/diversity.jpg" alt="publication caption" class="w-full object-cover object-center">
+        </div> 
+        <!--title, abstract & read more-->
+        <div class="px-5 ">
+           <p class="text-sm pt-5 md:text-lg font-semibold text-justify text-gray-600"> February 23, 2023 </p>
+          <h3 class="text-base md:text-2xl py-8 font-bold tracking-tight uppercase"> AN OVERVIEW OF THE ISLAMIC CONCEPT OF UNITY IN DIVERSITY AND DIVERSITY IN UNITY </h3> 
+         <p class="text-sm mb-8 md:text-2xl tracking-tight text-justify "> It is trite principle of Islamic law that any act or regulation that negates the substantive law, notwithstanding wherever it emanates from, is null and void. The Islamic law, also the “Islamic Sharii`ah”, is a version of divine law binding on all adherents of the Islamic monotheism faith. It covers both civil and criminal matters. It is a code which regulates both the internal and external affairs...</p>
+         <p class="text-sm md:text-2xl text-justify mb-5 text-blue-900 font-semibold "><a href="https://solacebuk.blogspot.com/2023/01/does-police-invitation-and-detention.html?m=1" class=""> READ MORE » </a> </p> 
+        </div>
+    </div> 
+     <!-- article three-->
+     <div data-aos="fade-down" class="md:grid-span-2 bg-white shadow-lg w-full rounded-lg mb-3">
+        <div class="md:w-full overflow-hidden rounded-t">
+          <img src="img/publications/intellectual-property.jpg" alt="publication caption" class="w-full h-full object-cover object-center">
+        </div> 
+        <!--title, abstract & read more-->
+        <div class="px-5 ">
+           <p class="text-sm pt-5 md:text-lg font-semibold text-justify text-gray-600"> February 23, 2023 </p>
+          <h3 class="text-base md:text-2xl py-8 font-bold tracking-tight uppercase"> INTELLECTUAL PROPERTY AND ECONOMIC DEVELOPMENT IN NIGERIA: SHARI`AH PERSPECTIVE </h3> 
+         <p class="text-sm mb-8 md:text-2xl tracking-tight text-justify "> One of the fundamental functions of the government in ensuring economic growth is the protection of property rights. Property rights are the theoretical and legal ownership of resources and how they can be used.  Resources, tangible or intangible, are owned by individuals, businesses, and even the government.  Hence, intangible resource protection is the main focus of Intellectual Property...</p>
+         <p class="text-sm md:text-2xl text-justify mb-5 text-blue-900 font-semibold "><a href="https://solacebuk.blogspot.com/2023/01/does-police-invitation-and-detention.html?m=1" class=""> READ MORE » </a> </p> 
+        </div>
+    </div> 
+    
+<!-- important div close-->
+</div>
+</article>
+</div>
+
+</div>
+</section>
+
+
+  <!-- Footer -->
+  <section class="Navy-blue py-10" id="footer">
+  <article class="pl-4 ">
+    <div class="">
+      <h1 class="text-white text-center text-lg md:text-4xl"> Get in Touch</h1>
+    </div>
+    <div class="md:flex justify-between items-center align-center pt-4 md:pt-8 ">
+    <div class="md:text-2xl w-full md:w-2/4 md:pl-10 mb-5">
+      <h5 class="text-white text-justify text-base md:text-3xl font-semibold "> Contact Me</h5>
+      <p class="text-gray-300 my-2 font-light "> <i class="fas fa-map-marker-alt mr-2"></i> Faculty of Law, BUK</p>
+      <p class="text-gray-300 my-2 font-light "> <i class="fab fa-whatsapp mr-2"> </i> <a class="" href="https://wa.me/2349037074761?text=Hello!?"> +234 903 707 4761</a></p> 
+      <p class="text-gray-300 my-2 font-light "> <i class="fas fa-envelope mr-2"> </i> <a class="" href="muhibqosim@gmail.com "> muhibqosim@gmail.com</a></p> 
+      <p class="text-gray-300 mt-2 font-light "><i class="fas fa-phone mr-2"></i><a class=" " href=""> (+234) 9037074761 </a> <!--<span class="text-gray-100 font-light"> (Click to call) </span > --> </p>
+    </div>
+    <div class="md:text-2xl w-full md:w-2/4 md:pl-8">
+      <h5 class=" text-white text-justify text-base md:text-3xl font-semibold "> Quick Links </h5>
+      <p class="text-gray-300 my-2 font-light "> <a class=" " href="index.html" > Home</a></p>
+      <p class="text-gray-300 my-2 font-light "> <a class=" " href="portfolio.html" >Portfolio</a></p>
+      <p class="text-gray-300 my-2 font-light "> <a class=" " href="publication.html" > Publications</a></p>
+      <p class="text-gray-300 my-2 font-light "> <a class=" " href="resource.html" > Free resources</a></p>
+      <p class="text-gray-300 my-2 font-light "> <a class=" " href="#footer" > Contact</a></p>
+    </div>
+    </div>
+    </article>
+    <!-- newsletter --> 
+    <div class="pt-6 px-4">
+      <h1 class="uppercase text-white text-center text-base md:text-3xl mt-5 font-bold"> sign up for the newsletter</h1>
+      <p class="mt-1 text-sm md:text-2xl text-center font-light text-white">Stay up to date with my latest publications by signing up for the newsletter.  </p>
+    </div>
+    <form action="subscribe.php" method="post" class=" mt-3 px-4 ">
+      <div class="md:px-24"> 
+      <input type="email" name="email" placeholder="Enter your email" class="bg-white border border-gray-300 rounded px-4 md:px-10 py-2 mr-2 focus:outline-none text-sm md:text-3xl w-full inline-block" required> 
+      </div> 
+      <div class="flex items-center justify-center"> 
+      <button type="submit" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded mt-5 text-sm md:text-3xl uppercase flex justify-center items-center"> Subscribe &nbsp;  <i class="far fa-paper-plane"> </i> </button>
+      </div>
+    </form>
+    <!-- horizontal line--> 
+    <hr style="background-color: " class="bg-gray-100 font-light mt-20 "> 
+    <!-- copyright--> 
+    <div class="mt-10 md:mt-20 pt-5">
+      <p class="text-xs text-white font-light text-center md:text-3xl"> <i class="far fa-copyright md:text-3xl "></i> 2023 Muhibudeen Qosim | All Rights Reserved.
+      </p>
+    </div>
+    <!-- social handles--> 
+    <div class="mt-10 md:mt-20 flex justify-between px-20 text-lg md:px-64 md:text-5xl">
+      <a href="twitter.com/adenaike_idris" class="text-white hover:text-blue-400" target="_blank" rel="noopener" title="Twitter"> <i class="fab fa-twitter "></i></a>
+      <a href="https://m.facebook.com/muhammadulqoosim.muhiibuddeen" class="text-white hover:text-blue-600" target="_blank" rel="noopener" title="Facebook"> <i class="fab fa-facebook "></i></a>
+      <a href="https://wa.me/2349037074761?text=Hello!" class="text-white hover:text-green-500" target="_blank" rel="noopener" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i></a>
+        <a href="instagram.com/muhibqosim" class="text-white hover:text-pink-600" target="_blank" rel="noopener" title="Instagram"> <i class="fab fa-instagram "></i></a>
+        <a href="https://www.linkedin.com/in/qosim-muhibudeen-5896a91a8" class="text-white hover:text-blue-600" target="_blank" rel="noopener" title="LinkedIn"> <i class="fab fa-linkedin "></i></a>
+        <a href="https://github.com/muhibqosim" class="text-white hover:text-gray-600" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github "></i></a>
+     </div>
+    
+  </section>
+  
+  <!--js starts here--> 
+    <script src="./js/main.js"> </script>
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
+    
+   <script> AOS.init({
+      offset: 100,
+      duration: 900,
+      easing: 'ease-in-sine',
+      delay: 200,
+      once: true
+    });
+       
+
+
+
+    <!--js starts here--> 
+    <script src="js/main.js">
+      const searchInput = document.getElementById('searchInput');
+const searchButton = document.getElementById('searchButton');
+const searchResults = document.getElementById('searchResults');
+
+// Sample data for demonstration
+const data = [
+  { id: 1, title: 'Result 1', description: 'This is the first search result' },
+  { id: 2, title: 'Result 2', description: 'This is the second search result' },
+  { id: 3, title: 'Result 3', description: 'This is the third search result' },
+];
+
+searchButton.addEventListener('click', performSearch);
+
+function performSearch() {
+  const searchTerm = searchInput.value;
+
+  // Filter the data based on the search term
+  const filteredData = data.filter(item =>
+    item.title.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
+  displaySearchResults(filteredData);
+}
+
+function displaySearchResults(results) {
+  searchResults.innerHTML = '';
+
+  if (results.length === 0) {
+    searchResults.innerHTML = 'No results found.';
+    return;
+  }
+
+  const resultsHTML = results
+    .map(result => `<div class="mb-4">
+                      <h3 class="font-bold">${result.title}</h3>
+                      <p>${result.description}</p>
+                    </div>`)
+    .join('');
+
+  searchResults.innerHTML = resultsHTML;
+}
+
+
+       
+
+    </script>
+  </body>
+
+</html>

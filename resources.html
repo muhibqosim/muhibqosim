@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initinitial-scale">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content=" ">
+    <meta name="keywords" content=" ">
+    <meta name="author" content=" "> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1. Hu1/css/fontawesome.min.css" integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
+     <!--<script src="https://cdn.tailwindcss.com"></sscript-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <link rel="stylesheet" href="css/main.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+     <!--Web fonts-->
+ <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Lora&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300&display=swap" rel="stylesheet">
+    <title>my website</title>
+   <style>
+   
+    /* Background image for homepage: mobile and desktop*/
+    @media (max-width:699px) {
+            .header-lg {
+                background-image: url('img/resources/resources.jpeg');
+                height: 50vh;
+            }
+    }
+        @media (min-width:700px) {
+            .header-lg {
+                background-image: url('img/resources/resources.jpeg');
+                height: 30vh;
+            }
+        }
+   
+  </style>
+  </head>
+  <!-- body starts here-->
+<body>
+<header class="header Navy-blue py-3 md:py-6 w-full">
+    <!-- Navigation menu -->
+    <nav class=" ">
+      <div class=" ">
+        <div class="flex justify-between">
+          <div class="flex">
+            <a href="#" class="flex items-center ">
+              <!-- <img src="" alt="logo"> -->
+              <span class="text-white text-gradient-to-br from-gray-300 to-gray-200 text-xl md:text-3xl garamond pl-2 font-bold" style="font-weight: 600;">MuhibQosim</span>
+            </a>
+          </div>
+          <!-- desktop menu bar-->
+          <div class="hidden garamond md:flex items-center md:justify-center mx-auto lg:pl-48 space-x-1 md:text-3xl">
+            <a href="#" class="py-4 px-2 text-white font-semibold hover:text-gray-900">Home</a>
+            <a href="publications.html" class="py-4 px-2 text-white font-semibold hover:text-gray-900">Publications</a>
+            <!--<a href="portfolio.html" class="py-4 px-2 text-white font-semibold hover:text-gray-900">Portfolio</a>-->
+            <a href="resources.html" class="py-4 px-2 text-white font-semibold hover:text-gray-900">Resources</a>
+            <a href="#footer" class="py-4 px-2 text-white font-semibold hover:text-gray-900">Contact</a>
+          </div>
+          <div class="md:hidden flex items-center pr-3">
+            <button type="button"
+              class="cursor-pointer text-gray-500 hover:text-white focus:outline-none focus:text-white"
+              aria-label="toggle menu" onclick="toggleMenu()">
+              <div class="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- mobile menu bar -->
+      <div class="hidden md:hidden justify-between  bg-blue-800  " id="mobile-menu">
+        <a href="#" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Home</a>
+        <a href="publications.html" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Publications</a>
+        <!--<a href="portfolio.html" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Portfolio</a>-->
+        <a href="resources.html" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Resources</a>
+        <a href="#footer" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Contact</a>
+      </div>
+    </nav>
+  </header>
+  <!-- header ends here-->
+  <!-- image background and introduction-->
+  <section class="bg-gray-800 bg-center header-lg py-8 md:py-24 text-center w-full px-2 md:px-14 text-white">
+      <div class="w-full items-center ">
+        <!--<h1 class="text-sm font-light md:text-2xl animate__animated animate__fadeIn animate__slow animate__delay-1.5s "> <span class="block leading-none">Welcome To</span>
+        </h1>--> 
+        <h1 class="text-2xl font-bold md:text-5xl animate__animated animate__fadeIn animate__slow animate__delay-1s font-weight-500 uppercase"> Free Resources </h1>
+        <p class="m-6"> <i class="inline-block fas fa-arrow-down text-red-500 font-bold text-5xl md:text-8xl "></i></p>
+        
+          <div class="hidden mt-14" id="typed-strings">
+            <h2 class=" "> Nigerian Legislations </h2>
+            <h2 class=" ">Court Rules</h2>
+            <h2 class=" ">Subsidiary Legislations</h2>
+            <h2 class=" ">Legal Resources </h2>
+            <h2 class=" ">Legal E-Books</h2>
+          </div>
+          <span class="leading-none font-bold text-shadow text-lg text-white md:text-4xl " id="typed" style=" "></span>
+       
+        <div class="mt-10 justify-between">
+          <button class="bg-red-800 text-center text-sm md:text-3xl py-2 px-3 rounded-lg font-bold animate__animated animate__fadeIn animate__slow animate__delay-1s "> <a href="#legislations" class="geologica">Legislations </a> </button> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          <button class="bg-red-800 text-center text-sm md:text-3xl py-2 px-3 rounded-lg font-bold animate__animated animate__fadeIn animate__slow animate__delay-1s" > <a class="" href="#rules"> Court Rules </a></button> <br>
+          <button class="inline-block mt-3 bg-red-800 text-center text-sm md:text-3xl py-2 px-3 rounded-lg font-bold animate__animated animate__fadeIn animate__slow animate__delay-1s" > <a class="" href="#e-books"> Legal E-Books </a></button>
+        </div>
+        </div>
+  </section>   
+ <!-- legislations free resources--> 
+ <main class="py-14" id="legislations">
+ <section class="mb-5">
+   <div class="">
+     <h1 class="text-center font-bold text-lg md:text-3xl"> Nigerian Legislation</h1>
+     <p class="text-sm md:text-2xl  text-center"> Below are list of various Nigerian legislations.  </p>
+   </div>
+ </section> 
+ <section class="grid grid-cols-2 md:grid-cols-3">
+  <!-- Constitution -->
+  <article class="py-5 md:px-8 border-t-2 border-gray-200 border-r-2 grid-span-2 " data-aos="fade-up">
+    <div class="justify-center mx-auto w-24 h-24 md:w-48 md:h-48"> 
+      <img src="img/resources/constitution.jpg" style="relative; width:100%; height: 100%; " class=" w-full h-full rounded-lg ">
+      </div>
+      <h1 class="text-xs md:text-xl mt-3 text-center font-bold ">The 1999 Constitution <br> (as amended)</h1>
+       <div class="mt-3 flex items-center justify-center">
+        <button class="rounded-lg p-1 Navy-blue bg-gradient-to-br from-blue-900 to-blue-600"><a href="https://drive.google.com/file/d/1JrDeTHmLulbneeh8F6B41RQiXt7XG-CI/view?usp=drivesdk" class="text-center text-xs md:text-sm text-white tracking-tight font-bold"> Download Here</a></button>
+      </div>
+</article>
+<!-- evidence Act, 2011 -->
+  <article class="py-5 md:px-8 border-t-2 border-r-2 border-gray-200" data-aos="fade-up">
+    <div class="justify-center mx-auto w-24 h-24 md:w-48 md:h-48"> 
+      <img src="img/resources/constitution.jpg" style="relative; width:100%; height: 100%; " class=" w-full h-full rounded-lg ">
+      </div>
+      <h1 class="text-xs md:text-xl mt-3 text-center font-bold"> Evidence Act, <br> 2011 </h1>
+      <div class="mx-auto mt-3 flex items-center justify-center">
+        <button class="rounded-lg p-1 Navy-blue bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg"><a href="https://drive.google.com/file/d/1Lv4XQrg0eFQMIubPfWZm_Xea7ds-eULh/view?usp=drivesdk" class="text-center text-xs md:text-lg text-white tracking-wide font-bold"> Download Here</a></button>
+      </div>
+  </article>
+<!-- ACJA Act -->
+  <article class="py-5 md:px-8 border-t-2 border-r-2 border-gray-200" data-aos="fade-up">
+    <div class="justify-center mx-auto w-24 h-24 md:w-48 md:h-48"> 
+      <img src="img/resources/constitution.jpg" style="relative; width:100%; height: 100%; " class=" w-full h-full rounded-lg ">
+      </div>
+      <h1 class="text-xs md:text-xl mt-3 text-center font-bold"> Administration of Criminal Justice Act, 2015</h1>
+      <div class="mx-auto mt-3 flex items-center justify-center">
+        <button class="rounded-lg p-1 Navy-blue bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg"><a href="https://drive.google.com/file/d/1JtSXHhOnSc6ZR7AFC9S9WL9H1enhZfU4/view?usp=drivesdk" class="text-center text-xs md:text-lg text-white tracking-wide font-bold"> Download Here</a></button>
+      </div>
+  </article>
+<!--Electoral Act -->
+  <article class="py-5 md:px-8 border-t-2 border-r-2 border-gray-200" data-aos="fade-up">
+    <div class="justify-center mx-auto w-24 h-24 md:w-48 md:h-48"> 
+      <img src="img/resources/constitution.jpg" style="relative; width:100%; height: 100%; " class=" w-full h-full rounded-lg ">
+      </div>
+      <h1 class="text-xs md:text-xl mt-3 text-center font-bold"> Electoral Act, <br> 2022 </h1>
+      <div class="mx-auto mt-3 flex items-center justify-center">
+        <button class="rounded-lg p-1 Navy-blue bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg"><a href="https://drive.google.com/file/d/1JysbCZyQ-w7agJ30D7gExW17FkIn5FjJ/view?usp=drivesdk" class="text-center text-xs md:text-lg text-white tracking-wide font-bold"> Download Here</a></button>
+      </div>
+  </article>
+<!-- CAMA Act -->
+  <article class=" py-5 md:px-8 border-t-2 border-r-2 border-gray-200" data-aos="fade-up">
+    <div class="justify-center mx-auto w-24 h-24 md:w-48 md:h-48"> 
+      <img src="img/resources/constitution.jpg" style="relative; width:100%; height: 100%; " class=" w-full h-full rounded-lg ">
+      </div>
+      <h1 class="text-xs md:text-xl mt-3 text-center font-bold"> Companies and Allied Matters Act, 2020</h1>
+      <div class="mx-auto mt-3 flex items-center justify-center">
+        <button class="rounded-lg p-1 Navy-blue bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg"><a href="https://drive.google.com/file/d/1LyWIjtdcCg0hHIdxV4MkKZqi-xIMT6mr/view?usp=drivesdk" class="text-center text-xs md:text-lg text-white tracking-wide font-bold"> Download Here</a></button>
+      </div>
+  </article>
+<!-- BOFIA Act -->
+  <article class=" py-5 md:px-8 border-t-2 border-r-2 border-gray-200" data-aos="fade-up">
+    <div class="justify-center mx-auto w-24 h-24 md:w-48 md:h-48"> 
+      <img src="img/resources/constitution.jpg" style="relative; width:100%; height: 100%; " class=" w-full h-full rounded-lg ">
+      </div>
+      <h1 class="text-xs md:text-xl mt-3 text-center font-bold"> Bank and Other Financial Institutions Act, 2020 </h1>
+      <div class="mx-auto mt-3 flex items-center justify-center">
+        <button class="rounded-lg p-1 Navy-blue bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg"><a href="https://drive.google.com/file/d/1LxTNTgh1rBju6KMfQAe-GPH3MoKhjeDY/view?usp=drivesdk" class="text-center text-xs md:text-lg text-white tracking-wide font-bold"> Download Here</a></button>
+      </div>
+  </article>
+<!-- Cybercrime Act -->
+  <article class="py-5 md:px-8 border-t-2 border-r-2 border-gray-200" data-aos="fade-up">
+    <div class="justify-center mx-auto w-24 h-24 md:w-48 md:h-48"> 
+      <img src="img/resources/constitution.jpg" style="relative; width:100%; height: 100%; " class=" w-full h-full rounded-lg ">
+      </div>
+      <h1 class="text-xs md:text-xl mt-3 text-center font-bold"> Cybercrimes (Prohibition, Prevention, etc) Act, 2015</h1>
+      <div class="mx-auto mt-3 flex items-center justify-center">
+        <button class="rounded-lg p-1 Navy-blue bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg"><a href="https://drive.google.com/file/d/1LwzDyjKQGFHrFB7TYXF-wmri7WQpjd_f/view?usp=drivesdk" class="text-center text-xs md:text-lg text-white tracking-wide font-bold"> Download Here</a></button>
+      </div>
+  </article>
+<!-- Petroleum Industrial Act -->
+  <article class="py-5 md:px-8 border-t-2 border-r-2 border-gray-200" data-aos="fade-up">
+    <div class="justify-center mx-auto w-24 h-24 md:w-48 md:h-48"> 
+      <img src="img/resources/constitution.jpg" style="relative; width:100%; height: 100%; " class=" w-full h-full rounded-lg ">
+      </div>
+      <h1 class="text-xs md:text-xl mt-3 text-center font-bold"> Petroleum Industrial Act,<br> 2021</h1>
+      <div class="mx-auto mt-3 flex items-center justify-center">
+        <button class="rounded-lg p-1 Navy-blue bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg"><a href="https://drive.google.com/file/d/1K4PUeg6m7kaLAyFgwhkA8H0sHhI2OJpn/view?usp=drivesdk" class="text-center text-xs md:text-lg text-white tracking-wide font-bold"> Download Here</a></button>
+      </div>
+  </article>
+<!-- Nigeria's Copyright Act -->
+  <article class="py-5 md:px-8 border-t-2 border-r-2 border-gray-200" data-aos="fade-up">
+    <div class="justify-center mx-auto w-24 h-24 md:w-48 md:h-48"> 
+      <img src="img/resources/constitution.jpg" style="relative; width:100%; height: 100%; " class=" w-full h-full rounded-lg ">
+      </div>
+      <h1 class="text-xs md:text-xl mt-3 text-center font-bold"> Copyright Act,<br> 2022</h1>
+      <div class="mx-auto mt-3 flex items-center justify-center">
+        <button class="rounded-lg p-1 Navy-blue bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg"><a href="https://drive.google.com/file/d/1LvjXo_cOoXGNOj0khaX7lNFJuW4GHrW_/view?usp=drivesdk" class="text-center text-xs md:text-lg text-white tracking-wide font-bold"> Download Here</a></button>
+      </div>
+  </article>
+  
+<!-- Arbitration & Mediation Act -->
+  <article class="py-5 md:px-8 border-t-2 border-r-2 border-gray-200" data-aos="fade-up">
+    <div class="justify-center mx-auto w-24 h-24 md:w-48 md:h-48"> 
+      <img src="img/resources/constitution.jpg" style="relative; width:100%; height: 100%; " class=" w-full h-full rounded-lg ">
+      </div>
+      <h1 class="text-xs md:text-xl mt-3 text-center font-bold"> Arbitration Mediation Act, <br> 2023 </h1>
+      <div class="mx-auto mt-3 flex items-center justify-center">
+        <button class="rounded-lg p-1 Navy-blue bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg"><a href="https://drive.google.com/file/d/1LvnZd_qFc9aKtYflN4zUfXYMVol9GaHN/view?usp=drivesdk" class="text-center text-xs md:text-lg text-white tracking-wide font-bold"> Download Here</a></button>
+      </div>
+  </article>
+  
+<!-- Patent Act -->
+  <article class="py-5 md:px-8 border-t-2 border-r-2 border-gray-200" data-aos="fade-up">
+    <div class="justify-center mx-auto w-24 h-24 md:w-48 md:h-48"> 
+      <img src="img/resources/constitution.jpg" style="relative; width:100%; height: 100%; " class=" w-full h-full rounded-lg ">
+      </div>
+      <h1 class="text-xs md:text-xl mt-3 text-center font-bold"> Patents and Designs<br> Act, 2004</h1>
+      <div class="mx-auto mt-3 flex items-center justify-center">
+        <button class="rounded-lg p-1 Navy-blue bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg"><a href="https://drive.google.com/file/d/1K4TmktIFrrT0jf0Ww1SIiyKuLa9Pr-xp/view?usp=drivesdk" class="text-center text-xs md:text-lg text-white tracking-wide font-bold"> Download Here</a></button>
+      </div>
+  </article>
+  
+<!-- Money Laundry Act -->
+  <article class="py-5 md:px-8 border-t-2 border-r-2 border-gray-200" data-aos="fade-up">
+    <div class="justify-center mx-auto w-24 h-24 md:w-48 md:h-48"> 
+      <img src="img/resources/constitution.jpg" style="relative; width:100%; height: 100%; " class=" w-full h-full rounded-lg ">
+      </div>
+      <h1 class="text-xs md:text-xl mt-3 text-center font-bold"> Money Laundering (Prevention & Prohibition) Act,2022 </h1>
+      <div class="mx-auto mt-3 flex items-center justify-center">
+        <button class="rounded-lg p-1 Navy-blue bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg"><a href="" class="text-center text-xs md:text-lg text-white tracking-wide font-bold"> Download Here</a></button>
+      </div>
+  </article>
+  
+<!-- Supreme Court Act-->
+  <article class="py-5 md:px-8 border-t-2 border-r-2 border-gray-200" data-aos="fade-up">
+    <div class="justify-center mx-auto w-24 h-24 md:w-48 md:h-48"> 
+      <img src="img/resources/constitution.jpg" style="relative; width:100%; height: 100%; " class=" w-full h-full rounded-lg ">
+      </div>
+      <h1 class="text-xs md:text-xl mt-3 text-center font-bold"> Supreme Court Act, <br> 2004</h1>
+      <div class="mx-auto mt-3 flex items-center justify-center">
+        <button class="rounded-lg p-1 Navy-blue bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg"><a href="https://drive.google.com/file/d/1K4kE40_hAvB3-x4pgGrA6j9tP4Y7Ha21/view?usp=drivesdk" class="text-center text-xs md:text-lg text-white tracking-wide font-bold"> Download Here</a></button>
+      </div>
+  </article>
+  
+<!--Evidence Act, (Amended) -->
+  <article class="py-5 md:px-8 border-t-2 border-r-2 border-gray-200" data-aos="fade-up">
+    <div class="justify-center mx-auto w-24 h-24 md:w-48 md:h-48"> 
+      <img src="img/resources/constitution.jpg" style="relative; width:100%; height: 100%; " class=" w-full h-full rounded-lg ">
+      </div>
+      <h1 class="text-xs md:text-xl mt-3 text-center font-bold"> Evidence (Amendment) Act, <br> 2023</h1>
+      <div class="mx-auto mt-3 flex items-center justify-center">
+        <button class="rounded-lg p-1 Navy-blue bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg"><a href="https://drive.google.com/file/d/1K-P_gdDrIh3irZMmA9uejSnpXjE6ulBV/view?usp=drivesdk" class="text-center text-xs md:text-lg text-white tracking-wide font-bold"> Download Here</a></button>
+      </div>
+  </article>
+  
+<!-- Nigeria Data Protection Act Act -->
+  <article class="py-5 md:px-8 border-t-2 border-r-2 border-gray-200" data-aos="fade-up">
+    <div class="justify-center mx-auto w-24 h-24 md:w-48 md:h-48"> 
+      <img src="img/resources/constitution.jpg" style="relative; width:100%; height: 100%; " class=" w-full h-full rounded-lg ">
+      </div>
+      <h1 class="text-xs md:text-xl mt-3 text-center font-bold"> Nigeria Data Protection Act, <br> 2023</h1>
+      <div class="mx-auto mt-3 flex items-center justify-center">
+        <button class="rounded-lg p-1 Navy-blue bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg"><a href="https://drive.google.com/file/d/1K1RDV332Z-pxGTtv5txRpwot9hIf7WTv/view?usp=drivesdk" class="text-center text-xs md:text-lg text-white tracking-wide font-bold"> Download Here</a></button>
+      </div>
+  </article>
+  
+<!-- Freedom of information Act -->
+  <article class="py-5 md:px-8 border-t-2 border-r-2 border-gray-200" data-aos="fade-up">
+    <div class="justify-center mx-auto w-24 h-24 md:w-48 md:h-48"> 
+      <img src="img/resources/constitution.jpg" style="relative; width:100%; height: 100%; " class=" w-full h-full rounded-lg ">
+      </div>
+      <h1 class="text-xs md:text-xl mt-3 text-center font-bold"> Freedom of Information Act, <br> 2011</h1>
+      <div class="mx-auto mt-3 flex items-center justify-center">
+        <button class="rounded-lg p-1 Navy-blue bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg"><a href="https://drive.google.com/file/d/1K-Svb3N3NqJPUtJobXrjpWqzqvqlYR6H/view?usp=drivesdk" class="text-center text-xs md:text-lg text-white tracking-wide font-bold"> Download Here</a></button>
+      </div>
+  </article>
+  
+<!-- oaths Act -->
+  <article class="py-5 md:px-8 border-t-2 border-r-2 border-gray-200" data-aos="fade-up">
+    <div class="justify-center mx-auto w-24 h-24 md:w-48 md:h-48"> 
+      <img src="img/resources/constitution.jpg" style="relative; width:100%; height: 100%; " class=" w-full h-full rounded-lg ">
+      </div>
+      <h1 class="text-xs md:text-xl mt-3 text-center font-bold"> Oaths Act, <br> 2004</h1>
+      <div class="mx-auto mt-3 flex items-center justify-center">
+        <button class="rounded-lg p-1 Navy-blue bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg"><a href="https://drive.google.com/file/d/1K3B_xthtvq9IotUS16uYto_Th3fdzyt7/view?usp=drivesdk" class="text-center text-xs md:text-lg text-white tracking-wide font-bold"> Download Here</a></button>
+      </div>
+  </article>
+  
+<!-- Supreme Court Additional Jurisdiction-->
+  <article class="py-5 md:px-8 border-t-2 border-r-2 border-gray-200" data-aos="fade-up">
+    <div class="justify-center mx-auto w-24 h-24 md:w-48 md:h-48"> 
+      <img src="img/resources/constitution.jpg" style="relative; width:100%; height: 100%; " class=" w-full h-full rounded-lg ">
+      </div>
+      <h1 class="text-xs md:text-xl mt-3 text-center font-bold"> Supreme Court (Additional) Jurisdiction 2002</h1>
+      <div class="mx-auto mt-3 flex items-center justify-center">
+        <button class="rounded-lg p-1 Navy-blue bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg"><a href="https://drive.google.com/file/d/1K9uDu7Z9Tm-3gy_ym2XntgRzBXECkMtf/view?usp=drivesdk" class="text-center text-xs md:text-lg text-white tracking-wide font-bold"> Download Here</a></button>
+      </div>
+  </article>
+  
+<!-- VAPA Act -->
+  <article class="py-5 md:px-8 border-t-2 border-r-2 border-gray-200" data-aos="fade-up">
+    <div class="justify-center mx-auto w-24 h-24 md:w-48 md:h-48"> 
+      <img src="img/resources/constitution.jpg" style="relative; width:100%; height: 100%; " class=" w-full h-full rounded-lg ">
+      </div>
+      <h1 class="text-xs md:text-xl mt-3 text-center font-bold"> Violence Against Persons Act, <br> 2015 </h1>
+      <div class="mx-auto mt-3 flex items-center justify-center">
+        <button class="rounded-lg p-1 Navy-blue bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg"><a href="https://drive.google.com/file/d/1Lh5oMvaVSMtTr_qBzdA6akf6fMxtsznt/view?usp=drivesdk" class="text-center text-xs md:text-lg text-white tracking-wide font-bold"> Download Here</a></button>
+      </div>
+  </article>
+  
+<!-- students loan Act -->
+  <article class="py-5 md:px-8 border-t-2 border-r-2 border-gray-200" data-aos="fade-up">
+    <div class="justify-center mx-auto w-24 h-24 md:w-48 md:h-48"> 
+      <img src="img/resources/constitution.jpg" style="relative; width:100%; height: 100%; " class=" w-full h-full rounded-lg ">
+      </div>
+      <h1 class="text-xs md:text-xl mt-3 text-center font-bold"> Student Loan Act, <br> 2023</h1>
+      <div class="mx-auto mt-3 flex items-center justify-center">
+        <button class="rounded-lg p-1 Navy-blue bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg"><a href="https://drive.google.com/file/d/1LhciAb37Hyv5e1jSHRFnfDXfdGRjGxwl/view?usp=drivesdk" class="text-center text-xs md:text-lg text-white tracking-wide font-bold"> Download Here</a></button>
+      </div>
+  </article>
+  
+<!-- Court of Appeal Act-->
+  <article class="py-5 md:px-8 border-t-2 border-r-2 border-gray-200" data-aos="fade-up">
+    <div class="justify-center mx-auto w-24 h-24 md:w-48 md:h-48"> 
+      <img src="img/resources/constitution.jpg" style="relative; width:100%; height: 100%; " class=" w-full h-full rounded-lg ">
+      </div>
+      <h1 class="text-xs md:text-xl mt-3 text-center font-bold"> Court of Appeal Act, <br> 2004 </h1>
+      <div class="mx-auto mt-3 flex items-center justify-center">
+        <button class="rounded-lg p-1 Navy-blue bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg"><a href="https://drive.google.com/file/d/1LnAqC-pdg-z5GVPh2dPf7cEpb6O-ZAn1/view?usp=drivesdk" class="text-center text-xs md:text-lg text-white tracking-wide font-bold"> Download Here</a></button>
+      </div>
+  </article>
+  
+<!-- federal high court Act -->
+  <article class="py-5 md:px-8 border-b-2 border-t-2 border-r-2 border-gray-200" data-aos="fade-up">
+    <div class="justify-center mx-auto w-24 h-24 md:w-48 md:h-48"> 
+      <img src="img/resources/constitution.jpg" style="relative; width:100%; height: 100%; " class=" w-full h-full rounded-lg ">
+      </div>
+      <h1 class="text-xs md:text-xl mt-3 text-center font-bold"> Federal High Court Act, <br> 2004</h1>
+      <div class="mx-auto mt-3 flex items-center justify-center">
+        <button class="rounded-lg p-1 Navy-blue bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg"><a href="https://drive.google.com/file/d/1L_z4i9NJdamKhBK0C1rkO__A3_d_OR4X/view?usp=drivesdk" class="text-center text-xs md:text-lg text-white tracking-wide font-bold"> Download Here</a></button>
+      </div>
+  </article>
+  
+<!-- Trade Marks Act -->
+  <article class="py-5 md:px-8 border-b-2 border-t-2 border-r-2 border-gray-200" data-aos="fade-up">
+    <div class="justify-center mx-auto w-24 h-24 md:w-48 md:h-48"> 
+      <img src="img/resources/constitution.jpg" style="relative; width:100%; height: 100%; " class=" w-full h-full rounded-lg ">
+      </div>
+      <h1 class="text-xs md:text-xl mt-3 text-center font-bold"> Trade Marks Act, <br> 2004</h1>
+      <div class="mx-auto mt-3 flex items-center justify-center">
+        <button class="rounded-lg p-1 Navy-blue bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg"><a href="https://drive.google.com/file/d/1Lt7Ar4coKujJr4ZzrZ0cIiYTX9PKGnWF/view?usp=drivesdk" class="text-center text-xs md:text-lg text-white tracking-wide font-bold"> Download Here</a></button>
+      </div>
+  </article>
+  
+<!-- Public Officers Protection Act -->
+  <article class="py-5 md:px-8 border-b-2 border-t-2 border-r-2 border-gray-200" data-aos="fade-up">
+    <div class="justify-center mx-auto w-24 h-24 md:w-48 md:h-48"> 
+      <img src="img/resources/constitution.jpg" style="relative; width:100%; height: 100%; " class=" w-full h-full rounded-lg ">
+      </div>
+      <h1 class="text-xs md:text-xl mt-3 text-center font-bold"> Public Officers Protection Act, <br> 2004</h1>
+      <div class="mx-auto mt-3 flex items-center justify-center">
+        <button class="rounded-lg p-1 Navy-blue bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg"><a href="https://drive.google.com/file/d/1M6iZT7xMJ6ItSd5wPmK0O16e8OZPjVOd/view?usp=drivesdk" class="text-center text-xs md:text-lg text-white tracking-wide font-bold"> Download Here</a></button>
+      </div>
+  </article>
+
+
+ </section>
+ </main>
+ 
+ <!-- Court rules --> 
+ <!-- Court rules --> 
+ <main class="mt-5 pb-14" id="rules">
+ <section class="mb-5">
+   <div class="">
+     <h1 class="text-center font-bold text-lg md:text-3xl"> COURT RULES, TRIBUNALS AND OTHER LEGISLATIONS</h1>
+     <p class="text-sm md:text-2xl text-center"> Below are list of Nigerian various court rules.   </p>
+   </div>
+ </section> 
+ <section class="grid grid-cols-2 md:grid-cols-3">
+  <!--Supreme Court  -->
+  <article class="py-5 md:px-8 border-t-2 border-gray-200 border-r-2 grid-span-2 " data-aos="fade-up">
+    <div class="justify-center mx-auto w-24 h-24 md:w-48 md:h-48"> 
+      <img src="img/resources/court-rules.jpg" style="relative; width:100%; height: 100%; " class=" w-full h-full rounded-lg ">
+      </div>
+      <h1 class="text-xs md:text-xl mt-3 text-center font-bold "> Supreme Court Rules, <br> 1985 </h1> 
+       <div class="mx-auto mt-3 flex items-center justify-center">
+        <button class="rounded-lg p-1 Navy-blue bg-gradient-to-br from-blue-900 to-blue-600"><a href="https://drive.google.com/file/d/1KScE2NU-_8wQcuouFasI1nJnNuiMSI2P/view?usp=drivesdk" class="text-center text-xs md:text-sm md:text-lg text-white tracking-wide font-bold"> Download Here</a></button>
+      </div>
+</article>
+<!-- Court of appeal -->
+  <article class="py-5 md:px-8 border-t-2 border-r-2 border-gray-200" data-aos="fade-up">
+    <div class="justify-center mx-auto w-24 h-24 md:w-48 md:h-48"> 
+      <img src="img/resources/court-rules.jpg" style="relative; width:100%; height: 100%; " class=" w-full h-full rounded-lg ">
+      </div>
+      <h1 class="text-xs md:text-xl mt-3 text-center font-bold"> Court of Appeal Rules <br> 2021 </h1>
+      <div class="mx-auto mt-3 flex items-center justify-center">
+        <button class="rounded-lg p-1 Navy-blue bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg"><a href="https://drive.google.com/file/d/1KU2f8hPiwn5Arwgu7dF5y6HwGBosLr_V/view?usp=drivesdk" class="text-center text-xs md:text-lg text-white tracking-wide font-bold"> Download Here</a></button>
+      </div>
+  </article>
+<!-- Federal High Court -->
+  <article class="py-5 md:px-8 border-t-2 border-r-2 border-gray-200" data-aos="fade-up">
+    <div class="justify-center mx-auto w-24 h-24 md:w-48 md:h-48"> 
+      <img src="img/resources/court-rules.jpg" style="relative; width:100%; height: 100%; " class=" w-full h-full rounded-lg ">
+      </div>
+      <h1 class="text-xs md:text-xl mt-3 text-center font-bold"> Federal High Court (Civil Procedures) Rules, 2019</h1>
+      <div class="mx-auto mt-3 flex items-center justify-center">
+        <button class="rounded-lg p-1 Navy-blue bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg"><a href="https://drive.google.com/file/d/1LQi7vIlOH4OoMvRZhl_ZT9PZ1dEVWvO-/view?usp=drivesdk" class="text-center text-xs md:text-lg text-white tracking-wide font-bold"> Download Here</a></button>
+      </div>
+  </article>
+<!-- National Industrial Court -->
+  <article class=" py-5 md:px-8 border-t-2 border-r-2 border-gray-200" data-aos="fade-up">
+    <div class="justify-center mx-auto w-24 h-24 md:w-48 md:h-48"> 
+      <img src="img/resources/court-rules.jpg" style="relative; width:100%; height: 100%; " class=" w-full h-full rounded-lg ">
+      </div>
+      <h1 class="text-xs md:text-xl mt-3 text-center font-bold">  National Industrial Court (Civil Procedures) Rules, 2017</h1>
+      <div class="mx-auto mt-3 flex items-center justify-center">
+        <button class="rounded-lg p-1 Navy-blue bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg"><a href="https://drive.google.com/file/d/1LRwemuPeCjMn5raj_fzHpmfFA9gwhyp0/view?usp=drivesdk" class="text-center text-xs md:text-lg text-white tracking-wide font-bold"> Download Here</a></button>
+      </div>
+  </article>
+<!-- High court fct -->
+  <article class=" py-5 md:px-8 border-t-2 border-r-2 border-gray-200" data-aos="fade-up">
+    <div class="justify-center mx-auto w-24 h-24 md:w-48 md:h-48"> 
+      <img src="img/resources/court-rules.jpg" style="relative; width:100%; height: 100%; " class=" w-full h-full rounded-lg ">
+      </div>
+      <h1 class="text-xs md:text-xl mt-3 text-center font-bold"> FCT High Court (Civil Procedure) Rules  2014</h1>
+      <div class="mx-auto mt-3 flex items-center justify-center">
+        <button class="rounded-lg p-1 Navy-blue bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg"><a href="https://drive.google.com/file/d/1LPj9EJk8hW1IAYKhckL-4RplsH9DSYB-/view?usp=drivesdk" class="text-center text-xs md:text-lg text-white tracking-wide font-bold"> Download Here</a></button>
+      </div>
+  </article>
+<!-- Fundamental Enforcement Rights -->
+  <article class="py-5 md:px-8 border-t-2 border-r-2 border-gray-200" data-aos="fade-up">
+    <div class="justify-center mx-auto w-24 h-24 md:w-48 md:h-48"> 
+      <img src="img/resources/court-rules.jpg" style="relative; width:100%; height: 100%; " class=" w-full h-full rounded-lg ">
+      </div>
+      <h1 class="text-xs md:text-xl mt-3 text-center font-bold"> Fundamental Rights (Enforcement Procedure) Rules, 2009 </h1>
+      <div class="mx-auto mt-3 flex items-center justify-center">
+        <button class="rounded-lg p-1 Navy-blue bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg"><a href="https://drive.google.com/file/d/1KKBDh2yB-8vf34T7K34hg4OX83y78km8/view?usp=drivesdk" class="text-center text-xs md:text-lg text-white tracking-wide font-bold"> Download Here</a></button>
+      </div>
+  </article>
+<!-- Legal Practitioners Disciplinary Committee Rules -->
+  <article class="py-5 md:px-8 border-t-2 border-r-2 border-gray-200" data-aos="fade-up">
+    <div class="justify-center mx-auto w-24 h-24 md:w-48 md:h-48"> 
+      <img src="img/resources/court-rules.jpg" style="relative; width:100%; height: 100%; " class=" w-full h-full rounded-lg ">
+      </div>
+      <h1 class="text-xs md:text-xl mt-3 text-center font-bold">Legal Practitioners Disciplinary Committee Rules </h1>
+      <div class="mx-auto mt-3 flex items-center justify-center">
+        <button class="rounded-lg p-1 Navy-blue bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg"><a href="https://drive.google.com/file/d/1KQKmrILYS-G1TpOLZ_aSjW5I3hRF0k__/view?usp=drivesdk" class="text-center text-xs md:text-lg text-white tracking-wide font-bold"> Download Here</a></button>
+      </div>
+  </article>
+<!-- NBA Constitution  -->
+  <article class="py-5 md:px-8 border-t-2 border-r-2 border-gray-200" data-aos="fade-up">
+    <div class="justify-center mx-auto w-24 h-24 md:w-48 md:h-48"> 
+      <img src="img/resources/court-rules.jpg" style="relative; width:100%; height: 100%; " class=" w-full h-full rounded-lg ">
+      </div>
+      <h1 class="text-xs md:text-xl mt-3 text-center font-bold"> Nigerian Bar Association Constitution </h1>
+      <div class="mx-auto mt-3 flex items-center justify-center">
+        <button class="rounded-lg p-1 Navy-blue bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg"><a href="https://drive.google.com/file/d/1KQyIebfIK3HWaCGe970hHwuCHl0zFzgJ/view?usp=drivesdk" class="text-center text-xs md:text-lg text-white tracking-wide font-bold"> Download Here</a></button>
+      </div>
+  </article>
+  
+<!-- Rules of Professional Conduct -->
+  <article class="py-5 md:px-8 border-t-2 border-r-2 border-gray-200" data-aos="fade-up">
+    <div class="justify-center mx-auto w-24 h-24 md:w-48 md:h-48"> 
+      <img src="img/resources/court-rules.jpg" style="relative; width:100%; height: 100%; " class=" w-full h-full rounded-lg ">
+      </div>
+      <h1 class="text-xs md:text-xl mt-3 text-center font-bold"> Rules of Professional <br> Conduct, 2007</h1>
+      <div class="mx-auto mt-3 flex items-center justify-center">
+        <button class="rounded-lg p-1 Navy-blue bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg"><a href="https://drive.google.com/file/d/1KRKEwc9QE2cJw0LXCEzJ2VerOwcdZ7vK/view?usp=drivesdk" class="text-center text-xs md:text-lg text-white tracking-wide font-bold"> Download Here</a></button>
+      </div>
+  </article>
+  
+<!-- Lagos State HIGH Court Rules -->
+  <article class="py-5 md:px-8 border-t-2 border-r-2 border-gray-200" data-aos="fade-up">
+    <div class="justify-center mx-auto w-24 h-24 md:w-48 md:h-48"> 
+      <img src="img/resources/court-rules.jpg" style="relative; width:100%; height: 100%; " class=" w-full h-full rounded-lg ">
+      </div>
+      <h1 class="text-xs md:text-xl mt-3 text-center font-bold"> Lagos State High Court <br> Rules, 2019 </h1>
+      <div class="mx-auto mt-3 flex items-center justify-center">
+        <button class="rounded-lg p-1 Navy-blue bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg"><a href="https://drive.google.com/file/d/1KTuu5FA13vDdgRXWf4tNYRoVDccdfpBH/view?usp=drivesdk" class="text-center text-xs md:text-lg text-white tracking-wide font-bold"> Download Here</a></button>
+      </div>
+  </article>
+  
+<!-- Ogun State HIGH Court Rules  -->
+  <article class="py-5 md:px-8 border-t-2 border-r-2 border-gray-200" data-aos="fade-up">
+    <div class="justify-center mx-auto w-24 h-24 md:w-48 md:h-48"> 
+      <img src="img/resources/court-rules.jpg" style="relative; width:100%; height: 100%; " class=" w-full h-full rounded-lg ">
+      </div>
+      <h1 class="text-xs md:text-xl mt-3 text-center font-bold">Ogun State HIGH Court <br> Rules, 2014</h1>
+      <div class="mx-auto mt-3 flex items-center justify-center">
+        <button class="rounded-lg p-1 Navy-blue bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg"><a href="https://drive.google.com/file/d/1LPOB3OPzZ6ntS0rsYWhkmxQSerZsGEnS/view?usp=drivesdk" class="text-center text-xs md:text-lg text-white tracking-wide font-bold"> Download Here</a></button>
+      </div>
+  </article>
+<!--Federal High Court Criminal Trials Practice Direction-->
+  <article class="py-5 md:px-8 border-t-2 border-r-2 border-gray-200" data-aos="fade-up">
+    <div class="justify-center mx-auto w-24 h-24 md:w-48 md:h-48"> 
+      <img src="img/resources/court-rules.jpg" style="relative; width:100%; height: 100%; " class=" w-full h-full rounded-lg ">
+      </div>
+      <h1 class="text-xs md:text-xl mt-3 text-center font-bold"> Federal High Court Criminal Trials Practice Direction, 2013 </h1>
+      <div class="mx-auto mt-3 flex items-center justify-center">
+        <button class="rounded-lg p-1 Navy-blue bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg"><a href="https://drive.google.com/file/d/1LH0eOTQt99K54hEt_GgyMnkqAUbWsNG2/view?usp=drivesdk" class="text-center text-xs md:text-lg text-white tracking-wide font-bold"> Download Here</a></button>
+      </div>
+  </article>
+
+ </section>
+ </main>
+ 
+ <!-- FREE E-BOOKS--> 
+ <main class="mt-5 py-14" id="e-books">
+ <section class="mb-5">
+   <div class="">
+     <h1 class="text-center font-bold text-lg md:text-3xl"> E-BOOKS </h1>
+     <p class="text-sm md:text-2xl text-center"> Below are list of Nigerian various court rules.   </p>
+
+   </div>
+ </section> 
+ <!-- Book 1--> 
+ <article data-aos="fade-up" class="border-gray-300 border-t-2 ">
+ <section class="flex px-4 md:px-0 md:w-4/5 md:mx-auto lg:w-6/7 lg:mx-auto">
+   <div class="py-2 resource-sm resource-md w-1/3">   <img src="img/resources/download.jpg" style="relative; width: ; height: ; " class="h-36 md:h-72">
+   </div>
+   <div class="ml-3 md:ml-5 pr-3 md:pr-9 py-2 w-2/3">
+     <h1 class="font-bold text-lg md:text-4xl leading-4"> The Elementary Guide to Moot Court</h1>     
+     <p class="text-xs md:text-xl mt-2 md:mt-4"> This resource discusses the rudimenta of court room advocacy. It addresses the approach to moot abd mock trial proceedings.</p>
+     <a href="https://drive.google.com/file/d/1KYWfVvn498z9hfzWpBz3iHEZXgdEQini/view?usp=drivesdk" class="text-base md:text-2xl mt-2.5 tracking-wide font-bold inline-block text-red-500"> Download Here</a> 
+   </div>
+ </section>
+ </article>
+ <!-- Book 2--> 
+ <article data-aos="fade-up" class="border-gray-300 border-t-2 py-1 ">
+ <section class="flex px-4 md:px-0 md:w-4/5 md:mx-auto lg:w-6/7 lg:mx-auto">
+   <div class="py-2 resource-sm resource-md w-1/3">   <img src="img/resources/download.jpg" style="relative; width: ; height: ; " class="h-36 md:h-72">
+   </div>
+   <div class="ml-3 md:ml-5 pr-3 md:pr-9 py-2 w-2/3">
+     <h1 class="font-bold text-lg md:text-4xl leading-4"> Brief Writing for the Court of Appeal And the...</h1>     <p class="text-xs md:text-xl mt-1 md:mt-4"> It discusses on the guiding principles when preparing Briefs of Argument to be adopted before the Court of Appeal and thr Supreme as well as, it's types.  </p>
+     <a href="https://drive.google.com/file/d/1KVBXP_GRoph5_Wb0csKzWhpw7Ls3N_k4/view?usp=drivesdk" class="text-base md:text-2xl mt-2 tracking-wide font-bold inline-block text-red-500"> Download Here</a> 
+   </div>
+ </section>
+ </article>
+ <!-- Book 3--> 
+ <article data-aos="fade-up" class="border-gray-300 border-t-2 py-1">
+ <section class="flex px-4 md:px-0 md:w-4/5 md:mx-auto lg:w-6/7 lg:mx-auto">
+   <div class="py-2 resource-sm resource-md w-1/3">   <img src="img/resources/download.jpg" style="relative; width: ; height: ; " class="h-36 md:h-72">
+   </div>
+   <div class="ml-3 md:ml-5 pr-3 md:pr-9 py-2 w-2/3">
+     <h1 class="font-bold text-base md:text-4xl leading-4"> Relevance and Admissibility of Evidence under the Evidence Act </h1>     <p class="text-xs md:text-xl mt-1 md:mt-4 leading-3"> A presentation by Hon. Justice Benedict Bakwaph KANYIP, Presidingg Judge, National Industrial Court, Lagos Division on issues revolving relevance and admissibility of evidence</p>
+     <a href="https://drive.google.com/file/d/1KYn2_QFlVpkxNlAEjUgSeJjbczYty0Zw/view?usp=drivesdk" class="text-base md:text-2xl mt-1 tracking-wide font-bold inline-block text-red-500"> Download Here</a> 
+   </div>
+ </section>
+ </article>
+ <!-- Book 1--> 
+ <article data-aos="fade-up" class="border-gray-300 border-t-2 py-5">
+ <section class="flex px-4 md:px-0 md:w-4/5 md:mx-auto lg:w-6/7 lg:mx-auto">
+   <div class="py-2 resource-sm resource-md w-1/3">   <img src="img/resources/download.jpg" style="relative; width: ; height: ; " class="h-36 md:h-72">
+   </div>
+   <div class="ml-3 md:ml-5 pr-3 md:pr-9 py-2 w-2/3">
+     <h1 class="font-bold text-lg md:text-4xl leading-5"> Sample Draft on Civil Litigation </h1>
+     <p class="text-xs md:text-xl mt-2 md:mt-4 leading-4"> A material of the Nigerian Law School on sample drafts of various processes relating to civil litigation before Nigerian Courts. </p>
+     <a href="https://drive.google.com/file/d/1KY7hTtonzlOaHzNFi6VsVlH6t8cheVpA/view?usp=drivesdk" class="text-base md:text-2xl mt-2.5 tracking-wide font-bold inline-block text-red-500"> Download Here</a> 
+   </div>
+ </section>
+ </article>
+ <!--Jurisdiction of Courts in Criminal Proceedings--> 
+ <article data-aos="fade-up" class="border-gray-300 border-t-2 py-1">
+ <section class="flex px-4 md:px-0 md:w-4/5 md:mx-auto lg:w-6/7 lg:mx-auto">
+   <div class="py-2 resource-sm resource-md w-1/3">   <img src="img/resources/download.jpg" style="relative; width: ; height: ; " class="h-36 md:h-72">
+   </div>
+   <div class="ml-3 md:ml-5 pr-3 md:pr-9 py-2 w-2/3">
+     <h1 class="font-bold text-lg md:text-4xl leading-5"> Jurisdiction of Courts in Criminal Proceedings</h1>     <p class="text-xs md:text-xl mt-2 md:mt-4 leading-3">  It analyses the jurisdiction of the various strata of courts in criminal proceedings in Nigeria, taking into ccountt the existing literature as well as recent developments.</p>
+     <a href="https://drive.google.com/file/d/1KXZkYampJoSTunPNyx0fQdT18ytE0rbD/view?usp=drivesdk" class="text-base md:text-2xl mt-2 tracking-wide font-bold inline-block text-red-500"> Download Here</a> 
+   </div>
+ </section>
+ </article>
+ </main>
+ 
+ 
+  <!-- Footer -->
+  <section class="Navy-blue py-10">
+  <article class="pl-4 ">
+    <div class="">
+      <h1 class="text-white text-center text-lg md:text-4xl font-bold uppercase tracking-widest"> Get in Touch</h1>
+    </div>
+    <div class="mx-32 md:mx-96 h-1 bg-white text-lg font-bold bg-gradient-to-br from-gray-300 to-gray-200 shadow-lg text-center mb-4 md:mb-8" > </div>
+    <div class="md:flex justify-between items-center align-center ">
+    <div class="md:text-2xl text-xs w-full md:w-2/4 md:pl-10 mb-5">
+      <h5 class="text-white text-justify text-base md:text-3xl font-semibold "> Contact Me</h5>
+      <p class="text-gray-300 my-2 font-light "> <i class="fas fa-map-marker-alt mr-2"></i> Faculty of Law, BUK</p>
+      <p class="text-gray-300 my-2 font-light "> <i class="fab fa-whatsapp mr-2"> </i> <a class="" href="https://wa.me/2349037074761?text=Hello!?"> +234 903 707 4761</a></p> 
+      <p class="text-gray-300 my-2 font-light "> <i class="fas fa-envelope mr-2"> </i> <a class="" href="muhibqosim@gmail.com "> muhibqosim@gmail.com</a></p> 
+      <p class="text-gray-300 mt-2 font-light "><i class="fas fa-phone mr-2"></i><a class=" " href=""> (+234) 9037074761 </a> <!--<span class="text-gray-100 font-light"> (Click to call) </span > --> </p>
+    </div>
+    <div class="md:text-2xl text-xs w-full md:w-2/4 md:pl-8">
+      <h5 class=" text-white text-justify text-base md:text-3xl font-semibold "> Quick Links </h5>
+      <p class="text-gray-300 my-2 font-light "> <a class=" " href="index.html" > Home</a></p>
+     <!-- <p class="text-gray-300 my-2 font-light "> <a class=" " href="portfolio.html" >Portfolio</a></p>-->
+      <p class="text-gray-300 my-2 font-light "> <a class=" " href="publications.html" > Publications</a></p>
+      <p class="text-gray-300 my-2 font-light "> <a class=" " href="resources.html" > Free resources</a></p>
+      <p class="text-gray-300 my-2 font-light "> <a class=" " href="#footer" > Contact</a></p>
+    </div>
+    </div>
+    </article>
+    <!-- newsletter --> 
+    <div class="pt-6 px-4">
+       <h1 class="uppercase text-white text-center text-base md:text-3xl mt-5 font-bold"> sign up for my newsletter</h1>
+    <div class="mx-20 md:mx-80 h-1 bg-white text-lg font-bold bg-gradient-to-br from-gray-300 to-gray-200 shadow-lg text-center" > </div>
+       <p class="mt-1 text-sm md:text-3xl text-center font-light text-gray-300 px-1 md:px-4 ">Stay up to date with my latest legal publications, articles and opinions on various aspects of law including Islamic topical issues & Islamic finance.   </p>
+    </div>
+    <form action="subscribe.php" method="post" class=" mt-3 px-4 ">
+       <script async data-uid="ea5c74106c" src="https://muhibqosim.ck.page/ea5c74106c/index.js"></script>
+    </form>
+    <!-- horizontal line--> 
+    <hr style="background-color: " class="bg-gray-100 font-light mt-20 "> 
+    <!-- copyright--> 
+    <div class="mt-10 md:mt-20 pt-5">
+      <p class="text-xs text-white font-light text-center md:text-3xl"> <i class="far fa-copyright md:text-3xl "></i> 2023 Muhibudeen Qosim | All Rights Reserved.
+      </p>
+    </div>
+    <!-- social handles--> 
+    <div class="mt-10 md:mt-20 flex justify-between px-20 text-lg md:px-64 md:text-5xl">
+      <a href="twitter.com/adenaike_idris" class="text-white hover:text-blue-400" target="_blank" rel="noopener" title="Twitter"> <i class="fab fa-twitter "></i></a>
+      <a href="https://m.facebook.com/muhammadulqoosim.muhiibuddeen" class="text-white hover:text-blue-600" target="_blank" rel="noopener" title="Facebook"> <i class="fab fa-facebook "></i></a>
+      <a href="https://wa.me/2349037074761?text=Hello!" class="text-white hover:text-green-500" target="_blank" rel="noopener" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i></a>
+        <a href="instagram.com/muhibqosim" class="text-white hover:text-pink-600" target="_blank" rel="noopener" title="Instagram"> <i class="fab fa-instagram "></i></a>
+        <a href="https://www.linkedin.com/in/qosim-muhibudeen-5896a91a8" class="text-white hover:text-blue-600" target="_blank" rel="noopener" title="LinkedIn"> <i class="fab fa-linkedin "></i></a>
+        <a href="https://github.com/muhibqosim" class="text-white hover:text-gray-600" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github "></i></a>
+     </div>
+    
+  </section>
+  
+  <!--js starts here--> 
+    <script src="js/main.js"> </script>
+   <script> AOS.init({
+      offset: 200,
+      duration: 600,
+      easing: 'ease-in-sine',
+      delay: 200,
+      once: true
+    },);
+       
+
+    </script>
+  </body>
+
+</html>

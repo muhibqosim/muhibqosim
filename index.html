@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initinitial-scale">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content=" ">
+  <meta name="keywords" content=" ">
+  <meta name="author" content=" ">
+  <!-- fontawesome link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css"
+    integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- tailwind link-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
+  <link href="/dist/output.css" rel="stylesheet">
+  <!-- libraries -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+  <!-- AOS link-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- css link-->
+  <link rel="stylesheet" href="css/main.css">
+  <!--Web fonts-->
+  <!-- fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300&display=swap" rel="stylesheet">
+
+  <title>muhibqosim | portfolio</title>
+  <style>
+    /* Background image for homepage: mobile and desktop*/
+    @media (max-width:699px) {
+      .header-lg {
+        background-image: url('img/capture.jpg');
+      }
+
+      .portfolios {
+        height: 35vh;
+      }
+    }
+
+    @media (min-width:700px) {
+      .header-lg {
+        background-image: url('img/capture.jpg');
+      }
+
+      .portfolios {
+        height: 20vh;
+      }
+    }
+
+    /* carousel*/
+    .carousel {
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      display: flex;
+      overflow-x: scroll
+    }
+
+    .carousel-item {
+      box-sizing: content-box;
+      scroll-snap-align: start;
+      flex: none;
+      display: flex
+    }
+  </style>
+</head>
+<!-- body starts here-->
+
+<body>
+  <header class="header Navy-blue p-3 md:py-6">
+    <!-- Navigation menu -->
+    <nav class=" ">
+      <div class="mx-auto px-4">
+        <div class="flex justify-between">
+          <div class="flex">
+            <a href="#" class="flex items-center ">
+              <!-- <img src="" alt="logo"> -->
+              <span class="text-white text-xl md:text-5xl garamond mx-1 font-bold" style="font-weight: 600;">MuhibQosim</span>
+            </a>
+          </div>
+          <!-- desktop menu bar-->
+          <div class="hidden garamond md:flex items-center md:justify-center mx-auto lg:w-full lg:pl-48 space-x-1 md:text-3xl">
+            <a href="#" class="py-4 px-2 text-white font-semibold hover:text-gray-900">Home</a>
+            <a href="publications.html" class="py-4 px-2 text-white font-semibold hover:text-gray-900">Publications</a>
+            <!--<a href="portfolio.html" class="py-4 px-2 text-white font-semibold hover:text-gray-900">Portfolio</a>-->
+            <a href="resources.html" class="py-4 px-2 text-white font-semibold hover:text-gray-900">Resources</a>
+            <a href="#footer" class="py-4 px-2 text-white font-semibold hover:text-gray-900">Contact</a>
+          </div>
+          <div class="md:hidden flex items-center">
+            <button type="button"
+              class="cursor-pointer text-gray-500 hover:text-white focus:outline-none focus:text-white"
+              aria-label="toggle menu" onclick="toggleMenu()">
+              <div class="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- mobile menu bar -->
+      <div class="hidden md:hidden justify-between  bg-blue-800  " id="mobile-menu">
+        <a href="#" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Home</a>
+        <a href="publications.html" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Publications</a>
+        <!--<a href="portfolio.html" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Portfolio</a>-->
+        <a href="resources.html" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Resources</a>
+        <a href="#footer" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Contact</a>
+      </div>
+    </nav>
+  </header>
+  <!-- header ends here-->
+  <!-- image background and introduction-->
+  <section class="header-lg relative cover bg-cover bg-center w-full h-screen pt-20 pb-10 md:pt-96 px-2.5">
+    <div class="items-center pt-3  md:px-10 lg:px-20 xl:px-24 w-full text-white">
+      <div class=" ">
+        <h1
+          class="text-3xl md:text-7xl animate__animated animate__fadeIn animate__slow animate__delay-1s mb-5">
+          Hello! Are you... </h1>
+      </div>
+
+      <div class="hidden" id="typed-strings">
+        <h2 class="text-9xl">Looking for a Web Developer? </h2>
+        <h2 class="text-9xl">Looking for a Content & Legal Writter? </h2>
+        <h2 class="text-9xl">Looking for a Research Assistant?</h2>
+        <h2 class="text-9xl">Looking for a Project Writing Assistant?</h2>
+        <h2 class="text-9xl">Looking for a Proofreader?</h2>
+      </div>
+      <span class="leading-none font-bold text-1xl text-white md:text-4xl lg:text-5xl " id="typed" style=" "></span>
+      <div
+        class="mt-10 md:mt-28 text-3xl md:text-5xl lg:text-4xl animate__animated animate__fadeIn animate__slow animate__delay-3s">
+        <h1 class="pb-1 border-3 border-b border-lime-500 md:border-white  underline-offset-2 text-4xl md:text-6xl font-weight:900 font-bold"> I'M YOUR RIGHT CHOICE!</h1>
+      </div>
+      <div class="mt-2 mb-20 text-4xl md:text-3xl lg:text-4xl animate__animated animate__fadeIn animate__slow animate__delay-4s">
+        <p class="leading-5 mt-3 mb-5 font-light text-sm md:text-4xl lg:text-3xl text-justify tracking-tighter md:tracking-wide font-semibold"> With a strong foundation in law and proficiency in web design, proofreading, legal research, content and legal writing, I offer a comprehensive range of services that cater to your diverse needs. </span> </p>
+      </div>
+    </div>
+    <div
+      class="flex md:mt-80 justify-center items-center mt-5 px-5 pb-10 animate__animated animate__fadeIn animate__slow animate__delay-5s">
+      <button
+        class="inline-block pulsate-bck text-white font-bold text-center btn  rounded-lg uppercase text-base md:text-4xl md:px-8 md:py-6 px-5 py-3 Navy-blue text-lg font-bold bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg  ">
+        <a class="text-white" href="#portfolio"> go to portfolio <i class="fas fa-angle-double-down font-extrabold text-red-600 text-xl"></i> </a> </button>
+    </div>
+    </div>
+  </section>
+  <!-- ABOUT ME-->
+  <section class="bg-gray-100 pt-16">
+    <section data-aos="fade-up" class="mx-auto px-5 mb-20">
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden md:flex">
+        <div
+          class="py-4 px-5 md:px-4 leading-6 md:leading-9 tracking-tighter text-dark-500 md:w-1/2 text-sm md:text-3xl text-justify">
+          <h1 class="text-2xl md:text-3xl mt-5 font-bold md:w-1/2 "> About Me</h1>
+          <p class="mt-5 md:mt-9 mb-5 "> Muhibudeen Qosim, a student of Common and Islamic Law, is highly proficient at
+            Legal Research, Case Analysis, Content and Legal Writing/Drafting, Proofreading, and Web Design. As an
+            aspirant to the bar, he brings a deep understanding of legal principles and a commitment to delivering
+            excellence in every aspect of his work. </p>
+          <p class="mt-5 md:mt-9 mb-5"> With a strong foundation in law, Qosim offers a unique blend of expertise and
+            creative prowess. His roficiencyy in web design allows him to create visually stunning websites that effectively communicates, while his meticulous proofreading skills ensure that documents are polished to perfection. </p>
+          <p class="mt-5 md:mt-9 mb-5"> Additionally, his knack for crafting compelling content enables him to engage
+            readers while conveying complex legal ideas in a clear and concise manner. With a dedication to delivering exceptional work, he strives to provide innovative solutions that meet the needs of clients in quest of his
+            service(s). </p>
+        </div>
+        <div class="md:w-1/2 image-container relative overflow-hidden">
+          <img src="img/adr-workshop.jpg" alt="About Me Image" class="w-full h-full object-cover object-center ">
+        </div>
+      </div>
+    </section>
+
+    <!-- about me information grid -->
+    <section class="py-16 px-4 bg-white">
+      <article class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-5 ">
+        <!-- my skills-->
+        <div class="md:grid-span-2 py-10 bg-white shadow-lg rounded-lg px-9 text-sm md:text-2xl">
+          <div data-aos="fade-up">
+            <div class="flex my-auto">
+              <p class="text-8xl md:text-8xl md:mt-2.5 font-light text-blue-900 pr-2">|</p>
+              <h1 class="text-2xl md:text-3xl font-bold tracking-tight py-2.5"> <img class="text-sm h-11 md:h-14 md: leading-none" src="img/svg/myskills.svg" style=""> My Skills </h1>
+            </div>
+            <!-- web design bar-->
+            <h6 class="text-label mt-5 md:mt-6 leading-relaxed tracking-wider">Web Designing</h6>
+            <aside class="w-full bg-gray-300 rounded-full dark:bg-gray-700">
+              <p class="bg-black text-base tx-base tx-base font-medium text-blue-100 text-center p-0.5 leading-5 rounded-full"
+                style="width: 95%"> 95% </p>
+            </aside>
+            <!-- legal research bar-->
+            <h6 class="text-label mt-5 md:mt-6 leading-relaxed tracking-wider"> Legal Research </h6>
+            <aside class="w-full bg-gray-300 rounded-full dark:bg-gray-700">
+              <p class="bg-black text-base tx-base tx-base font-medium text-blue-100 text-center p-0.5 leading-5 rounded-full"
+                style="width: 98%"> 98% </p>
+            </aside>
+            <!-- Content Writing bar-->
+            <h6 class="text-label mt-5 md:mt-6 leading-relaxed tracking-wider">Content & Legal Writing </h6>
+            <aside class="w-full bg-gray-300 rounded-full dark:bg-gray-700">
+              <p class="bg-black text-base tx-base tx-base font-medium text-blue-100 text-center p-0.5 leading-5 rounded-full"
+                style="width: 94%"> 94% </p>
+            </aside>
+            <!-- Proof reading bar-->
+            <h6 class="text-label mt-5 md:mt-6 leading-relaxed tracking-wider">Proofreading and Editing </h6>
+            <aside class="w-full bg-gray-300 rounded-full dark:bg-gray-700">
+              <p class="bg-black text-base tx-base tx-base font-medium text-blue-100 text-center p-0.5 leading-5 rounded-full"
+                style="width: 95%"> 95% </p>
+            </aside>
+            <!-- interpersonal relationships bar-->
+            <h6 class="text-label mt-5 md:mt-6 leading-relaxed tracking-wider">Interpersonal Interactions </h6>
+            <aside class="w-full bg-gray-300 rounded-full dark:bg-gray-700">
+              <p class="bg-black text-base tx-base tx-base font-medium text-blue-100 text-center p-0.5 leading-5 rounded-full"
+                style="width: 95%"> 95% </p>
+            </aside>
+          </div>
+        </div>
+        <!-- Hobbies & Interest-->
+        <div class="py-10 bg-gray-200 rounded-lg px-9 text-sm md:text-2xl">
+          <div data-aos="fade-down">
+            <div class="flex">
+              <p class="text-8xl md:mt-2.5 md:text-8xl font-light text-blue-900 pr-2">|</p>
+              <h1 class="text-2xl md:text-3xl font-bold tracking-tight py-2.5"> <img class="text-sm h-11 md:h-14 md: leading-none" src="img/svg/myinterest.svg" style=""> My Interests
+              </h1>
+            </div>
+            <!-- web design bar-->
+            <article class="ml-4">
+              <h6 class="text-label mt-8 md:mt-6 leading-relaxed tracking-tight ">
+                <!--<span class="fas fa-unlink text-xl ml-2">--> </span> Reading
+              </h6>
+              <h6 class="text-label mt-3 md:mt-6 leading-relaxed tracking-tight"> Writing </h6>
+              <h6 class="text-label mt-3 md:mt-6 leading-relaxed tracking-tight">Research </h6>
+              <!--<h6 class="text-label mt-3 md:mt-6 leading-relaxed tracking-tight">Case Reading & Analysis </h6>-->
+             <!--<h6 class="text-label mt-3 md:mt-6 leading-relaxed tracking-tight"> Litigation </h6>-->
+              <h6 class="text-label mt-3 md:mt-6 leading-relaxed tracking-tight"> Legal Drafting </h6>
+              <h6 class="text-label mt-3 md:mt-6 leading-relaxed tracking-tight"> Mentorship </h6>
+              <h6 class="text-label mt-3 md:mt-6 leading-relaxed tracking-tight">Public Speaking & Debating</h6>
+              <h6 class="text-label mt-3 md:mt-6 leading-relaxed tracking-wider">Volunteering </h6>
+            </article>
+          </div>
+        </div>
+        <!-- MY EXPERIENCE-->
+        <div class="text-sm md:text-2xl tracking-tight">
+          <div class="py-10 bg-white md:bg-gray-200 shadow-lg rounded-lg px-5 " data-aos="fade-up">
+            <div class="flex">
+              <p class="text-8xl md:text-8xl font-light text-blue-900 pr-2">|</p>
+              <h1 class="text-2xl md:text-3xl font-bold tracking-tight py-2.5 leading-none">
+                <div class="w-16 h-16 ">
+                  <img class=" " src="img/svg/myexperience.svg" style="height: ;">
+                </div> My Experience
+             </h1>
+            </div>
+            <!-- Solace Chambers-->
+            <div class="mt-5 md:mt-9">
+              <h6 class="font-medium text-dark "> <span class="font-bold ">Deputy Director of Research &
+                  Litigation:</span> Solace Chambers, Bayero University Kano </h6>
+              <p class="text-gray-500 text-xs md:text-lg"> September, 2022 — Date </p>
+            </div>
+            <!-- NADRS-->
+            <div class="mt-5 ">
+              <h6 class="font-medium text-dark "> <span class="font-bold ">Director of Research:</span> National ADR
+                Society </h6>
+              <p class="text-gray-500 text-xs md:text-lg"> September, 2022 — Date </p>
+            </div>
+            <!-- nadrs-->
+            <div class="mt-5 ">
+              <h6 class="font-medium text-dark "> <span class="font-bold "> Legal Trainee:</span> National LAWSAN Moot &
+                Mock Society </h6>
+              <p class="text-gray-500 text-xs md:text-lg"> June, 2023 — June, 2023 </p>
+            </div>
+            <!-- M&S Mooting Series -->
+            <div class="mt-5">
+              <h6 class="font-medium text-dark "> <span class="font-bold ">Legal Trainee:</span> M&S Mooting Series</h6>
+              <p class="text-gray-500 text-xs md:text-lg"> May,2023 — June, 2023 </p>
+            </div>
+            <!-- A.T Talib law -->
+            <div class="mt-5">
+              <h6 class="font-medium text-dark "> <span class="font-bold tracking-tight">Legal Intern:</span>
+                Abdulghaniy Talib & Co, Sagamu, Nigeria </h6>
+              <p class="text-gray-500 text-xs md:text-lg"> July, 2022 — Nov., 2022</p>
+            </div>
+            <!-- omaplex-->
+            <div class="mt-5">
+              <h6 class="font-medium text-dark "> <span class="font-bold ">Legal Intern:</span> Omaplex Law Firm, Abuja,
+                Nigeria </h6>
+              <p class="text-gray-500 text-xs md:text-lg"> August, 2022 </p>
+            </div>
+            <!-- A.A Hikima -->
+            <div class="mt-5">
+              <h6 class="font-medium text-dark "> <span class="font-bold ">Legal Intern:</span> A.A. Hikima & Co Law
+                Firm, Kano Nigeria</h6>
+              <p class="text-gray-500 text-xs md:text-lg"> March, 2022 — March, 2023</p>
+            </div>
+            <!-- code lounge-->
+            <div class="mt-5">
+              <h6 class="font-medium text-dark "> <span class="font-bold ">Trainee:</span> BOAS & Chukkol Virtual
+                Mentorship, Nigeria</h6>
+              <p class="text-gray-500 text-xs md:text-lg"> April, 2020 — May, 2020 </p>
+            </div>
+            <!-- rayyan Technologies-->
+            <div class="mt-5">
+              <h6 class="font-medium text-dark "> <span class="font-bold ">Intern and Website Freelancer:</span> <a
+                  class="" href="rayyantech.sgm.ng"> Rayyan Technologies Sagamu, Nigeria</a></h6>
+              <p class="text-gray-500 text-xs md:text-lg"> 2020—Date</p>
+            </div>
+            <!-- code lounge-->
+            <div class="mt-5">
+              <h6 class="font-medium text-dark "> <span class="font-bold "> IT Trainee:</span> Code Lounge, Sagamu,
+                Nigeria.</h6>
+              <p class="text-gray-500 text-xs md:text-lg"> 2020—2023 </p>
+            </div>
+            <!-- lafarge-->
+            <div class="mt-5">
+              <h6 class="font-medium text-dark "> <span class="font-bold "> IT Trainee:</span> Lafarge ICT</h6>
+              <p class="text-gray-500 text-xs md:text-lg">May, 2019—July, 2019</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- my Education-->
+        <div class="py-10 bg-gray-200 md:bg-white rounded-lg px-5 ">
+          <div class="text-sm md:text-2xl text-justify tracking-tight" data-aos="fade-down">
+            <div class="flex">
+              <p class="text-8xl md:text-8xl my-2.5font-light text-blue-900 pr-2">|</p>
+              <h1 class="text-2xl md:text-3xl font-bold tracking-tight py-2.5"> <img class="text-sm h-11 md:h-14 md: leading-none" src="img/svg/myeducation.svg" style=""> My Education
+              </h1>
+            </div>
+            <!-- LLB-->
+            <div class="mt-12 md:mt-14">
+              <h6 class="font-normal text-dark tracking-tight"> <span class="font-bold ">LL.B (in-view): </span> Bayero
+                University, Kano Nigeria.</h6>
+              <p class="text-gray-500 text-xs md:text-lg mt-4"> 2019 — till present
+            </div>
+            <!-- SECONDARY SCHOOL-->
+            <div class="mt-12 md:mt-14">
+              <h6 class="font-normal text-dark tracking-tight"> <span class="font-bold ">West African Secondary School Certificate:</span> Methodist Comprehensive College, Sagamu, Nigeria.</h6>
+              <p class="text-gray-500 text-xs md:text-lg mt-4"> 2012 — 2018 </p>
+            </div>
+            <!-- Primary school-->
+            <div class="mt-12 md:mt-14">
+              <h6 class="font-normal text-dark tracking-tight"> <span class="font-bold ">Primary School Leaving
+                  Certificate:</span> St. Paul Nursery and Primary School, Ofin, Alagbo, Sagamu, Nigeria.</h6>
+              <p class="text-gray-500 text-xs md:text-lg mt-4"> 2007 — 2012 </p>
+            </div>
+          </div>
+        </div>
+        <!-- important div close-->
+      </article>
+    </section>
+    <!-- About me closing section-->
+  </section>
+
+  <!-- my services-->
+  <section id="portfolio" style="background-image: url('img/port-img.jpg');" class="portfolio bg-cover pt-8 pb-12 px-4">
+    <div class="font-bold text-white text-center">
+      <h1 class="text-3xl md:text-6xl"> My Services</h1>
+      <!--<h6 class="text-lg md:text-3xl font-light mt-2"> My services</h6>-->
+      <p class="text-sm md:text-2xl font-normal text-center mt-3" data-aos="fade-in">Here are list of services I render
+        to satisfy client's appetite! </p>
+    </div>
+    <!-- list of services-->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-10">
+      <div class="mb-5 py-10 bg-white rounded-lg text-sm md:text-2xl px-5 mx-auto overflow-hidden md:grid-span-2 "
+        data-aos="zoom-in">
+        <div class=" justify-center mx-auto w-24 h-24 md:w-48 md:h-48">
+          <img src="img/web-design.jpg" style="relative; width:100%; height: 100%; "
+            class="rounded-full w-full h-full ">
+        </div>
+        <h2 class="mt-4 text-xl md:text-4xl font-bold text-center tracking-tight relative"> Web Design </h2>
+        <hr class="px-5">
+        <p class="mt-5 leading-relaxed tracking-tight text-center text-sm md:text-2xl" style="line-height: 35px; " > Crafting customized and responsive Websites for businesses and organizations! Enhance your online presence with our tailored responsive—websites that showcase your unique brand, engage your audience, and drive results. We deliver visually stunning websites that leave a lasting impression.</p>
+        <div class="text-center ">
+          <button
+            class="w-50 btn mt-5 Navy-blue text-white text-lg md:text-xl md:py-2 font-bold text-center rounded-lg py-1 px-5 bg-gradient-to-br from-blue-900 to-blue-600 shadow-2xl">
+            <a class="" href=""> Get in Touch! </a> </button>
+        </div>
+      </div>
+      <!-- legal writing -->
+      <div class="mb-5 py-10 bg-white rounded-lg text-sm md:text-4xl px-5 mx-auto overflow-hidden" data-aos="zoom-in">
+        <div class="  justify-center mx-auto w-24 h-24 md:w-48 md:h-48">
+          <img src="img/content-writing.jpg" style="relative; width:100%; height: 100%; "
+            class="rounded-full w-full h-full ">
+        </div>
+        <h2 class="mt-4 text-xl md:text-4xl font-bold text-center tracking-tight relative "> Legal & Content Writing
+        </h2>
+        <hr class="px-5">
+        <p class="mt-5 leading-relaxed tracking-tight text-center text-sm md:text-2xl"> As a trained legal researcher and writer, I create contents in the form of articles, blogs, and papers while paying attention to every detail and presenting the whole idea to the understanding of the targeted audience, void of ambiguity in the expression of the idea. Equally, services rendered cover coming up with researchable topics and chapterization. </p>
+        <div class="text-center ">
+          <button
+            class="w-50 btn mt-5 Navy-blue text-white text-lg md:text-xl md:py-2 font-bold text-center rounded-lg py-1 px-5 bg-gradient-to-br from-blue-900 to-blue-600 shadow-2xl">
+            <a class="" href=""> Get in Touch! </a> </button>
+        </div>
+      </div>
+      <!-- legal research-->
+      <div class="mb-5 py-10 bg-white rounded-lg text-sm md:text-2xl px-4 mx-auto overflow-hidden" data-aos="zoom-in">
+        <div class="  justify-center mx-auto w-24 h-24 md:w-48 md:h-48">
+          <img src="img/legal-research.jpg" style="relative; width:100%; height: 100%; "
+            class="rounded-full w-full h-full ">
+        </div>
+        <h2 class="mt-4 text-xl md:text-4xl  font-bold text-center tracking-tight relative "> Legal Research & Case Analysis </h2>
+        <hr class="px-5">
+        <p class="mt-5 leading-relaxed tracking-tight text-center text-sm md:text-2xl md:px-3" style="line-height: 34.6px;" > Desperately looking for a research assistant who delivers well researched work and case analysis? I provide a well researched result on different areas/aspects of and principles of law. Services offered also extend to offering first class court decisions.</p>
+        <div class="text-center ">
+          <button
+            class="w-50 btn mt-5 Navy-blue text-white text-lg md:text-xl md:py-2 font-bold text-center rounded-lg py-1 px-5 bg-gradient-to-br from-blue-900 to-blue-600 shadow-2xl">
+            <a class="" href=""> Get in Touch! </a> </button>
+        </div>
+      </div>
+      <!-- proofreading & editing -->
+      <div class="mb-5 py-10 bg-white rounded-lg text-sm md:text-2xl px-5 mx-auto overflow-hidden" data-aos="zoom-in">
+        <div class="  justify-center mx-auto w-24 h-24 md:w-48 md:h-48">
+          <img src="img/proofreading.jpg" style="relative; width:100%; height: 100%; "
+            class="rounded-full w-full h-full ">
+        </div>
+        <h2 class="mt-4 text-xl md:text-4xl md:px-6 font-bold text-center tracking-tight relative"> Proofreading & Editing </h2>
+        <hr class="px-5">
+        <p class="mt-5 leading-relaxed tracking-tight leading-8 text-center text-sm md:text-2xl"style="line-height: 34px; " > Proofreading and editing are essential before publications or submission of a written work, articles, presentation papers and research project. We provide quality proofreading and editing services. Let's help you proofread your work(s) professionally while adhering to the correct format.</p>
+        <div class="text-center ">
+          <button
+            class="w-50 btn mt-5 Navy-blue text-white text-lg md:text-xl md:py-2 font-bold text-center rounded-lg py-1 px-5 bg-gradient-to-br from-blue-900 to-blue-600 shadow-2xl">
+            <a class="" href=""> Get in Touch! </a> </button>
+        </div>
+      </div>
+      <!-- grid end-->
+    </div>
+  </section>
+  <!--my web design works-->
+  <main class="px-4 mt-6 md:mt-8">
+    <div class="mb- text-center">
+      <h2 class="text-3xl md:text-5xl font-bold"> Accomplished Projects</h2>
+      <p class="text-sm mt-2.5 md:mt-5 md:text-2xl"> View some of my accomplished web projects!</p>
+    </div>
+  </main>
+  <main class="px-4 mb-10 mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <!-- project 1-->
+    <section data-aos="fade-down" class="mb-5">
+      <div class="overflow-hidden relative image-container">
+        <img src="img/case-analysis.jpg" alt="A Bulkit Landing Page I built" class="w-full  portfolios"
+          style="height: ">
+        <div
+          class="overlay absolute top-0 left-0 w-full h-full text-white bottom-0 left-0 pt-6 md:pt-10 px-4 bg-gray-800 opacity-80">
+          <h3 class="text-2xl md:text-3xl font-bold mb-1" data-aos="">Landing Page</h3>
+          <p class="text-sm md:text-xl tx-base tx-base font-light mb-5 ">Built a Bulkit landing page </p>
+          <button
+            class="mt-16 md:mt-32 py-1 px-4 text-base md:text-3xl font-bold border-3 border text-center rounded-sm  ">
+            <a class="" href=""> Click to View <i class="fas fa-arrow-right"></i></a></button>
+        </div>
+      </div>
+    </section>
+    <!-- project 2-->
+    <section data-aos="fade-up" class="mb-5">
+      <div class="overflow-hidden relative image-container">
+        <img src="img/content-writing.jpg" alt="Mini Mart Store" class="w-full h-auto portfolios" style="height: ">
+        <div
+          class="overlay absolute top-0 left-0 w-full  text-white bottom-0 left-0 pt-6 md:pt-10 px-4 bg-gray-800 opacity-80">
+          <h3 class="text-2xl md:text-3xl font-bold mb-1" data-aos="">Blog</h3>
+          <p class="text-sm md:text-xl tx-base tx-base font-light mb-5 ">Built it for publications on islamic
+            epistemology </p>
+          <button
+            class="mt-12 md:mt-24 py-1 px-4 text-base md:text-3xl font-bold border-3 border text-center rounded-sm  ">
+            <a class="" href=""> Click to View <i class="fas fa-arrow-right"></i></a></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- project 3-->
+    <section data-aos="fade-up" class="mb-5">
+      <div class="overflow-hidden relative image-container">
+        <img src="img/content-writing.jpg" alt="Mini Mart Store" class="w-full h-auto portfolios" style="height: ">
+        <div
+          class="overlay absolute top-0 left-0 w-full  text-white bottom-0 left-0 pt-6 md:pt-10 px-4 bg-gray-800 opacity-80">
+          <h3 class="text-2xl md:text-3xl font-bold mb-1" data-aos="">website</h3>
+          <p class="text-sm md:text-xl tx-base tx-base font-light mb-5 ">Built a stunning, customized and responsive official website for Solace chambers, Bayero Uiversity, Kano.</p>
+          <button
+            class="mt-12 md:mt-10 py-1 px-4 text-base md:text-3xl font-bold border-3 border text-center rounded-sm  ">
+            <a class="" href=""> Click to View <i class="fas fa-arrow-right"></i></a></button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- TESTIMONY-->
+  <section style="background-image: url('img/port-img.jpg');"
+    class="portfolio bg-cover pt-8 pb-12 px-4 bg-gray-800 opacity-80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="lg:text-center">
+        <h2 class="mt-2 text-3xl md:text-5xl leading-8 font-extrabold tracking-tight text-white text-center">
+          Testimonials </h2>
+        <p class="mt-4 max-w-3xl text-lg tx-lg text-white lg:mx-auto text-center">Here are testimonies from some of
+          those whom I have worked with.</p>
+      </div>
+      <div class="mt-10">
+        <div class="mx-auto  p-4 rounded-box carousel">
+          <div
+            class="relative flex flex-col my-10 ml-1 mx-auto w-11/12 md:w-2/5 p-6 bg-red-100 rounded-lg shadow-md carousel-item">
+            <div class="w-full md:flex items-start justify-between">
+              <div class="flex">
+                <div class="flex-shrink-0">
+                  <img class="h-12 w-12 rounded-full" src="img/web-design.jpg" alt="">
+                </div>
+                <div class="ml-4">
+                  <h3 class="text-lg tx-lg font-medium text-gray-900">Haliamah Ummi Ismail</h3>
+                  <p class="text-gray-500 text-sm">Law student, writer and AI enthusiasts</p>
+                </div>
+              </div>
+            </div>
+            <div class="w-full mt-2 text-gray-600 text-base tx-base">
+              <p>I have worked with Qosim  on multiple occasions, and I can confirm that he leaves me impressed
+                every single time. Qosim designs my sales and landing pages brilliantly, leaving me impressed
+                and fulfilled. I recommend him anytime and any day.</p>
+              <i class="fas fa-quote-right absolute -bottom-8 right-0 text-7xl text-gray-400 mt-10 ml-6"></i>
+            </div>
+          </div>
+          <div
+            class="relative flex flex-col my-10 ml-1 mx-auto w-11/12 md:w-2/5 p-6 bg-white rounded-lg shadow-md carousel-item">
+            <div class="w-full md:flex items-start justify-between">
+              <div class="flex">
+                <div class="flex-shrink-0">
+                  <img class="h-12 w-12 rounded-full" src="./assets/images/amibelle.webp" alt="">
+                </div>
+                <div class="ml-4">
+                  <h3 class="text-lg tx-lg font-medium text-gray-900">Amara Elufowoju</h3>
+                  <p class="text-gray-500">7-figure Digital Entrepreneur</p>
+                </div>
+              </div>
+              <!--  <div class="flex pt-3 pb-10 sm:justify-center sm:mr-16 md:mr-0">
+                                        <svg class="w-4 h-4 text-yellow-500 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10 0l3.117 6.383 6.953.998-5.032 4.894 1.186 7.176L10 15.455l-6.224 3.997 1.186-7.176L0.93 7.381 7.883 6.383 10 0z">
+                                            </path>
+                                        </svg>
+                                        <svg class="w-4 h-4 text-yellow-500 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10 0l3.117 6.383 6.953.998-5.032 4.894 1.186 7.176L10 15.455l-6.224 3.997 1.186-7.176L0.93 7.381 7.883 6.383 10 0z">
+                                            </path>
+                                        </svg>
+                                        <svg class="w-4 h-4 text-yellow-500 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10 0l3.117 6.383 6.953.998-5.032 4.894 1.186 7.176L10 15.455l-6.224 3.997 1.186-7.176L0.93 7.381 7.883 6.383 10 0z">
+                                            </path>
+                                        </svg>
+                                        <svg class="w-4 h-4 text-yellow-500 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10 0l3.117 6.383 6.953.998-5.032 4.894 1.186 7.176L10 15.455l-6.224 3.997 1.186-7.176L0.93 7.381 7.883 6.383 10 0z">
+                                            </path>
+                                        </svg>
+                                        <svg class="w-4 h-4 text-yellow-500 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10 0l3.117 6.383 6.953.998-5.032 4.894 1.186 7.176L10 15.455l-6.224 3.997 1.186-7.176L0.93 7.381 7.883 6.383 10 0z">
+                                            </path>
+                                        </svg>
+                          </div>-->
+            </div>
+            <div class="w-full mt-2 text-gray-600 text-base tx-base">
+              <p>Idris knows his onions well.
+                I contacted him for a landing page for my affiliate product and he promised to
+                deliver quality.
+                He went ahead and gave me a high converting landing page that no lead could
+                resist.
+                That page has brought in the highest ROI since I started affiliate marketing and
+                I am glad I engaged him.</p>
+              <i class="fas fa-quote-right absolute -bottom-8 right-0 text-7xl text-gray-400 mt-10 ml-6"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- -->
+  <section class=" py-10 md:py-14 px-4">
+    <div class="pt-3" data-aos="fade-down">
+      <h1 class="text-center text-3xl md:text-5xl font-bold"> My Publications</h1>
+      <p class="text-sm md:text-2xl mt-3 text-center tracking-tight"> Explore my insightful publications on various aspects of law spanning accross but not limited to tech law, intellectual property, litigation, oil & gas, legal opinion, and islamic finance.  </p>
+    </div>
+    <!--publication samples grid-->
+    <article class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6 px-4 mx-auto">
+      <!-- pub 1-->
+      <div data-aos="fade-up" class="md:grid-span-2 bg-white w-full rounded-lg mb-3 shadow-lg">
+        <div class="md:w-full overflow-hidden rounded-t">
+          <img src="img/sun.jpg" alt="publication caption" class="w-full h-full object-cover object-center">
+        </div>
+        <!--title, abstract & read more-->
+        <div class="px-5 ">
+          <h1 class="text-base md:text-3xl pt-5 my-8 font-bold tracking-tight uppercase"> A legal x-ray of the doctrine
+            of frustration in contractual agreement
+          </h1>
+          <p class="text-sm mt-5 md:text-2xl tracking-tight text-justify "> A legal analysis of variance insurance
+            agreement was the last four judicially of a great day one Maryam the same time as the circumstance and then
+            I am going by the facilitator and I want it all to the house where t...</p>
+          <p class="text-sm md:text-2xl mt-9 text-justify text-blue-900 font-semibold "><a href="#" class=""> READ MORE
+              » </a> </p>
+        </div>
+        <!-- other part-->
+        <div class="mt-7">
+          <hr class="border-t-2 border-gray-300 ">
+          <p class="text-sm md:text-lg px-5 py-1 text-justify text-gray-800"> June 12, 2023 </p>
+        </div>
+      </div>
+      <!-- pub 1-->
+      <div data-aos="fade-up" class="md:grid-span-2 bg-white shadow-lg w-full rounded-lg mb-3">
+        <div class="md:w-full overflow-hidden rounded-t">
+          <img src="img/sun.jpg" alt="publication caption" class="w-full h-full object-cover object-center">
+        </div>
+        <!--title, abstract & read more-->
+        <div class="px-5 ">
+          <h1 class="text-base md:text-3xl pt-5 my-8 font-bold tracking-tight uppercase"> A legal x-ray of the doctrine
+            of frustration in contractual agreement
+          </h1>
+          <p class="text-sm mt-5 md:text-2xl tracking-tight text-justify "> A legal analysis of variance insurance
+            agreement was the last four judicially of a great day one Maryam the same time as the circumstance and then
+            I am going by the facilitator and I want it all to the house where t...</p>
+          <p class="text-sm md:text-2xl mt-9 text-justify text-blue-900 font-semibold "><a href="#" class=""> READ MORE
+              » </a> </p>
+        </div>
+        <!-- other part-->
+        <div class="mt-7">
+          <hr class="border-t-2 border-gray-300 ">
+          <p class="text-sm md:text-lg px-5 py-1 text-justify text-gray-800"> June 12, 2023 </p>
+        </div>
+      </div>
+      <!-- important div close-->
+      </div>
+    </article>
+    <div class="flex justify-center items-center mt-14 px-5  ">
+      <button
+        class=" text-white font-bold text-center btn  p-3 rounded-lg uppercase text-base md:text-3xl px-5 Navy-blue text-lg font-bold bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg ">
+        <a class="text-white" href="#portfolio"> View More <i class="fas fa-arrow-right font-bold"> </i> </a> </button>
+    </div>
+  </section>
+
+  <!-- MESSAGE ME  -->
+  <main class="pt-16 bg-gray-200">
+    <div class="">
+      <h1 class="text-3xl md:text-5xl font-bold text-center"> Contact Me </h1>
+    </div>
+    <section data-aos="fade-down" class="bg-blue-200 mt-9 px-4 py-8">
+      <h1 class="text-2xl md:text-4xl font-bold text-center mb-3"> Send me a Message </h1>
+      <div class=" ">
+        <form class="mx-auto " action="https://formspree.io/f/mqkvzbyz" method="POST" style="width: ">
+          <label class="inline-block text-sm md:text-3xl font-semibold" style=""> Your Email</label>
+          <div class="flex items-center justify-center">
+            <input class="shadow-lg mt-2 py-2.5 px-2 md:px-4 inline-block text-sm md:text-2xl" type="email" name="email"
+              placeholder="your@email.com" style="width: 90vw; height:6vh">
+          </div>
+          <label class="inline-block mt-5 text-sm md:text-3xl flex items-center justify-between font-semibold"> Your
+            Message </label>
+          <div class="flex items-center justify-center">
+            <textarea class="bg-white p-2 md:text-2xl mt-2 text-sm md:text-2xl" placeholder="your message here"
+              name="message" style="height: 32vh; width: 90vw"></textarea>
+          </div>
+          <!-- your other form fields go here -->
+          <div class="flex items-center justify-center">
+            <button
+              class="text-center mt-5 px-4 py-2 Navy-blue text-lg md:text-3xl text-white font-bold uppercase bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg"
+              type="submit" style="width: 90vw; ">Send</button>
+          </div>
+        </form>
+      </div>
+      <!-- WhatsApp quick contact-->
+      <h1 class="font-semibold text-center text-xl md:text-4xl tracking-wider mt-8"> VERY URGENT? </h1>
+      <h1 class="mb-3 mt-3 font-light text-center text-lg md:text-3xl"> Let's start conversation on WhatsApp!</h1>
+      <div class="">
+        <form class="py-2.5" id="messageForm">
+          <div class="flex items-center justify-center">
+            <textarea class="text-sm p-2 inline-block text-dark" name="message" id="messageInput"
+              placeholder="your message here " style="height:20vh; width: 90vw; ">  </textarea>
+          </div>
+          <div class="flex items-center justify-center">
+            <button
+              class="text-center items-center mt-5 px-4 py-2 Navy-blue text-lg md:text-3xl text-white font-bold uppercase shadow-lg inline-block mt-5 Navy-blue bg-gradient-to-br from-blue-900 to-blue-600"
+              type="submit" style="width: 90vw; ">Send on WhatsApp</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- MEMORIES & ACHIEVEMENTS-->
+  <section class="py-14 bg-gray-100 px-4">
+    <div class="" data-aos="fade-up">
+      <h1 class="text-center text-3xl md:text-4xl mt-1 font-bold "> Memories & Achievements</h1>
+      <p class="text-dark-500 text-center text-sm md:text-2xl mt-3 tracking-tight"> Here are some remarkable memories in the event of my sojourn in personal development so far. </p>
+    </div>
+
+    <!-- modal flowbite-->
+    <!-- modal flowbite-->
+    <div id="gallery" class="mt-10 relative w-full" data-carousel="slide">
+      <!-- Carousel wrapper -->
+      <div class="relative h-96 overflow-hidden rounded-lg md:h-96">
+        <!-- Item 1 -->
+        <div data-modal-target="defaultModal" data-modal-toggle="firstModal" class="hidden duration-700 ease-in-out"
+          data-carousel-item>
+          <img src="img/memory/nureni-jimah.jpg"
+            class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 hover:" alt="">
+          <div class="overlay absolute top-0 left-0 w-full h-full text-white bottom-0 left-0 pt-56 md:pt-10 px-4 mx-auto  ">
+            <p class="text-xs text-center pb-3 bg-white-50"> <i> Assuming the role of Research Officer and Solicitor to the Moot Champion </i> </p>
+            <div class="flex items-center justify-center">
+              <button data-modal-target="defaultModal" data-modal-toggle="firstModal" class="py-1 px-4 text-xs md:text-4xl font-bold border-3 text-black bg-gray-200 border text-center rounded-sm md:mx-10x  " type="button"> Click to View <i class="fas fa-arrow-right"></i></button>    
+            </div>
+          </div>
+        </div>
+        <!-- Main modal -->
+        <div id="firstModal" tabindex="-1" aria-hidden="true"
+          class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+          <div class="relative w-full max-w-2xl max-h-full">
+            <!-- Modal content -->
+            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+              <!-- Modal header -->
+              <div class="flex items-start justify-between p-2 border-b rounded-t dark:border-gray-600">
+                <h3 class="text-base md:text-xl font-semibold text-gray-900 dark:text-white text-center leading-5">
+                  Assuming the role of Research Officer and Solicitor to the Moot Champion </h3>
+                <button type="button"
+                  class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                  data-modal-hide="firstModal">
+                  <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 14 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                  </svg>
+                  <span class="sr-only">Close modal</span>
+                </button>
+              </div>
+              <!-- Modal body -->
+              <div class="p-6 space-y-6">
+                <img src="img/memory/nureni-jimah.jpg" class="h-25 w-full">
+                <p class="text-sm leading-relaxed text-gray-500 dark:text-gray-400"> With less than a month to the second semester examination, in a moot clash competetion organized by Equity Chambers, B.U.K., which was sponsored by Nureini Jimoh, SAN, I was seected as the Research Assistant to team Solace Chambers.
+                </p>
+                <p class="text-sm leading-relaxed text-gray-500 dark:text-gray-400"> After facing and knocking out Al-maslaha Chambers, we qualified to the final where we had a face-off with the organizing chamber, Equity Chambers. As usual, the team emerged the winner and won the TROPHY. In addition, the team leader, Mustapha Babalola, was awarded the Best Oralist. Other team member include Usman Ibrahim Muhammad and Mubarak Abdulrasheed. </p>
+              </div>
+              <!-- Modal footer -->
+              <div
+                class="flex justify-center items-center align-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
+                <button data-modal-hide="firstModal" type="button"
+                  class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-base px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Close</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div  data-modal-target="defaultModal" data-modal-toggle="secondModal" class="hidden duration-700 ease-in-out" data-carousel-item="active">
+          <img src="img/adr-workshop.jpg"
+            class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+            <div class="overlay absolute top-0 left-0 w-full h-full text-white bottom-0 left-0 pt-72 md:pt-10 px-4 mx-auto  ">
+              <p class="text-xs text-center pb-3 bg-white-50"> <i> Moment at the ADR workshop organized by the Bayero Unversity Law Clinic</i> </p>
+              <div class="flex items-center justify-center">
+                <button data-modal-target="defaultModal" data-modal-toggle="secondModal" class="py-1 px-4 text-xs md:text-4xl font-bold border-3 text-black bg-gray-200 border text-center rounded-sm md:mx-10x  " type="button"> Click to View <i class="fas fa-arrow-right"></i></button>    
+              </div>
+          </div>
+        </div>
+        <!-- Main modal -->
+        <div id="secondModal" tabindex="-1" aria-hidden="true"
+          class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+          <div class="relative w-full max-w-2xl max-h-full">
+            <!-- Modal content -->
+            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+              <!-- Modal header -->
+              <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+                <h3 class="text-lg md:text-xl font-semibold text-gray-900 dark:text-white"> Moment at the ADR workshop organized by the Bayero Unversity Law Clinic
+                </h3>
+                <button type="button"
+                  class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                  data-modal-hide="secondModal">
+                  <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 14 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                  </svg>
+                  <span class="sr-only">Close modal</span>
+                </button>
+              </div>
+              <!-- Modal body -->
+              <div class="p-6 space-y-6">
+                <img src="img/adr-workshop.jpg" class="h-25 w-full">
+                <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                  In the quest of appreciating the rudiments of Alternative Dispute Resolution mechanisms, I was in attendance at the ADR workshop in honour of Honourable Justice Safiyyah Gbadamasi, SAN. It was facilitated by the Bayero University Law Clinic in collaboration with the Kano state Multi-door Court House. 
+                </p>
+                <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                  The session was not only insightful but engaging and impactful. That was sometimes in February, 2023. 
+                </p>
+              </div>
+              <!-- Modal footer -->
+              <div
+                class="flex justify-center items-center align-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
+                <button data-modal-hide="secondModal" type="button"
+                  class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Close</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div  data-modal-target="defaultModal" data-modal-toggle="thirdModal" class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="img/memory/unioncourt.jpg"
+            class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+            <div class="overlay absolute top-0 left-0 w-full h-full text-white bottom-0 left-0 pt-60 md:pt-10 px-4 mx-auto  ">
+              <p class="text-xs text-center pb-3 bg-white-50"> <i> Representing the NAKSS, BUK at the Students'Union Court, B.U.K. </i> </p>
+              <div class="flex items-center justify-center">
+                <button data-modal-target="defaultModal" data-modal-toggle="thirdModal" class="py-1 px-4 text-xs md:text-4xl font-bold border-3 text-black bg-gray-200 border text-center rounded-sm md:mx-10x  " type="button"> Click to View <i class="fas fa-arrow-right"></i></button>    
+              </div> 
+          </div>
+        </div>
+        <!-- Main modal -->
+        <div id="thirdModal" tabindex="-1" aria-hidden="true"
+          class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+          <div class="relative w-full max-w-2xl max-h-full">
+            <!-- Modal content -->
+            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+              <!-- Modal header -->
+              <div class="flex items-start justify-between p-2 border-b rounded-t dark:border-gray-600">
+                <h3 class="text-base md:text-xl font-semibold text-gray-900 dark:text-white text-center leading-5">
+                  Representing the NAKSS, BUK at the Students'Union Court, B.U.K.</h3>
+                <button type="button"
+                  class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                  data-modal-hide="thirdModal">
+                  <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 14 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                  </svg>
+                  <span class="sr-only">Close modal</span>
+                </button>
+              </div>
+              <!-- Modal body -->
+              <div class="p-6 space-y-6">
+                <img src="img/memory/unioncourt.jpg" class="h-25 w-full">
+                <p class="text-sm leading-relaxed text-gray-500 dark:text-gray-400">
+                  With less than a month to go before the European Union enacts new consumer privacy laws for its
+                  citizens, companies around the world are updating their terms of service agreements to comply.
+                </p>
+                <p class="text-sm leading-relaxed text-gray-500 dark:text-gray-400">
+                  Appearing alongside A.A. Rqji, SABUK, my principal for the first time before my Lords marks the beginning of my humble appearances at the Students Union Court, Bayero University, Kano. 
+                </p>
+              </div>
+              <!-- Modal footer -->
+              <div
+                class="flex justify-center items-center align-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
+                <button data-modal-hide="firstModal" type="button"
+                  class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-base px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Close</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Item 4 -->
+        <div  data-modal-target="defaultModal" data-modal-toggle="fourthModal" class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="img/memory/rayyan-tech1.png"
+            class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+            <div class="overlay absolute top-0 left-0 w-full h-full text-white bottom-0 left-0 pt-72 md:pt-10 px-4 mx-auto  ">
+              <p class="text-xs text-center pb-3 bg-white-50"> <i> Undergoing web development training at Rayyan Technology, Sagamu, 2020. </i> </p>
+              <div class="flex items-center justify-center">
+                <button data-modal-target="defaultModal" data-modal-toggle="fourthModal" class="py-1 px-4 text-xs md:text-4xl font-bold border-3 text-black bg-gray-200 border text-center rounded-sm md:mx-10x  " type="button"> Click to View <i class="fas fa-arrow-right"></i></button>    
+              </div>
+          </div>
+        </div>
+
+        <!-- Main modal -->
+        <div id="fourthModal" tabindex="-1" aria-hidden="true"
+          class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+          <div class="relative w-full max-w-2xl max-h-full">
+            <!-- Modal content -->
+            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+              <!-- Modal header -->
+              <div class="flex items-start justify-between p-2 border-b rounded-t dark:border-gray-600">
+                <h3 class="text-base md:text-xl font-semibold text-gray-900 dark:text-white text-center leading-5">
+                  Undergoing web development training at Rayyan Technology, Sagamu, 2020.</h3>
+                <button type="button"
+                  class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                  data-modal-hide="fourthModal">
+                  <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 14 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                  </svg>
+                  <span class="sr-only">Close modal</span>
+                </button>
+              </div>
+              <!-- Modal body -->
+              <div class="p-6 space-y-6">
+                <img src="img/memory/rayyan-tech1.png" class="h-25 w-full">
+                <p class="text-sm leading-relaxed text-gray-500 dark:text-gray-400"> In the process of advancing the knowledge of web design and becoming a certified web developer, <a class="text-blue-500" href="www.rayyantech.sgm.ng"> Rayyan Technology</a>, Sagamu, under the leadership of Master Fawaz came to impact in no small amount. With other trainees:<a class="text-blue-500" href="www.tsquare.sgm.ng"> Tsquare</a>, <a class="text-blue-500" href="www.abuasmau.sgm.ng"> Abu Asmau</a> (L-R) the remarkable journey began. One of the remarkable things of the time was the fact that I and my partner, <a class="text-blue-500" href="www.adenaikeidris.com.ng"> Adenaike Idris, </a> as at that time, were using mobile phone to code and meeet up with tasks and deadline; and we performed excellently. 
+                </p>
+                <p class="text-sm leading-relaxed text-gray-500 dark:text-gray-400">
+                  At the time, we perfectly mastered <i> css</i> and how to use it in designing graphics. We equally became masters of Bootstrap with the help of Master Fawaz. 
+                </p>
+              </div>
+              <!-- Modal footer -->
+              <div
+                class="flex justify-center items-center align-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
+                <button data-modal-hide="fourthModal" type="button"
+                  class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-base px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Close</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- memory 1 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="img/memory/ceremonial-appearance.png"
+            class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+            <div class="overlay absolute top-0 left-0 w-full h-full text-white bottom-0 left-0 pt-72 md:pt-10 px-4 mx-auto  ">
+              <p class="text-xs text-center pb-3 bg-white-50"> <i> Moment after announcing appearance for the state (Respondent) in a criminal appeal at the ceremonial appearance in honour of the Judges of the Students Union Court, Bayero University, Kano sometimes in 2023.  </i> </p>
+          </div>
+        </div> 
+        <!-- memory 2 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="img/memory/man-crush.jpg"
+            class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+            <div class="overlay absolute top-0 left-0 w-full h-full text-white bottom-0 left-0 pt-80 md:pt-10 px-4 mx-auto  ">
+              <p class="text-xs text-center text-black pb-3 bg-white-50"> <i> Featured in the Legal Torch Initiative monday crush. </i> </p>
+          </div>
+        </div>
+        <!-- memory 3 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="img/memory/al-maslahah.jpg"
+            class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+            <div class="overlay absolute top-0 left-0 w-full h-full text-white bottom-0 left-0 pt-64 md:pt-10 px-4 mx-auto  ">
+              <p class="text-xs text-center font-bold pb-3 bg-white-50"> <i> Moment after Al-maslahah Chambers, B.U.K. moot appearance, 2023.   </i> </p>
+          </div>
+        </div>
+        <!-- memory 3 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="img/memory/law-clinic-climate.png"
+            class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+            <div class="overlay absolute top-0 left-0 w-full h-full text-white bottom-0 left-0 pt-64 md:pt-10 px-4 mx-auto  ">
+              <p class="text-xs text-center font-bold pb-3 bg-white-50"> <i> At the Bayero University Law Clinic for climate protection campaign sponsored by NULAI, 2021.</i> </p>
+          </div>
+        </div>
+        
+        <!-- memory 4 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="img/memory/after-appearance.png"
+            class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+            <div class="overlay absolute top-0 left-0 w-full h-full text-white bottom-0 left-0 pt-64 md:pt-10 px-4 mx-auto  ">
+              <p class="text-xs text-center font-bold pb-3 bg-white-50"> <i> Moment after the moot trial I had to appeaappear alone sometimes in 2021.</i> </p>
+          </div>
+        </div>
+        <!-- memory 5 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="img/memory/Llb2-debate.png"
+            class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+            <div class="overlay absolute top-0 left-0 w-full h-full text-white bottom-0 left-0 pt-64 md:pt-10 px-4 mx-auto  ">
+              <p class="text-xs text-center font-bold pb-3 bg-white-50"> <i> Group picture after the intra-class debate sometimes in 2023. </i> </p>
+          </div>
+        </div>
+        <!-- memory 6 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="img/memory/mock-trial.png"
+            class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+            <div class="overlay absolute top-0 left-0 w-full h-full text-white bottom-0 left-0 pt-64 md:pt-10 px-4 mx-auto  ">
+              <p class="text-xs text-center font-bold pb-3 bg-white-50"> <i> Moment after mock trial organized by the National Association of Kwara Law Students (NAKLAS),B.U.K. in 2023.</i> </p>
+          </div>
+        </div>
+        <!-- memory 7 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="img/memory/sinasofola.jpg"
+            class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+            <div class="overlay absolute top-0 left-0 w-full h-full text-white bottom-0 left-0 pt-64 md:pt-10 px-4 mx-auto  ">
+              <p class="text-xs text-center text-black font-bold pb-3 bg-white-50"> <i> Emerged second position at the 2nd Edition of Chief Idowu Sofola (SAN) Annual Memorial Essay Competition, 2022. </i> </p>
+          </div>
+        </div>
+        <!-- memory 7 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="img/memory/court-visit.png"
+            class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+            <div class="overlay absolute top-0 left-0 w-full h-full text-white bottom-0 left-0 pt-64 md:pt-10 px-4 mx-auto  ">
+              <p class="text-xs text-center text-white font-bold pb-3 bg-white-50"> <i> Visitation to the Kano State High Court organized by Solace Chambers, Bayero University, Kano.  </i> </p>
+          </div>
+        </div>
+ <!-- memory 8 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="img/memory/rayyantech2.jpg"
+            class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+            <div class="overlay absolute top-0 left-0 w-full h-full text-white bottom-0 left-0 pt-64 md:pt-10 px-4 mx-auto  ">
+              <p class="text-xs text-center text-white font-bold pb-3 bg-white-50"> <i> At Rayyan Tech, Sagamu, sometimes in January 2021.  </i> </p>
+          </div>
+        </div>
+        
+  <!-- memory 9 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="img/memory/naklas-law-quiz.png"
+            class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+            <div class="overlay absolute top-0 left-0 w-full h-full text-white bottom-0 left-0 pt-72 md:pt-10 px-4 mx-auto  ">
+              <p class="text-xs text-center text-white font-bold pb-3 bg-white-50"> <i> Represented Kwara state at the inter-state law quiz competition organized by the National Association of Kwara State Law Students (NAKLAS), 2023. </i> </p>
+          </div>
+        </div>
+  <!-- memory 9 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="img/memory/canvassing-argument.png"
+            class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+            <div class="overlay absolute top-0 left-0 w-full h-full text-white bottom-0 left-0 pt-72 md:pt-10 px-4 mx-auto  ">
+              <p class="text-xs text-center text-white font-bold pb-3 bg-white-50"> <i> Making oral adumbration during the ceremonial appearance in honour of the Judges of the Students Union Court. </i> </p>
+          </div>
+        </div>
+        <!-- Item 5 -->
+        <div  data-modal-target="defaultModal" data-modal-toggle="fifthModal" class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="img/memory/law-clinic-outreach.png"
+            class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+            <div class="overlay absolute top-0 left-0 w-full h-full text-white bottom-0 left-0 pt-60 md:pt-10 px-4 mx-auto  ">
+              <p class="text-xs text-center font-bold pb-3 bg-white-50"> <i> On humanitarian outreach to an IDP camp in Kano, Nigeria </i> </p>
+              <div class="flex items-center justify-center">
+                <button data-modal-target="defaultModal" data-modal-toggle="fifthModal" class="py-1 px-4 text-xs md:text-4xl font-bold border-3 text-black bg-gray-200 border text-center rounded-sm md:mx-10x  " type="button"> Click to View <i class="fas fa-arrow-right"></i></button>    
+              </div>
+          </div>
+        </div>
+      </div>
+      <!-- Main modal -->
+      <div id="fifthModal" tabindex="-1" aria-hidden="true"
+        class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative w-full max-w-2xl max-h-full">
+          <!-- Modal content -->
+          <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+            <!-- Modal header -->
+            <div class="flex items-start justify-between p-2 border-b rounded-t dark:border-gray-600">
+              <h3 class="text-base md:text-xl font-semibold text-gray-900 dark:text-white text-center leading-5">
+                On humanitarian outreach to an IDP camp in Kano, Nigeria  </h3>
+              <button type="button"
+                class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                data-modal-hide="fifthModal">
+                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                  viewBox="0 0 14 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                </svg>
+                <span class="sr-only">Close modal</span>
+              </button>
+            </div>
+            <!-- Modal body -->
+            <div class="p-6 space-y-6">
+              <img src="img/memory/law-clinic-outreach.png" class="h-25 w-full">
+              <p class="text-sm leading-relaxed text-gray-500 dark:text-gray-400">
+                The curiosity to know more about the plight of IDP came about while I was involved in a doctrinal research on the violation of the internally displaced persons human rights in the fight against boko haram in the north-eastern region of nigeria sometimes in 2022. That being my first time of reading so much on and, conducting research on the ...... about these groups of persons who have been forced to flee their homes & places of habitual residence as a result of or in order to avoid the effects of armed conflict. </p>
+              <p class="text-sm leading-relaxed text-gray-500 dark:text-gray-400"> I was privilege to participate in the humanitarian outreach pioneered by the Bayero University Law Clinic in conjunction with CELOHA & JCI, BUK. I so much felt about the hardships these persons are going through. To be forced to live one's place of abode as a result of conflict and to ensure safety of one's life is not so easy. 
+              </p>
+            </div>
+            <!-- Modal footer -->
+            <div
+              class="flex justify-center items-center align-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
+              <button data-modal-hide="fifthModal" type="button"
+                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-base px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- Slider controls -->
+      <button type="button"
+        class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        data-carousel-prev>
+        <span
+          class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+            fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M5 1 1 5l4 4" />
+          </svg>
+          <span class="sr-only">Previous</span>
+        </span>
+      </button>
+      <button type="button"
+        class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        data-carousel-next>
+        <span
+          class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+            fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="m1 9 4-4-4-4" />
+          </svg>
+          <span class="sr-only">Next</span>
+        </span>
+      </button>
+    </div>
+
+  </section>
+  <!-- bg distance -->
+  <div class="py-2.5 bg-white md:py-3"> </div>
+
+
+  <!-- free resources-->
+  <section class="py-14  px-4">
+    <div class="">
+      <h1 class="font-bold text-center text-3xl md:text-4xl "> Free Resource </h1>
+      <p class="text-center text-sm mt-2"> Download free legal resources on various legal discipline
+        including Nigerian legislations & court rules.</p>
+    </div>
+    <!-- Statues & legislations -->
+    <article class="mt-7 py-5 md:px-8 border-t-2 border-gray-300 " data-aos="fade-up">
+      <div class=" justify-center mx-auto w-25 h-24 md:w-50 md:h-48 px-8 md:px-20">
+        <img src="img/resources/constitution.jpg" style="relative; width:100%; height: 100%; " class=" w-full h-full ">
+      </div>
+      <h1 class="text-base md:text-2xl mt-3 text-center font-bold"> Nigerian Legislations </h1>
+      <p class="text-center text-sm md:text-xl "> Enjoy free download access to various Nigerian legislations </p>
+      <a href="resource.html"
+        class="inline-block flex items-center justify-center text-center text-sm md:text-base text-red-700 tracking-wide font-bold shadow-lg">
+        Access Here</a>
+    </article>
+    <!-- Court rules -->
+    <article class="mt-7 py-5 md:px-8 border-t-2 border-gray-300" data-aos="fade-up">
+      <div class=" justify-center px-8 md:px-20 mx-auto w-25 h-24 md:w-50 md:h-48">
+        <img src="img/resources/court-rules.jpg" style="relative; width:100%; height: 100%; " class=" w-full h-full ">
+      </div>
+      <h1 class="text-base leading-5 md:text-2xl mt-3 text-center font-bold"> Nigerian Court Rules & Subsidiary Regulations </h1>
+      <p class="text-center text-sm md:text-xl leading-7"> Download freely various Nigerian Court rules. </p>
+      <a href="resource.html"
+        class="inline-block flex items-center justify-center text-center text-sm md:text-base text-red-700 tracking-wide font-bold shadow-lg mx-26">
+        Access Here</a>
+    </article>
+    <!-- Court rules -->
+    <article class="mt-7 py-5 md:px-8 border-t-2 border-gray-300" data-aos="fade-up">
+      <div class=" justify-center mx-auto w-25 h-24 md:w-50 md:h-48 px-8 md:px-20">
+        <img src="img/e-books.jpg" style="relative; width:100%; height: 100%; " class=" w-full h-full ">
+      </div>
+      <h1 class="text-base mt-3 text-center font-bold"> Legal E-Books </h1>
+      <p class="text-center text-sm md:text-base"> Download freely various resources on ok ehal practice. </p>
+      <a href="resource.html"
+        class="inline-block flex items-center justify-center text-center text-sm md:text-base text-red-700 tracking-wide font-bold shadow-lg">
+        Access Here</a>
+    </article>
+  </section>
+  
+  </section>
+  
+
+  
+  <!-- Footer -->
+  <section class="Navy-blue py-10" id="footer">
+  <article class="pl-4 ">
+    <div class="">
+      <h1 class="text-white text-center text-lg md:text-4xl font-bold uppercase tracking-widest"> Get in Touch</h1>
+    </div>
+    <div class="mx-32 md:mx-96 h-1 bg-white text-lg font-bold bg-gradient-to-br from-gray-300 to-gray-200 shadow-lg text-center mb-4 md:mb-8" > </div>
+    <div class="md:flex justify-between items-center align-center ">
+    <div class="md:text-2xl text-xs w-full md:w-2/4 md:pl-10 mb-5">
+      <h5 class="text-white text-justify text-base md:text-3xl font-semibold "> Contact Me</h5>
+      <p class="text-gray-300 my-2 font-light "> <i class="fas fa-map-marker-alt mr-2"></i> Faculty of Law, BUK</p>
+      <p class="text-gray-300 my-2 font-light "> <i class="fab fa-whatsapp mr-2"> </i> <a class="" href="https://wa.me/2349037074761?text=Hello!?"> +234 903 707 4761</a></p> 
+      <p class="text-gray-300 my-2 font-light "> <i class="fas fa-envelope mr-2"> </i> <a class="" href="muhibqosim@gmail.com "> muhibqosim@gmail.com</a></p> 
+      <p class="text-gray-300 mt-2 font-light "><i class="fas fa-phone mr-2"></i><a class=" " href=""> (+234) 9037074761 </a> <!--<span class="text-gray-100 font-light"> (Click to call) </span > --> </p>
+    </div>
+    <div class="md:text-2xl text-xs w-full md:w-2/4 md:pl-8">
+      <h5 class=" text-white text-justify text-base md:text-3xl font-semibold "> Quick Links </h5>
+      <p class="text-gray-300 my-2 font-light "> <a class=" " href="index.html" > Home</a></p>
+     <!-- <p class="text-gray-300 my-2 font-light "> <a class=" " href="portfolio.html" >Portfolio</a></p>-->
+      <p class="text-gray-300 my-2 font-light "> <a class=" " href="publications.html" > Publications</a></p>
+      <p class="text-gray-300 my-2 font-light "> <a class=" " href="resources.html" > Free resources</a></p>
+      <p class="text-gray-300 my-2 font-light "> <a class=" " href="#footer" > Contact</a></p>
+    </div>
+    </div>
+    </article>
+    <!-- newsletter --> 
+    <div class="pt-6 px-4">
+       <h1 class="uppercase text-white text-center text-base md:text-3xl mt-5 font-bold"> sign up for my newsletter</h1>
+    <div class="mx-20 md:mx-80 h-1 bg-white text-lg font-bold bg-gradient-to-br from-gray-300 to-gray-200 shadow-lg text-center" > </div>
+       <p class="mt-1 text-sm md:text-3xl text-center font-light text-gray-300 px-1 md:px-4 ">Stay up to date with my latest legal publications, articles and opinions on various aspects of law including Islamic topical issues & Islamic finance.   </p>
+    </div>
+    <form action="subscribe.php" method="post" class=" mt-3 px-4 ">
+       <script async data-uid="ea5c74106c" src="https://muhibqosim.ck.page/ea5c74106c/index.js"></script>
+    </form>
+    <!-- horizontal line--> 
+    <hr style="background-color: " class="bg-gray-100 font-light mt-20 "> 
+    <!-- copyright--> 
+    <div class="mt-10 md:mt-20 pt-5">
+      <p class="text-xs text-white font-light text-center md:text-3xl"> <i class="far fa-copyright md:text-3xl "></i> 2023 Muhibudeen Qosim | All Rights Reserved.
+      </p>
+    </div>
+    <!-- social handles--> 
+    <div class="mt-10 md:mt-20 flex justify-between px-20 text-lg md:px-64 md:text-5xl">
+      <a href="twitter.com/adenaike_idris" class="text-white hover:text-blue-400" target="_blank" rel="noopener" title="Twitter"> <i class="fab fa-twitter "></i></a>
+      <a href="https://m.facebook.com/muhammadulqoosim.muhiibuddeen" class="text-white hover:text-blue-600" target="_blank" rel="noopener" title="Facebook"> <i class="fab fa-facebook "></i></a>
+      <a href="https://wa.me/2349037074761?text=Hello!" class="text-white hover:text-green-500" target="_blank" rel="noopener" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i></a>
+        <a href="instagram.com/muhibqosim" class="text-white hover:text-pink-600" target="_blank" rel="noopener" title="Instagram"> <i class="fab fa-instagram "></i></a>
+        <a href="https://www.linkedin.com/in/qosim-muhibudeen-5896a91a8" class="text-white hover:text-blue-600" target="_blank" rel="noopener" title="LinkedIn"> <i class="fab fa-linkedin "></i></a>
+        <a href="https://github.com/muhibqosim" class="text-white hover:text-gray-600" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github "></i></a>
+     </div>
+    
+  </section>
+  
+  <!--js starts here-->
+  <script src="./js/main.js"> </script>
+  <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
+
+  <script> AOS.init({
+      offset: 100,
+      duration: 900,
+      easing: 'ease-in-sine',
+      delay: 200,
+      once: true
+    });
+
+
+    const sliderContainer = document.querySelector('.slider-container');
+    const sliderItems = document.querySelectorAll('.slider-item');
+    let currentIndex = 0;
+
+    function slideImages() {
+      sliderItems[currentIndex].classList.remove('hover-effect');
+      currentIndex = (currentIndex + 1) % sliderItems.length;
+      sliderContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+      const hoverDelay = 2000; // 2 seconds
+      setTimeout(() => {
+        sliderItems[currentIndex].classList.add('hover-effect');
+      }, hoverDelay);
+    }
+
+    sliderItems[currentIndex].classList.add('hover-effect');
+    setInterval(slideImages, 5000); // Slide every 5 seconds
+
+
+
+  </script>
+</body>
+
+</html>
