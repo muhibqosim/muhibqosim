@@ -32,12 +32,12 @@
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300&display=swap" rel="stylesheet">
 
-  <title>muhibqosim | portfolio</title>
+  <title>muhibqosim | Home Page</title>
   <style>
     /* Background image for homepage: mobile and desktop*/
     @media (max-width:699px) {
       .header-lg {
-        background-image: url('img/capture.jpg');
+        background-image: url('img/capture.png');
       }
 
       .portfolios {
@@ -47,7 +47,7 @@
 
     @media (min-width:700px) {
       .header-lg {
-        background-image: url('img/capture.jpg');
+        background-image: url('img/capture.png');
       }
 
       .portfolios {
@@ -76,7 +76,8 @@
 <!-- body starts here-->
 
 <body>
-  <header class="header Navy-blue p-3 md:py-6">
+  <main class="navbar ">
+  <header class="header Navy-blue p-1.5 md:py-5">
     <!-- Navigation menu -->
     <nav class=" ">
       <div class="mx-auto px-4">
@@ -89,7 +90,7 @@
           </div>
           <!-- desktop menu bar-->
           <div class="hidden garamond md:flex items-center md:justify-center mx-auto lg:w-full lg:pl-48 space-x-1 md:text-3xl">
-            <a href="#" class="py-4 px-2 text-white font-semibold hover:text-gray-900">Home</a>
+            <a href="index.html" class="py-4 px-2 text-white font-semibold hover:text-gray-900">Home</a>
             <a href="publications.html" class="py-4 px-2 text-white font-semibold hover:text-gray-900">Publications</a>
             <!--<a href="portfolio.html" class="py-4 px-2 text-white font-semibold hover:text-gray-900">Portfolio</a>-->
             <a href="resources.html" class="py-4 px-2 text-white font-semibold hover:text-gray-900">Resources</a>
@@ -110,7 +111,7 @@
       </div>
       <!-- mobile menu bar -->
       <div class="hidden md:hidden justify-between  bg-blue-800  " id="mobile-menu">
-        <a href="#" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Home</a>
+        <a href="index.html" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Home</a>
         <a href="publications.html" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Publications</a>
         <!--<a href="portfolio.html" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Portfolio</a>-->
         <a href="resources.html" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Resources</a>
@@ -118,6 +119,7 @@
       </div>
     </nav>
   </header>
+  </main>
   <!-- header ends here-->
   <!-- image background and introduction-->
   <section class="header-lg relative cover bg-cover bg-center w-full h-screen pt-20 pb-10 md:pt-96 px-2.5">
@@ -130,14 +132,13 @@
 
       <div class="hidden" id="typed-strings">
         <h2 class="text-9xl">Looking for a Web Developer? </h2>
-        <h2 class="text-9xl">Looking for a Content & Legal Writter? </h2>
+        <h2 class="text-9xl">Looking for a Content & Legal Writer? </h2>
         <h2 class="text-9xl">Looking for a Research Assistant?</h2>
-        <h2 class="text-9xl">Looking for a Project Writing Assistant?</h2>
         <h2 class="text-9xl">Looking for a Proofreader?</h2>
       </div>
-      <span class="leading-none font-bold text-1xl text-white md:text-4xl lg:text-5xl " id="typed" style=" "></span>
+      <span class="leading-none md:mt-2.5 font-bold text-xl text-white md:text-4xl lg:text-5xl " id="typed" style=" "></span>
       <div
-        class="mt-10 md:mt-28 text-3xl md:text-5xl lg:text-4xl animate__animated animate__fadeIn animate__slow animate__delay-3s">
+        class="mt-16 md:mt-28 text-3xl md:text-5xl lg:text-4xl animate__animated animate__fadeIn animate__slow animate__delay-3s">
         <h1 class="pb-1 border-3 border-b border-lime-500 md:border-white  underline-offset-2 text-4xl md:text-6xl font-weight:900 font-bold"> I'M YOUR RIGHT CHOICE!</h1>
       </div>
       <div class="mt-2 mb-20 text-4xl md:text-3xl lg:text-4xl animate__animated animate__fadeIn animate__slow animate__delay-4s">
@@ -148,7 +149,7 @@
       class="flex md:mt-80 justify-center items-center mt-5 px-5 pb-10 animate__animated animate__fadeIn animate__slow animate__delay-5s">
       <button
         class="inline-block pulsate-bck text-white font-bold text-center btn  rounded-lg uppercase text-base md:text-4xl md:px-8 md:py-6 px-5 py-3 Navy-blue text-lg font-bold bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg  ">
-        <a class="text-white" href="#portfolio"> go to portfolio <i class="fas fa-angle-double-down font-extrabold text-red-600 text-xl"></i> </a> </button>
+        <a class="text-white" href="#portfolio"> go to portfolio <i class="fas fa-angle-double-down font-extrabold text-red-600 text-2xl md:text-5xl"></i> </a> </button>
     </div>
     </div>
   </section>
@@ -157,17 +158,11 @@
     <section data-aos="fade-up" class="mx-auto px-5 mb-20">
       <div class="bg-white rounded-lg shadow-lg overflow-hidden md:flex">
         <div
-          class="py-4 px-5 md:px-4 leading-6 md:leading-9 tracking-tighter text-dark-500 md:w-1/2 text-sm md:text-3xl text-justify">
-          <h1 class="text-2xl md:text-3xl mt-5 font-bold md:w-1/2 "> About Me</h1>
-          <p class="mt-5 md:mt-9 mb-5 "> Muhibudeen Qosim, a student of Common and Islamic Law, is highly proficient at
-            Legal Research, Case Analysis, Content and Legal Writing/Drafting, Proofreading, and Web Design. As an
-            aspirant to the bar, he brings a deep understanding of legal principles and a commitment to delivering
-            excellence in every aspect of his work. </p>
-          <p class="mt-5 md:mt-9 mb-5"> With a strong foundation in law, Qosim offers a unique blend of expertise and
-            creative prowess. His roficiencyy in web design allows him to create visually stunning websites that effectively communicates, while his meticulous proofreading skills ensure that documents are polished to perfection. </p>
-          <p class="mt-5 md:mt-9 mb-5"> Additionally, his knack for crafting compelling content enables him to engage
-            readers while conveying complex legal ideas in a clear and concise manner. With a dedication to delivering exceptional work, he strives to provide innovative solutions that meet the needs of clients in quest of his
-            service(s). </p>
+          class="py-4 px-5 md:px-4 leading-6 md:leading-9 tracking-tighter md:tracking-wider text-dark-500 md:w-1/2 text-sm md:text-3xl text-justify md:text-left">
+          <h1 class="text-2xl md:text-5xl mt-5 font-bold md:w-1/2 "> About Me</h1>
+          <p class="mt-5 md:mt-9 mb-5 "> Muhibudeen Qosim, a student of Common and Islamic Law, is highly proficient at Legal Research, Case Analysis, Content and Legal Writing/Drafting, Proofreading, and Web Design. As an aspirant to the bar, he brings a deep understanding of legal principles and a commitment to delivering excellence in every aspect of his work. </p>
+          <p class="mt-5 md:mt-9 mb-5"> With a strong foundation in law, Qosim offers a unique blend of expertise and creative prowess. His roficiencyy in web design allows him to create visually stunning websites that effectively communicates, while his meticulous proofreading skills ensure that documents are polished to perfection. </p>
+          <p class="mt-5 md:mt-9 mb-5"> Additionally, his knack for crafting compelling content enables him to engage readers while conveying complex legal ideas in a clear and concise manner. With a dedication to delivering exceptional work, he strives to provide innovative solutions that meet the needs of clients in quest of his service(s). </p>
         </div>
         <div class="md:w-1/2 image-container relative overflow-hidden">
           <img src="img/adr-workshop.jpg" alt="About Me Image" class="w-full h-full object-cover object-center ">
@@ -183,7 +178,7 @@
           <div data-aos="fade-up">
             <div class="flex my-auto">
               <p class="text-8xl md:text-8xl md:mt-2.5 font-light text-blue-900 pr-2">|</p>
-              <h1 class="text-2xl md:text-3xl font-bold tracking-tight py-2.5"> <img class="text-sm h-11 md:h-14 md: leading-none" src="img/svg/myskills.svg" style=""> My Skills </h1>
+              <h1 class="text-2xl md:text-4xl font-bold tracking-tight py-2.5"> <img class="text-sm h-11 md:h-14 md: leading-none" src="img/svg/myskills.svg" style=""> My Skills </h1>
             </div>
             <!-- web design bar-->
             <h6 class="text-label mt-5 md:mt-6 leading-relaxed tracking-wider">Web Designing</h6>
@@ -222,7 +217,7 @@
           <div data-aos="fade-down">
             <div class="flex">
               <p class="text-8xl md:mt-2.5 md:text-8xl font-light text-blue-900 pr-2">|</p>
-              <h1 class="text-2xl md:text-3xl font-bold tracking-tight py-2.5"> <img class="text-sm h-11 md:h-14 md: leading-none" src="img/svg/myinterest.svg" style=""> My Interests
+              <h1 class="text-2xl md:text-4xl font-bold tracking-tight py-2.5"> <img class="text-sm h-11 md:h-14 md: leading-none" src="img/svg/myinterest.svg" style=""> My Interests
               </h1>
             </div>
             <!-- web design bar-->
@@ -246,7 +241,7 @@
           <div class="py-10 bg-white md:bg-gray-200 shadow-lg rounded-lg px-5 " data-aos="fade-up">
             <div class="flex">
               <p class="text-8xl md:text-8xl font-light text-blue-900 pr-2">|</p>
-              <h1 class="text-2xl md:text-3xl font-bold tracking-tight py-2.5 leading-none">
+              <h1 class="text-2xl md:text-4xl font-bold tracking-tight py-2.5 leading-none">
                 <div class="w-16 h-16 ">
                   <img class=" " src="img/svg/myexperience.svg" style="height: ;">
                 </div> My Experience
@@ -324,7 +319,7 @@
           <div class="text-sm md:text-2xl text-justify tracking-tight" data-aos="fade-down">
             <div class="flex">
               <p class="text-8xl md:text-8xl my-2.5font-light text-blue-900 pr-2">|</p>
-              <h1 class="text-2xl md:text-3xl font-bold tracking-tight py-2.5"> <img class="text-sm h-11 md:h-14 md: leading-none" src="img/svg/myeducation.svg" style=""> My Education
+              <h1 class="text-2xl md:text-4xl font-bold tracking-tight py-2.5"> <img class="text-sm h-11 md:h-14 md: leading-none" src="img/svg/myeducation.svg" style=""> My Education
               </h1>
             </div>
             <!-- LLB-->
@@ -353,7 +348,7 @@
   </section>
 
   <!-- my services-->
-  <section id="portfolio" style="background-image: url('img/port-img.jpg');" class="portfolio bg-cover pt-8 pb-12 px-4">
+  <section id="portfolio" style="background-image: url('img/services.jpg');" class="bg-cover pt-8 pb-12 px-4 ">
     <div class="font-bold text-white text-center">
       <h1 class="text-3xl md:text-6xl"> My Services</h1>
       <!--<h6 class="text-lg md:text-3xl font-light mt-2"> My services</h6>-->
@@ -374,7 +369,7 @@
         <div class="text-center ">
           <button
             class="w-50 btn mt-5 Navy-blue text-white text-lg md:text-xl md:py-2 font-bold text-center rounded-lg py-1 px-5 bg-gradient-to-br from-blue-900 to-blue-600 shadow-2xl">
-            <a class="" href=""> Get in Touch! </a> </button>
+            <a class="" href="https://wa.me/2349037074761?text=Hello!"> Get in Touch! </a> </button>
         </div>
       </div>
       <!-- legal writing -->
@@ -390,7 +385,7 @@
         <div class="text-center ">
           <button
             class="w-50 btn mt-5 Navy-blue text-white text-lg md:text-xl md:py-2 font-bold text-center rounded-lg py-1 px-5 bg-gradient-to-br from-blue-900 to-blue-600 shadow-2xl">
-            <a class="" href=""> Get in Touch! </a> </button>
+            <a class="" href="https://wa.me/2349037074761?text=Hello!"> Get in Touch! </a> </button>
         </div>
       </div>
       <!-- legal research-->
@@ -405,7 +400,7 @@
         <div class="text-center ">
           <button
             class="w-50 btn mt-5 Navy-blue text-white text-lg md:text-xl md:py-2 font-bold text-center rounded-lg py-1 px-5 bg-gradient-to-br from-blue-900 to-blue-600 shadow-2xl">
-            <a class="" href=""> Get in Touch! </a> </button>
+            <a class="" href="https://wa.me/2349037074761?text=Hello!"> Get in Touch! </a> </button>
         </div>
       </div>
       <!-- proofreading & editing -->
@@ -420,7 +415,7 @@
         <div class="text-center ">
           <button
             class="w-50 btn mt-5 Navy-blue text-white text-lg md:text-xl md:py-2 font-bold text-center rounded-lg py-1 px-5 bg-gradient-to-br from-blue-900 to-blue-600 shadow-2xl">
-            <a class="" href=""> Get in Touch! </a> </button>
+            <a class="" href="https://wa.me/2349037074761?text=Hello!"> Get in Touch! </a> </button>
         </div>
       </div>
       <!-- grid end-->
@@ -475,14 +470,14 @@
           <p class="text-sm md:text-xl tx-base tx-base font-light mb-5 ">Built a stunning, customized and responsive official website for Solace chambers, Bayero Uiversity, Kano.</p>
           <button
             class="mt-12 md:mt-10 py-1 px-4 text-base md:text-3xl font-bold border-3 border text-center rounded-sm  ">
-            <a class="" href=""> Click to View <i class="fas fa-arrow-right"></i></a></button>
+            <a class="    " href="https://solace-chambers-buk.github.io/website/"> Click to View <i class="fas fa-arrow-right"></i></a></button>
         </div>
       </div>
     </section>
   </main>
 
   <!-- TESTIMONY-->
-  <section style="background-image: url('img/port-img.jpg');"
+  <section style="background-image: url('img/testimonials.jpg');"
     class="portfolio bg-cover pt-8 pb-12 px-4 bg-gray-800 opacity-80">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="lg:text-center">
@@ -568,61 +563,71 @@
   <section class=" py-10 md:py-14 px-4">
     <div class="pt-3" data-aos="fade-down">
       <h1 class="text-center text-3xl md:text-5xl font-bold"> My Publications</h1>
-      <p class="text-sm md:text-2xl mt-3 text-center tracking-tight"> Explore my insightful publications on various aspects of law spanning accross but not limited to tech law, intellectual property, litigation, oil & gas, legal opinion, and islamic finance.  </p>
+      <p class="text-sm md:text-2xl mt-3 text-center tracking-tight"> Explore my insightful publications on various aspects of law spanning accross to intellectual property, AI, litigation, oil & gas, legal opinion, islamic finance etc.  </p>
     </div>
     <!--publication samples grid-->
-    <article class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6 px-4 mx-auto">
+    <article class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-10 md:mt-16 px-4 mx-auto">
       <!-- pub 1-->
-      <div data-aos="fade-up" class="md:grid-span-2 bg-white w-full rounded-lg mb-3 shadow-lg">
+      
+<!-- article one -->
+      <div data-aos="fade-down" class="bg-white shadow-lg w-full rounded-lg mb-3">
         <div class="md:w-full overflow-hidden rounded-t">
-          <img src="img/sun.jpg" alt="publication caption" class="w-full h-full object-cover object-center">
-        </div>
+          <img src="img/publications/polygamous.jpg" alt="publication caption" class="w-full h-full object-cover object-center">
+        </div> 
         <!--title, abstract & read more-->
         <div class="px-5 ">
-          <h1 class="text-base md:text-3xl pt-5 my-8 font-bold tracking-tight uppercase"> A legal x-ray of the doctrine
-            of frustration in contractual agreement
-          </h1>
-          <p class="text-sm mt-5 md:text-2xl tracking-tight text-justify "> A legal analysis of variance insurance
-            agreement was the last four judicially of a great day one Maryam the same time as the circumstance and then
-            I am going by the facilitator and I want it all to the house where t...</p>
-          <p class="text-sm md:text-2xl mt-9 text-justify text-blue-900 font-semibold "><a href="#" class=""> READ MORE
-              » </a> </p>
+           <p class="text-sm pt-5 md:text-lg font-semibold text-justify text-gray-600"> January 26, 2023 </p>
+          <h3 class="text-base md:text-2xl py-8 font-bold tracking-tight uppercase"> POLYGAMOUS MARRIAGE UNDER THE NIGERIAN LAW: WHAT THE LAW HAS TO SAY </h3> 
+         <p class="text-sm mb-8 md:text-2xl tracking-tight text-justify "> Marriage is, indeed, the legitimate means of securing the right to cohabitate between opposite sexes in an "ideal" territory, Nigeria inclusive. And as a matter of fact, in Nigerian law, there are essentially two types of marriage: monogamous (which wholly depicts one man and one wife) and polygamous (which permits more than one wife married to just one man). It is also worth noting that the character...</p>
+         <p class="text-sm md:text-2xl text-justify mb-5 text-blue-900 font-semibold "><a href="https://solacebuk.blogspot.com/2023/01/does-police-invitation-and-detention.html?m=1" class=""> READ MORE » </a> </p> 
         </div>
-        <!-- other part-->
-        <div class="mt-7">
-          <hr class="border-t-2 border-gray-300 ">
-          <p class="text-sm md:text-lg px-5 py-1 text-justify text-gray-800"> June 12, 2023 </p>
-        </div>
-      </div>
-      <!-- pub 1-->
-      <div data-aos="fade-up" class="md:grid-span-2 bg-white shadow-lg w-full rounded-lg mb-3">
+    </div> 
+     <!-- ARTICLE TWO -->
+     <div data-aos="fade-down" class="md:grid-span-2 bg-white shadow-lg w-full rounded-lg mb-3">
         <div class="md:w-full overflow-hidden rounded-t">
-          <img src="img/sun.jpg" alt="publication caption" class="w-full h-full object-cover object-center">
-        </div>
+          <img src="img/publications/ai-liability.jpg" alt="publication caption" class="w-full h-75 md:h-80 object-cover object-center">
+        </div> 
         <!--title, abstract & read more-->
         <div class="px-5 ">
-          <h1 class="text-base md:text-3xl pt-5 my-8 font-bold tracking-tight uppercase"> A legal x-ray of the doctrine
-            of frustration in contractual agreement
-          </h1>
-          <p class="text-sm mt-5 md:text-2xl tracking-tight text-justify "> A legal analysis of variance insurance
-            agreement was the last four judicially of a great day one Maryam the same time as the circumstance and then
-            I am going by the facilitator and I want it all to the house where t...</p>
-          <p class="text-sm md:text-2xl mt-9 text-justify text-blue-900 font-semibold "><a href="#" class=""> READ MORE
-              » </a> </p>
+           <p class="text-sm pt-5 md:text-lg font-semibold text-justify text-gray-600"> January 26, 2023 </p>
+          <h3 class="text-base md:text-2xl py-8 font-bold tracking-tight uppercase"> ARTIFICIAL INTELLIGENCE VIS-À-VIS ITS PROSPECTS AND CHALLENGES:LEGAL RIGHTS AND LIABILITIES </h3> 
+         <p class="text-sm mb-8 md:text-2xl tracking-tight text-justify "> It is very obvious today that the most successful enterprise have embraced Artificial Intelligence (AI) to improve their operations over their competitors. Some advance countries have adopted the use of AI in their restaurant, mode of transportation etc. AI is a tool to enhance development in a domain. Experts regard AI as a factor of production...</p>
+         <p class="text-sm md:text-2xl text-justify mb-5 text-blue-900 font-semibold "><a href="https://solacebuk.blogspot.com/2023/01/does-police-invitation-and-detention.html?m=1" class=""> READ MORE » </a> </p> 
         </div>
-        <!-- other part-->
-        <div class="mt-7">
-          <hr class="border-t-2 border-gray-300 ">
-          <p class="text-sm md:text-lg px-5 py-1 text-justify text-gray-800"> June 12, 2023 </p>
+    </div> 
+ <!-- article one -->
+      <div data-aos="fade-down" class="bg-white shadow-lg w-full rounded-lg mb-3">
+        <div class="md:w-full overflow-hidden rounded-t">
+          <img src="img/publications/adoption.jpg" alt="publication caption" class="w-full h-full object-cover object-center">
+        </div> 
+        <!--title, abstract & read more-->
+        <div class="px-5 ">
+           <p class="text-sm pt-5 md:text-lg font-semibold text-justify text-gray-600"> February 23, 2023 </p>
+          <h3 class="text-base md:text-2xl py-8 font-bold tracking-tight uppercase"> ILLEGALITY OR OTHERWISE OF ADOPTION PRACTICES UNDER THE LENSE OF ISLAMIC LAW?</h3> 
+         <p class="text-sm mb-8 md:text-2xl tracking-tight text-justify "> Protection of lineage is so fundamental in Islamic law otherwise known as the “Sharii`ah”. Hence, it forms an integral part of the five core objectives of Islamic law, vis-à-vis: protection of life; protection of property; protection of intellect; protection of religion, and protection of lineage. These five...</p>
+         <p class="text-sm md:text-2xl text-justify mb-5 text-blue-900 font-semibold "><a href="https://solacebuk.blogspot.com/2023/01/does-police-invitation-and-detention.html?m=1" class=""> READ MORE » </a> </p> 
         </div>
-      </div>
+    </div> 
+     <!-- article one -->
+      <div data-aos="fade-down" class="bg-white shadow-lg w-full rounded-lg mb-3">
+        <div class="md:w-full overflow-hidden md:h-50 rounded-t">
+          <img src="img/publications/same-sex.jpg" alt="publication caption" class="w-full object-cover object-center">
+        </div> 
+        <!--title, abstract & read more-->
+        <div class="px-5 ">
+           <p class="text-sm pt-5 md:text-lg font-semibold text-justify text-gray-600"> February 23, 2023 </p>
+          <h3 class="text-base md:text-2xl py-8 font-bold tracking-tight uppercase"> REPLY TO MR. CHUKKOL ON THE TWO SKEPTICAL SIDES OF HOMOSEXUALITY UNDER NIGERIAN LAWS </h3> 
+         <p class="text-sm mb-8 md:text-2xl tracking-tight text-justify "> On the 20th day of August, 2021, an article written by a renowned legal writer, Mr. O.G. Chukkol (hereafter “the writer”) got published and circulated on different social media handles. The article is titled: “Homosexuality is Lawful under Lagos Criminal Law but a Crime under Same-Sex Marriage Act: R...</p>
+         <p class="text-sm md:text-2xl text-justify mb-5 text-blue-900 font-semibold "><a href="https://solacebuk.blogspot.com/2023/01/does-police-invitation-and-detention.html?m=1" class=""> READ MORE » </a> </p> 
+        </div>
+    </div> 
+    
       <!-- important div close-->
       </div>
     </article>
     <div class="flex justify-center items-center mt-14 px-5  ">
-      <button
-        class=" text-white font-bold text-center btn  p-3 rounded-lg uppercase text-base md:text-3xl px-5 Navy-blue text-lg font-bold bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg ">
-        <a class="text-white" href="#portfolio"> View More <i class="fas fa-arrow-right font-bold"> </i> </a> </button>
+      <button class=" text-white pulsate-bck font-bold text-center btn  p-3 rounded-lg uppercase text-base md:text-3xl px-5 Navy-blue text-lg font-bold bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg  ">
+        <a class="text-white" href="publications.html"> View More <i class="fas fa-arrow-right font-bold"> </i> </a> </button>
     </div>
   </section>
 
@@ -1094,7 +1099,7 @@
       </div>
       <h1 class="text-base md:text-2xl mt-3 text-center font-bold"> Nigerian Legislations </h1>
       <p class="text-center text-sm md:text-xl "> Enjoy free download access to various Nigerian legislations </p>
-      <a href="resource.html"
+      <a href="resources.html"
         class="inline-block flex items-center justify-center text-center text-sm md:text-base text-red-700 tracking-wide font-bold shadow-lg">
         Access Here</a>
     </article>
@@ -1105,18 +1110,18 @@
       </div>
       <h1 class="text-base leading-5 md:text-2xl mt-3 text-center font-bold"> Nigerian Court Rules & Subsidiary Regulations </h1>
       <p class="text-center text-sm md:text-xl leading-7"> Download freely various Nigerian Court rules. </p>
-      <a href="resource.html"
+      <a href="resources.html"
         class="inline-block flex items-center justify-center text-center text-sm md:text-base text-red-700 tracking-wide font-bold shadow-lg mx-26">
         Access Here</a>
     </article>
-    <!-- Court rules -->
+    <!-- E-books-->
     <article class="mt-7 py-5 md:px-8 border-t-2 border-gray-300" data-aos="fade-up">
       <div class=" justify-center mx-auto w-25 h-24 md:w-50 md:h-48 px-8 md:px-20">
         <img src="img/e-books.jpg" style="relative; width:100%; height: 100%; " class=" w-full h-full ">
       </div>
       <h1 class="text-base mt-3 text-center font-bold"> Legal E-Books </h1>
       <p class="text-center text-sm md:text-base"> Download freely various resources on ok ehal practice. </p>
-      <a href="resource.html"
+      <a href="resources.html"
         class="inline-block flex items-center justify-center text-center text-sm md:text-base text-red-700 tracking-wide font-bold shadow-lg">
         Access Here</a>
     </article>
@@ -1157,8 +1162,8 @@
     <div class="mx-20 md:mx-80 h-1 bg-white text-lg font-bold bg-gradient-to-br from-gray-300 to-gray-200 shadow-lg text-center" > </div>
        <p class="mt-1 text-sm md:text-3xl text-center font-light text-gray-300 px-1 md:px-4 ">Stay up to date with my latest legal publications, articles and opinions on various aspects of law including Islamic topical issues & Islamic finance.   </p>
     </div>
-    <form action="subscribe.php" method="post" class=" mt-3 px-4 ">
-       <script async data-uid="ea5c74106c" src="https://muhibqosim.ck.page/ea5c74106c/index.js"></script>
+    <form action=" " method=" " class=" mt-3 px-4 md:px-20 ">
+      <script async data-uid="ea5c74106c" src="https://muhibqosim.ck.page/ea5c74106c/index.js"></script>
     </form>
     <!-- horizontal line--> 
     <hr style="background-color: " class="bg-gray-100 font-light mt-20 "> 
