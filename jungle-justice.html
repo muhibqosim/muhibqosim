@@ -149,7 +149,39 @@
    <p class="mt-3"> Moreover, the jurisdiction of a court of law to entertain criminal cases is being challenged. The court is expected to serve as a place where justice is administered in an oderly and constitutional countries like Nigeria. However, the prevalent forms of self-help employed by various agrieved citizens is a clarion call that, it is time for the restructuring of our judicial system of Justice and the police agency so as to curb the menace(s) extrajudicial form of justice has brought to our land. And finally, our government should also come to the rescue of the country from its lawless state.</p>
  <!--  <p class="mt-5 text-center"> All in all, this write up was provoked by a recent case of extrajudicial justice around the author's area.</p>--> 
  </main>
- 
+ <script>
+// Check if the user has liked the post
+function hasLikedPost(postId) {
+  // Check if the post is in local storage
+  const likedPosts = JSON.parse(localStorage.getItem('likedPosts')) || [];
+  return likedPosts.includes(postId);
+}
+
+// Handle the "Like" button click
+function likePost(postId) {
+  const likedPosts = JSON.parse(localStorage.getItem('likedPosts')) || [];
+
+  if (!likedPosts.includes(postId)) {
+    likedPosts.push(postId);
+    localStorage.setItem('likedPosts', JSON.stringify(likedPosts));
+
+    // Update the like count display
+    const likeCount = document.getElementById('like-count-' + postId);
+    likeCount.textContent = likedPosts.length;
+  }
+}
+
+// Example usage on your HTML
+const postId = 1;
+if (hasLikedPost(postId)) {
+  // If the user has liked the post, you can display this accordingly
+  const likeButton = document.getElementById('like-button-' + postId);
+  likeButton.textContent = 'Liked';
+}
+</script>
+// Your HTML like button
+<button id="like-button-1" onclick="likePost(1)">Like</button>
+<span id="like-count-1">0</span>
 
  
 
