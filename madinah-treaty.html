@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initinitial-scale">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content=" ">
+    <meta name="keywords" content=" ">
+    <meta name="author" content=" "> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css" integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
+     <!--<script src="https://cdn.tailwindcss.com"></sscript-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <link rel="stylesheet" href="css/main.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    
+ <!--Web fonts-->
+ <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Lora&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300&display=swap" rel="stylesheet">
+    <title>My Blog: Al-madinah Treaty: The World’s First Written Constitution </title>
+   <style>
+   body{
+  font-size:  13.1px;
+}
+    /* Background image for homepage: mobile and desktop*/
+    @media (max-width:699px) {
+            .header-lg {
+                background-image: url('img/bgimg.jpg');
+                height: 50%;
+            }
+    }
+        @media (min-width:700px) {
+            .header-lg {
+                background-image: url('img/bgimg.jpg');
+                height: 80%;
+            }
+    }
+   
+  </style>
+  </head>
+  <!-- body starts here-->
+  <body>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v18.0" nonce="fYIThrBZ"></script>
+<!--<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId: '',
+      autoLogAppEvents: true,
+      xfbml: true,
+      version: 'v13.0'
+    });
+  };
+</script>-->
+<!--<script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>-->
+
+<!-- main page starts here-->
+  <main class="navbar ">
+     <header class="header Navy-blue py-1.5 md:py-5 w-full">
+    <!-- Navigation menu -->
+    <nav class=" ">
+      <div class=" ">
+        <div class="flex justify-between">
+          <div class="flex">
+            <a href="https://muhibqosim.github.io/muhibqosim/" class="flex items-center ">
+              <!-- <img src="" alt="logo"> -->
+              <span class="text-white text-gradient-to-br from-gray-300 to-gray-200 text-xl md:text-3xl garamond pl-2 font-bold" style="font-weight: 600;">MuhibQosim</span>
+            </a>
+          </div>
+          <!-- desktop menu bar-->
+          <div class="hidden garamond md:flex items-center md:justify-center mx-auto lg:pl-48 space-x-1 md:text-3xl">
+            <a href="https://muhibqosim.github.io/muhibqosim/" class="py-4 px-2 text-white font-semibold hover:text-gray-900">Home</a>
+            <a href="https://muhibqosim.github.io/muhibqosim/publications.html" class="py-4 px-2 text-white font-semibold hover:text-gray-900">Publications</a>
+            <!--<a href="portfolio.html" class="py-4 px-2 text-white font-semibold hover:text-gray-900">Portfolio</a>-->
+            <a href="https://muhibqosim.github.io/muhibqosim/resources.html" class="py-4 px-2 text-white font-semibold hover:text-gray-900">Resources</a>
+            <a href="#footer" class="py-4 px-2 text-white font-semibold hover:text-gray-900">Contact</a>
+          </div>
+          <div class="md:hidden flex items-center pr-3">
+            <button type="button"
+              class="cursor-pointer text-gray-500 hover:text-white focus:outline-none focus:text-white"
+              aria-label="toggle menu" onclick="toggleMenu()">
+              <div class="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- mobile menu bar -->
+      <div class="hidden md:hidden justify-between  bg-blue-800  " id="mobile-menu">
+        <a href="https://muhibqosim.github.io/muhibqosim/" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Home</a>
+        <a href="publications.html" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Publications</a>
+        <!--<a href="portfolio.html" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Portfolio</a>-->
+        <a href="resources.html" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Resources</a>
+        <a href="#footer" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Contact</a>
+      </div>
+    </nav>
+  </header>
+  </main>
+    <!--header ends here-->
+  <!-- image background and introduction-->
+  <section class="bg-white h-50  px-4">
+    <h1 class="mt-10 text-center md:mt-20 font-bold text-lg md:text-5xl md:leading-snug md:"> Al-madinah Treaty: The World’s First Written Constitution </h1>
+    <hr class="mt-10 md:mt-20 " style="border:none; border-top: 5px dashed #ddd; margin: ;"/>
+    <div class="justify-center mt-10 md:mt-20 mx-auto "> 
+      <img src="img/publications/madinah-treaty.jpg" style="relative; width:100%; height: 100%; " class=" w-full h-full ">
+    </div>
+    
+    <div  id="download-pdf"  class="mt-5">
+      <h6 class="font-light md:text-2xl text-gray-700"> Published on: <span class="text-dark font-semibold">  April 22, 2023</span></h6>
+      <button class="text-center items-center px-2 tracking-wide mt-4 py-1 Navy-blue text-sm md:text-2xl text-white font-bold uppercase bg-gradient-to-br from-red-900 to-red-600 shadow-lg border border-white " type="submit" style="width: vw; "> <i class="far fa-file-pdf font-bold text-lg md:text-2xl tetext-white"></i> <a href="https://drive.google.com/file/d/1P9BAk3mybT8k1MqLKt2wAfC_vrT8-sAz/view?usp=drivesdk"> Download pdf</a></button>
+ </div>
+  </section>   
+  
+ <!-- publication content--> 
+ <main class="pt-8 pb-16 px-4 tracking-tight text-justify leading-5 md:leading-10 md:text-3xl">
+   <h2 class="font-bold text-lg md:text-5xl"> 1.0 Introduction</h2>
+   <p class="mt-2.5  ">Prior to the migration of the prophet (SAW) the now city of Al-madinah was formerly known as “Yathrib”. The city of was designated as a conflict zone in the Arabian Peninsula. This attests to the ubiquitous enmity among the different people of Al-madinah as at the time. There was frequent fighting and war between the Aws and the Khazraj, the two dominant clan in the city. However, after the prophet migration, the prophet (SAW) was consensually made the leader of Al-madinah city. Hence, the recognition of the Prophet (SAW) as the head of state in Madinah resulted in the establishment of the Madinah Charter, which governed the inhabitants of Madinah of many races, languages, religions, and cultural traditions. The Madinah Charter is the world's first written constitution that effectively controlled a multi-ethnic society and helped Madinah become a peaceful nation.  Hence, the purpose of this study is to examine the ethnic relations that existed in the Madinah Charter based on this foundation and its impacts. </p>
+   <h2 class="font-bold mt-3 text-lg md:text-5xl"> 2.0 Madinah City before and after Migration of the prophet </h2>
+   <p class="mt-2.5  ">Because of the enormous difference in lifestyle between the two time periods, discussions of Madinah civilization before and after the advent of Islam demand special consideration. Wat  claims that understanding the condition in Madinah prior to Islam is critical to having a clear picture of the times before and after the Prophet Muhammad (SAW)'s visit. Disputes and fights were common prior to the arrival of Islam, but collaboration became the foundation of social ties among the Madinah population after the arrival of Isla.  Thus, in this part, and for the purpose of efficient understanding of the subject matter, the brief state of Madinah city before and after the advent of prophet (SAW) shall be evaluated. </p>
+   <h2 class="font-bold mt-2 text-lg md:text-5xl"> <i class="">2.1 Madinah City before Migration</i></h2>
+   <p class="mt-2.5  ">Madinah was a small town with an estimated population of 4000 to 5000 people.  Prior to the prophet migration, the social system was based on the system based on their tribe or group where each tribe protected and defended its members.  The people of Madinah at that period consisted of various races, groups, and tribes such as the Arabs which constituted of the Aws and Khazraj tribes who were immigrants from South Arabia and other Arab tribes who settled in Madinah. Accordingly, history had it that, in the Aus and Khazraj tribes, there were eight tribes as mentioned in the Madinah Charter as well as 33 small groups that were together in the battle of Badr.  These Arabs adhered to superstitious beliefs, idolatry, and embraced Judaism and Christianity. Each group lived in their separate areas, and they rarely interacted with each other in the plural society. Therefore, disputes and fights often occurred among these groups. </p>
+   <p class="mt-2.5  ">The people of Madinah had their respective lifestyles and had social ties that were separated from one group to another. At that time, the relationship between the Arabs and the Jews was not in peaceful terms because both of these groups had intentions in ruling Madinah; even the groups within the Jewish tribes were against one another.  The Jews dominated and greatly influenced the economic market of Madinah. They practiced usury and mortgages where mortgages were not only for trade but also involved women and children. The Jews also reaped profits many times over, causing the Arabs to loathe them.  This has continue to be the clash not until the time the prophet got to Madinah.</p>
+   <h2 class="font-bold mt-2 text-lg md:text-5xl"> <i class="">2.2 The Madinah Society After Islam</i></h2>
+   <p class="mt-2.5  ">The arrival of the Prophet (SAW) to Madinah was on Friday, 12 Rabiulawal of the first year of Hijra which is equivalent to 27th day of September, 622 AD. The arrival of the Prophet (SAW) was welcomed by the people of Madinah, in contrast to the people of Mecca who dominantly opposed the teachings of Islam. The Arabs of Madinah had a better understanding of the divine and prophetic matters, which may be a result of their association with the Jews who believed in the teachings of the Prophet Moses. Moreover, the Jews often reminded them of the resurrection of a prophet and apostle. </p>
+   <p class="mt-2.5  ">Following the migration, the Muslim Mecca Arabs who are immigrants were known as the Muhajirun (the emigrants) while the Muslim Arabs of Madinah were known as the Ansar (the helper). The non-Muslim group consisted of two groups, namely the Jews and the followers of the idolatrous religion known as wathaniyyin (idol worshippers). The advent of the prophet (SAW) in Madinah changed the population composition of Madinah into three large groups, namely the Arabs of Mecca who migrated together with the Prophet (,SAW), the Arabs of Madinah, and the Jews. </p>
+   <h2 class="font-bold mt-2 text-lg md:text-5xl"> 3.0 The Draw up of the Madinah Treaty </h2>
+   <p class="mt-2.5  ">Under the prevailing condition of Madinah there was a dire need to formulate a constitution with the mission of governing the state of Madinah city and to regulate its political and social life. At that time the Quran, was not fully revealed therefore Prophet Muhammad (SAW) has to fall back on customs and precedents.  Thus, this is the year when the Madinah Constitution was agreed upon and written into law.</p>
+   <p class="mt-2.5  ">The Charter of Madinah dates back to year 622 AD. The Charter was the first written constitution in Islam and arguably the first constitutional law in society. The prophet of Islam (SAW) had been known prior to his divine prophethood to be a competent arbitrator as he had facilitated to resolve conflicts at several occasion in Makkah and had an ability of leadership quality that devoid in that area. Due to this ability he was call for by the tribes of Yathrib (Madinah) to act as arbitrator to resolve the rampant conflict between them. At that time it was a common practice and custom of the Arabs to get the mediator from outside to resolve their conflict and the Prophet Muhammad (SAW) had already known as trustworthy and given the title of Ameen and Sadiq by the residents of Makkah. At last the Prophet (SAW) consulted the leaders of each tribe while drafting the Charter for mutual consensus and hence demonstrating the will to listen the needs and desires of the each tribe.</p>
+   <p class="mt-2.5  ">The Constitution of Madinah, written on behalf of the Islamic prophet Muhammad in 622 CE, outlines the rights and duties of the people living in the city of Madinah (present-day Saudi Arabia). The document also regulates relations between Muslims and other communities on the basis of religion (as opposed to ethnicity or tribal affiliation). The constitution protects all inhabitants of Madinah, regardless of religion, and explicitly states that Jews and Muslims can practice their religions freely. Many historians consider the Constitution of Madinah to be the first document in history to establish religious freedom as a right (though earlier documents, such as the Cyrus Cylinder, also mention religious freedom). </p>
+   <p class="mt-2.5  ">There are salient features of the charter of Madinah which made it a standout social agreements among the multifarious tribes, clans and religions existing in as at the time. The charter thus envisaged the following treaty: <br>
+   •	That all tribes residing in Madinah will be considered single Ummah (Community). <br>
+•	That Prophet Muhammad (SAW) would be considered a Central Authority of the (Federation), i.e., the leadership of Madinah will pass to him.<br>
+•	That as the leader, all matters and issues of difference will be referred to Prophet Muhammad (SAW) for final adjudication or settlement.<br>
+•	That there would be no declaration of war without prior permission of Prophet Muhammad (SAW) being the elected leadership.<br>
+•	The treaty also contain agreement that admonishes against treachery & oppression. <br>
+•	There is also a provision for shared counsel and collective consultation in matter of urgency and other salient issues. </p>
+   
+   <h2 class="font-bold mt-3 text-lg md:text-5xl"> 4.0 A Peep into the Contents of the Madinah Treaty </h2>
+   <p class="mt-2.5  ">Most scholars accept the authenticity of the Madinah Constitution, though the original document has not been found. Scholars fail to agree, however, whether the Madinah Treaty is a single contract or a compilation of multiple agreements reached at different times. The Treaty contains 47 articles. Notwithstanding, a close reading of the document reveals that its provisions are most coherent when read as a compilation of two separate agreements. Muhammad Hamidullah  makes a persuasive submission that the Madinah Treaty, because of its tone and phraseology, was not drafted in a single sitting. He thus divides the document into two parts. Part 1 (articles 1-23) addresses mutual relations among Muslims. Part II (articles 24-47) contains rules to regulate inter-communal affairs between Muslims and Jews. </p>
+   <p class="mt-2.5  ">Equally, Hussin  posited that the first part constituted Clauses 1 to 23 concerning the Muhajirin and Ansar relations and was completed before the Battle of Badr. Meanwhile, Clauses 24 to 47 are regarding the rights and obligations of the Jews, which was subsequently completed after the Battle of Badr.  This textual division of the Madinah Treaty, though necessary to make the most sense of the document, does not undermine its underlying organic appeal to found Islamic Free State on principles of equality, equity, and religious freedom. The most organic feature of the Madinah Constitution is that it establishes an Islamic Free State on the basis of a social contract. Hence, the focus of this section to appraise briefly some of the provisions of the said Treaty. </p>
+   
+   
+   <h2 class="font-bold mt-2 text-lg md:text-5xl"> <i class="">(a)	The Prophet as the Responsible of the Treaty </i> </h2>
+   <p class="mt-2.5  ">The prophet position as a reference of the Treaty's content is reflected from clause 1, 23 and 42. In Madinah, the prophet had authority to allow and not the people to leave and enter the city. It was because the Muslim community was not strong enough yet to anticipate the enemy’s fight, allowing people to pass the city easily without control will make enemy easily come and enter the city. This rule was a process of ideological strengthening of the Madinah society.</p>
+   <h2 class="font-bold mt-2 text-lg md:text-5xl"> <i class="">(b) Rights and Obligations </i> </h2>
+   <p class="mt-2.5  ">Pursuant to Article 46 of the Treaty, the Prophet (WSAW) emphatically showed the respective parties to the treaty that in an alliance that was built, there is no discrimination of groups. The alliance is only built on upholding unity, equality, and equality before the law. </p>
+   <h2 class="font-bold mt-2 text-lg md:text-5xl"> <i class="">(c) Court and justice system </i> </h2>
+   <p class="mt-2.5  ">With the enactment of the Treaty, any personal enmity which usually leads to conflict among tribes was abolished and override. The prophet comes to reconstruct the habits by stipulating the personal wrongdoing as personal responsibility. The treaty eliminates the old traditions while stipulating one's deed as personal act and responsibility, except the problem threatening the social security of the ummah. Truth and justice then become the standard. Here, the prophet is implementing notion of achievement-based appreciation, not based on prestige such as descendent, race, tribe and so forth.</p>
+   <h2 class="font-bold mt-2 text-lg md:text-5xl"> <i class="">(d)	Respect for Individual Traditions </i> </h2>
+   <p class="mt-2.5  ">Articles 3 - 11 of the Treaty determine that the Madinah’s customs, traditions, rules as living traditions and protected by law. It specifically provides that each tribe should respect each other. The Article recognizes the existence of agreement members’ customs and traditions.  Rules and traditions of each member are protected. But as long as it is based on justice and commonly employed among the faithful people that will be guaranteed. It negates traditions that threaten social structures and justice.</p>
+  
+   <h2 class="font-bold text-lg mt-3 md:text-5xl">5.0 Conclusion </h2>
+   <p class="mt-2.5  ">The Madinah Charter is the Prophet’s (SAW) strategy to restructure the political and social system in Madinah. The reason being that, Madinah needed an orderly administrative system to manage a plural society and strengthen its strength to face various threats. Hence, the piece revealed that through the establishment of the Medina Charter, Prophet Muhammad (PBUH) was able to foster harmonious ethnic relations among the people of Medina. This principle's appreciation is in line with the Qur'an's mandates for human beings to be educated in noble qualities. As a result, putting these concepts into practice is critical in managing a plural society in order to create a stable society in terms of socio-politics and economics. These ideas have served as a defensive wall for Medina, uniting and fostering cooperative relationships in a plural community.</p>
+   
+   
+  
+   <!--pdf version--> 
+   <p class="mt-5 text-center   "> <i class="">To get access to the materials referenced in this publication, kindly download the pdf file <a class="text-red-600 font-bold uppercase" href="#download-pdf"> HERE </a> </i> </p>
+  
+ </main>
+ 
+ 
+
+
+ <!-- ABOUT THE AUTHOR & COMMENT SECTION-->
+ <main class="bg-gray-100 py-10"> 
+ <!-- about the author-->
+ <div class="px-4 ">
+ <div class="">
+   <h1 class="text-xl md:text-4xl text-center font-bold uppercase"> About the Author</h1>
+ <div class="mx-20 md:mx-80 h-1 Navy-blue text-lg font-bold bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg text-center" > </div>
+   <p class="text-justify mt-4 tracking-tight leading-5 md:leading-10 md:text-3xl text-gray-800"> Qosim is a third-year student of law at the Faculty of Law, Bayero University, Kano, with proficiency in Web Design, Legal/Content Writing, Legal Research, Case Analysis and Proofreading/Editing. He has a keen interest in Legal Drafting and Research, Corporate practise and Litigation, Oil & Gas, Intellectual Property, Islamic Finance and Mediation. He is equally a Web Developer, Legal Wriiter/Essayist. He can be reached via: <span class="text-gray-900 font-semibold my-2 font-light text-sm md:text-3xl"> <a class="" href="https://wa.me/2349037074761?text=Hello!?"> +2349037074761</a></span> OR
+      <span class="text-gray-900;my-2 font-semibold text-sm md:text-3xl"> <a class="" href="muhibqosim@gmail.com "> muhibqosim@gmail.com</a></span> 
+   </p>
+ </div>
+ 
+ <hr class="my-10" > 
+ <div class="mx-auto px-4 mt-10" >
+   <h1 class="text-xl md:text-4xl text-center font-bold uppercase">Leave a Comment</h1>
+ <div class="mx-20 md:mx-80 h-1 Navy-blue text-lg font-bold bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg text-center" > </div>
+   <p class="mt-5 md:text-3xl text-center"> Type your comment in the box below.</p>
+  <!-- <div class="flex items-center justify-center">
+   <textarea class="inline-block bg-white p-2 mt-5 border-2 md:text-3xl " placeholder="Write a comment..." name="message" style="height: 10vh; width: 90vw"></textarea>
+   </div>
+   <div class="flex items-center justify-center">
+   <button class="text-center items-center px-2 tracking-wide mt-4 py-2 Navy-blue text-sm md:text-3xl text-white font-bold uppercase bg-gradient-to-br from-blue-900 to-blue-600 shadow-2xl rounded-sm" type="submit" style="width: 90vw; ">send comment</button>
+   </div> -->
+ </div> 
+ 
+
+<div class="fb-comments w-full " data-href="https://muhibqosim.github.io/muhibqosim/https://muhibqosim.github.io/muhibqosim/madinah-treaty.html" data-width="80vw"   data-lazy="false"   data-numposts="5"></div>
+ 
+ </main>
+ 
+ 
+  <!-- Footer -->
+  <section class="Navy-blue py-10" id="footer">
+  <article class="pl-4 ">
+    <div class="">
+      <h1 class="text-white text-center text-lg md:text-4xl font-bold uppercase tracking-widest"> Get in Touch</h1>
+    </div>
+    <div class="mx-32 md:mx-96 h-1 bg-white text-lg font-bold bg-gradient-to-br from-gray-300 to-gray-200 shadow-lg text-center mb-4 md:mb-8" > </div>
+    <div class="md:flex justify-between items-center align-center ">
+    <div class="md:text-2xl w-full md:w-2/4 md:pl-10 mb-5">
+      <h5 class="text-white text-justify text-base md:text-3xl font-semibold "> Contact Me</h5>
+      <p class="text-gray-300 my-2 font-light "> <i class="fas fa-map-marker-alt mr-2"></i> Faculty of Law, BUK</p>
+      <p class="text-gray-300 my-2 font-light "> <i class="fab fa-whatsapp mr-2"> </i> <a class="" href="https://wa.me/2349037074761?text=Hello!?"> +234 903 707 4761</a></p> 
+      <p class="text-gray-300 my-2 font-light "> <i class="fas fa-envelope mr-2"> </i> <a class="" href="muhibqosim@gmail.com "> muhibqosim@gmail.com</a></p> 
+      <p class="text-gray-300 mt-2 font-light "><i class="fas fa-phone mr-2"></i><a class=" " href=""> (+234) 9037074761 </a> <!--<span class="text-gray-100 font-light"> (Click to call) </span > --> </p>
+    </div>
+    <div class="md:text-2xl w-full md:w-2/4 md:pl-8">
+      <h5 class=" text-white text-justify text-base md:text-3xl font-semibold "> Quick Links </h5>
+      <p class="text-gray-300 my-2 font-light "> <a class=" " href="https://muhibqosim.github.io/muhibqosim/" > Home</a></p>
+     <!-- <p class="text-gray-300 my-2 font-light "> <a class=" " href="portfolio.html" >Portfolio</a></p>-->
+      <p class="text-gray-300 my-2 font-light "> <a class=" " href="https://muhibqosim.github.io/muhibqosim/publications.html" > Publications</a></p>
+      <p class="text-gray-300 my-2 font-light "> <a class=" " href="https://muhibqosim.github.io/muhibqosim/resources.html" > Free resources</a></p>
+      <p class="text-gray-300 my-2 font-light "> <a class=" " href="#footer" > Contact</a></p>
+    </div>
+    </div>
+    </article>
+    <!-- newsletter --> 
+    <div class="pt-6 px-4">
+       <h1 class="uppercase text-white text-center text-base md:text-3xl mt-5 font-bold"> sign up for my newsletter</h1>
+    <div class="mx-20 md:mx-80 h-1 bg-white text-lg font-bold bg-gradient-to-br from-gray-300 to-gray-200 shadow-lg text-center" > </div>
+       <p class="mt-1 text-sm md:text-3xl text-center font-light text-gray-300 px-1 md:px-4 ">Stay up to date with my latest legal publications, articles and opinions on various aspects of law including Islamic topical issues & Islamic finance.   </p>
+    </div>
+    <form action=" " method=" " class=" mt-3 px-4 ">
+       <script async data-uid="ea5c74106c" src="https://muhibqosim.ck.page/ea5c74106c/index.js"></script>
+    </form>
+    <!-- horizontal line--> 
+    <hr style="background-color: " class="bg-gray-100 font-light mt-20 "> 
+    <!-- copyright--> 
+    <div class="mt-10 md:mt-20 pt-5">
+      <p class="text-xs text-white font-light text-center md:text-3xl"> <i class="far fa-copyright md:text-3xl "></i> 2023 Muhibudeen Qosim | All Rights Reserved.
+      </p>
+    </div>
+    <!-- social handles--> 
+    <div class="mt-10 md:mt-20 flex justify-between px-20 text-lg md:px-64 md:text-5xl">
+      <a href="twitter.com/adenaike_idris" class="text-white hover:text-blue-400" target="_blank" rel="noopener" title="Twitter"> <i class="fab fa-twitter "></i></a>
+      <a href="https://m.facebook.com/muhammadulqoosim.muhiibuddeen" class="text-white hover:text-blue-600" target="_blank" rel="noopener" title="Facebook"> <i class="fab fa-facebook "></i></a>
+      <a href="https://wa.me/2349037074761?text=Hello!" class="text-white hover:text-green-500" target="_blank" rel="noopener" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i></a>
+        <a href="instagram.com/muhibqosim" class="text-white hover:text-pink-600" target="_blank" rel="noopener" title="Instagram"> <i class="fab fa-instagram "></i></a>
+        <a href="https://www.linkedin.com/in/qosim-muhibudeen-5896a91a8" class="text-white hover:text-blue-600" target="_blank" rel="noopener" title="LinkedIn"> <i class="fab fa-linkedin "></i></a>
+        <a href="https://github.com/muhibqosim" class="text-white hover:text-gray-600" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github "></i></a>
+     </div>
+    
+  </section>
+  
+  
+  <!--js starts here--> 
+    <script src="js/main.js"> </script>
+   <script> AOS.init({
+      offset: 200,
+      duration: 600,
+      easing: 'ease-in-sine',
+      delay: 200,
+      once: true
+    },);
+       
+
+    </script>
+  </body>
+
+</html>
