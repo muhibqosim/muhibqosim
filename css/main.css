@@ -7,6 +7,18 @@ body, .geologica{
 h1, h2, h3, h4, h5, .garamond {
   font-family: "EB Garamond", serif;
 }
+/*Sticky header*/
+.navbar {
+  background-color: #f1f1f1;
+  padding: 0px 0px 0px 0px;
+  position: sticky;
+  top: 0;
+  z-index: 100; /* Set a higher z-index to keep the navbar above other elements */
+}
+
+.header-bg{
+  background-color: #2c2725;
+}
 
 .no-outline{
   outline: none;
@@ -56,6 +68,16 @@ h1, h2, h3, h4, h5, .garamond {
     .change .bar3 {
             transform: translate(0, -11px) rotate(45deg);
     }
+    
+/*Sticky header*/
+.navbar {
+  background-color: #f1f1f1;
+  padding: 0px 0px 0px 0px;
+  position: sticky;
+  top: 0;
+  z-index: 100; /* Set a higher z-index to keep the navbar above other elements */
+}
+    
     
     /*homepage background float in*/
     @keyframes float-in-left {
@@ -128,3 +150,39 @@ h1, h2, h3, h4, h5, .garamond {
 }
 
 
+/*client testimonials*/
+
+
+/*slider*/ 
+.slider-container {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s;
+}
+
+.slide-a {
+  flex: 0 0 100%;
+}
+
+.btn-slider {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  font-size: ;
+  cursor: pointer;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
