@@ -3,6 +3,17 @@ document.addEventListener('DOMContentLoaded', function() {
             var currentYear = new Date().getFullYear();
             document.getElementById('copyright-year').textContent = currentYear;
         });
+//about the author
+document.addEventListener('DOMContentLoaded', function() {
+    // The sentence you want to insert
+    var sentence = "Qosim is a pupil of law at the Faculty of Law, Bayero University, Kano, with proficiency in Web Design, Legal/Content Writing, Legal Research, Case Analysis and Proofreading/Editing. He has a keen interest in Legal Drafting and Research and various aspect of law including Corporate practise, Litigation, Intellectual Property, Data Privacy, Islamic Finance and ADR. ";
+
+    // Find the element where the sentence will be inserted
+    var container = document.getElementById('about-author');
+
+    // Insert the sentence into the container
+    container.textContent = sentence; 
+});
 
 function myFunction(x) {
             x.classList.toggle("change");
@@ -140,4 +151,3 @@ window.onload = function() {
 };
 
 
-//
