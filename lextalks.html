@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initinitial-scale">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content=" LexTalks is a legal blog simplifying law through insightful articles, case reviews, and scholarly essays.">
+  <meta name="keywords" content="Legal Research, Case Analysis, Content and Legal Writing/Drafting, Proofreading, Web Design, Programming, case digest, legal insights, legal essays">
+  <meta name="author" content="Al-Qosim ">
+  <title> Al-Qosim | LexTalks </title>
+  <!--og properties-->
+  <meta property="og:title" content="Al-Qosim | LexTalks">
+  <meta property="og:description" content="LexTalks is a legal blog simplifying law through insightful articles, case reviews, and scholarly essays.">
+  <meta property="og:image" content="https://muhibqosim.com.ng/img/lextalks.png">
+  <meta property="og:url" content="https://muhibqosim.com.ng/">
+  <!--otg ends here-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css" integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+
+  <!--css link-->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Geologica&display=swap" rel="stylesheet">
+  <style>
+    /* Background image for homepage: mobile and desktop*/
+    @media (max-width:699px) {
+      .header-lg {
+        background-image: url('https://i.ibb.co/qBZvtK9/library.jpg');
+        height: 40vh;
+      }
+    }
+
+    @media (min-width:700px) {
+      .header-lg {
+        background-image: url('https://i.ibb.co/qBZvtK9/library.jpg');
+        height: 45vh;
+      }
+    }
+  </style>
+</head>
+<!-- body starts here-->
+
+<body>
+  <main class="navbar ">
+    <header class="header Navy-blue py-1.5 md:py-5 w-full" style="posisition: sticky; top:0;">
+      <!-- Navigation menu -->
+      <nav class=" ">
+        <div class=" ">
+          <div class="flex justify-between">
+            <div class="flex">
+              <a href="#" class="flex items-center ">
+                <img src="https://i.ibb.co/qpWhN2R/Screenshot-20240414-225818-removebg-preview.png" class="w-20 h-14 md:w-72 md:h-48" alt="logo">
+                <!--<span class="text-white text-xl md:text-5xl garamond mx-1 font-bold uppercase" style="font-weight: 600;">Al-qosim</span>-->
+              </a>
+            </div>
+            <!-- desktop menu bar-->
+            <div class="hidden garamond md:flex items-center md:justify-center mx-auto lg:pl-48 space-x-1 md:text-3xl hover:text-red-900">
+              <a href="index.html" class="py-4 px-2 text-white font-semibold hover:text-red-500">Home</a>
+              <a href="index.html" class="block py-2 px-4 tx-sm text-white font-semibold hover:text-red-500">Expertise</a>
+              <!-- Dropdown for Blog -->
+              <div class="relative">
+                <button class="block py-2 px-4 tx-sm md:text-3xl text-white font-semibold hover:bg-red-500 w-full text-left" onclick="toggleDropdown()">Publications</button>
+                <div class="dropdown-content hidden bg-gray-50 text-black hover:text-white rounded-sm shadow-sm w-full">
+                  <a href="lextalks.html" class="block text-black hover:text-white px-4 py-2 hover:bg-gray-900">LexTalks</a>
+                  <!--<a href="tech-bus.html" class="block text-black hover:text-white px-4 py-2 hover:bg-gray-900 border-b">Tech & bus </a>-->
+
+                </div>
+              </div>
+              <!--<a href="portfolio.html" class="py-4 px-2 text-white font-semibold hover:text-gray-900">Portfolio</a>-->
+              <a href="resources.html" class="py-4 px-2 text-white font-semibold hover:text-red-500">Resources</a>
+              <a href="#footer" class="py-4 px-2 text-white font-semibold hover:text-red-500">Contact</a>
+            </div>
+            <!-- desktop menu bar-->
+            <div class="md:hidden flex items-center pr-3">
+              <button type="button" class="cursor-pointer text-gray-500 hover:text-white focus:outline-none focus:text-white" aria-label="toggle menu" onclick="toggleMenu()">
+                <div class="container" onclick="myFunction(this)">
+                  <div class="bar1"></div>
+                  <div class="bar2"></div>
+                  <div class="bar3"></div>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- mobile menu bar -->
+        <div class="hidden md:hidden justify-between bg-blue-800" id="mobile-menu">
+          <a href="index.html" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Home</a>
+          <a href="index.html" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Expertise</a>
+
+          <!-- Dropdown for Blog -->
+          <div class="relative">
+            <button class="block py-2 px-4 tx-sm md:text-3xl text-white font-semibold hover:bg-gray-900 w-full text-left" onclick="toggleDropdown()">Publications</button>
+            <div class="dropdown-content hidden bg-gray-50 text-black hover:text-white rounded-sm shadow-sm w-full">
+              <a href="lextalks.html" class="block text-black hover:text-white px-4 py-2 hover:bg-gray-900">LexTalks</a>
+              <!--<a href="tech-bus.html" class="block text-black hover:text-white px-4 py-2 hover:bg-gray-900 border-b">Tech & bus </a>-->
+
+            </div>
+          </div>
+          <a href="resources.html" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Resources</a>
+          <a href="#footer" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Contact</a>
+
+
+        </div>
+      </nav>
+    </header>
+  </main>
+  <!-- header ends here-->
+  <!-- image background and introduction-->
+  <section class="bg-gray-800 bg-center header-lg  ">
+    <div class="header-bg opacity-70 py-20 md:py-56 h-full ">
+      <div class="px-3 md:pt-14 md:px-10  xl:px-32  text-center">
+        <div class="w-full text-white ">
+          <!--<div class="text-sm font-light md:text-3xl lg:text-5xl animate__animated animate__fadeIn animate__slow animate__delay-1.5s ">
+                    <span class="block leading-none">Welcome To</span>
+                </div>-->
+          <div class="text-4xl garamond md:text-8xl animate__animated animate__fadeIn animate__slow animate__delay-1s tracking-tight mb-4 md:mb-24">
+            <span class="block leading-none font-semibold text-center tracking-widest opacity-100 uppercase">LexTalks </span> <span class="block mt-3 md:mt-7 geologica text-sm md:text-4xl italic tracking-wide  text-gray-50 font-light bg-gray-800 mx-20 md:mx-44"> Talk Law. Think Loud.</span>
+          </div>
+          <div class="hidden " id="typed-strings">
+            <h2 class="text-base "> Legal Series for Everyone </h2>
+            <h2 class="text-base"> Simplifying Everyday Law </h2>
+            <h2 class="text-base">A Blog-style Podcast Series</h2>
+            <h2 class="text-base"> </h2>
+          </div>
+          <span class="text-shadow text-sm font-light text-white md:text-4xl md:mt-24 " id="typed" style=" "></span>
+        </div>
+  </section>
+
+  <!-- short description -->
+  <section class="bg-white ">
+    <button class="bg-red-800 text-center text-base text-white py-1 md:text-3xl px-2 font-bold uppercase geologica tracking-wider"> About LexTalks:</button>
+    <div class="mt-12 md:mt-24">
+      <div class="px-16 md:px-2 flex justify-center">
+        <img src="img/lextalks.png" class=" h-32 md:h-64 rounded-4xl" alt="" />
+      </div>
+      <p class="px-5 mt-5 md:mt-12 text-sm md:text-3xl text-center font-light text-gray-700 "><span class="text-red-500"> LexTalks</span> is a legal blog simplifying law through insightful articles, case reviews, and scholarly essays. As an independent platform, it is dedicated to making legal knowledge more accessible and relatable through well-crafted publications and deep legal insights. From everyday issues to complex legal developments, LexTalks explores key areas of law with clarity and purpose — bringing the law closer to all.</p>
+
+    </div>
+  </section>
+
+
+  <div class="pt-0.5 mt-8 bg-gray-100"> </div>
+
+  <!-- Search button -->
+  <section class="bg-white ">
+
+    <!-- TABLE -->
+    <div class="mb-4  md:pt-6 pb-5  ">
+      <ul class="flex flex-wrap items-center justify-center text-sm md:text-4xl font-normal text-center garamond text-white" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
+        <li class="cursor-pointer inline-block  mr-2 md:mr-10 text-base md:text-5xl font-bold  " role="presentation" style="color: #fff"><a class="text-white bg-yellow-600 text-white hover:bg-red-900 py-2 px-3 md:py-5 md:px-7 btn rounded-lg" id="all-tab" data-tabs-target="#legal-insights" type="button" role="tab" aria-controls="legal-insights" aria-selected="false"> <span class="text-white"> Legal Insights </span> </a> </li>
+        <li class="mr-2 md:mr-10 text-base md:text-5xl  font-bold   " role="presentation "><a class="no-outline cursor-pointer inline-block bg-blue-600 text-white hover:bg-red-900 py-2 px-3 md:py-5 md:px-7 btn rounded-lg" id="case-digest-tab" data-tabs-target="#case-digest" type="button" role="tab" aria-controls="case-digest" aria-selected="false"> <span class="text-white"> <span class="text-white"> </span> Case Digest</span> </a> </li>
+        <li class="mr-2 md:mr-10 text-base md:text-5xl    font-bold   btn rounded-lg " role="presentation"><a class="cursor-pointer inline-block bg-blue-600 text-white hover:bg-red-900 py-2 px-3 md:py-5 md:px-7 rounded-lg " id="archives-tab" data-tabs-target="#archives" type="button" role="tab" aria-controls="archives" aria-selected="false"><span class="text-white"> Archives </span> </a> </li>
+      </ul>
+    </div>
+    <!--search button-->
+    <div class="container mt-6 mx-auto px-5 pb-8 md:px-10">
+      <div class="flex md:text-3xl">
+        <input type="text" id="searchInput" placeholder="Enter your search term" class="border rounded-l-lg px-4 py-2 w-full">
+        <button id="searchButton" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-r-lg"> Search </button>
+      </div>
+      <div id="searchResults" class="mt-4">
+      </div>
+    </div>
+    <div id="myTabContent">
+      <!-- LEGAL INSIGHTS-->
+      <div class="hidden p-4 rounded-lg bg-gray-200 dark:bg-gray-800" id="legal-insights" role="tabpanel" aria-labelledby="all-tab">
+        <p class="mt-4 max-w-3xl text-3xl md:text-6xl md:px-6 text-gray-700  mb-4 garamond"> Legal Insights —</p>
+        <article class="grid grid-cols-1 md:grid-cols-2 gap-4 py-5 md:grid-span-2">
+
+          <!-- article one -->
+          <div data-aos="fade-down" class="bg-white shadow-lg w-full rounded-lg mb-3">
+            <div class="md:w-full overflow-hidden rounded-t">
+              <img src="https://i.ibb.co/NZ1n2Gk/polygamous.jpg" alt="publication caption" class="w-full h-48 md:h-96 object-center ">
+            </div>
+            <!--title, abstract & read more-->
+            <div class="px-5 ">
+              <p class="text-sm pt-5 md:text-lg font-semibold text-justify text-gray-600"> January 26, 2023 </p>
+              <h3 class="text-base md:text-2xl py-8 font-bold tracking-tight uppercase"> POLYGAMOUS MARRIAGE UNDER THE NIGERIAN LAW: WHAT THE LAW HAS TO SAY </h3>
+              <p class="text-sm mb-8 md:text-2xl tracking-tight text-justify "> Marriage is, indeed, the legitimate means of securing the right to cohabitate between opposite sexes in an "ideal" territory, Nigeria inclusive. And as a matter of fact, in Nigerian law, there are essentially two types of marriage: monogamous (which wholly depicts one man and one wife) and polygamous (which permits more than one wife married to just one man). It is also worth noting that the character...</p>
+              <p class="text-sm md:text-2xl text-justify mb-5 text-blue-900 font-semibold "><a href="polygamous-marriage.html" class=""> READ MORE » </a> </p>
+            </div>
+          </div>
+
+          <!-- adoption under isamic law -->
+          <div data-aos="fade-down" class="bg-white shadow-lg w-full rounded-lg mb-3">
+            <div class="md:w-full overflow-hidden rounded-t">
+              <img src="img/publications/adoption.jpg" alt="publication caption" class="w-full h-48 md:h-96 object-center ">
+            </div>
+            <!--title, abstract & read more-->
+            <div class="px-5 ">
+              <p class="text-sm pt-5 md:text-lg font-semibold text-justify text-gray-600"> February 23, 2023 </p>
+              <h3 class="text-base md:text-2xl py-8 font-bold tracking-tight uppercase"> The ILLEGALITY OR OTHERWISE OF ADOPTION PRACTICES UNDER THE LENSE OF ISLAMIC LAW?</h3>
+              <p class="text-sm mb-8 md:text-2xl tracking-tight text-justify "> Protection of lineage is so fundamental in Islamic law otherwise known as the “Sharii`ah”. Hence, it forms an integral part of the five core objectives of Islamic law, vis-à-vis: protection of life; protection of property; protection of intellect; protection of religion, and protection of lineage. These five core objectives are what the divine Islamic code seeks to regulate through its various working principles and mechanisms. In addendum, the objectives of Islamic law cut across the personal affairs of Islamic faith adherents as well as, their public affairs...</p>
+              <p class="text-sm md:text-2xl text-justify mb-5 text-blue-900 font-semibold "><a href="adoption.html  " class=""> READ MORE » </a> </p>
+            </div>
+          </div>
+
+          <!-- article three-->
+          <div data-aos="fade-down" class="md:grid-span-2 bg-white shadow-lg w-full rounded-lg mb-3">
+            <div class="md:w-full overflow-hidden rounded-t">
+              <img src="https://i.ibb.co/QMB1QgH/invitation.jpg" alt="publication caption" class="w-full h-48 md:h-96 object-center ">
+            </div>
+            <!--title, abstract & read more-->
+            <div class="px-5 ">
+              <p class="text-sm pt-5 md:text-lg font-semibold text-justify text-gray-600"> January 30, 2023 </p>
+              <h3 class="text-base md:text-2xl py-8 font-bold tracking-tight uppercase"> DOES POLICE INVITATION AND DETENTION FOR THE PURPOSE OF INVESTIGATION AMOUNTS TO AN INFRINGEMENT OF FUNDAMENTAL RIGHTS? </h3>
+              <p class="text-sm mb-8 md:text-2xl tracking-tight text-justify "> It is trite position of the law that fundamental rights are sacrosanct and immutable to the extent of the immutability of the Constitution itself. However, as a principle of law, fundamental rights accruing to human persons, although sacrosanct, is not absolute...</p>
+              <p class="text-sm md:text-2xl text-justify mb-5 text-blue-900 font-semibold "><a href="police-invitation.html" class=""> READ MORE » </a> </p>
+            </div>
+          </div>
+
+          <!-- article 4-->
+          <div data-aos="fade-up" class="md:grid-span-2 bg-white shadow-lg w-full rounded-lg mb-3">
+            <div class="md:w-full overflow-hidden rounded-t">
+              <img src="https://i.ibb.co/HK2YJXg/jungle-justice.jpg" alt="publication caption" class="w-full h-48 md:h-96 object-center ">
+            </div>
+            <!--title, abstract & read more-->
+            <div class="px-5 ">
+              <p class="text-sm pt-5 md:text-lg font-semibold text-justify text-gray-600"> March 4, 2023 </p>
+              <h3 class="text-base md:text-2xl py-8 font-bold tracking-tight uppercase"> JUNGLE JUSTICE IN THE NIGERIA LEGAL SYSTEM </h3>
+              <p class="text-sm mb-8 md:text-2xl tracking-tight text-justify "> Of several unsatisfactory and illegal means of resolving disputes, jungle Justice - otherwise known as mob justice or street justice - could not escape such. There have been, in each given society, a several methods and dimensions in which adjudication is exercised on a given specific matter or issue. Some of these methods enjoy legal backing, and while others were rendered illegal...</p>
+              <p class="text-sm md:text-2xl text-justify mb-5 text-blue-900 font-semibold "><a href="jungle-justice.html" class=""> READ MORE » </a> </p>
+            </div>
+          </div>
+
+
+          <!-- important div close-->
+      </div>
+      </article>
+    </div>
+
+    <!-- Case Digest -->
+    <div class="hidden p-4 rounded-lg bg-gray-200" id="case-digest" role="tabpanel" aria-labelledby="case-digest-tab">
+      <p class="mt-4 max-w-3xl text-3xl md:text-6xl tx-lg text-gray-700  md:px-6 mb-4 garamond">Case Digest —</p>
+      <article class="grid grid-cols-1 md:grid-cols-2 gap-4 py-5 md:grid-span-2">
+
+        <!-- article one -->
+        <div data-aos="fade-down" class="bg-white shadow-lg w-full rounded-lg mb-3">
+          <div class="md:w-full md:h-50 overflow-hidden rounded-t">
+            <img src="https://i.ibb.co/BrWt0ZM/written-address.jpg" alt="publication caption" class="w-full h-48 md:h-96 object-center ">
+          </div>
+          <!--title, abstract & read more-->
+          <div class="px-5 ">
+            <p class="text-sm pt-5 md:text-lg font-semibold text-justify text-gray-600"> October 12, 2023 </p>
+            <h3 class="text-base md:text-2xl py-8 font-bold tracking-tight uppercase"> THE VALIDITY OR OTHERWISE OF ORDERING RE-ADOPTION OF FINAL WRITTEN ADDRESSES, ENLARGING THE CONSTITUTIONAL TIME BOUND FOR JUDGEMENT DELIVERY </h3>
+            <p class="text-sm mb-8 md:text-2xl tracking-tight text-justify "> As a general principle of law, parties to a civil or criminal suit are to address the court after the call and examination of witnesses—which include examination-in-chief, cross-examination, and re-examination—and tendering of evidence. The address, as...</p>
+            <p class="text-sm md:text-2xl text-justify mb-5 text-blue-900 font-semibold "><a href="re-adoption-of-addresses.html" class=""> READ MORE » </a> </p>
+          </div>
+        </div>
+        <!-- article one -->
+        <div data-aos="fade-down" class="bg-white shadow-lg w-full rounded-lg mb-3">
+          <div class="md:w-full md:h-50 overflow-hidden rounded-t">
+            <img src="https://i.ibb.co/fSYqsWx/fhr-jurisdiction.jpg" alt="publication caption" class="w-full h-48 md:h-96 object-center ">
+          </div>
+          <!--title, abstract & read more-->
+          <div class="px-5 ">
+            <p class="text-sm pt-5 md:text-lg font-semibold text-justify text-gray-600"> March 8, 2023 </p>
+            <h3 class="text-base md:text-2xl py-8 font-bold tracking-tight uppercase"> CONCURRENT JURISDICTION OF FEDERAL HIGH Court and States High Court over Applications for the Enforcement of Fundamental Rights </h3>
+            <p class="text-sm mb-8 md:text-2xl tracking-tight text-justify "> It is settled law that, going by section 46(1) of the 1999 Constitution (as amended), a High Court existing within the territorial jurisdiction of a state where a contravention of any of the provisions of the Chapter 4 of the Constitution is alleged has the power...</p>
+            <p class="text-sm md:text-2xl text-justify mb-5 text-blue-900 font-semibold "><a href="fhr-jurisdiction.html" class=""> READ MORE » </a> </p>
+          </div>
+        </div>
+        <!-- article two -->
+        <div data-aos="fade-down" class="md:grid-span-2 bg-white shadow-lg w-full rounded-lg mb-3">
+          <div class="md:w-full h-50  rounded-t">
+            <img src="https://i.ibb.co/y0RQ4mv/functus.jpg" alt="publication caption" class="w-full h-48 md:h-96 object-center ">
+          </div>
+          <!--title, abstract & read more-->
+          <div class="px-5 ">
+            <p class="text-sm pt-5 md:text-lg font-semibold text-justify text-gray-600"> February 23, 2023 </p>
+            <h3 class="text-base md:text-2xl py-8 font-bold tracking-tight uppercase"> ON WHEN A COURT BECOMES FUNCTUS OFFICIO, ITS EFFECT & EXCEPTION(S) THEREOF</h3>
+            <p class="text-sm mb-8 md:text-2xl tracking-tight text-justify "> It is a cardinal principle of jurisprudence that, when a court has made a decision in respect of a matter brought under its inherent power, such a court becomes, by operation of the law, functus officio. The principle of functus officio has been defined in the...</p>
+            <p class="text-sm md:text-2xl text-justify text-blue-900 font-semibold mb-5 "><a href="functus-officio.html" class=""> READ MORE » </a> </p>
+          </div>
+        </div>
+
+        <!-- article 4-->
+        <div data-aos="fade-up" class="md:grid-span-2 bg-white shadow-lg w-full rounded-lg mb-3">
+          <div class="md:w-full overflow-hidden rounded-t">
+            <img src="https://i.ibb.co/Q8qwjFw/istockphoto-1346156711-612x612.jpg" alt="publication caption" class="w-full h-48 md:h-96 object-center ">
+          </div>
+          <!--title, abstract & read more-->
+          <div class="px-5 ">
+            <p class="text-sm pt-5 md:text-lg font-semibold text-justify text-gray-600"> January 26, 2023 </p>
+            <h3 class="text-base md:text-2xl py-8 font-bold tracking-tight uppercase"> AN APPEAL AGAINST THE DECISION OF THE LPDC LIES NOT DIRECTLY TO THE SUPREME COURT </h3>
+            <p class="text-sm mb-8 md:text-2xl tracking-tight text-justify "> Before the Supreme Court decision in ALADEJOBI V. NIGERIA BAR ASSOCIATION (2013) LPELR-SC.121/2011, the position of the law as established in OKIKE V. LPDC (2005) 15 NWLR (Pt. 949) 471 was that an appeal against the direction of the Legal Practitioner Disciplinary Committee (LPDC) lies directly before the Supreme Court. However,...</p>
+            <p class="text-sm md:text-2xl text-justify mb-5 text-blue-900 font-semibold "><a href="lpdc-appeal.html" class=""> READ MORE » </a> </p>
+          </div>
+        </div>
+
+
+
+        <!-- important div close-->
+    </div>
+    </article>
+    </div>
+
+
+
+
+    <!-- Archives-->
+    <div class="hidden p-4 rounded-lg bg-gray-200 dark:bg-gray-800" id="archives" role="tabpanel" aria-labelledby="archives-tab">
+      <p class="mt-4 max-w-3xl text-3xl md:text-7xl tx-lg text-gray-700 md:mx-4 mb-4 md:mb-12 garamond">Archives —</p>
+      <article class="grid grid-cols-1 md:grid-cols-2 gap-4 py-5 md:grid-span-2">
+
+        <!-- ARTICLE TWO -->
+        <div data-aos="fade-down" class="md:grid-span-2 bg-white shadow-lg w-full rounded-lg mb-3">
+          <div class="md:w-full overflow-hidden rounded-t">
+            <img src="https://i.ibb.co/h7FQXMX/istockphoto-1054513236-612x612.jpg" alt="publication caption" class="w-full h-48 md:h-96 object-center">
+          </div>
+          <!--title, abstract & read more-->
+          <div class="px-5 ">
+            <p class="text-sm pt-5 md:text-lg font-semibold text-justify text-gray-600"> March, 2023 </p>
+            <h3 class="text-base md:text-2xl py-8 font-bold tracking-tight uppercase"> Intellectual Property Rights of a Deceased Muslim Vis-a-Vis the Question of Inheritance: A Perspective from the Sharī`Ah </h3>
+            <p class="text-sm mb-8 md:text-2xl tracking-tight text-justify "> This study delves into the intricate intersection of Intellectual Property (IP) rights and Sharia law, particularly focusing on the inheritance of IP rights within Islamic legal frameworks. It begins by examining the conceptualization of IP under Sharia, exploring how the usefulness and benefits qualify IP as protected property, subject to inheritance by legal heirs.</p>
+            <p class="text-sm md:text-2xl text-justify mb-5 text-blue-900 font-semibold "><a href="islam-ip.html " class=""> READ MORE » </a> </p>
+          </div>
+        </div>
+
+        <!-- ARTICLE TWO -->
+        <div data-aos="fade-down" class="md:grid-span-2 bg-white shadow-lg w-full rounded-lg mb-3">
+          <div class="md:w-full overflow-hidden rounded-t">
+            <img src="https://i.ibb.co/XYsCzft/frustration.jpg" alt="publication caption" class="w-full h-48 md:h-96 object-center">
+          </div>
+          <!--title, abstract & read more-->
+          <div class="px-5 ">
+            <p class="text-sm pt-5 md:text-lg font-semibold text-justify text-gray-600"> March, 2023 </p>
+            <h3 class="text-base md:text-2xl py-8 font-bold tracking-tight uppercase"> An X-Ray of the Doctrine of Frustration </h3>
+            <p class="text-sm mb-8 md:text-2xl tracking-tight text-justify "> The underlying principle of the law of contract or contractual agreement—laissez faire (the freedom to contract)—implies nothing but that parties are at liberty to contract and agree to the terms of contract they so mutually agreed upon. Hence, the fact that parties enjoy their freedom of contract carries with it the inevitable implication of the sanctity of their contracts.</p>
+            <p class="text-sm md:text-2xl text-justify mb-5 text-blue-900 font-semibold "><a href="frustration.html " class=""> READ MORE » </a> </p>
+          </div>
+        </div>
+
+
+        <!-- ARTICLE THREE-->
+        <div data-aos="fade-down" class="md:grid-span-2 bg-white shadow-lg w-full rounded-lg mb-3">
+          <div class="md:w-full overflow-hidden rounded-t">
+            <img src="https://i.ibb.co/VmfLQwD/legal-clinic.jpg" alt="publication caption" class="w-full h-48 md:h-96 object-center ">
+          </div>
+          <!--title, abstract & read more-->
+          <div class="px-5 ">
+            <p class="text-sm pt-5 md:text-lg font-semibold text-justify text-gray-600"> March 4, 2023 </p>
+            <h3 class="text-base md:text-2xl py-8 font-bold tracking-tight uppercase"> A BLUEPRINT FOR SUSTAINABLE UTILIZATION OF CLINICAL LEGAL EDUCATION AS A PANACEA FOR THE REBIRTH OF THE LEGAL PROFESSION IN NIGERIA </h3>
+            <p class="text-sm mb-8 md:text-2xl tracking-tight text-justify "> Legal practice is a profession which is distinguished with advocacy and drafting. Every aspirant to the bar is required to undergo rigorous training on both advocacy and drafting skills. Both are two complementary skills which apply also to non-adjudicatory method of resolving dispute – Alternative Disputes Resolution – such as arbitration and mediation as well as, what lawyers do generally...</p>
+            <p class="text-sm md:text-2xl text-justify mb-5 text-blue-900 font-semibold "><a href="sustainable-cle.html " class=""> READ MORE » </a> </p>
+          </div>
+        </div>
+
+
+
+        <!-- article one -->
+        <div data-aos="fade-down" class="bg-white shadow-lg w-full rounded-lg mb-3">
+          <div class="md:w-full overflow-hidden md:h-64 rounded-t">
+            <img src="https://i.ibb.co/c6D7WJ0/same-sex.jpg" alt="publication caption" class="w-full h-48 md:h-96 object-center ">
+          </div>
+          <!--title, abstract & read more-->
+          <div class="px-5 ">
+            <p class="text-sm pt-5 md:text-lg font-semibold text-justify text-gray-600"> February 23, 2023 </p>
+            <h3 class="text-base md:text-2xl py-8 font-bold tracking-tight uppercase"> REPLY TO MR. CHUKKOL ON THE TWO SKEPTICAL SIDES OF HOMOSEXUALITY UNDER NIGERIAN LAWS </h3>
+            <p class="text-sm mb-8 md:text-2xl tracking-tight text-justify "> On the 20th day of August, 2021, an article written by a renowned legal writer, Mr. O.G. Chukkol (hereafter “the writer”) got published and circulated on different social media handles. The article is titled: “Homosexuality is Lawful under Lagos Criminal Law but a Crime under Same-Sex Marriage Act: Reconciling the Conflict”. For ease of reference, the link to the article is herein provided:...</p>
+            <p class="text-sm md:text-2xl text-justify mb-5 text-blue-900 font-semibold "><a href="reply-to-same-sex-marraiage.html" class=""> READ MORE » </a> </p>
+          </div>
+        </div>
+
+        <!-- article one -->
+        <div data-aos="fade-down" class="md:grid-span-2 bg-white shadow-lg w-full rounded-lg mb-3">
+          <div class="md:w-full h-48 md:h-64 overflow-hidden rounded-t">
+            <img src="https://i.ibb.co/gg2Bs3R/arabic-inscription.jpg" alt="publication caption" class="w-full h-48 md:h-96 object-center ">
+          </div>
+          <!--title, abstract & read more-->
+          <div class="px-5 ">
+            <p class="text-sm pt-5 md:text-lg font-semibold text-justify text-gray-600"> February 23, 2023 </p>
+            <h3 class="text-base md:text-2xl py-8 font-bold tracking-tight uppercase"> THE POSITION OF LAW ON THE ARABIC INSCRIPTION ON NAIRA NOTES: WHETHER IT IS INCONSISTENT WITH SECTIONS 10 AND 55 OF THE 1999 CONSTITUTION </h3>
+            <p class="text-sm mb-8 md:text-2xl tracking-tight text-justify "> This article is in respect to a suit challenging the Arabic inscriptions on Nigerian naira notes filed by a Lagos-based lawyer, Chief Malcolm Omirhobo who contended that the Arabic inscriptions on the naira notes portrays Nigeria as an Islamic state, and that such inscription is inconsistent with section 10 and 55 of the Constitution. In this...</p>
+            <p class="text-sm md:text-2xl text-justify mb-5 text-blue-900 font-semibold "><a href="arabic-inscription.html  " class=""> READ MORE » </a> </p>
+          </div>
+        </div>
+
+        <!-- important div close-->
+    </div>
+    </article>
+    </div>
+    <!-- ........ -->
+
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <section class="Navy-blue py-10" id="footer">
+    <article class="pl-4 ">
+      <div class="">
+        <h1 class="text-white text-center text-lg md:text-4xl font-bold uppercase tracking-widest"> Get in Touch</h1>
+      </div>
+      <div class="mx-32 md:mx-96 h-1 bg-white text-lg font-bold bg-gradient-to-br from-gray-300 to-gray-200 shadow-lg text-center mb-4 md:mb-8"> </div>
+      <div class="md:flex justify-between items-center align-center ">
+        <div class="md:text-2xl text-xs w-full md:w-2/4 md:pl-10 mb-5">
+          <h5 class="text-white text-justify text-base md:text-3xl font-semibold "> Contact Me</h5>
+          <p class="text-gray-300 my-2 font-light "> <i class="fas fa-map-marker-alt mr-2"></i> Faculty of Law, BUK</p>
+          <p class="text-gray-300 my-2 font-light "> <i class="fab fa-whatsapp mr-2"> </i> <a class="" href="https://wa.me/2349037074761?text=Hello!?"> +234 903 707 4761</a></p>
+          <p class="text-gray-300 my-2 font-light "> <i class="fas fa-envelope mr-2"> </i> <a class="" href="muhibqosim@gmail.com "> muhibqosim@gmail.com</a></p>
+          <p class="text-gray-300 mt-2 font-light "><i class="fas fa-phone mr-2"></i><a class=" " href=""> (+234) 9037074761 </a> <!--<span class="text-gray-100 font-light"> (Click to call) </span > --> </p>
+        </div>
+        <div class="md:text-2xl text-xs w-full md:w-2/4 md:pl-8">
+          <h5 class=" text-white text-justify text-base md:text-3xl font-semibold "> Quick Links </h5>
+          <p class="text-gray-300 my-2 font-light "> <a class=" " href="index.html"> Home</a></p>
+          <!-- <p class="text-gray-300 my-2 font-light "> <a class=" " href="portfolio.html" >Portfolio</a></p>-->
+          <p class="text-gray-300 my-2 font-light "> <a class=" " href="lextalks.html"> Publications</a></p>
+          <p class="text-gray-300 my-2 font-light "> <a class=" " href="resources.html"> Free resources</a></p>
+          <p class="text-gray-300 my-2 font-light "> <a class=" " href="#footer"> Contact</a></p>
+        </div>
+      </div>
+    </article>
+    <!-- newsletter -->
+    <div class="pt-6 px-4">
+      <h1 class="uppercase text-white text-center text-base md:text-3xl mt-5 font-bold"> Catch Up with my Publications</h1>
+      <div class="mx-20 md:mx-80 h-1 bg-white text-lg font-bold bg-gradient-to-br from-gray-300 to-gray-200 shadow-lg text-center"> </div>
+      <p class="mt-1 text-sm md:text-3xl text-center font-light text-gray-300 px-1 md:px-4 ">Stay up to date with latest legal insights, articles and case digest. </p>
+    </div>
+    <form action="  " method="  " class=" mt-3 px-4 md:px-20 ">
+      <script async data-uid="ea5c74106c" src="https://muhibqosim.ck.page/ea5c74106c/index.js"></script>
+    </form>
+    <!-- horizontal line-->
+    <hr style="background-color: " class="bg-gray-100 font-light mt-20 ">
+    <!-- copyright-->
+    <div class="mt-10 md:mt-20 pt-5">
+      <p class="text-sm text-white font-light text-center md:text-3xl"> <i class="far fa-copyright md:text-3xl "></i> <span id="copyright-year"></span> Al-Qosim | All rights reserved.</p>
+    </div>
+    <!-- social handles-->
+    <div class="mt-10 md:mt-20 flex justify-between px-20 text-lg md:px-64 md:text-5xl">
+      <a href="https://x.com/al_qosimiy?t=Mn2u12C1b3VDzYjazF8MfA&s=09" class="text-white hover:text-blue-400" target="_blank" rel="noopener" title="Twitter"> <i class="fab fa-twitter "></i></a>
+      <a href="https://m.facebook.com/muhammadulqoosim.muhiibuddeen" class="text-white hover:text-blue-600" target="_blank" rel="noopener" title="Facebook"> <i class="fab fa-facebook "></i></a>
+      <a href="https://wa.me/2349037074761?text=Hello!" class="text-white hover:text-green-500" target="_blank" rel="noopener" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i></a>
+      <a href="instagram.com/muhibqosim" class="text-white hover:text-pink-600" target="_blank" rel="noopener" title="Instagram"> <i class="fab fa-instagram "></i></a>
+      <a href="https://www.linkedin.com/in/qosim-muhibudeen-5896a91a8" class="text-white hover:text-blue-600" target="_blank" rel="noopener" title="LinkedIn"> <i class="fab fa-linkedin "></i></a>
+      <a href="https://github.com/muhibqosim" class="text-white hover:text-gray-600" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github "></i></a>
+    </div>
+
+  </section>
+
+  <!--js starts here-->
+  <script src="./js/main.js"> </script>
+  <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
+
+  <script>
+    AOS.init({
+      offset: 100,
+      duration: 900,
+      easing: 'ease-in-sine',
+      delay: 200,
+      once: true
+    });
+
+
+
+
+    <!--js starts here--> 
+    <script src="js/main.js">
+      const searchInput = document.getElementById('searchInput');
+const searchButton = document.getElementById('searchButton');
+const searchResults = document.getElementById('searchResults');
+
+// Sample data for demonstration
+const data = [
+  { id: 1, title: 'Result 1', description: 'This is the first search result' },
+  { id: 2, title: 'Result 2', description: 'This is the second search result' },
+  { id: 3, title: 'Result 3', description: 'This is the third search result' },
+];
+
+searchButton.addEventListener('click', performSearch);
+
+function performSearch() {
+  const searchTerm = searchInput.value;
+
+  // Filter the data based on the search term
+  const filteredData = data.filter(item =>
+    item.title.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
+  displaySearchResults(filteredData);
+}
+
+function displaySearchResults(results) {
+  searchResults.innerHTML = '';
+
+  if (results.length === 0) {
+    searchResults.innerHTML = 'No results found.';
+    return;
+  }
+
+  const resultsHTML = results
+    .map(result => `<div class="mb-4">
+                      <h3 class="font-bold">${result.title}</h3>
+                      <p>${result.description}</p>
+                    </div>`)
+    .join('');
+
+  searchResults.innerHTML = resultsHTML;
+}
+
+
+       
+  </script>
+</body>
+
+</html>
