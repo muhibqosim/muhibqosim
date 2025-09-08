@@ -24,7 +24,7 @@
   <!-- libraries -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-
+  
   <!-- AOS link-->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -34,30 +34,35 @@
   <!-- fonts-->
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300&display=swap" rel="stylesheet">
-
-
+  
+  
   <style>
     /* Background image for homepage: mobile and desktop*/
     @media (max-width:699px) {
       .header-lg {
-        background-image: url('https://i.ibb.co/rxMjJV5/capture.png');
+        background-image: url('https://i.ibb.co/dwwkZ51d/faded-gallery-Ofd-OEd-GYiuk-unsplash.jpg');
       }
-
+      
       .portfolios {
-        height: 35vh;
+        height: vh;
       }
     }
-
+    
+    /*md screen */
     @media (min-width:700px) {
-      .header-lg {
+      .header-lg-1 {
         background-image: url('https://i.ibb.co/rxMjJV5/capture.png');
       }
-
+      
+      .header-lg-2 {
+        background-image: url('https://i.ibb.co/dwwkZ51d/faded-gallery-Ofd-OEd-GYiuk-unsplash.jpg');
+      }
+      
       .portfolios {
-        height: 25vh;
+        height: vh;
       }
     }
-
+    
     /* carousel*/
     .carousel {
       scroll-snap-type: x mandatory;
@@ -67,7 +72,7 @@
       display: flex;
       overflow-x: scroll
     }
-
+    
     .carousel-item {
       box-sizing: content-box;
       scroll-snap-align: start;
@@ -80,30 +85,27 @@
 
 <body>
   <main class="navbar ">
-    <header class="header Navy-blue p-1.5 md:py-5" style="position: sticky; top:0;">
+    <header class="header Navy-blue p-0.5 md:py- bg-gradient-to-br from-blue-900 to-blue-700 shadow-2xl " style="position: sticky; top:0; ">
       <!-- Navigation menu -->
-      <nav class=" ">
+      <nav class="  ">
         <div class=" ">
           <div class="flex justify-between">
-            <div class="flex">
+            <div class="flex ">
               <a href="#" class="flex items-center ">
-                <img src="img/logo.png" class="w-20 h-14 md:w-72 md:h-48" alt="logo">
+                <img src="img/logo.png" class="w-20 h-14 md:w-28 md:h-28" alt="logo">
                 <!--<span class="text-white text-xl md:text-5xl garamond mx-1 font-bold uppercase" style="font-weight: 600;">Al-qosim</span>-->
               </a>
             </div>
             <!-- desktop menu bar-->
-            <div class="hidden garamond md:flex items-center md:justify-center mx-auto lg:pl-48 space-x-1 md:text-3xl hover:text-red-900">
-              <a href="index.html" class="py-4 px-2 text-white font-semibold hover:text-red-500">Home</a>
-              <a href="#portfolio" class="block py-2 px-4 tx-sm text-white font-semibold hover:text-red-500">Expertise</a>
-
-              <!--<a href="publications.html" class="py-4 px-2 text-white font-semibold hover:text-gray-900">Publications</a>-->
+            <div class="hidden garamond md:flex items-center md:justify-center mx-auto lg:pl-48 space-x-1 md:text-xl text-white hover:text-red-900">
+              <a href="index.html" class="py-4 px-2 text- font-semibold hover:text-red-500">Home</a>
+              <a href="#portfolio" class="block py-2 px-4 tx-sm text- font-semibold hover:text-red-500">Expertise</a>
               <!-- Dropdown for Blog -->
               <div class="relative">
-                <button class="block py-2 px-4 tx-sm md:text-3xl text-white font-semibold hover:bg-red-500 w-full text-left" onclick="toggleDropdown()">Publications</button>
+                <button class="block py-2 px-4 tx-sm md:text-xl text-white font-semibold hover:bg-red-500 w-full text-left" onclick="toggleDropdown()">Publications</button>
                 <div class="dropdown-content hidden bg-gray-50 text-black hover:text-white rounded-sm shadow-sm w-full">
                   <a href="lextalks.html" class="block text-black hover:text-white px-4 py-2 hover:bg-gray-900">LexTalks</a>
                   <!--<a href="tech-bus.html" class="block text-black hover:text-white px-4 py-2 hover:bg-gray-900 border-b">Tech & bus </a>-->
-
                 </div>
               </div>
               <!--<a href="portfolio.html" class="py-4 px-2 text-white font-semibold hover:text-gray-900">Portfolio</a>-->
@@ -122,89 +124,105 @@
             </div>
           </div>
         </div>
-
+        
         <!-- mobile menu bar -->
-        <div class="hidden md:hidden justify-between bg-blue-800" id="mobile-menu">
+        <div class="hidden md:hidden justify-between bg-blue- Navy-blue" id="mobile-menu">
           <a href="index.html" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Home</a>
           <a href="#portfolio" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Expertise</a>
-
+          
           <!-- Dropdown for Blog -->
           <div class="relative">
-            <button class="block py-2 px-4 tx-sm md:text-3xl text-white font-semibold hover:bg-gray-900 w-full text-left" onclick="toggleDropdown()">Publications</button>
+            <button class="block py-2 px-4 tx-sm md:text-xl text-white font-semibold hover:bg-gray-900 w-full text-left" onclick="toggleDropdown()">Publications</button>
             <div class="dropdown-content hidden bg-gray-50 text-black hover:text-white rounded-sm shadow-sm w-full">
               <a href="lextalks.html" class="block text-black hover:text-white px-4 py-2 hover:bg-gray-900">LexTalks</a>
               <!--<a href="tech-bus.html" class="block text-black hover:text-white px-4 py-2 hover:bg-gray-900 border-b">Tech & bus </a>-->
-
             </div>
           </div>
           <a href="resources.html" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Resources</a>
           <a href="#footer" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Contact</a>
-
-
         </div>
       </nav>
-
     </header>
   </main>
   <div class="conte">
-
+    
   </div>
   <!-- header ends here-->
   <!-- image background and introduction-->
-  <section class="header-lg  relative cover bg-cover bg-center w-full h-screen ">
-    <div class="header-bg opacity-70 pt-20 md:pt-96 px-2.5 h-screen">
-      <div class="items-center pt-3  md:px-10 lg:px-20 xl:px-24 w-full text-white ">
-        <div class=" ">
-          <h1 class="text-3xl md:text-7xl animate__animated animate__fadeIn animate__slow animate__delay-1s mb-5">
+  <main class="mx-6 pt-5 pb-20 ">
+    <section class="header-lg relative  bg-cover bg-center w- h-45 md:flex mt-16 md:mt-4 rounded-lg no-repeat px-2 ">
+      <div class=" pt-16 md:pt-10 px-2.5 md:rounded-l-xl header-lg-2 bg-cover py-auto">
+        <div class="items-center md:px-10 w- text-white ">
+          <h1 class="text-3xl md:text-4xl animate__animated animate__fadeIn animate__slow animate__delay-1s mb-5">
             Hello! Are you... </h1>
+          <div class="hidden" id="typed-strings">
+            <h2 class="text-9xl"> Looking for a Web Developer? </h2>
+            <h2 class="text-9xl"> Looking for a Content & Legal Writer? </h2>
+            <h2 class="text-9xl"> Looking for a Legal Researcher?</h2>
+            <h2 class="text-9xl"> Looking for a Proofreader?</h2>
+          </div>
+          <span class="leading-none font-bold text-base text-white md:text-2xl " id="typed" style=" "></span> 
+          <div class="mt-16 md:mt-10 text-3xl md:text-4xl lg:text-4xl animate__animated animate__fadeIn animate__slow animate__delay-3s">
+            <h1 class="pb-1 border-3 border-b border-lime-500 md:border-white  underline-offset-2 text-4xl md:text-4xl font-weight:900 font-bold uppercase"> YOU are at the RIGHT place!</h1>
+          </div>
+          <div class="mt-2 animate__animated animate__fadeIn animate__slow animate__delay-4s">
+            <p class="leading-5 mt-3 mb-5 font-light text-sm md:text-xl  tracking-widest  md:tracking-wider font-semibold"> With a strong foundation in law and proficiency in web design, proofreading, legal research, content and legal writing, I offer a comprehensive range of services that cater to your diverse needs. </span> </p>
+          </div>
         </div>
-
-        <div class="hidden" id="typed-strings">
-          <h2 class="text-9xl">Looking for a Web Developer? </h2>
-          <h2 class="text-9xl">Looking for a Content & Legal Writer? </h2>
-          <h2 class="text-9xl">Looking for a Legal Researcher?</h2>
-          <h2 class="text-9xl">Looking for a Proofreader?</h2>
-        </div>
-        <span class="leading-none md:mt-2.5 font-bold text-xl text-white md:text-4xl lg:text-5xl " id="typed" style=" "></span>
-        <div class="mt-16 md:mt-28 text-3xl md:text-5xl lg:text-4xl animate__animated animate__fadeIn animate__slow animate__delay-3s">
-          <h1 class="pb-1 border-3 border-b border-lime-500 md:border-white  underline-offset-2 text-4xl md:text-6xl font-weight:900 font-bold uppercase"> YOU are at the RIGHT place!</h1>
-        </div>
-        <div class="mt-2 mb-20 text-4xl md:text-3xl lg:text-4xl animate__animated animate__fadeIn animate__slow animate__delay-4s">
-          <p class="leading-5 mt-3 mb-5 font-light text-sm md:text-4xl lg:text-3xl text-justify tracking-tighter md:tracking-wide font-semibold"> With a strong foundation in law and proficiency in web design, proofreading, legal research, content and legal writing, I offer a comprehensive range of services that cater to your diverse needs. </span> </p>
+        <div class="flex justify-between md:justify-center md:gap-32 md:mt-16 justify-center items-center mt-16 md:px-auto  pb-10 animate__animated animate__fadeIn animate__slow animate__delay-5s">
+          <div class="">
+            <button class="inline-block pulsate-bck text-white font-bold text-center btn  rounded-lg  text-xs md:text-base md:px-2 md:py-2 px-2 py-2 Navy-blue text-lg font-bold bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg  ">
+              <a class="text-white" href="#portfolio"> View Portfolio <i class="fas fa-angle-double-down font-extrabold text-red-600 text-xl md:text-base"></i> </a> </button>
+          </div>
+          <div class="text-white  ">
+            <p class=""> Connect:</p>
+            <div class="flex justify-between">
+              <div class="flex tracking-w py-1 text-xl "> 
+                <button class="inline-block text-white font-bold text-center btn  rounded-sm p-1 Navy-blue text-sm font-bold bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg  mr-2"> <a href="https://www.facebook.com/profile.php?id=100092506571508" class="text-white hover:text-blue-600 px-1 " target="_blank" rel="noopener" title="Facebook"> <i class="fab fa-facebook "></i></a> </button>
+                <button class="inline-block text-white font-bold text-center btn  rounded-sm  Navy-blue text-sm font-bold bg-gradient-to-br from-green-900 to-green-600 shadow-lg  mr-2 "> <a href="https://wa.me/2349037074761?text=Hello!" class="text-white hover:text-green-50 px-2 " target="_blank" rel="noopener" title="WhatsApp">
+                    <i class="fab fa-whatsapp"></i></a> </button> 
+                <button class="inline-block text-white font-bold text-center btn  rounded-sm p-1 Navy-blue text-sm font-bold bg-gradient-to-br from-blue-900 to-blue-800 shadow-lg  mr-2"> <a href="https://www.linkedin.com/company/solace-chambers-bayero-university-kano/" class="text-white hover:text-blue-600 px-1 md:px-2.5" target="_blank" rel="noopener" title="LinkedIn"> <i class="fab fa-linkedin "></i></a> </button>
+                <button class="inline-block text-white font-bold text-center btn  rounded-sm p-1 Navy-blue text-sm font-bold bg-gradient-to-br from-red-900 to-red-600 shadow-lg mr-2  "><a href="https://www.instagram.com/solace_chambers_buk/" class="text-white hover:text-pink-600 px-1 md:px-2.5" target="_blank" rel="noopener" title="Instagram"> <i class="fab fa-instagram "></i></a> </button>
+                <button class="inline-block text-white font-bold text-center btn  rounded-sm p-1 Navy-blue text-sm font-bold bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg mr-2 "> <a href="https://x.com/Solacechamber?t=0fg1FTwOb63PkasDn_cQWw&s=09" class="text-white hover:text-blue-600 px-1 md:px-2.5" target="_blank" rel="noopener" title="Twitter"> <i class="fab fa-twitter "></i></a> </button>
+                
+              </div>
+              
+            </div>
+          </div>
         </div>
       </div>
-      <div class="flex md:mt-80 justify-center items-center mt-5 px-5 pb-10 animate__animated animate__fadeIn animate__slow animate__delay-5s">
-        <button class="inline-block pulsate-bck text-white font-bold text-center btn  rounded-lg uppercase text-base md:text-4xl md:px-8 md:py-6 px-5 py-3 Navy-blue text-lg font-bold bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg  ">
-          <a class="text-white" href="#portfolio"> go to portfolio <i class="fas fa-angle-double-down font-extrabold text-red-600 text-2xl md:text-5xl"></i> </a> </button>
+      <!--image at large screen -->
+      <div class="w-full  header-lg-1 bg-cover md:rounded-r-xl no-repeat">
+        <!--  <img class="hidden" src="  https://i.ibb.co/dwwkZ51d/faded-gallery-Ofd-OEd-GYiuk-unsplash.jpg" alt="" />-->
       </div>
-    </div>
-    </div>
-  </section>
+    </section>
+  </main>
+  
   <!-- ABOUT ME-->
-  <section class="bg-gray-100 pt-16">
-    <section data-aos="fade-up" class="mx-auto px-5 mb-20">
+  <section class="bg-gray-100 py-16">
+    <section data-aos="fade-up" class="mx-auto px-5 mb-16">
       <div class="bg-white rounded-lg shadow-lg overflow-hidden md:flex">
-        <div class="py-4 px-5 md:px-4 leading-6 md:leading-9 tracking-tighter md:tracking-wider text-dark-500 md:w-1/2 text-sm md:text-3xl text-justify md:text-left">
-          <h1 id="about" class="text-2xl md:text-5xl mt-5 font-bold md:w-1/2 "> About Me</h1>
+        <div class="py-4 px-5 md:px-4 leading-6 md:leading-9 tracking-tighter md:tracking-wider text-dark-500 md:w-1/2 text-sm md:text-base text-justify md:text-left">
+          <h1 id="about" class="text-2xl md:text-2xl mt-5 font-bold md:w-1/2 "> About </h1>
           <p class="mt-5 md:mt-9 mb-5 "> Qosim A. Muhibudeen (Al-Qosim), a student of Common and Islamic Law, is highly proficient at Legal Research, Case Analysis, Content and Legal Writing/Drafting, Proofreading, and Web Design. As an aspirant to the bar, he brings a deep understanding of legal principles and a commitment to delivering excellence in every aspect of his work. </p>
           <p class="mt-5 md:mt-9 mb-5"> With a strong foundation in law, Qosim offers a unique blend of expertise and creative prowess. His roficiencyy in web design allows him to create visually stunning websites that effectively communicates, while his meticulous proofreading skills ensure that documents are polished to perfection. </p>
           <p class="mt-5 md:mt-9 mb-5"> Additionally, his knack for crafting compelling content enables him to engage readers while conveying complex legal ideas in a clear and concise manner. With a dedication to delivering exceptional work, he strives to provide innovative solutions that meet the needs of clients in quest of his service(s). </p>
         </div>
         <div class="md:w-1/2 image-container relative overflow-hidden">
-          <img src="https://i.ibb.co/487Smh5/adr-workshop.jpg" alt="About Me Image" class="w-full h-full object-cover object-center ">
+          <img src="https://i.ibb.co/487Smh5/adr-workshop.jpg" alt="About Me Image" class="w-full h-full bg-cover object-center ">
         </div>
       </div>
     </section>
-
+    
     <!-- about me information grid -->
     <section class="py-16 px-4 bg-white">
       <article class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-5 ">
         <!-- ls-->
-        <div class="md:grid-span-2 py-10 bg-white shadow-lg rounded-lg px-9 text-sm md:text-2xl">
+        <div class="md:grid-span-2 py-10 bg-white shadow-lg rounded-lg px-9 text-sm md:text-base">
           <div data-aos="fade-up">
             <div class="flex my-auto">
               <p class="text-8xl md:text-8xl md:mt-2.5 font-light text-blue-900 pr-2">|</p>
-              <h1 class="text-2xl md:text-4xl font-bold tracking-tight py-2.5"> <img class="text-sm h-11 md:h-14 md: leading-none" src="img/svg/myskills.svg" style=""> My Skills </h1>
+              <h1 class="text-2xl md:text-2xl font-bold tracking-tight py-2.5"> <img class="text-sm h-11 md:h-14 md: leading-none" src="img/svg/myskills.svg" style=""> Key Skills </h1>
             </div>
             <!-- web design bar-->
             <h6 class="text-label mt-5 md:mt-6 leading-relaxed tracking-wider">Web Design </h6>
@@ -234,12 +252,11 @@
           </div>
         </div>
         <!-- Hobbies & Interest-->
-        <div class="py-10 bg-gray-200 rounded-lg px-9 text-sm md:text-2xl">
+        <div class="py-10 bg-gray-200 rounded-lg px-9 text-sm md:text-base">
           <div data-aos="fade-down">
             <div class="flex">
               <p class="text-8xl md:mt-2.5 md:text-8xl font-light text-blue-900 pr-2">|</p>
-              <h1 class="text-2xl md:text-4xl font-bold tracking-tight py-2.5"> <img class="text-sm h-11 md:h-14 md: leading-none" src="img/svg/myinterest.svg" style=""> My Interests
-              </h1>
+              <h1 class="text-2xl md:text-2xl font-bold tracking-tight py-2.5"> <img class="text-sm h-11 md:h-14 md: leading-none" src="img/svg/myinterest.svg" style=""> Key Interests </h1>
             </div>
             <!-- web design bar-->
             <article class="ml-4">
@@ -260,14 +277,14 @@
           </div>
         </div>
         <!-- MY EXPERIENCE-->
-        <div class="text-sm md:text-2xl tracking-tight">
+        <div class="text-sm md:text-base tracking-tight">
           <div class="py-10 bg-white md:bg-gray-200 shadow-lg rounded-lg px-5 " data-aos="fade-up">
             <div class="flex">
               <p class="text-8xl md:text-8xl font-light text-blue-900 pr-2">|</p>
-              <h1 class="text-2xl md:text-4xl font-bold tracking-tight py-2.5 leading-none">
+              <h1 class="text-2xl md:text-2xl font-bold tracking-tight py-2.5 leading-none">
                 <div class="w-16 h-16 ">
                   <img class=" " src="img/svg/myexperience.svg" style="height: ;">
-                </div> My Experience
+                </div> Experience
               </h1>
             </div>
             <!-- IT Training-->
@@ -279,7 +296,7 @@
                 <li class=""> <span Class=""> Trainee:</span> Lafarge Cement ICT Training, Sagamu, Ogun State, Nigeria. (2018 — 2019)</li>
               </ol>
             </div>
-
+            
             <!-- Law Intern and Mentee-->
             <div class="mt-5 md:mt-9">
               <h6 class="font-medium text-dark "> <span class="font-bold "> Law Intern & Mentee </span> </h6>
@@ -294,7 +311,7 @@
                 <li class="mb-2 md:mb-5"> <span class=" "> Mentee:</span> BOAS & Chukkol Virtual Mentorship, Nigeria (April, 2020 — Date) </li>
               </ol>
             </div>
-
+            
             <!-- Volunteering -->
             <div class="mt-5 md:mt-9">
               <h6 class="font-medium text-dark "> <span class="font-bold "> Volunteering & Team Work </span> </h6>
@@ -306,19 +323,19 @@
                 <li class="mb-2 md:mb-5"> <span class=""> Freelancer:</span> BOAS Freelancing General Writing Services</li>
               </ol>
             </div>
-
-
-
-
+            
+            
+            
+            
           </div>
         </div>
-
+        
         <!-- my Education-->
         <div class="py-10 bg-gray-200 md:bg-white rounded-lg px-5 ">
-          <div class="text-sm md:text-2xl tracking-tight" data-aos="fade-down">
+          <div class="text-sm md:text-base tracking-tight" data-aos="fade-down">
             <div class="flex">
               <p class="text-8xl md:text-8xl my-2.5  text-blue-900 pr-2">|</p>
-              <h1 class="text-2xl md:text-4xl font-bold tracking-tightest py-2.5 "> <img class="text-sm h-11 md:h-14 md: leading-none" src="img/svg/myeducation.svg" style=""> Education & Professional Qualification
+              <h1 class="text-2xl md:text-2xl font-bold tracking-tightest py-2.5 "> <img class="text-sm h-11 md:h-14 md: leading-none" src="img/svg/myeducation.svg" style=""> Education & Professional Qualification
               </h1>
             </div>
             <!-- LLB-->
@@ -350,73 +367,67 @@
     </section>
     <!-- About me closing section-->
   </section>
-
-
-
-
-
-
-
-
-
-
+  
+  
+  
   <!-- my services-->
-  <section id="portfolio" style="background-image: url('https://i.ibb.co/BZ7GdMJ/services.jpg');" class="bg-cover pt-8 pb-12 px-4 ">
+  <section id="portfolio" style="background-image: url('https://i.ibb.co/BZ7GdMJ/services.jpg');" class="bg-cover pt-8 pb-12 px-4 md:px-32 ">
     <div class="font-bold text-white text-center">
-      <h1 class="text-3xl md:text-6xl"> What I Do</h1>
+      <h1 class="text-3xl md:text-4xl"> What I Do</h1>
       <!--<h6 class="text-lg md:text-3xl font-light mt-2"> My services</h6>-->
-      <p class="text-sm md:text-2xl font-normal text-center mt-3" data-aos="fade-in">Here are list of services I render
-        to satisfy client's appetite! </p>
+      <p class="text-sm md:text-base font-normal text-center mt-3" data-aos="fade-in">Here are list of services I render to satisfy client's appetite! </p>
     </div>
+    
     <!-- list of services-->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-10">
-      <div class="mb-5 py-10 bg-white rounded-lg text-sm md:text-2xl px-5 mx-auto overflow-hidden md:grid-span-2 " data-aos="zoom-in">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 pt-10 ">
+      <div class="mb-5 py-10 bg-white rounded-lg text-sm md:text-base px-5 mx-auto overflow-hidden md:grid-span-2 " data-aos="zoom-in">
         <div class=" justify-center mx-auto w-24 h-24 md:w-48 md:h-48">
           <img src="https://i.ibb.co/K9sRS4K/web-design.jpg" style="relative; width:100%; height: 100%; " class="rounded-full w-full h-full ">
         </div>
-        <h2 class="mt-4 text-xl md:text-4xl font-bold text-center tracking-tight relative"> Web Design </h2>
+        <h2 class="mt-4 text-xl md:text-2xl font-bold text-center tracking-tight relative"> Web Design </h2>
         <hr class="px-5">
-        <p class="mt-5 leading-relaxed tracking-tight text-center text-sm md:text-2xl" style="line-height: 35px; "> Crafting customized and responsive Websites for businesses and organizations! Enhance your online presence with our tailored responsive—websites that showcase your unique brand, engage your audience, and drive results. We deliver visually stunning and user-friendly websites that leave a lasting impression.</p>
+        <p class="mt-5 leading-relaxed tracking-tight text-center text-sm md:text-base" style="line-height: 35px; "> Crafting customized and responsive Websites for businesses and organizations! Enhance your online presence with our tailored responsive—websites that showcase your unique brand, engage your audience, and drive results. We deliver visually stunning and user-friendly websites that leave a lasting impression.</p>
         <div class="text-center ">
           <button class="w-50 btn mt-5 Navy-blue text-white text-lg md:text-xl md:py-2 font-bold text-center rounded-lg py-1 px-5 bg-gradient-to-br from-blue-900 to-blue-600 shadow-2xl">
             <a class="" href="https://wa.me/2349037074761?text=Hello!"> Get in Touch! </a> </button>
         </div>
       </div>
       <!-- legal writing -->
-      <div class="mb-5 py-10 bg-white rounded-lg text-sm md:text-4xl px-5 mx-auto overflow-hidden" data-aos="zoom-in">
+      <div class="mb-5 py-10 bg-white rounded-lg text-sm md:text-base px-5 mx-auto overflow-hidden" data-aos="zoom-in">
         <div class="  justify-center mx-auto w-24 h-24 md:w-48 md:h-48">
           <img src="https://i.ibb.co/qR576L9/writing.jpg" style="relative; width:100%; height: 100%; " class="rounded-full w-full h-full ">
         </div>
-        <h2 class="mt-4 text-xl md:text-4xl font-bold text-center tracking-tight relative "> Legal & Content Writing
+        <h2 class="mt-4 text-xl md:text-2xl font-bold text-center tracking-tight relative "> Legal & Content Writing
         </h2>
         <hr class="px-5">
-        <p class="mt-5 leading-relaxed tracking-tight text-center text-sm md:text-2xl"> As a trained legal researcher and writer, I create contents in the form of articles, blogs, and papers while paying attention to every detail and presenting the whole idea to the understanding of the targeted audience, void of ambiguity in the expression of the idea. Equally, services rendered cover coming up with researchable topics, excellently structred chapterizations & dissertation proposal. </p>
+        <p class="mt-5 leading-relaxed tracking-tight text-center text-sm md:text-base md:leading-7"> As a trained legal researcher and writer, I create contents in the form of articles, blogs, and papers while paying attention to every detail and presenting the whole idea to the understanding of the targeted audience, void of ambiguity in the expression of the idea. Equally, services rendered cover coming up with researchable topics, excellently structred chapterizations & dissertation proposal. </p>
         <div class="text-center ">
           <button class="w-50 btn mt-5 Navy-blue text-white text-lg md:text-xl md:py-2 font-bold text-center rounded-lg py-1 px-5 bg-gradient-to-br from-blue-900 to-blue-600 shadow-2xl">
             <a class="" href="https://wa.me/2349037074761?text=Hello!"> Get in Touch! </a> </button>
         </div>
       </div>
       <!-- legal research-->
-      <div class="mb-5 py-10 bg-white rounded-lg text-sm md:text-2xl px-4 mx-auto overflow-hidden" data-aos="zoom-in">
+      <div class="mb-5 py-10 bg-white rounded-lg text-sm md:text-base px-4 mx-auto overflow-hidden" data-aos="zoom-in">
         <div class="  justify-center mx-auto w-24 h-24 md:w-48 md:h-48">
           <img src="https://i.ibb.co/prQW0Ks/research.jpg" style="relative; width:100%; height: 100%; " class="rounded-full w-full h-full ">
         </div>
-        <h2 class="mt-4 text-xl md:text-4xl  font-bold text-center tracking-tight relative "> Legal Research & Case Analysis </h2>
+        <h2 class="mt-4 text-xl md:text-2xl  font-bold text-center tracking-tight relative "> Legal Research & Case Analysis </h2>
         <hr class="px-5">
-        <p class="mt-5 leading-relaxed tracking-tight text-center text-sm md:text-2xl md:px-3" style="line-height: 34.6px;"> Desperately looking for a research assistant who delivers well researched work and case analysis? I provide a well researched result on different areas/aspects and principles of law. Services offered also extend to offering first class court decisions.</p>
+        <p class="mt-5 leading-relaxed tracking-tight text-center text-sm md:text-base md:px-3" style="line-height: 34.6px;"> Desperately looking for a research assistant who delivers well researched work and case analysis? I provide a well researched result on different areas/aspects and principles of law. Services offered also extend to offering first class court decisions.</p>
         <div class="text-center ">
           <button class="w-50 btn mt-5 Navy-blue text-white text-lg md:text-xl md:py-2 font-bold text-center rounded-lg py-1 px-5 bg-gradient-to-br from-blue-900 to-blue-600 shadow-2xl">
             <a class="" href="https://wa.me/2349037074761?text=Hello!"> Get in Touch! </a> </button>
         </div>
       </div>
+      
       <!-- proofreading & editing -->
-      <div class="mb-5 py-10 bg-white rounded-lg text-sm md:text-2xl px-5 mx-auto overflow-hidden" data-aos="zoom-in">
+      <div class="mb-5 py-10 bg-white rounded-lg text-sm md:text-base px-5 mx-auto overflow-hidden" data-aos="zoom-in">
         <div class="  justify-center mx-auto w-24 h-24 md:w-48 md:h-48">
           <img src="https://i.ibb.co/gTByR3n/proofread.jpg" style="relative; width:100%; height: 100%; " class="rounded-full w-full h-full ">
         </div>
-        <h2 class="mt-4 text-xl md:text-4xl md:px-6 font-bold text-center tracking-tight relative"> Proofreading & Editing </h2>
+        <h2 class="mt-4 text-xl md:text-2xl md:px-6 font-bold text-center tracking-tight relative"> Proofreading & Editing </h2>
         <hr class="px-5">
-        <p class="mt-5 leading-relaxed tracking-tight leading-8 text-center text-sm md:text-2xl" style="line-height: 34px; "> Proofreading and editing are essential before publications or submission of a written work, articles, presentation papers and research project. I provide quality proofreading and editing services. Let's help you proofread your work(s) professionally while adhering to the correct format.</p>
+        <p class="mt-5 leading-relaxed tracking-tight leading-8 text-center text-sm md:text-base" style="line-height: 34px; "> Proofreading and editing are essential before publications or submission of a written work, articles, presentation papers and research project. I provide quality proofreading and editing services. Let's help you proofread your work(s) professionally while adhering to the correct format.</p>
         <div class="text-center ">
           <button class="w-50 btn mt-5 Navy-blue text-white text-lg md:text-xl md:py-2 font-bold text-center rounded-lg py-1 px-5 bg-gradient-to-br from-blue-900 to-blue-600 shadow-2xl">
             <a class="" href="https://wa.me/2349037074761?text=Hello!"> Get in Touch! </a> </button>
@@ -425,22 +436,24 @@
       <!-- grid end-->
     </div>
   </section>
+  
+  
   <!--my web design works-->
   <main class="px-4 mt-6 md:mt-8">
     <div class="mb- text-center">
-      <h2 class="text-3xl md:text-5xl font-bold"> Accomplished Projects </h2>
-      <p class="text-sm mt-2.5 md:mt-5 md:text-2xl"> View some of my accomplished web and blog projects!</p>
+      <h2 class="text-3xl md:text-4xl font-bold"> Accomplished Web Projects </h2>
+      <p class="text-sm mt-2.5 md:mt-5 md:text-base"> View some of my accomplished web and blog projects!</p>
     </div>
   </main>
-  <main class="px-4 mb-10 mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+  <main class="px-4 mb-10 mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:px-32">
     <!-- Bayero Law Clinic-->
     <section data-aos="fade-down" class="mb-5">
       <div class="overflow-hidden relative image-container">
         <img src="https://i.ibb.co/k3ZPckF/bulc.jpg" alt="Bayero University Law Clinic official website" class="w-full  portfolios" style="height: ">
         <div class="overlay absolute top-0 left-0 w-full h-full text-white bottom-0 left-0 pt-6 md:pt-10 px-4 bg-gray-800 opacity-70">
-          <h3 class="text-2xl md:text-4xl font-bold mb-1 md:mb-6" data-aos="">Bayero University Law Clinic (BULC)</h3>
-          <p class="text-sm md:text-3xl tx-base tx-base font-light mb-5 ">Built a responsive website for the Clinic showcasing what it stands for. </p>
-          <button class="mt-10 md:mt-28 py-1 px-4 text-base md:text-3xl font-bold border-3 border text-center rounded-sm  ">
+          <h3 class="text-2xl md:text-3xl font-bold mb-1 md:mb-6" data-aos="">Bayero University Law Clinic (BULC)</h3>
+          <p class="text-sm md:text-2xl tx-base tx-base font-light mb-5 ">Built a responsive website for the Clinic showcasing what it stands for. </p>
+          <button class="mt-10 md:mt-28 py-1 px-4 text-base md:text-base font-bold border-3 border text-center rounded-sm  ">
             <a class="" href="https://buklawclinic.com.ng/"> Click to View <i class="fas fa-arrow-right"></i></a></button>
         </div>
       </div>
@@ -448,37 +461,37 @@
     <!-- AIC -->
     <section data-aos="fade-up" class="mb-5">
       <div class="overflow-hidden relative image-container ">
-
+        
         <img src="https://i.ibb.co/8Y45WdZ/aic.jpg" alt="Al-Qosim Islamic Center (AIC)" class="w-full h-auto portfolios md:w-full md:h-auto" style="height: ">
-
+        
         <div class="overlay absolute top-0 left-0 w-full  text-white bottom-0 left-0 pt-6 md:pt-10 px-4 bg-gray-800 opacity-70">
-          <h3 class="text-2xl md:text-4xl font-bold mb-1 md:mb-7" data-aos="">Al-Qosim Islamic Center (AIC)</h3>
-          <p class="text-sm md:text-3xl tx-base tx-base font-light mb-5"> Built a stunning and user-friendly website for the organization for publication </p>
-          <button class="mt-10 md:mt-28 py-1 px-4 text-base md:text-3xl font-bold border-3 border text-center rounded-sm  ">
+          <h3 class="text-2xl md:text-3xl font-bold mb-1 md:mb-7" data-aos="">Al-Qosim Islamic Center (AIC)</h3>
+          <p class="text-sm md:text-2xl tx-base tx-base font-light mb-5"> Built a stunning and user-friendly website for the organization for publication </p>
+          <button class="mt-10 md:mt-28 py-1 px-4 text-base md:text-base font-bold border-3 border text-center rounded-sm  ">
             <a class="" href="https://alqosim.sgm.ng"> Click to View <i class="fas fa-arrow-right"></i></a></button>
         </div>
       </div>
     </section>
-
+    
     <!-- solace chambers -->
     <section data-aos="fade-up" class="mb-5">
       <div class="overflow-hidden relative image-container">
         <img src="https://i.ibb.co/G097ZQz/solace-buk.jpg" alt="Solace Chambers, Bayero University, Kano" class="w-full h-auto portfolios" style="height: ">
         <div class="overlay absolute top-0 left-0 w-full  text-white bottom-0 left-0 pt-6 md:pt-10 px-4 bg-gray-800 opacity-70">
-          <h3 class="text-2xl md:text-4xl font-bold mb-1 md:mb-5" data-aos="">Solace Chambers, Bayero University, Kano</h3>
-          <p class="text-sm md:text-3xl tx-base tx-base font-light mb-1 ">Built a customized and responsive landing page for Student's based Chanbers domiciled in Bayero University, Kano.</p>
-          <button class="mt-5 md:mt-16 py-1 px-4 text-base md:text-3xl font-bold border-3 border text-center rounded-sm  ">
+          <h3 class="text-2xl md:text-3xl font-bold mb-1 md:mb-5" data-aos="">Solace Chambers, Bayero University, Kano</h3>
+          <p class="text-sm md:text-2xl tx-base tx-base font-light mb-1 ">Built a customized and responsive landing page for Student's based Chanbers domiciled in Bayero University, Kano.</p>
+          <button class="mt-5 md:mt-16 py-1 px-4 text-base md:text-base font-bold border-3 border text-center rounded-sm  ">
             <a class="    " href="https://muhibqosim.github.io/solace-buk/"> Click to View <i class="fas fa-arrow-right"></i></a></button>
         </div>
       </div>
     </section>
   </main>
-
+  
   <!-- TESTIMONY-->
   <section style="background-image: url('https://i.ibb.co/VWcctpW/testimonials.jpg');" class="portfolio bg-cover pt-12 pb-12 px-4 bg-gray-900 opacity-80 px-4 sm:px-4 md:px-10 lg:px-8">
     <div class="text-center">
-      <h2 class="mt-2 text-3xl md:text-5xl leading-8 font-extrabold tracking-tight text-yellow-400 text-center tracking-wider"> Testimonials </h2>
-      <p class="mt-4 max-w-3xl text-xl md:text-3xl text-white lg:mx-auto text-center">Here are testimonies from some of whom I have worked with.</p>
+      <h2 class="mt-2 text-3xl md:text-4xl leading-8 font-extrabold tracking-tight text-yellow-400 text-center tracking-wider"> Testimonials </h2>
+      <p class="mt-4 max-w-3xl text-xl md:text-base text-white lg:mx-auto text-center">Here are testimonies from some of whom I have worked with.</p>
     </div>
     <!--slider starts here-->
     <div class="mt-10">
@@ -500,7 +513,7 @@
             <i class="fas fa-quote-right absolute -bottom-8 right-0 text-7xl text-gray-400 mt-10 ml-6"></i>
           </div>
         </div>
-
+        
         <!-- enitan bolu -->
         <div class="relative flex flex-col my-10 ml-1 mx-auto w-11/12 md:w-2/5 p-6 bg-white rounded-lg shadow-md carousel-item">
           <div class="w-full md:flex items-start justify-between">
@@ -514,7 +527,7 @@
               </div>
             </div>
           </div>
-          <div class="w-full mt-2 text-gray-600 leading-5 text-sm tracking-wide ">
+          <div class="w-full mt-2 text-gray-600 leading-5 text-sm md:text-base tracking-wide ">
             <p>I started looking up to Qosim immediately I knew him. He addresses issues with astute shrewdness, and his knowledge of the law is undeniable. Qosim is distinguished for his ability to craft compelling legal content and communicate ideas in simple, understandable language. In every encounter, he exhibits a drive for perfection. Qosim equally possesses a special capacity to apply Islamic concepts to challenging contemporary issues, offering well-rounded advice.</p>
             <i class="fas fa-quote-right absolute -bottom-8 right-0 text-7xl text-gray-400 mt-10 ml-6"></i>
           </div>
@@ -532,27 +545,27 @@
               </div>
             </div>
           </div>
-          <div class="w-full mt-5 text-gray-600 leading-7 text-sm tracking-wide ">
+          <div class="w-full mt-5 text-gray-600 leading-7 text-sm md:text-base tracking-wide ">
             <p>I have witnessed Qosim's dedication to his craft for the past few years and I can attest to the fact that he is a master of his crafts. Qosim goes constantly above and beyond to deliver exceptional results, exceeding expectations time and time again. As such, I highly recommend him for any opportunity that comes his way. </p>
             <i class="fas fa-quote-right absolute -bottom-8 right-0 text-7xl text-gray-400 mt-10 ml-6"></i>
           </div>
         </div>
-
+        
         <!--important close div-->
       </div>
     </div>
   </section>
-
+  
   <!-- My Publications -->
   <section class="py-12 md:py-20 px-4">
     <div class="pt-3" data-aos="fade-down">
-      <h1 class="text-center text-3xl md:text-5xl font-bold"> My Publications</h1>
-      <p class="text-sm md:text-2xl mt-3 text-center tracking-tight"> Explore my insightful publications on various aspects of law spanning accross to intellectual property, AI, litigation, oil & gas, legal opinion, islamic finance etc. </p>
+      <h1 class="text-center text-3xl md:text-4xl font-bold"> My Publications</h1>
+      <p class="text-sm md:text-base mt-3 text-center tracking-tight"> Explore my insightful publications on various aspects of law spanning accross to intellectual property, AI, litigation, oil & gas, legal opinion, islamic finance etc. </p>
     </div>
     <!--publication samples grid-->
-    <article class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-10 md:mt-16 px-4 mx-auto">
+    <article class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-10 md:mt-16 px-4 mx-auto md:px-32">
       <!-- pub 1-->
-
+      
       <!-- article one -->
       <div data-aos="fade-down" class="bg-white shadow-lg w-full rounded-lg mb-3">
         <div class="md:w-full overflow-hidden rounded-t">
@@ -560,328 +573,66 @@
         </div>
         <!--title, abstract & read more-->
         <div class="px-5 ">
-          <p class="text-sm pt-5 md:text-lg font-semibold text-justify text-gray-600"> January 26, 2023 </p>
-          <h3 class="text-base md:text-2xl py-8 font-bold tracking-tight uppercase"> POLYGAMOUS MARRIAGE UNDER THE NIGERIAN LAW: WHAT THE LAW HAS TO SAY </h3>
-          <p class="text-sm mb-8 md:text-2xl tracking-tight text-justify "> Marriage is, indeed, the legitimate means of securing the right to cohabitate between opposite sexes in an "ideal" territory, Nigeria inclusive. And as a matter of fact, in Nigerian law, there are essentially two types of marriage: monogamous (which wholly depicts one man and one wife) and polygamous (which permits more than one wife married to just one man). It is also worth noting that the character...</p>
-          <p class="text-sm md:text-2xl text-justify mb-5 text-blue-900 font-semibold "><a href="polygamous-marriage.html  " class=""> READ MORE » </a> </p>
+          <p class="text-sm pt-5 md:text-base font-semibold text-justify text-gray-600"> January 26, 2023 </p>
+          <h3 class="text-base md:text-xl py-8 font-bold tracking-tight uppercase"> POLYGAMOUS MARRIAGE UNDER THE NIGERIAN LAW: WHAT THE LAW HAS TO SAY </h3>
+          <p class="text-sm mb-8 md:text-base tracking-tight text-justify "> Marriage is, indeed, the legitimate means of securing the right to cohabitate between opposite sexes in an "ideal" territory, Nigeria inclusive. And as a matter of fact, in Nigerian law, there are essentially two types of marriage: monogamous (which wholly depicts one man and one wife) and polygamous (which permits more than one wife married to just one man). It is also worth noting that the character...</p>
+          <p class="text-sm md:text-base text-justify mb-5 text-blue-900 font-semibold "><a href="polygamous-marriage.html  " class=""> READ MORE » </a> </p>
         </div>
       </div>
-      <!-- ARTICLE TWO -->
-      <div data-aos="fade-down" class="md:grid-span-2 bg-white shadow-lg w-full rounded-lg mb-3">
-        <div class="md:w-full overflow-hidden rounded-t">
-          <img src="img/publications/ai-liability.jpg" alt="publication caption" class="w-full h-75 md:h-80 object-cover object-center">
-        </div>
-        <!--title, abstract & read more-->
-        <div class="px-5 ">
-          <p class="text-sm pt-5 md:text-lg font-semibold text-justify text-gray-600"> January 26, 2023 </p>
-          <h3 class="text-base md:text-2xl py-8 font-bold tracking-tight uppercase"> ARTIFICIAL INTELLIGENCE VIS-À-VIS ITS PROSPECTS AND CHALLENGES:LEGAL RIGHTS AND LIABILITIES </h3>
-          <p class="text-sm mb-8 md:text-2xl tracking-tight text-justify "> It is very obvious today that the most successful enterprise have embraced Artificial Intelligence (AI) to improve their operations over their competitors. Some advance countries have adopted the use of AI in their restaurant, mode of transportation etc. AI is a tool to enhance development in a domain. Experts regard AI as a factor of production...</p>
-          <p class="text-sm md:text-2xl text-justify mb-5 text-blue-900 font-semibold "><a href="      " class=""> READ MORE » </a> </p>
-        </div>
-      </div>
-      <!-- article one -->
-      <div data-aos="fade-down" class="bg-white shadow-lg w-full rounded-lg mb-3">
-        <div class="md:w-full overflow-hidden rounded-t">
-          <img src="https://i.ibb.co/WD57LSZ/adoption.jpg" alt="publication caption" class="w-full h-full object-cover object-center">
-        </div>
-        <!--title, abstract & read more-->
-        <div class="px-5 ">
-          <p class="text-sm pt-5 md:text-lg font-semibold text-justify text-gray-600"> February 23, 2023 </p>
-          <h3 class="text-base md:text-2xl py-8 font-bold tracking-tight uppercase"> ILLEGALITY OR OTHERWISE OF ADOPTION PRACTICES UNDER THE LENSE OF ISLAMIC LAW?</h3>
-          <p class="text-sm mb-8 md:text-2xl tracking-tight text-justify "> Protection of lineage is so fundamental in Islamic law otherwise known as the “Sharii`ah”. Hence, it forms an integral part of the five core objectives of Islamic law, vis-à-vis: protection of life; protection of property; protection of intellect; protection of religion, and protection of lineage. These five...</p>
-          <p class="text-sm md:text-2xl text-justify mb-5 text-blue-900 font-semibold "><a href="adoption.html" class=""> READ MORE » </a> </p>
-        </div>
-      </div>
-      <!-- article one -->
-      <div data-aos="fade-down" class="bg-white shadow-lg w-full rounded-lg mb-3">
-        <div class="md:w-full overflow-hidden md:h-50 rounded-t">
-          <img src="https://i.ibb.co/c6D7WJ0/same-sex.jpg" alt="publication caption" class="w-full object-cover object-center">
-        </div>
-        <!--title, abstract & read more-->
-        <div class="px-5 ">
-          <p class="text-sm pt-5 md:text-lg font-semibold text-justify text-gray-600"> February 23, 2023 </p>
-          <h3 class="text-base md:text-2xl py-8 font-bold tracking-tight uppercase"> REPLY TO MR. CHUKKOL ON THE TWO SKEPTICAL SIDES OF HOMOSEXUALITY UNDER NIGERIAN LAWS </h3>
-          <p class="text-sm mb-8 md:text-2xl tracking-tight text-justify "> On the 20th day of August, 2021, an article written by a renowned legal writer, Mr. O.G. Chukkol (hereafter “the writer”) got published and circulated on different social media handles. The article is titled: “Homosexuality is Lawful under Lagos Criminal Law but a Crime under Same-Sex Marriage Act: R...</p>
-          <p class="text-sm md:text-2xl text-justify mb-5 text-blue-900 font-semibold "><a href="reply-to-same-sex-marraiage.html" class=""> READ MORE » </a> </p>
-        </div>
-      </div>
-
+      
+      
       <!-- important div close-->
       </div>
     </article>
     <div class="flex justify-center items-center mt-14 px-5  ">
-      <button class=" text-white pulsate-bck font-bold text-center btn  p-3 rounded-lg uppercase text-base md:text-3xl px-5 Navy-blue text-lg font-bold bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg  ">
+      <button class=" text-white pulsate-bck font-bold text-center btn  p-3 rounded-lg uppercase text-base md:text-base px-5 Navy-blue text-lg font-bold bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg  ">
         <a class="text-white" href="lextalks.html"> View More <i class="fas fa-arrow-right font-bold"> </i> </a> </button>
     </div>
   </section>
-
+  
   <!-- MESSAGE ME  -->
-  <main class="pt-16 bg-gray-200">
+  <main class="py-10 bg-gray-200 md:px-56">
     <div class="">
-      <h1 class="text-3xl md:text-5xl font-bold text-center"> Contact Me </h1>
+      <h1 class="text-3xl md:text-4xl font-bold text-center"> Contact </h1>
     </div>
-    <section data-aos="fade-down" class="bg-blue-200 mt-9 px-4 py-8">
-      <h1 class="text-2xl md:text-4xl font-bold text-center mb-3"> Send me a Message </h1>
+    <section data-aos="fade-down" class="bg-blue-200 mt-4 md:mt-4 px-4 md:px-10 py-8">
+      <p class="text-2xl md:text-2xl font-bold text-center mb-3"> Send a Message </p>
       <div class=" ">
         <form class="mx-auto " action="https://formspree.io/f/mqkvzbyz" method="POST" style="width: ">
-          <label class="inline-block text-sm md:text-3xl font-semibold" style=""> Your Email</label>
+          <label class="inline-block text-sm md:text-base font-semibold" style=""> Your Email</label>
           <div class="flex items-center justify-center">
-            <input class="shadow-lg mt-2 py-2.5 px-2 md:px-4 inline-block text-sm md:text-2xl" type="email" name="email" placeholder="your@email.com" style="width: 90vw; height:6vh">
+            <input class="shadow-lg mt-2 py-2.5 px-2 md:px-4 inline-block text-sm md:text-base" type="email" name="email" placeholder="your@email.com" style="width: 90vw; height:6vh">
           </div>
-          <label class="inline-block mt-5 text-sm md:text-3xl flex items-center justify-between font-semibold"> Your
-            Message </label>
+          <label class="inline-block mt-5 text-sm md:text-base flex items-center justify-between font-semibold"> Your Message </label>
           <div class="flex items-center justify-center">
-            <textarea class="bg-white p-2 md:text-2xl mt-2 text-sm md:text-2xl" placeholder="your message here" name="message" style="height: 32vh; width: 90vw"></textarea>
+            <textarea class="bg-white p-2 md:text-base mt-2 text-sm md:text-base" placeholder="your message here" name="message" style="height: 32vh; width: 90vw"></textarea>
           </div>
           <!-- your other form fields go here -->
           <div class="flex items-center justify-center">
-            <button class="text-center mt-5 px-4 py-2 Navy-blue text-lg md:text-3xl text-white font-bold uppercase bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg" type="submit" style="width: 90vw; ">Send</button>
+            <button class="text-center mt-5 px-4 py-2 Navy-blue text-base md:text-base text-white font-bold uppercase bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg" type="submit" style="width: 90vw; ">Send</button>
           </div>
         </form>
       </div>
       <!-- WhatsApp quick contact-->
-      <h1 class="font-semibold text-center text-xl md:text-4xl tracking-wider mt-8"> VERY URGENT? </h1>
-      <p class="mb-3 mt-3 font-light text-center text-sm md:text-3xl"> Let's start conversation on WhatsApp!</p>
+      <h1 class="font-semibold text-center text-xl md:text-2xl tracking-wider mt-8"> VERY URGENT? </h1>
+      <p class="mb-3 mt-3 font-light text-center text-sm md:text-base"> Let's start conversation on WhatsApp!</p>
       <div class="">
         <form class="py-2.5" id="messageForm">
           <div class="flex items-center justify-center">
             <textarea class="text-sm p-2 inline-block text-dark" name="message" id="messageInput" placeholder="your message here " style="height:20vh; width: 90vw; ">  </textarea>
           </div>
           <div class="flex items-center justify-center">
-            <button class="text-center items-center mt-5 px-4 py-2 Navy-blue text-lg md:text-3xl text-white font-bold uppercase shadow-lg inline-block mt-5 Navy-blue bg-gradient-to-br from-blue-900 to-blue-600" type="submit" style="width: 90vw; ">Send on WhatsApp</button>
+            <button class="text-center items-center mt-5 px-4 py-2 Navy-blue text-base md:text-base text-white font-bold uppercase shadow-lg inline-block mt-5 Navy-blue bg-gradient-to-br from-blue-900 to-blue-600" type="submit" style="width: 90vw; ">Send on WhatsApp</button>
           </div>
         </form>
       </div>
     </section>
   </main>
-
-  <!-- MEMORIES & ACHIEVEMENTS-->
-  <section class="py-14 bg-gray-100 px-4">
-    <div class="" data-aos="fade-up">
-      <h1 class="text-center text-3xl md:text-4xl mt-1 font-bold "> Memories & Achievements</h1>
-      <p class="text-dark-500 text-center text-sm md:text-2xl mt-3 tracking-tight"> Here are some remarkable memories in the event of my sojourn in personal development so far. </p>
-    </div>
-
-    <!-- modal flowbite-->
-
-    <div id="gallery" class="mt-10 relative w-full" data-carousel="slide">
-      <!-- Carousel wrapper -->
-      <div class="relative h-96 overflow-hidden rounded-lg md:h-100">
-        <!-- Item 1 -->
-        <div data-modal-target="defaultModal" data-modal-toggle="firstModal" class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="https://i.ibb.co/1Jb4fsp/best-executive.jpg" class="absolute block w-full h-96 md:h-100 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 hover:" alt="Best Executive">
-          <div class="overlay absolute top-0 left-0 w-full h-full text-white bottom-0 left-0 pt-4 md:pt-10 px-4 mx-auto  ">
-            <p class="text-xs text-center bg-gray-900 opacity-60"> <i> Receiving the Award of Executive of the year, 2022/2023 session, Solace Chambers presented by Halimah Ummi Usmail, SABUK. </i> </p>
-            <a href="https://www.linkedin.com/posts/qosim-muhibudeen-sabuk-ool-5896a91a8_on-the-26th-day-of-february-2024-i-stepped-activity-7170123545694400512-nWf2?utm_source=share&utm_medium=member_android">
-              <div class="flex items-center mt-72 justify-center"> <button href="  " class="py-1 px-4 text-xs md:text-4xl font-bold border-3 text-black bg-gray-200 border text-center rounded-sm md:mx-10x  " type="button"> Click to View <i class="fas fa-arrow-right"></i></button>
-              </div>
-            </a>
-          </div>
-        </div>
-        <!-- Item 1 -->
-        <div data-modal-target="defaultModal" data-modal-toggle="firstModal" class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="https://i.ibb.co/7VqTVK5/solace-mocktrial.jpg" class="absolute block w-full h-96 md:h-100 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 hover:" alt="nnureni-jimah">
-          <div class="overlay absolute top-0 left-0 w-full h-full text-white bottom-0 left-0 pt-2 md:pt-10 px-4 mx-auto  ">
-            <p class="text-xs text-center bg-gray-900 opacity-60 "> <i> Awarded Best Advocate at the Solace Chambers Mock Trial, 2024 </i> </p>
-            <a href="https://www.linkedin.com/posts/qosim-muhibudeen-sabuk-ool-5896a91a8_early-this-month-precisely-the-10th-day-activity-7168425951435997185-SXWY?utm_source=share&utm_medium=member_android">
-              <div class="flex items-center mt-72 justify-center"> <button href="  " class="py-1 px-4 text-xs md:text-4xl font-bold border-3 text-black bg-gray-200 border text-center rounded-sm md:mx-10x  " type="button"> Click to View <i class="fas fa-arrow-right"></i></button>
-              </div>
-            </a>
-          </div>
-        </div>
-        <!-- Item 1 -->
-        <div data-modal-target="defaultModal" data-modal-toggle="firstModal" class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="https://i.ibb.co/r0wzJ9t/sabuk.jpg" class="absolute block w-full h-96 md:h-100 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 hover:" alt="nureni-jimah">
-          <div class="overlay absolute top-0 left-0 w-full h-full text-white bottom-0 left-0 pt-2 md:pt-10 px-4 mx-auto  ">
-            <p class="text-xs text-center bg-gray-900 opacity-60 "> <i> Conferment of Senior Advocate of Bayero University, Kano (SABUK), 2024</i> </p>
-            <a href="https://www.linkedin.com/posts/qosim-muhibudeen-sabuk-ool-5896a91a8_on-the-8th-day-of-march-2024-i-was-privileged-activity-7178101334322077697-xgpa?utm_source=share&utm_medium=member_android">
-              <div class="flex items-center mt-72 justify-center"> <button href="  " class="py-1 px-4 text-xs md:text-4xl font-bold border-3 text-black bg-gray-200 border text-center rounded-sm md:mx-10x  " type="button"> Click to View <i class="fas fa-arrow-right"></i></button>
-              </div>
-            </a>
-          </div>
-        </div>
-        <!-- Item 1 -->
-        <div data-modal-target="defaultModal" data-modal-toggle="firstModal" class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="https://i.ibb.co/p0cjTWs/nureni-jimah.jpg" class="absolute block w-full h-96 md:h-100 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 hover:" alt="nnureni-jimah">
-          <div class="overlay absolute top-0 left-0 w-full h-full text-white bottom-0 left-0 pt-80 md:pt-10 px-4 mx-auto  ">
-            <p class="text-xs text-center pb-3 bg-gray-900 opacity-60"> <i> Assuming the role of Research Assistant and Solicitor to the Moot Champion </i> </p>
-          </div>
-        </div>
-        <!-- Item 1 -->
-        <div data-modal-target="defaultModal" data-modal-toggle="firstModal" class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="https://i.ibb.co/fXdCdyj/sabuk-dinner.jpg" class="absolute block w-full h-96 md:h-100 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 hover:" alt="nnureni-jimah">
-          <div class="overlay absolute top-0 left-0 w-full h-full text-white bottom-0 left-0 pt-80 md:pt-10 px-4 mx-auto  ">
-            <p class="text-xs text-center pb-3 bg-gray-900 opacity-60"> <i> At the SABUK Conferment dinner organized by the Body of Benchers, BUK </i> </p>
-          </div>
-        </div>
-
-        <!-- Item 2 -->
-        <div data-modal-target="defaultModal" data-modal-toggle="secondModal" class="hidden duration-700 ease-in-out" data-carousel-item="active">
-          <img src="https://i.ibb.co/487Smh5/adr-workshop.jpg" class="absolute block w-full h-96 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
-          <div class="overlay absolute top-0 left-0 w-full h-full text-white bottom-0 left-0 pt-80 md:pt-10 px-4 mx-auto  ">
-            <p class="text-xs text-center pb-3 bg-white-50"> <i> Moment at the ADR workshop organized by the Bayero Unversity Law Clinic</i> </p>
-          </div>
-        </div>
-
-        <!-- Item 3 -->
-        <div data-modal-target="defaultModal" data-modal-toggle="thirdModal" class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="https://i.ibb.co/Jq8wC16/unioncourt.jpg" class="absolute block w-full h-96 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
-          <div class="overlay absolute top-0 left-0 w-full h-full text-white bottom-0 left-0 pt-80 md:pt-10 px-4 mx-auto  ">
-            <p class="text-xs text-center pb-3 bg-white-50"> <i> Representing the NAKSS, BUK at the Students'Union Court, B.U.K. </i> </p>
-          </div>
-        </div>
-
-        <!-- Item 4 -->
-        <div data-modal-target="defaultModal" data-modal-toggle="sixthModal" class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="https://i.ibb.co/Kx5wpqh/rayyan-tech1.jpg" class="absolute block w-full h-96 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
-          <div class="overlay absolute top-0 left-0 w-full h-full text-white bottom-0 left-0 pt-4 md:pt-10 px-4 mx-auto  ">
-            <p class="text-xs text-center pb-3 bg-gray-800 opacity-70 py-1 mx-5"> <i> Undergoing web development training at Rayyan Technology, Sagamu, 2020. </i> </p>
-            <a href="">
-              <div class="flex items-center justify-center mt-64">
-                <button class="py-1 px-4 text-xs md:text-4xl font-bold border-3 text-black bg-gray-200 border text-center rounded-sm md:mx-10x  " type="button"> Click to View <i class="fas fa-arrow-right"></i></button>
-              </div>
-            </a>
-          </div>
-        </div>
-
-
-        <!-- item 5  -->
-        <div class="hidden duration-700 ease-in-out " data-carousel-item>
-          <img src="https://i.ibb.co/hVQVcgq/ceremonial-appearance.jpg" class="absolute block w-full h-96 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 " alt="">
-          <div class="overlay absolute top-0 left-0 w-full h-full text-white bottom-0 left-0 pt-72 md:pt-10 px-4 mx-auto  ">
-            <p class="text-xs text-center pb-3 bg-gray-800 opacity-70 py-1"> <i> Moment after announcing appearance for the state (Respondent) in a criminal appeal at the ceremonial appearance in honour of the Judges of the Students Union Court, Bayero University, Kano sometimes in 2023. </i> </p>
-          </div>
-        </div>
-
-        <!-- item 6  -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="https://i.ibb.co/2yfQHLH/man-crush.jpg" class="absolute block w-full h-96 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
-          <div class="overlay absolute top-0 left-0 w-full h-full text-white bottom-0 left-0 pt-80 md:pt-10 px-4 mx-auto  ">
-            <p class="text-xs text-center text-black pb-3 bg-white-50"> <i> Featured in the Legal Torch Initiative monday crush. </i> </p>
-          </div>
-        </div>
-
-        <!-- item 7  -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="https://i.ibb.co/By1LZ9Z/al-maslahah.jpg" class="absolute block w-full h-96 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
-          <div class="overlay absolute top-0 left-0 w-full h-full text-white bottom-0 left-0 pt-80 md:pt-10 px-4 mx-auto  ">
-            <p class="text-xs text-center font-bold pb-3 bg-gray-800 opacity-70 py-1"> <i> Moment after Al-maslahah Chambers, B.U.K. moot appearance, 2023. </i> </p>
-          </div>
-        </div>
-
-        <!-- item 8   -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="https://i.ibb.co/tqwV6gT/law-clinic-climate.jpg" class="absolute block w-full h-96 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
-          <div class="overlay absolute top-0 left-0 w-full h-full text-white bottom-0 left-0 pt-80 md:pt-10 px-4 mx-auto  ">
-            <p class="text-xs text-center font-bold pb-3 bg-gray-800 opacity-70 py-1"> <i> At the Bayero University Law Clinic for climate protection campaign sponsored by NULAI, 2021.</i> </p>
-          </div>
-        </div>
-
-        <!-- item 9   -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="https://i.ibb.co/MPpSMqB/after-appearance.jpg" class="absolute block w-full h-96 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
-          <div class="overlay absolute top-0 left-0 w-full h-full text-white bottom-0 left-0 pt-80 md:pt-10 px-4 mx-auto  ">
-            <p class="text-xs text-center font-bold pb-3 bg-gray-800 opacity-70 py-1"> <i> Moment after the moot trial I had to appeaappear alone sometimes in 2021.</i> </p>
-          </div>
-        </div>
-
-        <!-- item 10   -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="https://i.ibb.co/TkgM6S1/Llb2-debate.jpg" class="absolute block w-full h-96 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
-          <div class="overlay absolute top-0 left-0 w-full h-full text-white bottom-0 left-0 pt-80 md:pt-10 px-4 mx-auto  ">
-            <p class="text-xs text-center font-bold pb-3 bg-gray-800 opacity-70 py-1"> <i> Group picture after the intra-class debate sometimes in 2023. </i> </p>
-          </div>
-        </div>
-
-        <!-- item 11  -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="https://i.ibb.co/QNrB7SY/mock-trial.jpg" class="absolute block w-full h-96 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
-          <div class="overlay absolute top-0 left-0 w-full h-full text-white bottom-0 left-0 pt-80 md:pt-10 px-4 mx-auto  ">
-            <p class="text-xs text-center font-bold pb-3 bg-gray-800 opacity-70 py-1"> <i> Moment after mock trial organized by the National Association of Kwara Law Students (NAKLAS),B.U.K. in 2023.</i> </p>
-          </div>
-        </div>
-
-        <!-- item 12   -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="https://i.ibb.co/r4NLvvf/sinasofola.jpg" class="absolute block w-full h-96 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
-          <div class="overlay absolute top-0 left-0 w-full h-full text-white bottom-0 left-0 pt-80 md:pt-10 px-4 mx-auto  ">
-            <p class="text-xs text-center text-black font-bold pb-3 bg-gray-800 opacity-70 py-1"> <i> Emerged second position at the 2nd Edition of Chief Idowu Sofola (SAN) Annual Memorial Essay Competition, 2022. </i> </p>
-          </div>
-        </div>
-
-        <!-- item 13   -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="https://i.ibb.co/zr10264/court-visit.jpg" class="absolute block w-full h-96 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
-          <div class="overlay absolute top-0 left-0 w-full h-full text-white bottom-0 left-0 pt-80 md:pt-10 px-4 mx-auto  ">
-            <p class="text-xs text-center text-white font-bold pb-3 bg-gray-800 opacity-70 py-1"> <i> Visitation to the Kano State High Court organized by Solace Chambers, Bayero University, Kano. </i> </p>
-          </div>
-        </div>
-
-        <!-- item 14   -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="https://i.ibb.co/C7DSnbN/rayyantech2.jpg" class="absolute block w-full h-96 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
-          <div class="overlay absolute top-0 left-0 w-full h-full text-white bottom-0 left-0 pt-80 md:pt-10 px-4 mx-auto  ">
-            <p class="text-xs text-center text-white font-bold pb-3 bg-gray-800 opacity-70 py-1"> <i> At Rayyan Tech, Sagamu, sometimes in January 2021. </i> </p>
-          </div>
-        </div>
-
-        <!-- item 15  -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="https://i.ibb.co/RpTcRG0/naklas-law-quiz.jpg" class="absolute block w-full h-96 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
-          <div class="overlay absolute top-0 left-0 w-full h-full text-white bottom-0 left-0 pt-80 md:pt-10 px-4 mx-auto  ">
-            <p class="text-xs text-center text-white font-bold pb-3 bg-gray-800 opacity-70 py-1"> <i> Represented NAKLAS—BUK at the inter-state law quiz competition organized by the National Association of Kwara State Law Students (NAKLAS), 2023. </i> </p>
-          </div>
-        </div>
-
-        <!-- item 16   -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="https://i.ibb.co/dcpT499/canvassing-argument.jpg" class="absolute block w-full h-96 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
-          <div class="overlay absolute top-0 left-0 w-full h-full text-white bottom-0 left-0 pt-80 md:pt-10 px-4 mx-auto  ">
-            <p class="text-xs text-center text-white font-bold pb-3 bg-gray-800 opacity-70 py-1"> <i> Making oral adumbration during the ceremonial appearance in honour of the Judges of the Students Union Court. </i> </p>
-          </div>
-        </div>
-
-        <!-- Item 17 -->
-        <div data-modal-target="defaultModal" data-modal-toggle="fifthModal" class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="https://i.ibb.co/ChZ1V2D/law-clinic-outreach.jpg" class="absolute block w-full h-96 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
-          <div class="overlay absolute top-0 left-0 w-full h-full text-white bottom-0 left-0 pt-4 md:pt-10 px-4 mx-auto  ">
-            <p class="text-xs text-center font-bold pb-3 bg-gray-800 opacity-70 py-1"> <i> On humanitarian outreach to an IDP camp in Kano, Nigeria </i> </p>
-            <a href="https://m.facebook.com/story.php?story_fbid=pfbid0P7o2k3yWutB3Cap34mv7vGKZSB5vSsUCzw9fkzeqgSh7BFMd2vjNzNMpuq2FqYPLl&id=100011559003498">
-              <div class="flex items-center mt-72 justify-center">
-                <button href="  " class="py-1 px-4 text-xs md:text-4xl font-bold border-3 text-black bg-gray-200 border text-center rounded-sm md:mx-10x  " type="button"> Click to View <i class="fas fa-arrow-right"></i></button>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-
-
-      <!-- Slider controls -->
-      <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-          <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4" />
-          </svg>
-          <span class="sr-only">Previous</span>
-        </span>
-      </button>
-      <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-          <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
-          </svg>
-          <span class="sr-only">Next</span>
-        </span>
-      </button>
-
-
-  </section>
-  <!-- bg distance -->
-  <div class="py-2.5 bg-white md:py-3"> </div>
-
-
+  
+  
+  
   <!-- free resources-->
-  <section class="py-14  px-4">
+  <section class="py-10  px-4 md:px-52">
     <div class="">
       <h1 class="font-bold text-center text-3xl md:text-4xl "> Free Resource </h1>
       <p class="text-center text-sm mt-2"> Download free legal resources on various legal discipline
@@ -918,11 +669,11 @@
         Access Here</a>
     </article>
   </section>
-
+  
   </section>
-
-
-
+  
+  
+  
   <!-- Footer -->
   <section class="Navy-blue py-10" id="footer">
     <article class="pl-4 ">
@@ -962,10 +713,10 @@
     <!-- copyright-->
     <div class="mt-10 md:mt-20 pt-5">
       <p class="text-sm text-white font-light text-center md:text-3xl"> <i class="far fa-copyright md:text-3xl "></i> <span id="copyright-year"></span> Al-Qosim | All rights reserved.</p>
-
+      
     </div>
-
-
+    
+    
     <!-- social handles-->
     <div class="mt-10 md:mt-20 flex justify-between px-20 text-lg md:px-64 md:text-5xl">
       <a href="https://x.com/al_qosimiy?t=Mn2u12C1b3VDzYjazF8MfA&s=09" class="text-white hover:text-blue-400" target="_blank" rel="noopener" title="Twitter"> <i class="fab fa-twitter "></i></a>
@@ -976,13 +727,13 @@
       <a href="https://www.linkedin.com/in/qosim-muhibudeen-5896a91a8" class="text-white hover:text-blue-600" target="_blank" rel="noopener" title="LinkedIn"> <i class="fab fa-linkedin "></i></a>
       <a href="https://github.com/muhibqosim" class="text-white hover:text-gray-600" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github "></i></a>
     </div>
-
+    
   </section>
-
+  
   <!--js starts here-->
   <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
-
+  
   <script>
     AOS.init({
       offset: 100,
@@ -991,7 +742,7 @@
       delay: 200,
       once: true
     });
-
+    
     document.addEventListener('DOMContentLoaded', function() {
       var currentYear = new Date().getFullYear();
       document.getElementById('copyright-year').textContent = currentYear;
