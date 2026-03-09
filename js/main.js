@@ -43,11 +43,16 @@ function myFunction(x) {
 function toggleMenu() {
   var menu = document.getElementById("mobile-menu");
   if (menu.classList.contains("hidden")) {
-    menu.classList.remove("hidden");
+    menu.classList.removehidden");
   } else {
     menu.classList.add("hidden");
   }
 }
+
+
+
+/*   */
+
 /* type js for who i am */
 var typed = new Typed('#typed', {
   stringsElement: '#typed-strings',

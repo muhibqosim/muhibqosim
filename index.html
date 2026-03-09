@@ -82,45 +82,30 @@
     }
   </style>
 </head>
+
+
 <!-- body starts here-->
 
-<body>
-  <main class="navbar ">
-    <header class="header bg-gray-100 p-0.5 md:py- bg-gradient-to-br from-gray-100 to-gray-50 shadow-2xl " style="position: sticky; top:0; ">
+<body class="bg-white">
+  <main class="navbar " >
+    <header class="header Navy-blue px-2 py-3 md:py- bg-gradient-to-br text-white shadow-2xl " style="position: sticky; top:0; ">
       <!-- Navigation menu -->
       <nav class="  ">
         <div class=" ">
           <div class="flex justify-between">
             <div class="flex ">
-              <a href="#" class="flex items-center ">
-                <img src="img/logo.png" class="w-20 h-14 md:w-28 md:h-28" alt="logo">
+              <a href="#" class="flex items-center "> <p class="text-white text-xl md:text-3xl garamond mx-1 font-light " style="font-weight: ;"> 
+              <!--<img src="img/logo.png" class="w-20 h-14 md:w-28 md:h-28" alt="logo">-->
                 <!--<span class="text-white text-xl md:text-5xl garamond mx-1 font-bold uppercase" style="font-weight: 600;">Al-qosim</span>-->
-              </a>
+               Muhibudeen, Qosim Atanda (Al-Qosim)
+              </p></a>
             </div>
             <!-- desktop menu bar-->
             <div class="hidden garamond md:flex items-center md:justify-center mx-auto lg:pl-48 space-x-1 md:text-xl  md:gap-12 ">
               <a href="index.html" class="py-4 px-2 text- font-semibold hover:text-white hover:bg-blue-500 md:rounded-2xl md:py-1 md:px-4">Home</a>
-              <a href="#portfolio" class="block py-2 px-4 tx-sm text- font-semibold hover:text-white hover:bg-blue-500 md:rounded-2xl md:py-1 md:px-4">Expertise</a>
+              <a href="index.html" class="py-4 px-2 text- font-semibold hover:text-white hover:bg-blue-500 md:rounded-2xl md:py-1 md:px-4">About</a>
+              <a href="#portfolio" class="block py-2 px-4 tx-sm text- font-semibold hover:text-white hover:bg-blue-500 md:rounded-2xl md:py-1 md:px-4">Porftolio</a>
 
-<el-dropdown class="inline-block text-black">
-  <button class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white/10 px-3 py-2 text-sm font-semibold text-white inset-ring-1 inset-ring-white/5 hover:bg-white/20">
-    <span class="text-black"> Publications </span> 
-    <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="-mr-1 size-5 text-gray-400">
-      <path d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" fill-rule="evenodd" />
-    </svg>
-  </button>
-  
-  <el-menu anchor="bottom end" popover class="w-full origin-top-right rounded-md bg-gray-800 outline-1 -outline-offset-1 outline-white/10 transition transition-discrete [--anchor-gap:--spacing(0)] data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in">
-    <div class="py-1">
-      <a href="lextalks.html" class="block px-4 py-2 text-sm text-gray-300 focus:bg-white/5 focus:text-white focus:outline-hidden">Account settings</a>
-      <form action="#" method="POST">
-        <button type="submit" class="block w-full px-4 py-2 text-left text-sm text-gray-300 focus:bg-white/5 focus:text-white focus:outline-hidden">Sign out</button>
-      </form>
-    </div>
-  </el-menu>
-</el-dropdown>
-              
-              
               
               <!-- Dropdown for Blog -->
               <div class="relative">
@@ -150,6 +135,7 @@
         <!-- mobile menu bar -->
         <div class="hidden md:hidden justify-between bg-blue- Navy-blue" id="mobile-menu">
           <a href="index.html" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Home</a>
+          <a href="about.html" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">About</a>
           <a href="#portfolio" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Expertise</a>
           
           <!-- Dropdown for Blog -->
@@ -157,7 +143,6 @@
             <button class="block py-2 px-4 tx-sm md:text-xl text-white font-semibold hover:bg-gray-900 w-full text-left" onclick="toggleDropdown()">Publications</button>
             <div class="dropdown-content hidden bg-gray-50 text-black hover:text-white rounded-sm shadow-sm w-full">
               <a href="lextalks.html" class="block text-black hover:text-white px-4 py-2 hover:bg-gray-900">LexTalks</a>
-              <!--<a href="tech-bus.html" class="block text-black hover:text-white px-4 py-2 hover:bg-gray-900 border-b">Tech & bus </a>-->
             </div>
           </div>
           <a href="resources.html" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Resources</a>
@@ -167,11 +152,14 @@
     </header>
   </main>
   <div class="conte">
-    
+
   </div>
   <!-- header ends here-->
+  
+  
+  
   <!-- image background and introduction-->
-  <main class="px-4 md:px-8 pt-5 pb-20 ">
+  <main class="px-4 pt-5 pb-20 ">
     <section class="header-lg relative  bg-cover bg-center w- h-45 md:flex mt-16 md:mt-4 rounded-xl no-repeat px-2.5 ">
       <div class=" pt-16 md:pt-10 md:rounded-l-xl header-lg-2 bg-cover py-auto">
         <div class="items-center md:px-10 w- text-white ">
@@ -185,7 +173,7 @@
           </div>
           <span class="leading-none text-lg text-white md:text-3xl " id="typed" style=" "></span>
           <div class="mt-16 md:mt-10 text-3xl md:text-4xl lg:text-4xl animate__animated animate__fadeIn animate__slow animate__delay-3s">
-            <h1 class="pb-1 border-3 border-b border-lime-500 md:border-white  underline-offset-2 text-3xl md:text-4xl font-weight:900 font-bold uppercase"> YOU are at the RIGHT place!</h1>
+            <h1 class="pb-1 border-3 border-b border-lime-500 md:border-white  underline-offset-2 text-3xl md:text-4xl font-weight:900 font-bold uppercase"> Let's Get Started!</h1>
           </div>
           <div class="mt-2 animate__animated animate__fadeIn animate__slow animate__delay-4s">
             <p class="leading-5 mt-3 mb-5 font-light text-sm md:text-xl  tracking-wide  md:tracking-wider font-"> With a strong foundation in law and proficiency in web design, proofreading, legal research, content and legal writing, I offer a comprehensive range of services that cater to your diverse needs. </span> </p>
@@ -220,194 +208,47 @@
       </div>
     </section>
   </main>
+  <!-- nav bar stops here -->
   
-  <!-- ABOUT ME-->
-  <section class="bg-gray-100 py-16">
+  <!-- ABOUT ME starts here-->
+  <section class="bg-gray-50 py-16">
     <section data-aos="fade-up" class="mx-auto px-5 mb-16">
       <div class="bg-white rounded-lg shadow-lg overflow-hidden md:flex">
+        <div class="md:w-1/2 image-container relative overflow-hidden">
+  <img src="https://i.ibb.co/487Smh5/adr-workshop.jpg" alt="About Me Image" class="w-full h-full bg-cover object-center ">
+</div>
         <div class="py-4 px-5 md:px-4 leading-6 md:leading-9 tracking-tighter md:tracking-wider text-dark-500 md:w-1/2 text-sm md:text-base text-justify md:text-left">
           <h1 id="about" class="text-2xl md:text-2xl mt-5 font-bold md:w-1/2 "> About </h1>
-          <p class="mt-5 md:mt-9 mb-5 "> Qosim A. Muhibudeen (Al-Qosim), a student of Common and Islamic Law, is highly proficient at Legal Research, Case Analysis, Content and Legal Writing/Drafting, Proofreading, and Web Design. As an aspirant to the bar, he brings a deep understanding of legal principles and a commitment to delivering excellence in every aspect of his work. </p>
-          <p class="mt-5 md:mt-9 mb-5"> With a strong foundation in law, Qosim offers a unique blend of expertise and creative prowess. His roficiencyy in web design allows him to create visually stunning websites that effectively communicates, while his meticulous proofreading skills ensure that documents are polished to perfection. </p>
+          <p class="mt-5 md:mt-9 mb-5 "> Qosim is highly proficient at Legal Research, Case Analysis, Legal Drafting, ADR, Web Design with impressive experience in litigation. As an aspirant to the bar, he brings a deep understanding of legal principles and a commitment to delivering excellence in every aspect of his work. </p>
+          <p class="mt-5 md:mt-9 mb-5"> With a strong foundation in law, Qosim offers a unique blend of expertise and creative prowess. His proficiencyy in web design allows him to create visually stunning websites that effectively communicates, while his meticulous proofreading skills ensure that documents are polished to perfection. </p>
           <p class="mt-5 md:mt-9 mb-5"> Additionally, his knack for crafting compelling content enables him to engage readers while conveying complex legal ideas in a clear and concise manner. With a dedication to delivering exceptional work, he strives to provide innovative solutions that meet the needs of clients in quest of his service(s). </p>
+        <div class="">
+  <button class="inline-block pulsate-bc text-white text-center btn  rounded-lg  text-sm md:text-base md:px-2 md:py-2 px-4 py-2 Navy-blue bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg  ">
+    <a class="text-white" href="#portfolio"> More About <i class="fas fa-arrow-right font-extrabold text-white text-sm md:text-base"></i> </a> </button>
+</div>
         </div>
-        <div class="md:w-1/2 image-container relative overflow-hidden">
-          <img src="https://i.ibb.co/487Smh5/adr-workshop.jpg" alt="About Me Image" class="w-full h-full bg-cover object-center ">
-        </div>
+        
       </div>
     </section>
     
-    <!-- about me information grid -->
-    <section class="py-16 px-4 bg-white">
-      <article class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-5 ">
-        <!-- ls-->
-        <div class="md:grid-span-2 py-10 bg-white shadow-lg rounded-lg px-9 text-sm md:text-base">
-          <div data-aos="fade-up">
-            <div class="flex my-auto">
-              <p class="text-8xl md:text-8xl md:mt-2.5 font-light text-blue-900 pr-2">|</p>
-              <h1 class="text-2xl md:text-2xl font-bold tracking-tight py-2.5"> <img class="text-sm h-11 md:h-14 md: leading-none" src="img/svg/myskills.svg" style=""> Key Skills </h1>
-            </div>
-            <!-- web design bar-->
-            <h6 class="text-label mt-5 md:mt-6 leading-relaxed tracking-wider">Web Design </h6>
-            <aside class="w-full bg-gray-300 rounded-full dark:bg-gray-700">
-              <p class="bg-black text-base tx-base tx-base font-medium text-blue-100 text-center p-0.5 leading-5 rounded-full" style="width: 95%"> 95% </p>
-            </aside>
-            <!-- legal research bar-->
-            <h6 class="text-label mt-5 md:mt-6 leading-relaxed tracking-wider"> Legal Research </h6>
-            <aside class="w-full bg-gray-300 rounded-full dark:bg-gray-700">
-              <p class="bg-black text-base tx-base tx-base font-medium text-blue-100 text-center p-0.5 leading-5 rounded-full" style="width: 98%"> 98% </p>
-            </aside>
-            <!-- Content Writing bar-->
-            <h6 class="text-label mt-5 md:mt-6 leading-relaxed tracking-wider">Content & Legal Writing </h6>
-            <aside class="w-full bg-gray-300 rounded-full dark:bg-gray-700">
-              <p class="bg-black text-base tx-base tx-base font-medium text-blue-100 text-center p-0.5 leading-5 rounded-full" style="width: 94%"> 94% </p>
-            </aside>
-            <!-- Proof reading bar-->
-            <h6 class="text-label mt-5 md:mt-6 leading-relaxed tracking-wider">Proofreading and Editing </h6>
-            <aside class="w-full bg-gray-300 rounded-full dark:bg-gray-700">
-              <p class="bg-black text-base tx-base tx-base font-medium text-blue-100 text-center p-0.5 leading-5 rounded-full" style="width: 97%"> 97% </p>
-            </aside>
-            <!-- interpersonal relationships bar-->
-            <h6 class="text-label mt-5 md:mt-6 leading-relaxed tracking-wider">Interpersonal Interactions </h6>
-            <aside class="w-full bg-gray-300 rounded-full dark:bg-gray-700">
-              <p class="bg-black text-base tx-base tx-base font-medium text-blue-100 text-center p-0.5 leading-5 rounded-full" style="width: 95%"> 95% </p>
-            </aside>
-          </div>
-        </div>
-        <!-- Hobbies & Interest-->
-        <div class="py-10 bg-gray-200 rounded-lg px-9 text-sm md:text-base">
-          <div data-aos="fade-down">
-            <div class="flex">
-              <p class="text-8xl md:mt-2.5 md:text-8xl font-light text-blue-900 pr-2">|</p>
-              <h1 class="text-2xl md:text-2xl font-bold tracking-tight py-2.5"> <img class="text-sm h-11 md:h-14 md: leading-none" src="img/svg/myinterest.svg" style=""> Key Interests </h1>
-            </div>
-            <!-- web design bar-->
-            <article class="ml-4">
-              <h6 class="text-label mt-8 md:mt-6 leading-relaxed tracking-tight "> Coding
-              </h6>
-              <h6 class="text-label mt-3 md:mt-6 leading-relaxed tracking-tight ">
-                Reading
-              </h6>
-              <h6 class="text-label mt-3 md:mt-6 leading-relaxed tracking-tight"> Writing </h6>
-              <h6 class="text-label mt-3 md:mt-6 leading-relaxed tracking-tight">Research </h6>
-              <!--<h6 class="text-label mt-3 md:mt-6 leading-relaxed tracking-tight">Case Reading & Analysis </h6>-->
-              <!--<h6 class="text-label mt-3 md:mt-6 leading-relaxed tracking-tight"> Litigation </h6>-->
-              <h6 class="text-label mt-3 md:mt-6 leading-relaxed tracking-tight"> Legal Drafting </h6>
-              <h6 class="text-label mt-3 md:mt-6 leading-relaxed tracking-tight"> Mentorship </h6>
-              <h6 class="text-label mt-3 md:mt-6 leading-relaxed tracking-tight">Public Speaking & Debating</h6>
-              <h6 class="text-label mt-3 md:mt-6 leading-relaxed tracking-wider">Volunteering </h6>
-            </article>
-          </div>
-        </div>
-        <!-- MY EXPERIENCE-->
-        <div class="text-sm md:text-base tracking-tight">
-          <div class="py-10 bg-white md:bg-gray-200 shadow-lg rounded-lg px-5 " data-aos="fade-up">
-            <div class="flex">
-              <p class="text-8xl md:text-8xl font-light text-blue-900 pr-2">|</p>
-              <h1 class="text-2xl md:text-2xl font-bold tracking-tight py-2.5 leading-none">
-                <div class="w-16 h-16 ">
-                  <img class=" " src="img/svg/myexperience.svg" style="height: ;">
-                </div> Experience
-              </h1>
-            </div>
-            <!-- IT Training-->
-            <div class="mt-5 md:mt-9">
-              <h6 class="font-medium text-dark "> <span class="font-bold "> IT & Web Development </span> </h6>
-              <ol class="pl-2.5 md:pl-5">
-                <li class="mb-2 md:mb-5"> <span class=""> Trainee and Freelancer:</span> Rayyan Technologies, Sagamu, Ogun State, Nigeria (2020—Date)</li>
-                <li class="mb-2 md:mb-5"> <span class="">Trainee:</span> Code Lounge, Sagamu, Ogun State, Nigeria (2019—2020) </li>
-                <li class=""> <span Class=""> Trainee:</span> Lafarge Cement ICT Training, Sagamu, Ogun State, Nigeria. (2018 — 2019)</li>
-              </ol>
-            </div>
-            
-            <!-- Law Intern and Mentee-->
-            <div class="mt-5 md:mt-9">
-              <h6 class="font-medium text-dark "> <span class="font-bold "> Law Intern & Mentee </span> </h6>
-              <ol class="pl-2.5 md:pl-5">
-                <li class="mb-2 md:mb-5"> <span class=" "> Intern: </span> D.A. IDUH Advocates (2024 — 2025) </li>
-                <li class="mb-2 md:mb-5"> <span class=" "> Intern: </span> Olumide Babalola LP, Lagos, Nigeria — Data Privacy (August, 2024) </li>
-                <li class="mb-2 md:mb-5"> <span class=" "> Mentee: </span> National LAWSAN Moot & Mock Society (2023) </li>
-                <li class="mb-2 md:mb-5"> <span class=" "> Mentee: </span> M&S Mooting Series (2022 — 2024) </li>
-                <li class="mb-2 md:mb-5"> <span class=" "> Intern: </span> Abdulghaniy Talib & Co, Sagamu, Nigeria (July, 2022 — Nov., 2022) </li>
-                <li class="mb-2 md:mb-5"> <span class=" "> Intern: </span> Omaplex Law Firm, Abuja, Nigeria (August, 2022) </li>
-                <li class="mb-2 md:mb-5"> <span class=" "> Intern: </span> A.A. Hikima & Co Law Firm, Kano Nigeria (2022 — Date) </li>
-                <li class="mb-2 md:mb-5"> <span class=" "> Mentee:</span> BOAS & Chukkol Virtual Mentorship, Nigeria (April, 2020 — Date) </li>
-              </ol>
-            </div>
-            
-            <!-- Volunteering -->
-            <div class="mt-5 md:mt-9">
-              <h6 class="font-medium text-dark "> <span class="font-bold "> Volunteering & Team Work </span> </h6>
-              <ol class="pl-2.5 md:pl-5">
-                <li class="mb-2 md:mb-5"> <span class=""> Planning Team:</span>Solace Virtual Mentorship Programme Series (2023 — Date)</li>
-                <li class="mb-2 md:mb-5"> <span class=""> Stakeholder:</span> Bayero University Law Clinic (2023 — Date) </li>
-                <li class="mb-2 md:mb-5"> <span class=""> Stakeholder:</span> International Humanitarian Law Club (2021 — Date) </li>
-                <li class="mb-2 md:mb-5"> <span class=""> Research Director:</span> National Alternative Dispute Resolution Society (2022 — 2024) </li>
-                <li class="mb-2 md:mb-5"> <span class=""> Freelancer:</span> BOAS Freelancing General Writing Services</li>
-              </ol>
-            </div>
-            
-            
-            
-            
-          </div>
-        </div>
-        
-        <!-- my Education-->
-        <div class="py-10 bg-gray-200 md:bg-white rounded-lg px-5 ">
-          <div class="text-sm md:text-base tracking-tight" data-aos="fade-down">
-            <div class="flex">
-              <p class="text-8xl md:text-8xl my-2.5  text-blue-900 pr-2">|</p>
-              <h1 class="text-2xl md:text-2xl font-bold tracking-tightest py-2.5 "> <img class="text-sm h-11 md:h-14 md: leading-none" src="img/svg/myeducation.svg" style=""> Education & Professional Qualification
-              </h1>
-            </div>
-            <!-- LLB-->
-            <div class="mt-12 md:mt-14">
-              <h6 class="font-normal text-dark tracking-tight"> <span class="font-bold ">LL.B (in-view): </span> Bayero
-                University, Kano Nigeria.</h6>
-              <p class="text-gray-500 text-xs md:text-lg mt-4"> 2019 — till present
-            </div>
-            <!-- MEDIATOR-->
-            <div class="mt-12 md:mt-14">
-              <h6 class="font-normal text-dark tracking-tight"> <span class="font-bold ">Certified Mediator & Associate Member: </span> Institute OF Chartered Mediators & Conciliator, Nigeria </h6>
-              <p class="text-gray-500 text-xs md:text-lg mt-4"> May, 2024
-            </div>
-            <!-- SECONDARY SCHOOL-->
-            <div class="mt-12 md:mt-14">
-              <h6 class="font-normal text-dark tracking-tight"> <span class="font-bold ">West African Secondary School Certificate:</span> Methodist Comprehensive College, Sagamu, Nigeria.</h6>
-              <p class="text-gray-500 text-xs md:text-lg mt-4"> 2012 — 2018 </p>
-            </div>
-            <!-- Primary school-->
-            <div class="mt-12 md:mt-14">
-              <h6 class="font-normal text-dark tracking-tight"> <span class="font-bold ">Primary School Leaving
-                  Certificate:</span> St. Paul Nursery and Primary School, Ofin, Alagbo, Sagamu, Nigeria.</h6>
-              <p class="text-gray-500 text-xs md:text-lg mt-4"> 2007 — 2012 </p>
-            </div>
-          </div>
-        </div>
-        <!-- important div close-->
-      </article>
-    </section>
-    <!-- About me closing section-->
-  </section>
-  
-  
+   
   
   <!-- my services-->
   <section id="portfolio" style="background-image: url('https://i.ibb.co/BZ7GdMJ/services.jpg');" class="bg-cover pt-8 pb-12 px-4 md:px-32 ">
     <div class="font-bold text-white text-center">
-      <h1 class="text-3xl md:text-4xl"> What I Do</h1>
+      <h1 class="text-3xl md:text-4xl"> Key Competencies</h1>
       <!--<h6 class="text-lg md:text-3xl font-light mt-2"> My services</h6>-->
       <p class="text-sm md:text-base font-normal text-center mt-3" data-aos="fade-in">Here are list of services I render to satisfy client's appetite! </p>
     </div>
     
-    <!-- list of services-->
+    
+    <!-- Key competencies -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-10 pt-10 ">
       <div class="mb-5 py-10 bg-white rounded-lg text-sm md:text-base px-5 mx-auto overflow-hidden md:grid-span-2 " data-aos="zoom-in">
         <div class=" justify-center mx-auto w-24 h-24 md:w-48 md:h-48">
           <img src="https://i.ibb.co/K9sRS4K/web-design.jpg" style="relative; width:100%; height: 100%; " class="rounded-full w-full h-full ">
         </div>
-        <h2 class="mt-4 text-xl md:text-2xl font-bold text-center tracking-tight relative"> Web Design </h2>
+        <h2 class="mt-4 text-xl md:text-2xl font-bold text-center tracking-tight relative"> Web Development </h2>
         <hr class="px-5">
         <p class="mt-5 leading-relaxed tracking-tight text-center text-sm md:text-base" style="line-height: 35px; "> Crafting customized and responsive Websites for businesses and organizations! Enhance your online presence with our tailored responsive—websites that showcase your unique brand, engage your audience, and drive results. We deliver visually stunning and user-friendly websites that leave a lasting impression.</p>
         <div class="text-center ">
@@ -460,55 +301,44 @@
     </div>
   </section>
   
-  
-  <!--my web design works-->
-  <main class="px-4 mt-6 md:mt-8">
-    <div class="mb- text-center">
-      <h2 class="text-3xl md:text-4xl font-bold"> Accomplished Web Projects </h2>
-      <p class="text-sm mt-2.5 md:mt-5 md:text-base"> View some of my accomplished web and blog projects!</p>
+
+  <!-- My Publications -->
+  <section class="py-12 md:py-20 px-4">
+    <div class="pt-3" data-aos="fade-down">
+      <h1 class="text-center text-3xl md:text-4xl font-bold"> My Publications</h1>
+      <p class="text-sm md:text-base mt-3 text-center tracking-tight"> Explore insightful publications on various aspects including law and technology.</p>
     </div>
-  </main>
-  <main class="px-4 mb-10 mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:px-32">
-    <!-- Bayero Law Clinic-->
-    <section data-aos="fade-down" class="mb-5">
-      <div class="overflow-hidden relative image-container">
-        <img src="https://i.ibb.co/k3ZPckF/bulc.jpg" alt="Bayero University Law Clinic official website" class="w-full  portfolios" style="height: ">
-        <div class="overlay absolute top-0 left-0 w-full h-full text-white bottom-0 left-0 pt-6 md:pt-10 px-4 bg-gray-800 opacity-70">
-          <h3 class="text-2xl md:text-3xl font-bold mb-1 md:mb-6" data-aos="">Bayero University Law Clinic (BULC)</h3>
-          <p class="text-sm md:text-2xl tx-base tx-base font-light mb-5 ">Built a responsive website for the Clinic showcasing what it stands for. </p>
-          <button class="mt-10 md:mt-28 py-1 px-4 text-base md:text-base font-bold border-3 border text-center rounded-sm  ">
-            <a class="" href="https://buklawclinic.com.ng/"> Click to View <i class="fas fa-arrow-right"></i></a></button>
+    <!--publication samples grid-->
+    <article class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-10 md:mt-16 px-4 mx-auto md:px-32">
+      <!-- pub 1-->
+      
+      <!-- article one -->
+      <div data-aos="fade-down" class="bg-white shadow-lg w-full rounded-lg mb-3">
+        <div class="md:w-full overflow-hidden rounded-t">
+          <img src="https://i.ibb.co/NZ1n2Gk/polygamous.jpg" alt="publication caption" class="w-full h-full object-cover object-center">
+        </div>
+        <!--title, abstract & read more-->
+        <div class="px-5 ">
+          <p class="text-sm pt-5 md:text-base font-semibold text-justify text-gray-600"> January 26, 2023 </p>
+          <h3 class="text-base md:text-xl py-8 font-bold tracking-tight uppercase"> POLYGAMOUS MARRIAGE UNDER THE NIGERIAN LAW: WHAT THE LAW HAS TO SAY </h3>
+          <p class="text-sm mb-8 md:text-base tracking-tight text-justify "> Marriage is, indeed, the legitimate means of securing the right to cohabitate between opposite sexes in an "ideal" territory, Nigeria inclusive. And as a matter of fact, in Nigerian law, there are essentially two types of marriage: monogamous (which wholly depicts one man and one wife) and polygamous (which permits more than one wife married to just one man). It is also worth noting that the character...</p>
+          <p class="text-sm md:text-base text-justify mb-5 text-blue-900 font-semibold "><a href="polygamous-marriage.html  " class=""> READ MORE » </a> </p>
         </div>
       </div>
-    </section>
-    <!-- AIC -->
-    <section data-aos="fade-up" class="mb-5">
-      <div class="overflow-hidden relative image-container ">
-        
-        <img src="https://i.ibb.co/8Y45WdZ/aic.jpg" alt="Al-Qosim Islamic Center (AIC)" class="w-full h-auto portfolios md:w-full md:h-auto" style="height: ">
-        
-        <div class="overlay absolute top-0 left-0 w-full  text-white bottom-0 left-0 pt-6 md:pt-10 px-4 bg-gray-800 opacity-70">
-          <h3 class="text-2xl md:text-3xl font-bold mb-1 md:mb-7" data-aos="">Al-Qosim Islamic Center (AIC)</h3>
-          <p class="text-sm md:text-2xl tx-base tx-base font-light mb-5"> Built a stunning and user-friendly website for the organization for publication </p>
-          <button class="mt-10 md:mt-28 py-1 px-4 text-base md:text-base font-bold border-3 border text-center rounded-sm  ">
-            <a class="" href="https://alqosim.sgm.ng"> Click to View <i class="fas fa-arrow-right"></i></a></button>
-        </div>
+      
+      
+      <!-- important div close-->
       </div>
-    </section>
-    
-    <!-- solace chambers -->
-    <section data-aos="fade-up" class="mb-5">
-      <div class="overflow-hidden relative image-container">
-        <img src="https://i.ibb.co/G097ZQz/solace-buk.jpg" alt="Solace Chambers, Bayero University, Kano" class="w-full h-auto portfolios" style="height: ">
-        <div class="overlay absolute top-0 left-0 w-full  text-white bottom-0 left-0 pt-6 md:pt-10 px-4 bg-gray-800 opacity-70">
-          <h3 class="text-2xl md:text-3xl font-bold mb-1 md:mb-5" data-aos="">Solace Chambers, Bayero University, Kano</h3>
-          <p class="text-sm md:text-2xl tx-base tx-base font-light mb-1 ">Built a customized and responsive landing page for Student's based Chanbers domiciled in Bayero University, Kano.</p>
-          <button class="mt-5 md:mt-16 py-1 px-4 text-base md:text-base font-bold border-3 border text-center rounded-sm  ">
-            <a class="    " href="https://muhibqosim.github.io/solace-buk/"> Click to View <i class="fas fa-arrow-right"></i></a></button>
-        </div>
-      </div>
-    </section>
-  </main>
+    </article>
+    <div class="flex justify-center items-center mt-14 px-5  ">
+      <button class=" text-white pulsate-bck font-bold text-center btn  p-3 rounded-lg uppercase text-base md:text-base px-5 Navy-blue text-lg font-bold bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg  ">
+        <a class="text-white" href="lextalks.html"> View More <i class="fas fa-arrow-right font-bold"> </i> </a> </button>
+    </div>
+  </section>
+  
+
+
+
   
   <!-- TESTIMONY-->
   <section style="background-image: url('https://i.ibb.co/VWcctpW/testimonials.jpg');" class="portfolio bg-cover pt-12 pb-12 px-4 bg-gray-900 opacity-80 px-4 sm:px-4 md:px-10 lg:px-8">
@@ -579,46 +409,13 @@
     </div>
   </section>
   
-  <!-- My Publications -->
-  <section class="py-12 md:py-20 px-4">
-    <div class="pt-3" data-aos="fade-down">
-      <h1 class="text-center text-3xl md:text-4xl font-bold"> My Publications</h1>
-      <p class="text-sm md:text-base mt-3 text-center tracking-tight"> Explore my insightful publications on various aspects of law spanning accross to intellectual property, AI, litigation, oil & gas, legal opinion, islamic finance etc. </p>
-    </div>
-    <!--publication samples grid-->
-    <article class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-10 md:mt-16 px-4 mx-auto md:px-32">
-      <!-- pub 1-->
-      
-      <!-- article one -->
-      <div data-aos="fade-down" class="bg-white shadow-lg w-full rounded-lg mb-3">
-        <div class="md:w-full overflow-hidden rounded-t">
-          <img src="https://i.ibb.co/NZ1n2Gk/polygamous.jpg" alt="publication caption" class="w-full h-full object-cover object-center">
-        </div>
-        <!--title, abstract & read more-->
-        <div class="px-5 ">
-          <p class="text-sm pt-5 md:text-base font-semibold text-justify text-gray-600"> January 26, 2023 </p>
-          <h3 class="text-base md:text-xl py-8 font-bold tracking-tight uppercase"> POLYGAMOUS MARRIAGE UNDER THE NIGERIAN LAW: WHAT THE LAW HAS TO SAY </h3>
-          <p class="text-sm mb-8 md:text-base tracking-tight text-justify "> Marriage is, indeed, the legitimate means of securing the right to cohabitate between opposite sexes in an "ideal" territory, Nigeria inclusive. And as a matter of fact, in Nigerian law, there are essentially two types of marriage: monogamous (which wholly depicts one man and one wife) and polygamous (which permits more than one wife married to just one man). It is also worth noting that the character...</p>
-          <p class="text-sm md:text-base text-justify mb-5 text-blue-900 font-semibold "><a href="polygamous-marriage.html  " class=""> READ MORE » </a> </p>
-        </div>
-      </div>
-      
-      
-      <!-- important div close-->
-      </div>
-    </article>
-    <div class="flex justify-center items-center mt-14 px-5  ">
-      <button class=" text-white pulsate-bck font-bold text-center btn  p-3 rounded-lg uppercase text-base md:text-base px-5 Navy-blue text-lg font-bold bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg  ">
-        <a class="text-white" href="lextalks.html"> View More <i class="fas fa-arrow-right font-bold"> </i> </a> </button>
-    </div>
-  </section>
-  
-  <!-- MESSAGE ME  -->
+
+  <!-- MESSAGE ME  starts here -->
   <main class="py-10 bg-gray-200 md:px-56">
     <div class="">
       <h1 class="text-3xl md:text-4xl font-bold text-center"> Contact </h1>
     </div>
-    <section data-aos="fade-down" class="bg-blue-200 mt-4 md:mt-4 px-4 md:px-10 py-8">
+    <section data-aos="fade-down" class="bg-blue-200 mt-4 md:mt-4 px-4 md:px-10 py-8 rounded-2xl ">
       <p class="text-2xl md:text-2xl font-bold text-center mb-3"> Send a Message </p>
       <div class=" ">
         <form class="mx-auto " action="https://formspree.io/f/mqkvzbyz" method="POST" style="width: ">
@@ -741,7 +538,7 @@
     <hr style="background-color: " class="bg-gray-100 font-light mt-20 ">
     <!-- copyright-->
     <div class="mt-10 md:mt-20 pt-5">
-      <p class="text-sm text-white font-light text-center md:text-base"> <i class="far fa-copyright md:text-base "></i> <span id="copyright-year"></span> Al-Qosim | All rights reserved.</p>
+      <p class="text-sm text-white font-light text-center md:text-base"> <i class="far fa-copyright md:text-base "></i> <span id="copyright-year"></span> Muhibudeen, Qosim Atanda | All rights reserved.</p>
     </div>
     
     
