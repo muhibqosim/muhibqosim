@@ -1,16 +1,3 @@
-// Toggle the mobile menu
-/*function toggleMenu() {
-  const menu = document.getElementById('mobile-menu');
-  menu.classList.toggle('hidden');
-}*/
-
-// Toggle the dropdown menu for Blog
-function toggleDropdown() {
-  const dropdownContent = document.querySelector('.dropdown-content');
-  dropdownContent.classList.toggle('hidden');
-}
-
-
 // Toggle dropdown (works for both mobile and desktop)
 function toggleDropdown() {
   const dropdown = document.querySelectorAll(".dropdown-content");
@@ -24,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var currentYear = new Date().getFullYear();
   document.getElementById('copyright-year').textContent = currentYear;
 });
+
 //about the author
 document.addEventListener('DOMContentLoaded', function() {
   // The sentence you want to insert
@@ -43,7 +31,7 @@ function myFunction(x) {
 function toggleMenu() {
   var menu = document.getElementById("mobile-menu");
   if (menu.classList.contains("hidden")) {
-    menu.classList.removehidden");
+    menu.classList.remove("hidden");
   } else {
     menu.classList.add("hidden");
   }
@@ -139,4 +127,3 @@ function autoAdvance() {
 
 showSlide(slideIndex);
 autoAdvance();
-
