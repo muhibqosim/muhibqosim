@@ -25,6 +25,7 @@ window.addEventListener("scroll", function() {
     if (logo) {
       logo.classList.remove("text-white");
       logo.classList.add("text-blue-900");
+      logo.classList.add("font-semibold");
     }
     
     // CHANGE HAMBURGER COLOR
