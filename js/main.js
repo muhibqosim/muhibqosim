@@ -4,6 +4,59 @@ function toggleDropdown() {
   dropdown.forEach(el => el.classList.toggle("hidden"));
 }
 
+//Chaning of nav bar bacjground color
+window.addEventListener("scroll", function() {
+  
+  const navbar = document.getElementById("navbar");
+  const links = document.querySelectorAll(".nav-link");
+  const logo = document.querySelector(".nav-logo");
+  const bars = document.querySelectorAll(".bar1, .bar2, .bar3");
+  
+  if (window.scrollY > 50) {
+    
+    navbar.classList.remove("Navy-blue");
+    navbar.classList.add("bg-white/90", "backdrop-blur-md", "shadow-lg");
+    
+    links.forEach(link => {
+      link.classList.remove("text-white");
+      link.classList.add("text-blue-900");
+    });
+    
+    if (logo) {
+      logo.classList.remove("text-white");
+      logo.classList.add("text-blue-900");
+    }
+    
+    // CHANGE HAMBURGER COLOR
+    bars.forEach(bar => {
+      bar.style.backgroundColor = "#1e3a8a";
+    });
+    
+  } else {
+    
+    navbar.classList.remove("bg-white/90", "backdrop-blur-md", "shadow-lg");
+    navbar.classList.add("Navy-blue");
+    
+    links.forEach(link => {
+      link.classList.remove("text-blue-900");
+      link.classList.add("text-white");
+    });
+    
+    if (logo) {
+      logo.classList.remove("text-blue-900");
+      logo.classList.add("text-white");
+    }
+    
+    // RESTORE HAMBURGER COLOR
+    bars.forEach(bar => {
+      bar.style.backgroundColor = "white";
+    });
+    
+  }
+  
+});
+
+
 
 
 //Footer
