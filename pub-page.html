@@ -50,86 +50,65 @@
     }
   </style>
 </head>
+
+
 <!-- body starts here-->
 
-<body>
-  <div id="fb-root"></div>
-  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v18.0" nonce="fYIThrBZ"></script>
-  <!--<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId: '',
-      autoLogAppEvents: true,
-      xfbml: true,
-      version: 'v13.0'
-    });
-  };
-</script>-->
-  <!--<script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>-->
-
-  <!-- main page starts here-->
-  <main class="navbar ">
-    <header class="header Navy-blue py-1.5 md:py-5 w-full" style="posisition: sticky; top:0;">
-      <!-- Navigation menu -->
-      <nav class=" ">
-        <div class=" ">
-          <div class="flex justify-between">
-            <div class="flex">
-              <a href="#" class="flex items-center ">
-                <img src="https://i.ibb.co/qpWhN2R/Screenshot-20240414-225818-removebg-preview.png" class="w-20 h-14 md:w-72 md:h-48" alt="logo">
-                <!--<span class="text-white text-xl md:text-5xl garamond mx-1 font-bold uppercase" style="font-weight: 600;">Al-qosim</span>-->
-              </a>
-            </div>
-            <!-- desktop menu bar-->
-            <div class="hidden garamond md:flex items-center md:justify-center mx-auto lg:pl-48 space-x-1 md:text-3xl hover:text-red-900">
-              <a href="index.html" class="py-4 px-2 text-white font-semibold hover:text-red-500">Home</a>
-              <a href="#portfolio" class="block py-2 px-4 tx-sm text-white font-semibold hover:text-red-500">Expertise</a>
-              <!-- Dropdown for Blog -->
-              <div class="relative">
-                <button class="block py-2 px-4 tx-sm md:text-3xl text-white font-semibold hover:bg-red-500 w-full text-left" onclick="toggleDropdown()">Publications</button>
-                <div class="dropdown-content hidden bg-gray-50 text-black hover:text-white rounded-sm shadow-sm w-full">
-                  <a href="lextalks.html" class="block text-black hover:text-white px-4 py-2 hover:bg-gray-900">LexTalks</a>
-                  <!--<a href="tech-bus.html" class="block text-black hover:text-white px-4 py-2 hover:bg-gray-900 border-b">Tech & bus </a>-->
-                </div>
+<body class="bg-gray-50 flex flex-col min-h-screen">
+  <div class="flex-grow">
+    <div class="navbar ">
+      <header id="navbar" class="header Navy-blue px-2 py-3 text-white shadow-2xl sticky z-50 top-0 transition-all duration-300 nav-link">
+        <!-- Navigation menu -->
+        <nav class="  ">
+          <div class=" ">
+            <div class="flex justify-between py-2 md:py-4">
+              <div class="flex ">
+                <a href="#" class="flex items-center ">
+                  <p class="text-white text-xl md:text-2xl garamond mx-1 font-light nav-logo" style="font-weight: ;">
+                    <!--<img src="img/logo.png" class="w-20 h-14 md:w-28 md:h-28" alt="logo">-->
+                    <!--<span class="text-white text-xl md:text-5xl garamond mx-1 font-bold uppercase" style="font-weight: 600;">Al-qosim</span>-->
+                    Muhibudeen, Qosim Atanda
+                  </p>
+                </a>
               </div>
-              <a href="resources.html" class="py-4 px-2 text-white font-semibold hover:text-red-500">Resources</a>
-              <a href="#footer" class="py-4 px-2 text-white font-semibold hover:text-red-500">Contact</a>
+              <!-- desktop menu bar-->
+              <div class="hidden garamond md:flex items-center md:justify-center mx-auto lg:pl-48 space-x-1 md:text-xl  md:gap-8 ">
+                <a href="index.html" class="py-4 px-2 text- font-semibold hover:text-white hover:bg-blue-500 md:rounded-2xl md:py-1 md:px-4">Home</a>
+                <a href="index.html" class="py-4 px-2 text- font-semibold hover:text-white hover:bg-blue-500 md:rounded-2xl md:py-1 md:px-4">About</a>
+                <a href="services.html" class="block py-2 px-4 tx-sm text- font-semibold hover:text-white hover:bg-blue-500 md:rounded-2xl md:py-1 md:px-4">Competencies</a>
+                <a href="publications.html" class="block py-2 px-4 tx-sm text- font-semibold hover:text-white hover:bg-blue-500 md:rounded-2xl md:py-1 md:px-4">Publications</a>
+                <a href="resources.html" class="py-4 px-2  font-semibold hover:text-white hover:bg-blue-500 md:rounded-2xl md:py-1 md:px-4">Resources</a>
+                <a href="#footer" class="py-4 px-2  font-semibold hover:text-white hover:bg-blue-500 md:rounded-2xl md:py-1 md:px-4">Contact</a>
+              </div>
+              <!-- desktop menu bar-->
+              <div class="md:hidden flex items-center pr-3">
+                <button type="button" class="cursor-pointer text-gray-500 hover:text-white focus:outline-none focus:text-white" aria-label="toggle menu" onclick="toggleMenu()">
+                  <div class="hamburger container" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                  </div>
+                </button>
+              </div>
+            </div </div>
+            
+            <!-- mobile menu bar -->
+            <div class="hidden md:hidden justify-between bg-gray-400 " id="mobile-menu">
+              <a href="index.html" class="block py-2 px-4 tx-sm hover:text-white font-semibold hover:bg-gray-900 nav-link">Home</a>
+              <a href="about.html" class="block py-2 px-4 tx-sm hover:text-white font-semibold hover:bg-gray-900 nav-link">About</a>
+              <a href="services.html" class="block py-2 px-4 tx-sm hover:text-white font-semibold hover:bg-gray-900 nav-link">Competencies</a>
+              <a href="publications.html" class="block py-2 px-4 tx-sm hover:text-white font-semibold hover:bg-gray-900 nav-link">Publications</a>
+              <a href="resources.html" class="block py-2 px-4 tx-sm hover:text-white font-semibold hover:bg-gray-900 nav-link">Resources</a>
+              <a href="#footer" class="block py-2 px-4 tx-sm hover:text-white font-semibold hover:bg-gray-900 nav-link">Contact</a>
             </div>
-            <!-- desktop menu bar-->
-            <div class="md:hidden flex items-center pr-3">
-              <button type="button" class="cursor-pointer text-gray-500 hover:text-white focus:outline-none focus:text-white" aria-label="toggle menu" onclick="toggleMenu()">
-                <div class="container" onclick="myFunction(this)">
-                  <div class="bar1"></div>
-                  <div class="bar2"></div>
-                  <div class="bar3"></div>
-                </div>
-              </button>
-            </div>
-          </div>
-        </div>
+        </nav>
+      </header>
+    </div>
+    <div class="conte">
+      
+    </div>
+    <!-- header ends here-->
 
-        <!-- mobile menu bar -->
-        <div class="hidden md:hidden justify-between bg-blue-800" id="mobile-menu">
-          <a href="index.html" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Home</a>
-          <a href="#portfolio" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Expertise</a>
-
-          <!-- Dropdown for Blog -->
-          <div class="relative">
-            <button class="block py-2 px-4 tx-sm md:text-3xl text-white font-semibold hover:bg-gray-900 w-full text-left" onclick="toggleDropdown()">Publications</button>
-            <div class="dropdown-content hidden bg-gray-50 text-black hover:text-white rounded-sm shadow-sm w-full">
-              <a href="lextalks.html" class="block text-black hover:text-white px-4 py-2 hover:bg-gray-900">LexTalks</a>
-              <!--<a href="tech-bus.html" class="block text-black hover:text-white px-4 py-2 hover:bg-gray-900 border-b">Tech & bus </a>-->
-            </div>
-          </div>
-          <a href="resources.html" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Resources</a>
-          <a href="#footer" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Contact</a>
-
-
-        </div>
-      </nav>
-    </header>
-  </main>
-  <!--header ends here-->
   <!-- image background and introduction-->
   <section class="bg-white h-50  px-4">
     <h1 class="mt-10 text-center md:mt-20 font-bold text-lg md:text-5xl md:leading-snug md:uppercase uppercase"> Jungle Justice in the Nigeria Legal System</h1>
@@ -192,7 +171,7 @@
   </div>
 
 
-  <!-- ABOUT THE AUTHOR & COMMENT SECTION-->
+  <!-- ABOUT THE AUTHOR -->
   <section class="bg-gray-100 py-10">
     <!-- about the author-->
     <div class="px-4 ">
@@ -247,7 +226,7 @@
     <hr style="background-color: " class="bg-gray-100 font-light mt-20 ">
     <!-- copyright-->
     <div class="mt-10 md:mt-20 pt-5">
-      <p class="text-sm text-white font-light text-center md:text-base"> <i class="far fa-copyright md:text-base "></i> <span id="copyright-year"></span> Al-Qosim | All rights reserved.</p>
+      <p class="text-sm text-white font-light text-center md:text-base"> <i class="far fa-copyright md:text-base "></i> <span id="copyright-year"></span> Muhibudeen, Qosim Atanda | All rights reserved.</p>
     </div>
     
     

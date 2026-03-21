@@ -5,28 +5,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initinitial-scale">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content=" LexTalks is a legal blog simplifying law through insightful articles, case reviews, and scholarly essays.">
-  <meta name="keywords" content="Legal Research, Case Analysis, Content and Legal Writing/Drafting, Proofreading, Web Design, Programming, case digest, legal insights, legal essays">
-  <meta name="author" content="Al-Qosim: Legal Mind. Tech Edge.">
-  <title> Al-Qosim | LexTalks </title>
+  <meta name="description" content="With a strong foundation in law and proficiency in web design, I explore the intersection of law, technology, and Islamic finance through research, litigation support, and digital innovation.">
+  <meta name="keywords" content="Legal and Academic Research, Litigation and ADR Practice Assistance, Islamic Finance & Shari’ah Governance, Legal and Legislative Drafting, Web Development & Artificial Intelligence Literacy, Strategic Leadership & Institutional Support ">
+  <meta name="author" content="Muhibudeen, Qosim Atanda ">
+  <title> Free Resources || Qosim  </title>
   <!--og properties-->
-  <meta property="og:title" content="Al-Qosim | LexTalks">
-  <meta property="og:description" content="LexTalks is a legal blog simplifying law through insightful articles, case reviews, and scholarly essays.">
-  <meta property="og:image" content="https://muhibqosim.com.ng/img/lextalks.png">
+  <meta property="og:title" content="Free Resources || Qosim ">
+  <meta property="og:description" content="With a strong foundation in law and proficiency in web design, I explore the intersection of law, technology, and Islamic finance through research, litigation support, and digital innovation.">
+  <meta property="og:image" content="https://muhibqosim.com.ng/img/logo-otg.png">
   <meta property="og:url" content="https://muhibqosim.com.ng/">
-  <!--otg ends here-->
+  <!-- fontawesome link-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css" integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- tailwind link-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
+  <link href="/dist/output.css" rel="stylesheet">
+  <!-- libraries -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-
-
-  <!--css link-->
+  
+  <!-- AOS link-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- css link-->
   <link rel="stylesheet" href="css/main.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script> 
+  <!--Web fonts-->
   <!-- fonts-->
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Geologica&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300&display=swap" rel="stylesheet">
+  
+  <!-- style starts here-->
   <style>
     /* Background image for homepage: mobile and desktop*/
     @media (max-width:699px) {
@@ -44,76 +54,65 @@
     }
   </style>
 </head>
+
 <!-- body starts here-->
 
-<body>
-  <main class="navbar ">
-    <header class="header Navy-blue py-1.5 md:py-5 w-full" style="posisition: sticky; top:0;">
+<body class="bg-gray-50 flex flex-col min-h-screen">
+  <div class="flex-grow">
+  <div class="navbar " >
+    <header id="navbar" class="header Navy-blue px-2 py-3 text-white shadow-2xl sticky z-50 top-0 transition-all duration-300 nav-link">
       <!-- Navigation menu -->
-      <nav class=" ">
+      <nav class="  ">
         <div class=" ">
-          <div class="flex justify-between">
-            <div class="flex">
-              <a href="#" class="flex items-center ">
-                <img src="img/logo.png" class="w-20 h-14 md:w-72 md:h-48" alt="logo">
+          <div class="flex justify-between py-2 md:py-4">
+            <div class="flex ">
+              <a href="#" class="flex items-center "> <p class="text-white text-xl md:text-2xl garamond mx-1 font-light nav-logo" style="font-weight: ;"> 
+              <!--<img src="img/logo.png" class="w-20 h-14 md:w-28 md:h-28" alt="logo">-->
                 <!--<span class="text-white text-xl md:text-5xl garamond mx-1 font-bold uppercase" style="font-weight: 600;">Al-qosim</span>-->
-              </a>
+               Muhibudeen, Qosim Atanda
+              </p></a>
             </div>
             <!-- desktop menu bar-->
-            <div class="hidden garamond md:flex items-center md:justify-center mx-auto lg:pl-48 space-x-1 md:text-3xl hover:text-red-900">
-              <a href="index.html" class="py-4 px-2 text-white font-semibold hover:text-red-500">Home</a>
-              <a href="index.html" class="block py-2 px-4 tx-sm text-white font-semibold hover:text-red-500">Expertise</a>
-              <!-- Dropdown for Blog -->
-              <div class="relative">
-                <button class="block py-2 px-4 tx-sm md:text-3xl text-white font-semibold hover:bg-red-500 w-full text-left" onclick="toggleDropdown()">Publications</button>
-                <div class="dropdown-content hidden bg-gray-50 text-black hover:text-white rounded-sm shadow-sm w-full">
-                  <a href="lextalks.html" class="block text-black hover:text-white px-4 py-2 hover:bg-gray-900">LexTalks</a>
-                  <!--<a href="tech-bus.html" class="block text-black hover:text-white px-4 py-2 hover:bg-gray-900 border-b">Tech & bus </a>-->
-
-                </div>
-              </div>
-              <!--<a href="portfolio.html" class="py-4 px-2 text-white font-semibold hover:text-gray-900">Portfolio</a>-->
-              <a href="resources.html" class="py-4 px-2 text-white font-semibold hover:text-red-500">Resources</a>
-              <a href="#footer" class="py-4 px-2 text-white font-semibold hover:text-red-500">Contact</a>
+            <div class="hidden garamond md:flex items-center md:justify-center mx-auto lg:pl-48 space-x-1 md:text-xl  md:gap-8 ">
+              <a href="index.html" class="py-4 px-2 text- font-semibold hover:text-white hover:bg-blue-500 md:rounded-2xl md:py-1 md:px-4">Home</a>
+              <a href="index.html" class="py-4 px-2 text- font-semibold hover:text-white hover:bg-blue-500 md:rounded-2xl md:py-1 md:px-4">About</a>
+              <a href="services.html" class="block py-2 px-4 tx-sm text- font-semibold hover:text-white hover:bg-blue-500 md:rounded-2xl md:py-1 md:px-4">Competencies</a>
+              <a href="publications.html" class="block py-2 px-4 tx-sm text- font-semibold hover:text-white hover:bg-blue-500 md:rounded-2xl md:py-1 md:px-4">Publications</a>
+              <a href="resources.html" class="py-4 px-2  font-semibold hover:text-white hover:bg-blue-500 md:rounded-2xl md:py-1 md:px-4">Resources</a>
+              <a href="#footer" class="py-4 px-2  font-semibold hover:text-white hover:bg-blue-500 md:rounded-2xl md:py-1 md:px-4">Contact</a>
             </div>
             <!-- desktop menu bar-->
             <div class="md:hidden flex items-center pr-3">
               <button type="button" class="cursor-pointer text-gray-500 hover:text-white focus:outline-none focus:text-white" aria-label="toggle menu" onclick="toggleMenu()">
-                <div class="container" onclick="myFunction(this)">
+                <div class="hamburger container" onclick="myFunction(this)">
                   <div class="bar1"></div>
                   <div class="bar2"></div>
                   <div class="bar3"></div>
                 </div>
               </button>
             </div>
-          </div>
+          </div
         </div>
-
+        
         <!-- mobile menu bar -->
-        <div class="hidden md:hidden justify-between bg-blue-800" id="mobile-menu">
-          <a href="index.html" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Home</a>
-          <a href="index.html" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Expertise</a>
-
-          <!-- Dropdown for Blog -->
-          <div class="relative">
-            <button class="block py-2 px-4 tx-sm md:text-3xl text-white font-semibold hover:bg-gray-900 w-full text-left" onclick="toggleDropdown()">Publications</button>
-            <div class="dropdown-content hidden bg-gray-50 text-black hover:text-white rounded-sm shadow-sm w-full">
-              <a href="lextalks.html" class="block text-black hover:text-white px-4 py-2 hover:bg-gray-900">LexTalks</a>
-              <!--<a href="tech-bus.html" class="block text-black hover:text-white px-4 py-2 hover:bg-gray-900 border-b">Tech & bus </a>-->
-
-            </div>
-          </div>
-          <a href="resources.html" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Resources</a>
-          <a href="#footer" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Contact</a>
-
-
+        <div class="hidden md:hidden justify-between bg-gray-400 " id="mobile-menu">
+          <a href="index.html" class="block py-2 px-4 tx-sm hover:text-white font-semibold hover:bg-gray-900 nav-link">Home</a>
+          <a href="about.html" class="block py-2 px-4 tx-sm hover:text-white font-semibold hover:bg-gray-900 nav-link">About</a>
+          <a href="services.html" class="block py-2 px-4 tx-sm hover:text-white font-semibold hover:bg-gray-900 nav-link">Competencies</a>
+          <a href="publications.html" class="block py-2 px-4 tx-sm hover:text-white font-semibold hover:bg-gray-900 nav-link">Publications</a>
+          <a href="resources.html" class="block py-2 px-4 tx-sm hover:text-white font-semibold hover:bg-gray-900 nav-link">Resources</a>
+          <a href="#footer" class="block py-2 px-4 tx-sm hover:text-white font-semibold hover:bg-gray-900 nav-link">Contact</a>
         </div>
       </nav>
     </header>
-  </main>
+  </div>
+  <div class="conte">
+
+  </div>
   <!-- header ends here-->
+
   <!-- image background and introduction-->
-  <section class="bg-gray-800 bg-center header-lg  ">
+  <section class="bg-white  bg-center header-lg  ">
     <div class="header-bg opacity-70 py-20 md:py-56 h-full ">
       <div class="px-3 md:pt-14 md:px-10  xl:px-32  text-center">
         <div class="w-full text-white ">
@@ -121,7 +120,7 @@
                     <span class="block leading-none">Welcome To</span>
                 </div>-->
           <div class="text-4xl garamond md:text-8xl animate__animated animate__fadeIn animate__slow animate__delay-1s tracking-tight mb-4 md:mb-24">
-            <span class="block leading-none font-semibold text-center tracking-widest opacity-100 uppercase">LexTalks </span> <span class="block mt-3 md:mt-7 geologica text-sm md:text-4xl italic tracking-wide  text-gray-50 font-light bg-gray-800 mx-20 md:mx-44"> Talk Law. Think Loud.</span>
+            <span class="block leading-none font-semibold text-center tracking-widest opacity-100 uppercase">My Publications </span> <span class="block mt-3 md:mt-7 geologica text-sm md:text-4xl italic tracking-wide  text-gray-50 font-light bg-gray-800 mx-20 md:mx-44"> Talk Law. Think Loud.</span>
           </div>
           <div class="hidden " id="typed-strings">
             <h2 class="text-base "> Legal Series for Everyone </h2>
@@ -135,21 +134,17 @@
 
   <!-- short description -->
   <section class="bg-white ">
-    <button class="bg-red-800 text-center text-base text-white py-1 md:text-3xl px-2 font-bold uppercase geologica tracking-wider"> About LexTalks:</button>
-    <div class="mt-12 md:mt-24">
-      <div class="px-16 md:px-2 flex justify-center">
-        <img src="img/lextalks.png" class=" h-32 md:h-64 rounded-4xl" alt="" />
-      </div>
-      <p class="px-5 mt-5 md:mt-12 text-sm md:text-3xl text-center font-light text-gray-700 "><span class="text-red-500"> LexTalks</span> is a legal blog simplifying law through insightful articles, case reviews, and scholarly essays. As an independent platform, it is dedicated to making legal knowledge more accessible and relatable through well-crafted publications and deep legal insights. From everyday issues to complex legal developments, LexTalks explores key areas of law with clarity and purpose — bringing the law closer to all.</p>
-
+    <button class="bg-red-800 text-center text-base text-white py-1 md:text-3xl px-2 font-bold uppercase geologica tracking-wider"> About My Publications:</button>
+    <div class="py-12 md:mt-24">
+      <p class="px-5 text-sm md:text-3xl text-center font-light text-gray-700 pb"><span class=" "> Qosim </span> offers a platform which simplifies law through insightful articles, case reviews, and scholarly essays. Through writings, Qosim makes legal knowledge more accessible and relatable through well-crafted publications and deep legal insights.</p>
     </div>
   </section>
 
-
-  <div class="pt-0.5 mt-8 bg-gray-100"> </div>
+<hr class="bg-red-900" />
+<!--  <div class="pt-0.5 mt-8 bg-gray-100"> </div>-->
 
   <!-- Search button -->
-  <section class="bg-white ">
+  <section class="bg-white pt-12 md:pt-24">
 
     <!-- TABLE -->
     <div class="mb-4  md:pt-6 pb-5  ">
@@ -414,7 +409,7 @@
           <h5 class=" text-white text-justify text-base md:text-xl font-semibold "> Quick Links </h5>
           <p class="text-gray-300 my-2 font-light "> <a class=" " href="index.html"> Home</a></p>
           <!-- <p class="text-gray-300 my-2 font-light "> <a class=" " href="portfolio.html" >Portfolio</a></p>-->
-          <p class="text-gray-300 my-2 font-light "> <a class=" " href="lextalks.html"> Publications</a></p>
+          <p class="text-gray-300 my-2 font-light "> <a class=" " href="publications.html"> Publications</a></p>
           <p class="text-gray-300 my-2 font-light "> <a class=" " href="resources.html"> Free resources</a></p>
           <p class="text-gray-300 my-2 font-light "> <a class=" " href="#footer"> Contact</a></p>
         </div>
