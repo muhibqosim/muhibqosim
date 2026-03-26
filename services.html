@@ -30,7 +30,7 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <!-- css link-->
   <link rel="stylesheet" href="css/main.css">
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
   <!--Web fonts-->
   <!-- fonts-->
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
@@ -77,533 +77,537 @@
 
 <body class="bg-gray-50 flex flex-col min-h-screen">
   <div class="flex-grow">
-  <div class="navbar " >
-    <header id="navbar" class="header Navy-blue px-2 py-3 text-white shadow-2xl sticky z-50 top-0 transition-all duration-300 nav-link">
-      <!-- Navigation menu -->
-      <nav class="  ">
-        <div class=" ">
-          <div class="flex justify-between py-2 md:py-4">
-            <div class="flex ">
-              <a href="#" class="flex items-center "> <p class="text-white text-xl md:text-2xl garamond mx-1 font-light nav-logo" style="font-weight: ;"> 
-              <!--<img src="img/logo.png" class="w-20 h-14 md:w-28 md:h-28" alt="logo">-->
-                <!--<span class="text-white text-xl md:text-5xl garamond mx-1 font-bold uppercase" style="font-weight: 600;">Al-qosim</span>-->
-               Muhibudeen, Qosim Atanda
-              </p></a>
-            </div>
-            <!-- desktop menu bar-->
-            <div class="hidden garamond md:flex items-center md:justify-center mx-auto lg:pl-48 space-x-1 md:text-xl  md:gap-8 ">
-              <a href="index.html" class="py-4 px-2 text- font-semibold hover:text-white hover:bg-blue-500 md:rounded-2xl md:py-1 md:px-4">Home</a>
-              <a href="index.html" class="py-4 px-2 text- font-semibold hover:text-white hover:bg-blue-500 md:rounded-2xl md:py-1 md:px-4">About</a>
-              <a href="services.html" class="block py-2 px-4 tx-sm text- font-semibold hover:text-white hover:bg-blue-500 md:rounded-2xl md:py-1 md:px-4">Competencies</a>
-              <a href="publications.html" class="block py-2 px-4 tx-sm text- font-semibold hover:text-white hover:bg-blue-500 md:rounded-2xl md:py-1 md:px-4">Publications</a>
-              <a href="resources.html" class="py-4 px-2  font-semibold hover:text-white hover:bg-blue-500 md:rounded-2xl md:py-1 md:px-4">Resources</a>
-              <a href="#footer" class="py-4 px-2  font-semibold hover:text-white hover:bg-blue-500 md:rounded-2xl md:py-1 md:px-4">Contact</a>
-            </div>
-            <!-- desktop menu bar-->
-            <div class="md:hidden flex items-center pr-3">
-              <button type="button" class="cursor-pointer text-gray-500 hover:text-white focus:outline-none focus:text-white" aria-label="toggle menu" onclick="toggleMenu()">
-                <div class="hamburger container" onclick="myFunction(this)">
-                  <div class="bar1"></div>
-                  <div class="bar2"></div>
-                  <div class="bar3"></div>
-                </div>
-              </button>
+    <div class="navbar ">
+      <header id="navbar" class="header Navy-blue px-2 py-3 text-white shadow-2xl sticky z-50 top-0 transition-all duration-300 nav-link">
+        <!-- Navigation menu -->
+        <nav class="  ">
+          <div class=" ">
+            <div class="flex justify-between py-2 md:py-4">
+              <div class="flex ">
+                <a href="#" class="flex items-center ">
+                  <p class="text-white text-xl md:text-2xl garamond mx-1 font-light nav-logo" style="font-weight: ;">
+                    <!--<img src="img/logo.png" class="w-20 h-14 md:w-28 md:h-28" alt="logo">-->
+                    <!--<span class="text-white text-xl md:text-5xl garamond mx-1 font-bold uppercase" style="font-weight: 600;">Al-qosim</span>-->
+                    Muhibudeen, Qosim Atanda
+                  </p>
+                </a>
+              </div>
+              <!-- desktop menu bar-->
+              <div class="hidden garamond md:flex items-center md:justify-center mx-auto lg:pl-48 space-x-1 md:text-xl  md:gap-8 ">
+                <a href="index.html" class="py-4 px-2 text- font-semibold hover:text-white hover:bg-blue-500 md:rounded-2xl md:py-1 md:px-4">Home</a>
+                <a href="index.html" class="py-4 px-2 text- font-semibold hover:text-white hover:bg-blue-500 md:rounded-2xl md:py-1 md:px-4">About</a>
+                <a href="services.html" class="block py-2 px-4 tx-sm text- font-semibold hover:text-white hover:bg-blue-500 md:rounded-2xl md:py-1 md:px-4">Competencies</a>
+                <a href="publications.html" class="block py-2 px-4 tx-sm text- font-semibold hover:text-white hover:bg-blue-500 md:rounded-2xl md:py-1 md:px-4">Publications</a>
+                <a href="resources.html" class="py-4 px-2  font-semibold hover:text-white hover:bg-blue-500 md:rounded-2xl md:py-1 md:px-4">Resources</a>
+                <a href="#footer" class="py-4 px-2  font-semibold hover:text-white hover:bg-blue-500 md:rounded-2xl md:py-1 md:px-4">Contact</a>
+              </div>
+              <!-- desktop menu bar-->
+              <div class="md:hidden flex items-center pr-3">
+                <button type="button" class="cursor-pointer text-gray-500 hover:text-white focus:outline-none focus:text-white" aria-label="toggle menu" onclick="toggleMenu()">
+                  <div class="hamburger container" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                  </div>
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-        
-        <!-- mobile menu bar -->
-        <div class="hidden md:hidden justify-between bg-gray-400 " id="mobile-menu">
-          <a href="index.html" class="block py-2 px-4 tx-sm hover:text-white font-semibold hover:bg-gray-900 nav-link">Home</a>
-          <a href="about.html" class="block py-2 px-4 tx-sm hover:text-white font-semibold hover:bg-gray-900 nav-link">About</a>
-          <a href="services.html" class="block py-2 px-4 tx-sm hover:text-white font-semibold hover:bg-gray-900 nav-link">Competencies</a>
-          <a href="publications.html" class="block py-2 px-4 tx-sm hover:text-white font-semibold hover:bg-gray-900 nav-link">Publications</a>
-          <a href="resources.html" class="block py-2 px-4 tx-sm hover:text-white font-semibold hover:bg-gray-900 nav-link">Resources</a>
-          <a href="#footer" class="block py-2 px-4 tx-sm hover:text-white font-semibold hover:bg-gray-900 nav-link">Contact</a>
-        </div>
-      </nav>
-    </header>
-  </div>
-  <div class="conte">
-
-  </div>
-  <!-- header ends here-->
-  
-
+          
+          <!-- mobile menu bar -->
+          <div class="hidden md:hidden justify-between bg-gray-400 " id="mobile-menu">
+            <a href="index.html" class="block py-2 px-4 tx-sm hover:text-white font-semibold hover:bg-gray-900 nav-link">Home</a>
+            <a href="about.html" class="block py-2 px-4 tx-sm hover:text-white font-semibold hover:bg-gray-900 nav-link">About</a>
+            <a href="services.html" class="block py-2 px-4 tx-sm hover:text-white font-semibold hover:bg-gray-900 nav-link">Competencies</a>
+            <a href="publications.html" class="block py-2 px-4 tx-sm hover:text-white font-semibold hover:bg-gray-900 nav-link">Publications</a>
+            <a href="resources.html" class="block py-2 px-4 tx-sm hover:text-white font-semibold hover:bg-gray-900 nav-link">Resources</a>
+            <a href="#footer" class="block py-2 px-4 tx-sm hover:text-white font-semibold hover:bg-gray-900 nav-link">Contact</a>
+          </div>
+        </nav>
+      </header>
+    </div>
+    <div class="conte">
+      
+    </div>
+    <!-- header ends here-->
+    
+    
     <section class="header-lg relative  bg-cover bg-center w-full ">
-      <div class="header-bg opacity-70  h-full bg-cover py-36  md:pt-96 px-2.5 md:px-6 h-75">
-        <div class="text-white  text-center">
-          <h1 class="text-3xl font-semibold md:text-7xl line-height mb-16 "> Qosim's Core Competencies </h1>
-          
-          <div class="flex items-center md:my-10 justify-center  ">
-            <p class="text-3xl"> ....................... </p>
-            <img src="img/decorations.png" class="mt-7 md:h-8" />
-          </div>
-          <div class="flex text-xs justify-center gap-3 mt-5">
-            <p class=" mt-3 md:mt-mt-6 md:text-4xl  font-bold text-center border rounded-lg px-1 py-0.5 border-white-700 hover:bg-white hover:text-black hover:border-white "> <a class="" href="index.html"> Home </a> </p>
-            <p class="mt-3 md:mt-mt-6 md:text-4xl  font-bold text-center border rounded-lg px-1 py-0.5 border-white-700 hover:bg-white hover:text-black hover:border-white "> <a class=" " href="#legal-competencies"> Legal Competencies </a> </p>
-            <p class="mt-3 md:mt-mt-6 md:text-4xl  font-bold text-center border rounded-lg px-1 py-0.5 border-white-700 hover:bg-white hover:text-black hover:border-white "> <a class=" " href="#technical-skills"> Technical & Organisational Skills </a> </p>
-          </div>
+      <div class="header-bg opacity-70 text-white  h-full bg-cover py-40  md:pt-96 px-2.5 md:px-6 h-75">
+        <div class="flex gap-3 mb-16">
+          <p class="mx-4 md:mx-14 mt-3 h-3 text-yellow-600 text-lg font-bold bg-gradient-to-br from-yellow-900 to-yellow-600 shadow-lg text-center rounded-lg w-3/4"> </p>
+          <p class="text-3xl geologica font-semibold md:text-7xl line-height "> Competencies </p>
+          <p class="mx-4 md:mx-14 mt-3 h-3 text-yellow-600 text-lg font-bold bg-gradient-to-br from-yellow-900 to-yellow-600 shadow-lg text-center rounded-lg w-3/4"> </p>
         </div>
-        <!--<div class=" w-90">
-      <img src="img/rosul.png"  class="h-48 max-w-75"/>
-    </div>-->
+        <div class="flex text-xs justify-center gap-3 mt-5">
+          <p class=" mt-3 md:mt-mt-6 md:text-4xl  font-bold text-center border rounded-lg px-1 py-0.5 border-white-700 hover:bg-white hover:text-black hover:border-white "> <a class="" href="index.html"> Home </a> </p>
+          <p class="mt-3 md:mt-mt-6 md:text-4xl  font-bold text-center border rounded-lg px-1 py-0.5 border-white-700 hover:bg-white hover:text-black hover:border-white "> <a class=" " href="#legal-competencies"> Legal Competencies </a> </p>
+          <p class="mt-3 md:mt-mt-6 md:text-4xl  font-bold text-center border rounded-lg px-1 py-0.5 border-white-700 hover:bg-white hover:text-black hover:border-white "> <a class=" " href="#technical-skills"> Technical & Organisational Skills </a> </p>
       </div>
-    </section>
-    <!-- nav bar stops here -->
-  
-    <!-- ===== KEY COMPETENCIES PAGE ===== -->
-<section id="key-competencies" class="py-12">
-  <div class="text-center mb-12">
-    <h1 class="text-2xl md:text-5xl font-bold">Key Competencies</h1>
-    <p class="text-sm md:text-base max-w-3xl mx-auto mt-3 px-7"> My competencies reflect an interdisciplinary engagement with law, technology, and intellectual development, with particular interests in legal research, dispute resolution, Islamic finance, and digital knowledge platforms. </p>
+      
   </div>
+  </section>
+  <!-- nav bar stops here -->
   
-  <!-- ===== Slider Template for Legal and Academic Research ===== -->
-  <div id="legal-competencies" class="relative mb-20 rounded-lg overflow-hidden text-justify" style="background-image: url('https://i.ibb.co/prQW0Ks/research.jpg'); background-size: cover; background-position: center;">
-    <div class="absolute inset-0 bg-black bg-opacity-40"></div> <!-- overlay -->
+  <!-- ===== KEY COMPETENCIES PAGE ===== -->
+  <section id="key-competencies" class="py-12">
+    <div class="text-center mb-12">
+      <h1 class="text-2xl md:text-5xl font-bold">Key Competencies</h1>
+      <p class="text-sm md:text-base max-w-3xl mx-auto mt-3 px-7"> My competencies reflect an interdisciplinary engagement with law, technology, and intellectual development, with particular interests in legal research, dispute resolution, Islamic finance, and digital knowledge platforms. </p>
+    </div>
     
-    <div class="relative z-10 px-6 py-12">
-      <h2 class="bg-red-700 mb-5 px-3 w-1/2 md:w-1/5">
-        <p class="text-white font-semibold tracking-widest"> Legal Competency 01</p>
-      </h2>
-      <h2 class="text-3xl md:text-4xl font-semibold text-white mb-3 ">Legal and Academic Research</h2>
-      <p class="text-white text-base md:text-lg max-w-3xl mb-6 "> I provide structured research and scholarly analysis across diverse areas of law, combining meticulous statutory interpretation, case review, and critical evaluation of legal principles. </p>
-      <p class="text-white text-base md:text-lg max-w-3xl mb-3"> Experience Highlights:</p>
-      <ol class="pl-2.5 md:pl-5 text-white">
-        <li class="mb-2.5 md:mb-5"> 1) Publication contributions and chairing the editorial board for the Solace Chambers Weekly Legal Bit publications and Compendium (1st and 2nd Edition) initiative. </li>
-        <li class="mb-2.5 md:mb-5">2) Virtual Intern at Chinedu G. Udora & Co., Abuja – research across Corporate Law, Property Law, and Sports Law. </li>
-        <li class="mb-2.5 md:mb-5"> 3) Interned at Olumide Babalola Legal Practitioners, Lagos where I led a team in public interest litigation research for Federal High Court cases and specific data breaches instances. </li>
-        <li class="mb-2.5 md:mb-5"> 4) Interned with D.A. Iduh Advocates and Omaplex Law Firm exposed me to litigation, ADR, corporate governance, and emerging legal technologies through daily submission of well-research legal articles. </li>
-      </ol>    
-      <p class="text-white text-base md:text-lg max-w-3xl mb-5"> Take a look at some of the projects I have been part so far.</p>
-
-      <!-- Slider Container -->
-      <div class="relative">
-        <div id="slider1" class="flex overflow-x-auto space-x-6 pb-4 scroll-smooth">
-          <!-- Slide 1 -->
-          <div class="w-full md:w-full bg-white rounded-lg shadow-lg p-4 flex-shrink-0 hover:shadow-2xl transition duration-300"> <a href="https://drive.google.com/file/d/1qRoWdh-lA3isEOybr9dEEsmjyok41Lmm/view?usp=drivesdk">
-            <img src="https://i.ibb.co/HDJ9BY5t/IMG-20260324-WA0006.jpg" alt="Image" class="rounded-lg mb-4 w-full h-40 object-cover">
-            <h3 class="text-lg font-semibold text-gray-800 mb-2">Solace Chambers Weekly Legal Bit publications and Compendium (1st Edition)</h3>
-            <p class="text-gray-600 text-sm"> Made submissions and chaired the editorial board of the initiative as the Director of Research.</p> </a>
-          </div>
-          <!-- Slide 2 -->
-          <div class="w-full md:min-w-[300px] bg-white rounded-lg shadow-lg p-4 flex-shrink-0 hover:shadow-2xl transition duration-300"> <a href="https://drive.google.com/file/d/1SNJhLFxhqzRG9LGqXLNi3nzp9ATo4jUX/view?usp=drivesdk">
-            <img src="https://i.ibb.co/Gf3m1vHt/IMG-20260324-WA0005.jpg" alt=" " class="rounded-lg mb-4 w-full h-40 object-cover">
-            <h3 class="text-lg font-semibold text-gray-800 mb-2">Solace Chambers Weekly Legal Bit publications and Compendium (2nd Edition)</h3>
-            <p class="text-gray-600 text-sm">Co-chaired the editorial board of the 2nd Edition as the Chambers Head alongside the Director of Research and some members of the directorate.</p> </a>
-          </div>
-          <!-- Add more slides as needed -->
-        </div>
+    <!-- ===== Slider Template for Legal and Academic Research ===== -->
+    <div id="legal-competencies" class="relative mb-20 rounded-lg overflow-hidden text-justify" style="background-image: url('https://i.ibb.co/prQW0Ks/research.jpg'); background-size: cover; background-position: center;">
+      <div class="absolute inset-0 bg-black bg-opacity-40"></div> <!-- overlay -->
+      
+      <div class="relative z-10 px-6 py-12">
+        <h2 class="bg-red-700 mb-5 px-3 w-1/2 md:w-1/5">
+          <p class="text-white font-semibold tracking-widest"> Legal Competency 01</p>
+        </h2>
+        <h2 class="text-3xl md:text-4xl font-semibold text-white mb-3 ">Legal and Academic Research</h2>
+        <p class="text-white text-base md:text-lg max-w-3xl mb-6 "> I provide structured research and scholarly analysis across diverse areas of law, combining meticulous statutory interpretation, case review, and critical evaluation of legal principles. </p>
+        <p class="text-white text-base md:text-lg max-w-3xl mb-3"> Experience Highlights:</p>
+        <ol class="pl-2.5 md:pl-5 text-white">
+          <li class="mb-2.5 md:mb-5"> 1) Publication contributions and chairing the editorial board for the Solace Chambers Weekly Legal Bit publications and Compendium (1st and 2nd Edition) initiative. </li>
+          <li class="mb-2.5 md:mb-5">2) Virtual Intern at Chinedu G. Udora & Co., Abuja – research across Corporate Law, Property Law, and Sports Law. </li>
+          <li class="mb-2.5 md:mb-5"> 3) Interned at Olumide Babalola Legal Practitioners, Lagos where I led a team in public interest litigation research for Federal High Court cases and specific data breaches instances. </li>
+          <li class="mb-2.5 md:mb-5"> 4) Interned with D.A. Iduh Advocates and Omaplex Law Firm exposed me to litigation, ADR, corporate governance, and emerging legal technologies through daily submission of well-research legal articles. </li>
+        </ol>
+        <p class="text-white text-base md:text-lg max-w-3xl mb-5"> Take a look at some of the projects I have been part so far.</p>
         
-        <!-- Navigation Arrows -->
-        <button onclick="scrollSlider('slider1', -1)" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-blue-700 text-white p-3 rounded-full shadow-lg hover:bg-blue-900 transition">&#10094;</button>
-        <button onclick="scrollSlider('slider1', 1)" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-blue-700 text-white p-3 rounded-full shadow-lg hover:bg-blue-900 transition">&#10095;</button>
+        <!-- Slider Container -->
+        <div class="relative">
+          <div id="slider1" class="flex overflow-x-auto space-x-6 pb-4 scroll-smooth">
+            <!-- Slide 1 -->
+            <div class="w-full md:w-full bg-white rounded-lg shadow-lg p-4 flex-shrink-0 hover:shadow-2xl transition duration-300"> <a href="https://drive.google.com/file/d/1qRoWdh-lA3isEOybr9dEEsmjyok41Lmm/view?usp=drivesdk">
+                <img src="https://i.ibb.co/HDJ9BY5t/IMG-20260324-WA0006.jpg" alt="Image" class="rounded-lg mb-4 w-full h-40 object-cover">
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">Solace Chambers Weekly Legal Bit publications and Compendium (1st Edition)</h3>
+                <p class="text-gray-600 text-sm"> Made submissions and chaired the editorial board of the initiative as the Director of Research.</p>
+              </a>
+            </div>
+            <!-- Slide 2 -->
+            <div class="w-full md:min-w-[300px] bg-white rounded-lg shadow-lg p-4 flex-shrink-0 hover:shadow-2xl transition duration-300"> <a href="https://drive.google.com/file/d/1SNJhLFxhqzRG9LGqXLNi3nzp9ATo4jUX/view?usp=drivesdk">
+                <img src="https://i.ibb.co/Gf3m1vHt/IMG-20260324-WA0005.jpg" alt=" " class="rounded-lg mb-4 w-full h-40 object-cover">
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">Solace Chambers Weekly Legal Bit publications and Compendium (2nd Edition)</h3>
+                <p class="text-gray-600 text-sm">Co-chaired the editorial board of the 2nd Edition as the Chambers Head alongside the Director of Research and some members of the directorate.</p>
+              </a>
+            </div>
+            <!-- Add more slides as needed -->
+          </div>
+          
+          <!-- Navigation Arrows -->
+          <button onclick="scrollSlider('slider1', -1)" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-blue-700 text-white p-3 rounded-full shadow-lg hover:bg-blue-900 transition">&#10094;</button>
+          <button onclick="scrollSlider('slider1', 1)" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-blue-700 text-white p-3 rounded-full shadow-lg hover:bg-blue-900 transition">&#10095;</button>
+        </div>
       </div>
     </div>
-  </div>
-  
-  
+    
+    
     <!-- ===== Slider Template for Litigation and ADR Practice Assistance ===== -->
-  <div class="relative mb-20 rounded-lg overflow-hidden text-justify" style="background-image: url('https://i.ibb.co/Dgkfcp5C/istockphoto-2244981068-612x612.jpg'); background-size: cover; background-position: center;">
-    <div class="absolute inset-0 bg-black bg-opacity-40"></div> <!-- overlay -->
-    
-    <div class="relative z-10 px-6 py-12">
-      <h2 class="bg-red-700 mb-5 px-3 w-1/2 md:w-1/5">
-  <p class="text-white font-semibold tracking-widest"> Legal Competency 02</p>
-</h2>
-      <h2 class="text-3xl md:text-4xl font-semibold text-white mb-3 ">Litigation and ADR Practice Assistance</h2>
-      <p class="text-white text-base md:text-lg max-w-3xl mb-6 "> I provide analytical and procedural support in both litigation and out-of-court dispute resolution processes through case law analysis, legal drafting, and alternative dispute resolution frameworks. </p>
-      <p class="text-white text-base md:text-lg max-w-3xl mb-3"> Experience Highlights:</p>
-      <ol class="pl-2.5 md:pl-5 text-white">
-        <li class="mb-2.5 md:mb-5"> 1) I served as the Deputy Director and subsequently, the Director of Research & Litigation, Solace Chambers, Bayero University, Kano, where I facilitated weekly advocacy sessions, moot and mock trial exercises, and trained members on courtroom practice basics.</li>
-        <li class="mb-2.5 md:mb-5">2) I actively participated and earned a Certification on ADR at the Hon. Justice Safiyya Badamasi ADR Workshop organised by the Bayero University Law Clinic in 2023 in collaboration with the Kano State Multidoor Court and the Institute of Chartered Mediators and Conciliators, Kano Branch.</li>
-        <li class="mb-2.5 md:mb-5"> 3) I had a formal and practical training and exposure in mediation, negotiation, and conciliation through the Institute of Chartered Mediators and Conciliators, Kano Branch. </li>
-        <li class="mb-2.5 md:mb-5"> 4) I contributed to the maiden edition of the National Alternative Dispute Resolution Society (NADRS) Realms of Resolution Volume 1, 2023-2024 facilitated the annual ADR competition organised by Solace Chambers, Bayero University, Kano. </li>
-        <li class="mb-2.5 md:mb-5"> 5) I facilitated the annual ADR competition organised by Solace Chambers, Bayero University, Kano. </li>
-      </ol>    
-      <p class="text-white text-base md:text-lg max-w-3xl mb-5"> Take a look at some of the projects I have been part so far.</p>
-
-      <!-- Slider Container -->
-      <div class="relative">
-        <div id="slider2" class="flex overflow-x-auto space-x-6 pb-4 scroll-smooth">
-          <!-- Slide 1 -->
-          <div class="w-full md:w-full bg-white rounded-lg shadow-lg p-4 flex-shrink-0 hover:shadow-2xl transition duration-300">
-            <img src="https://i.ibb.co/S7NMVWwS/Screenshot-20260317-002354-Linked-In.jpg" alt="Image" class="rounded-lg mb-4 w-full h-40 object-cover">
-            <h3 class="text-lg font-semibold text-gray-800 mb-2">National ADR Society Realms of Resolution Volume 1</h3>
-            <p class="text-gray-600 text-sm"> Contributed to the success of the initiagtive as a Director of Research of the association.</p>
-          </div>
-          <!-- Slide 2 -->
-          <div class="w-full md:min-w-[300px] bg-white rounded-lg shadow-lg p-4 flex-shrink-0 hover:shadow-2xl transition duration-300">
-            <img src="https://i.ibb.co/CptGQZzt/WA-1773704214661.jpg" alt="Image" class="rounded-lg mb-4 w-full h-40 object-cover">
-            <h3 class="text-lg font-semibold text-gray-800 mb-2">Director of Research & Litigation, Solace Chambers</h3>
-            <p class="text-gray-600 text-sm">As the Director of Research, I facilitated weekly advocacy sessions, moot and mock trial exercises, and trained members on courtroom practice basics.</p>
+    <div class="relative mb-20 rounded-lg overflow-hidden text-justify" style="background-image: url('https://i.ibb.co/Dgkfcp5C/istockphoto-2244981068-612x612.jpg'); background-size: cover; background-position: center;">
+      <div class="absolute inset-0 bg-black bg-opacity-40"></div> <!-- overlay -->
+      
+      <div class="relative z-10 px-6 py-12">
+        <h2 class="bg-red-700 mb-5 px-3 w-1/2 md:w-1/5">
+          <p class="text-white font-semibold tracking-widest"> Legal Competency 02</p>
+        </h2>
+        <h2 class="text-3xl md:text-4xl font-semibold text-white mb-3 ">Litigation and ADR Practice Assistance</h2>
+        <p class="text-white text-base md:text-lg max-w-3xl mb-6 "> I provide analytical and procedural support in both litigation and out-of-court dispute resolution processes through case law analysis, legal drafting, and alternative dispute resolution frameworks. </p>
+        <p class="text-white text-base md:text-lg max-w-3xl mb-3"> Experience Highlights:</p>
+        <ol class="pl-2.5 md:pl-5 text-white">
+          <li class="mb-2.5 md:mb-5"> 1) I served as the Deputy Director and subsequently, the Director of Research & Litigation, Solace Chambers, Bayero University, Kano, where I facilitated weekly advocacy sessions, moot and mock trial exercises, and trained members on courtroom practice basics.</li>
+          <li class="mb-2.5 md:mb-5">2) I actively participated and earned a Certification on ADR at the Hon. Justice Safiyya Badamasi ADR Workshop organised by the Bayero University Law Clinic in 2023 in collaboration with the Kano State Multidoor Court and the Institute of Chartered Mediators and Conciliators, Kano Branch.</li>
+          <li class="mb-2.5 md:mb-5"> 3) I had a formal and practical training and exposure in mediation, negotiation, and conciliation through the Institute of Chartered Mediators and Conciliators, Kano Branch. </li>
+          <li class="mb-2.5 md:mb-5"> 4) I contributed to the maiden edition of the National Alternative Dispute Resolution Society (NADRS) Realms of Resolution Volume 1, 2023-2024 facilitated the annual ADR competition organised by Solace Chambers, Bayero University, Kano. </li>
+          <li class="mb-2.5 md:mb-5"> 5) I facilitated the annual ADR competition organised by Solace Chambers, Bayero University, Kano. </li>
+        </ol>
+        <p class="text-white text-base md:text-lg max-w-3xl mb-5"> Take a look at some of the projects I have been part so far.</p>
+        
+        <!-- Slider Container -->
+        <div class="relative">
+          <div id="slider2" class="flex overflow-x-auto space-x-6 pb-4 scroll-smooth">
+            <!-- Slide 1 -->
+            <div class="w-full md:w-full bg-white rounded-lg shadow-lg p-4 flex-shrink-0 hover:shadow-2xl transition duration-300">
+              <img src="https://i.ibb.co/S7NMVWwS/Screenshot-20260317-002354-Linked-In.jpg" alt="Image" class="rounded-lg mb-4 w-full h-40 object-cover">
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">National ADR Society Realms of Resolution Volume 1</h3>
+              <p class="text-gray-600 text-sm"> Contributed to the success of the initiagtive as a Director of Research of the association.</p>
+            </div>
+            <!-- Slide 2 -->
+            <div class="w-full md:min-w-[300px] bg-white rounded-lg shadow-lg p-4 flex-shrink-0 hover:shadow-2xl transition duration-300">
+              <img src="https://i.ibb.co/CptGQZzt/WA-1773704214661.jpg" alt="Image" class="rounded-lg mb-4 w-full h-40 object-cover">
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">Director of Research & Litigation, Solace Chambers</h3>
+              <p class="text-gray-600 text-sm">As the Director of Research, I facilitated weekly advocacy sessions, moot and mock trial exercises, and trained members on courtroom practice basics.</p>
+            </div>
+            
+            <!-- Slide 3 -->
+            <div class="w-full md:min-w-[300px] bg-white rounded-lg shadow-lg p-4 flex-shrink-0 hover:shadow-2xl transition duration-300">
+              <img src="https://i.ibb.co/G3tyrj8X/IMG-20260317-WA0002.jpg" alt="Image" class="rounded-lg mb-4 w-full h-40 object-cover">
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">Annual ADR Competition</h3>
+              <p class="text-gray-600 text-sm">As the Chambers Head, I facilitated the annual ADR competition organised by Solace Chambers, Bayero University, Kano.</p>
+            </div>
+            <!-- Add more slides as needed -->
           </div>
           
-                    <!-- Slide 3 -->
-          <div class="w-full md:min-w-[300px] bg-white rounded-lg shadow-lg p-4 flex-shrink-0 hover:shadow-2xl transition duration-300">
-            <img src="https://i.ibb.co/G3tyrj8X/IMG-20260317-WA0002.jpg" alt="Image" class="rounded-lg mb-4 w-full h-40 object-cover">
-            <h3 class="text-lg font-semibold text-gray-800 mb-2">Annual ADR Competition</h3>
-            <p class="text-gray-600 text-sm">As the Chambers Head, I facilitated the annual ADR competition organised by Solace Chambers, Bayero University, Kano.</p>
-          </div>
-          <!-- Add more slides as needed -->
+          <!-- Navigation Arrows -->
+          <button onclick="scrollSlider('slider2', -1)" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-blue-700 text-white p-3 rounded-full shadow-lg hover:bg-blue-900 transition">&#10094;</button>
+          <button onclick="scrollSlider('slider2', 1)" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-blue-700 text-white p-3 rounded-full shadow-lg hover:bg-blue-900 transition">&#10095;</button>
         </div>
-        
-        <!-- Navigation Arrows -->
-        <button onclick="scrollSlider('slider2', -1)" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-blue-700 text-white p-3 rounded-full shadow-lg hover:bg-blue-900 transition">&#10094;</button>
-        <button onclick="scrollSlider('slider2', 1)" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-blue-700 text-white p-3 rounded-full shadow-lg hover:bg-blue-900 transition">&#10095;</button>
       </div>
     </div>
-  </div>
-  
-  
-  
+    
+    
+    
     <!-- ===== Slider Template for Islamic Finance & Shari’ah Governance ===== -->
-  <div class="relative mb-20 rounded-lg overflow-hidden text-justify" style="background-image: url('https://i.ibb.co/XfJFFTBX/istockphoto-1201700808-612x612.jpg'); background-size: cover; background-position: center;">
-    <div class="absolute inset-0 bg-black bg-opacity-40"></div> <!-- overlay -->
-    
-    <div class="relative z-10 px-6 py-12">
-      <h2 class="bg-red-700 mb-5 px-3 w-1/2 md:w-1/5">
-  <p class="text-white font-semibold tracking-widest"> Legal Competency 03</p>
-</h2>
-      <h2 class="text-3xl md:text-4xl font-semibold text-white mb-3 ">Islamic Finance & Shari’ah Governance </h2>
-      <p class="text-white text-base md:text-lg max-w-3xl mb-6 "> I engage in rigorous research on Islamic financial systems, focusing on regulatory frameworks, Shari’ah compliance mechanisms, and governance structures within Islamic capital markets. </p>
-      <p class="text-white text-base md:text-lg max-w-3xl mb-3"> Experience Highlights:</p>
-      <ol class="pl-2.5 md:pl-5 text-white">
-        <li class="mb-2.5 md:mb-5"> 1) Earned the Associate Certificate in Islamic Banking and Finance (ACIBF) issued by the International Institute of Islamic Banking and Finance, Bayero University, Kano. </li>
-        <li class="mb-2.5 md:mb-5">2) Underwent LL. B training in Islamic finance, inheritance, waqf systems and general jurisprudence and court systems at Bayero University, Kano.</li>
-        <li class="mb-2.5 md:mb-5"> 3) Conducted the compulsory LL.B dissertation on Sukuk Market in Nigeria and Shari’ah supervisory oversight by the Committee of Experts. </li>
-      </ol>    
-      <p class="text-white text-base md:text-lg max-w-3xl mb-5"> Take a look at some of the projects I have been part so far.</p>
-
-      <!-- Slider Container -->
-      <div class="relative">
-        <div id="slider3" class="flex overflow-x-auto space-x-6 pb-4 scroll-smooth">
-          <!-- Slide 1 -->
-          <div class="w-full md:w-full bg-white rounded-lg shadow-lg p-4 flex-shrink-0 hover:shadow-2xl transition duration-300">
-            <img src="https://i.ibb.co/LXZQThRZ/Screenshot-20260317-011818-Drive.jpg" alt="Image" class="rounded-lg mb-4 w-full h-40 object-cover">
-            <h3 class="text-lg font-semibold text-gray-800 mb-2">Compulsory LL.B dissertation on Sukuk Market in Nigeria</h3>
-            <p class="text-gray-600 text-sm"> Completed my compulsory LL.B dissertation on Sukuk Market in Nigeria and Shari’ah supervisory oversight by the Committee of Experts.</p>
-          </div>
-          <!-- Slide 2 -->
-          <div class="w-full md:min-w-[300px] bg-white rounded-lg shadow-lg p-4 flex-shrink-0 hover:shadow-2xl transition duration-300">
-            <img src="https://i.ibb.co/N23RpqTF/Screenshot-20260317-012513-Lite.jpg" alt="Image" class="rounded-lg mb-4 w-full h-40 object-cover">
-            <h3 class="text-lg font-semibold text-gray-800 mb-2">Associate Certificate in Islamic Banking and Finance (ACIBF)</h3>
-            <p class="text-gray-600 text-sm">Earned the Associate Certificate in Islamic Banking and Finance (ACIBF) issued by the International Institute of Islamic Banking and Finance, Bayero University, Kano.</p>
-          </div>
-          <!-- Add more slides as needed -->
-        </div>
+    <div class="relative mb-20 rounded-lg overflow-hidden text-justify" style="background-image: url('https://i.ibb.co/XfJFFTBX/istockphoto-1201700808-612x612.jpg'); background-size: cover; background-position: center;">
+      <div class="absolute inset-0 bg-black bg-opacity-40"></div> <!-- overlay -->
+      
+      <div class="relative z-10 px-6 py-12">
+        <h2 class="bg-red-700 mb-5 px-3 w-1/2 md:w-1/5">
+          <p class="text-white font-semibold tracking-widest"> Legal Competency 03</p>
+        </h2>
+        <h2 class="text-3xl md:text-4xl font-semibold text-white mb-3 ">Islamic Finance & Shari’ah Governance </h2>
+        <p class="text-white text-base md:text-lg max-w-3xl mb-6 "> I engage in rigorous research on Islamic financial systems, focusing on regulatory frameworks, Shari’ah compliance mechanisms, and governance structures within Islamic capital markets. </p>
+        <p class="text-white text-base md:text-lg max-w-3xl mb-3"> Experience Highlights:</p>
+        <ol class="pl-2.5 md:pl-5 text-white">
+          <li class="mb-2.5 md:mb-5"> 1) Earned the Associate Certificate in Islamic Banking and Finance (ACIBF) issued by the International Institute of Islamic Banking and Finance, Bayero University, Kano. </li>
+          <li class="mb-2.5 md:mb-5">2) Underwent LL. B training in Islamic finance, inheritance, waqf systems and general jurisprudence and court systems at Bayero University, Kano.</li>
+          <li class="mb-2.5 md:mb-5"> 3) Conducted the compulsory LL.B dissertation on Sukuk Market in Nigeria and Shari’ah supervisory oversight by the Committee of Experts. </li>
+        </ol>
+        <p class="text-white text-base md:text-lg max-w-3xl mb-5"> Take a look at some of the projects I have been part so far.</p>
         
-        <!-- Navigation Arrows -->
-        <button onclick="scrollSlider('slider3', -1)" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-blue-700 text-white p-3 rounded-full shadow-lg hover:bg-blue-900 transition">&#10094;</button>
-        <button onclick="scrollSlider('slider3', 1)" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-blue-700 text-white p-3 rounded-full shadow-lg hover:bg-blue-900 transition">&#10095;</button>
+        <!-- Slider Container -->
+        <div class="relative">
+          <div id="slider3" class="flex overflow-x-auto space-x-6 pb-4 scroll-smooth">
+            <!-- Slide 1 -->
+            <div class="w-full md:w-full bg-white rounded-lg shadow-lg p-4 flex-shrink-0 hover:shadow-2xl transition duration-300">
+              <img src="https://i.ibb.co/LXZQThRZ/Screenshot-20260317-011818-Drive.jpg" alt="Image" class="rounded-lg mb-4 w-full h-40 object-cover">
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">Compulsory LL.B dissertation on Sukuk Market in Nigeria</h3>
+              <p class="text-gray-600 text-sm"> Completed my compulsory LL.B dissertation on Sukuk Market in Nigeria and Shari’ah supervisory oversight by the Committee of Experts.</p>
+            </div>
+            <!-- Slide 2 -->
+            <div class="w-full md:min-w-[300px] bg-white rounded-lg shadow-lg p-4 flex-shrink-0 hover:shadow-2xl transition duration-300">
+              <img src="https://i.ibb.co/N23RpqTF/Screenshot-20260317-012513-Lite.jpg" alt="Image" class="rounded-lg mb-4 w-full h-40 object-cover">
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">Associate Certificate in Islamic Banking and Finance (ACIBF)</h3>
+              <p class="text-gray-600 text-sm">Earned the Associate Certificate in Islamic Banking and Finance (ACIBF) issued by the International Institute of Islamic Banking and Finance, Bayero University, Kano.</p>
+            </div>
+            <!-- Add more slides as needed -->
+          </div>
+          
+          <!-- Navigation Arrows -->
+          <button onclick="scrollSlider('slider3', -1)" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-blue-700 text-white p-3 rounded-full shadow-lg hover:bg-blue-900 transition">&#10094;</button>
+          <button onclick="scrollSlider('slider3', 1)" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-blue-700 text-white p-3 rounded-full shadow-lg hover:bg-blue-900 transition">&#10095;</button>
+        </div>
       </div>
     </div>
-  </div>
-  
     
-  
+    
+    
     <!-- ===== Slider Template for Legal & Legislative Drafting===== -->
-  <div class="relative mb-20 rounded-lg overflow-hidden text-justify" style="background-image: url('https://i.ibb.co/chypTtpf/istockphoto-1318801364-612x612.jpg'); background-size: cover; background-position: center;">
-    <div class="absolute inset-0 bg-black bg-opacity-40"></div> <!-- overlay -->
-    
-    <div class="relative z-10 px-6 py-12">
-      <h2 class="bg-red-700 mb-5 px-3 w-1/2 md:w-1/5">
-  <p class="text-white font-semibold tracking-widest"> Legal Competency 04</p>
-</h2>
-      <h2 class="text-3xl md:text-4xl font-semibold text-white mb-3 ">Legal & Legislative Drafting</h2>
-      <p class="text-white text-base md:text-lg max-w-3xl mb-6 "> I engage in the preparation and structuring of legal documents, policy drafts, and legislative drafts with emphasis on clarity, coherence, and legal precision. </p>
-      <p class="text-white text-base md:text-lg max-w-3xl mb-3"> Experience Highlights:</p>
-      <ol class="pl-2.5 md:pl-5 text-white">
-        <li class="mb-2.5 md:mb-5"> 1) Assisted in drafting corporate and public interest litigation originating processesb at Olumide Babalola Legal Practitioners. </li>
-        <li class="mb-2.5 md:mb-5">2) Drafted court processes, settlement agreements, and correspondences during my internship at A.A. Hikima & Co and Abdulghaniy Talib & Co.</li>
-        <li class="mb-2.5 md:mb-5"> 3) Underwent a training on Legoslative Drafting by the Association of Legislative Drafting and Advocacy Practitioners. </li>
-      </ol>    
-      <p class="text-white text-base md:text-lg max-w-3xl mb-5"> Take a look at some of the projects I have been part so far.</p>
-
-      <!-- Slider Container -->
-      <div class="relative">
-        <div id="slider4" class="flex overflow-x-auto space-x-6 pb-4 scroll-smooth">
-          <!-- Slide 1 -->
-          <div class="w-full md:w-full bg-white rounded-lg shadow-lg p-4 flex-shrink-0 hover:shadow-2xl transition duration-300">
+    <div class="relative mb-20 rounded-lg overflow-hidden text-justify" style="background-image: url('https://i.ibb.co/chypTtpf/istockphoto-1318801364-612x612.jpg'); background-size: cover; background-position: center;">
+      <div class="absolute inset-0 bg-black bg-opacity-40"></div> <!-- overlay -->
+      
+      <div class="relative z-10 px-6 py-12">
+        <h2 class="bg-red-700 mb-5 px-3 w-1/2 md:w-1/5">
+          <p class="text-white font-semibold tracking-widest"> Legal Competency 04</p>
+        </h2>
+        <h2 class="text-3xl md:text-4xl font-semibold text-white mb-3 ">Legal & Legislative Drafting</h2>
+        <p class="text-white text-base md:text-lg max-w-3xl mb-6 "> I engage in the preparation and structuring of legal documents, policy drafts, and legislative drafts with emphasis on clarity, coherence, and legal precision. </p>
+        <p class="text-white text-base md:text-lg max-w-3xl mb-3"> Experience Highlights:</p>
+        <ol class="pl-2.5 md:pl-5 text-white">
+          <li class="mb-2.5 md:mb-5"> 1) Assisted in drafting corporate and public interest litigation originating processesb at Olumide Babalola Legal Practitioners. </li>
+          <li class="mb-2.5 md:mb-5">2) Drafted court processes, settlement agreements, and correspondences during my internship at A.A. Hikima & Co and Abdulghaniy Talib & Co.</li>
+          <li class="mb-2.5 md:mb-5"> 3) Underwent a training on Legoslative Drafting by the Association of Legislative Drafting and Advocacy Practitioners. </li>
+        </ol>
+        <!-- <p class="text-white text-base md:text-lg max-w-3xl mb-5"> Take a look at some of the projects I have been part so far.</p> -->
+        
+        <!-- Slider Container -->
+        <!--      <div class="relative">
+        <div id="slider4" class="flex overflow-x-auto space-x-6 pb-4 scroll-smooth"> -->
+        <!-- Slide 1 -->
+        <!--          <div class="w-full md:w-full bg-white rounded-lg shadow-lg p-4 flex-shrink-0 hover:shadow-2xl transition duration-300">
             <img src="https://i.ibb.co/LXZQThRZ/Screenshot-20260317-011818-Drive.jpg" alt="Image" class="rounded-lg mb-4 w-full h-40 object-cover">
             <h3 class="text-lg font-semibold text-gray-800 mb-2"> Volunteered as a draftsman for the Rotaract BUK Bye Law  </h3>
             <p class="text-gray-600 text-sm"> Served as a member of the Club's bye law amendment committee and succesfully excuted the task.</p>
-          </div>
-          <!-- Slide 2 -->
-    <!-- <div class="w-full md:min-w-[300px] bg-white rounded-lg shadow-lg p-4 flex-shrink-0 hover:shadow-2xl transition duration-300">
+          </div> -->
+        <!-- Slide 2 -->
+        <!-- <div class="w-full md:min-w-[300px] bg-white rounded-lg shadow-lg p-4 flex-shrink-0 hover:shadow-2xl transition duration-300">
             <img src="https://i.ibb.co/N23RpqTF/Screenshot-20260317-012513-Lite.jpg" alt="Image" class="rounded-lg mb-4 w-full h-40 object-cover">
             <h3 class="text-lg font-semibold text-gray-800 mb-2">Solace consitution </h3>
             <p class="text-gray-600 text-sm"> </p>
-          </div>
-          <!-- Add more slides as needed -->
-        </div>
-        
-        <!-- Navigation Arrows -->
-        <button onclick="scrollSlider('slider4', -1)" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-blue-700 text-white p-3 rounded-full shadow-lg hover:bg-blue-900 transition">&#10094;</button>
-        <button onclick="scrollSlider('slider4', 1)" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-blue-700 text-white p-3 rounded-full shadow-lg hover:bg-blue-900 transition">&#10095;</button>
-      </div>
-    </div>
-  </div>
-  
-  
-  
-    <!-- ===== Slider Template for Web Development & Artificial Intelligence Literacy ===== -->
-  <div class="relative mb-20 rounded-lg overflow-hidden text-justify" style="background-image: url('https://i.ibb.co/W1Kw1HD/istockphoto-2212360504-612x612.webp'); background-size: cover; background-position: center;">
-    <div class="absolute inset-0 bg-black bg-opacity-40"></div> <!-- overlay -->
-    
-    <div class="relative z-10 px-6 py-12" id="technical-skills">
-      <h2 class="bg-red-700 mb-5 px-3 w-1/2 md:w-1/5">
-  <p class="text-white font-semibold tracking-widest"> Technical Competency</p>
-</h2>
-      <h2 class="text-3xl md:text-4xl font-semibold text-white mb-3 ">Web Development & Artificial Intelligence Literacy </h2>
-      <p class="text-white text-base md:text-lg max-w-3xl mb-6 "> I, alongside my team at <a class="text-yellow-300 underline" href="https://rayyantech.sgm.ng/"> Rayyan Technologies</a>, design responsive websites and digital platforms for industries, law firms, businesses, educational institutions, start-ups, etc. I also possess a good use of modern AI tools. </p>
-      <p class="text-white text-base md:text-lg max-w-3xl mb-3"> Experience Highlights:</p>
-      <ol class="pl-2.5 md:pl-5 text-white">
-        <li class="mb-2.5 md:mb-5"> 1) I designed a customised, responsive website for Solace Chambers - a students-based law chambers domiciled in Faculty of Law, Bayero University, Kano. </li>
-        <li class="mb-2.5 md:mb-5">2) I designed a customised, responsive website for Bayero University Law Clinic - a students-based organisation regulated by the Council for Legal Education, Nigeria.</li>
-        <li class="mb-2.5 md:mb-5"> 3) </li>
-      </ol>    
-      <p class="text-white text-base md:text-lg max-w-3xl mb-5"> Take a look at some of the projects I have been part so far.</p>
-
-      <!-- Slider Container -->
-      <div class="relative">
-        <div id="slider5" class="flex overflow-x-auto space-x-6 pb-4 scroll-smooth">
-          <!-- Slide 1 --> 
-            <div class="w-full md:w-full bg-white rounded-lg shadow-lg p-4 flex-shrink-0 hover:shadow-2xl transition duration-300">
-           <a class="" href="https://solacechambersbuk.com.ng"> <img src="https://i.ibb.co/G097ZQz/solace-buk.jpg" alt="Solace website" class="rounded-lg mb-4 w-full h-40 object-cover">
-            <h3 class="text-lg font-semibold text-gray-800 mb-2">Solace Chambers Bayero University, Kano, customised website</h3>
-            <p class="text-gray-600 text-sm"> A responsive website designed for Solace Chambers Bayero University, Kano, in 2025.</p> </a>
-          </div> 
-          
-          <!-- Slide 2 -->
-          <div class="w-full md:min-w-[300px] bg-white rounded-lg shadow-lg p-4 flex-shrink-0 hover:shadow-2xl transition duration-300"> <a href="https://muhibqosim.github.io/buk-law-clinic/"> <img src="https://i.ibb.co/k3ZPckF/bulc.jpg" alt="Image" class="rounded-lg mb-4 w-full h-40 object-cover">
-            <h3 class="text-lg font-semibold text-gray-800 mb-2">Bayero University Law Clinic customised website</h3>
-            <p class="text-gray-600 text-sm">A responsive website designed for Bayero University Law Clinic in 2023.</p> </a>
-          </div>
-          
-                    <!-- Slide 2 -->
-          <div class="w-full md:min-w-[300px] bg-white rounded-lg shadow-lg p-4 flex-shrink-0 hover:shadow-2xl transition duration-300">
-            <a class="" href="https://alqosim.sgm.ng"><img src="https://i.ibb.co/8Y45WdZ/aic.jpg" alt="Image" class="rounded-lg mb-4 w-full h-40 object-cover">
-            <h3 class="text-lg font-semibold text-gray-800 mb-2">Al-Qosim Islamic Center customised website</h3>
-            <p class="text-gray-600 text-sm">A responsive website designed for Al-Qosim Islamic Center in 2023.</p> </a>
-          </div>
-          <!-- Add more slides as needed -->
-        </div>
-      
-        <!-- Navigation Arrows -->
-        <button onclick="scrollSlider('slider5', -1)" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-blue-700 text-white p-3 rounded-full shadow-lg hover:bg-blue-900 transition">&#10094;</button>
-        <button onclick="scrollSlider('slider5', 1)" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-blue-700 text-white p-3 rounded-full shadow-lg hover:bg-blue-900 transition">&#10095;</button>
-      </div>
-    </div>
-  </div>
-  
-
-  <!-- ===== Slider Template for Strategic Leadership & Institutional Support ===== -->
-<div class="relative mb-20 rounded-lg overflow-hidden text-justify" style="background-image: url('https://i.ibb.co/pry8sDsp/istockphoto-1133383903-612x612.jpg'); background-size: cover; background-position: center;">
-  <div class="absolute inset-0 bg-black bg-opacity-40"></div> <!-- overlay -->
-  
-  <div class="relative z-10 px-6 py-12">
-    <h2 class="bg-red-700 mb-5 px-3 w-1/2 md:w-1/5">
-  <p class="text-white font-semibold tracking-widest"> Organisational Competency</p>
-</h2>
-    <h2 class="text-3xl md:text-4xl font-semibold text-white mb-3 ">Strategic Leadership & Institutional Support </h2>
-    <p class="text-white text-base md:text-lg max-w-3xl mb-6 "> I provide structured strategic support to organisations, combining my leadership experience with legal expertise to mentor teams, improve operations, and drive intellectual and organisational growth. </p>
-    <p class="text-white text-base md:text-lg max-w-3xl mb-3"> Experience Highlights:</p>
-    <ol class="pl-2.5 md:pl-5 text-white">
-      <li class="mb-2.5 md:mb-5"> 1) I held various positions in Solace Chambers, Bayero University, Kano, from serving as the Chief Registrar, Deputy Director, to holding the position of Attorney General (Chambers Head), where I immensely contributed to the current renewed and growth-driven structure of the Chambers. </li>
-      <li class="mb-2.5 md:mb-5">2) I made a significant contribution to the establishment and operation of the Editorial Board of the National Alternative Dispute Resolution Society as the Director of Research III. I led a team of fellow law students across the country.</li>
-      <li class="mb-2.5 md:mb-5"> 3) Pioneered the Solace Virtual Mentorship Programme, an annual mentorship platform created to facilitate personal and professional growth of not only members of the Chambers but also growth-focused law students across the country and beyond.</li>
-      <li class="mb-2.5 md:mb-5"> 4) Planned and coordinated the weekly sessions of the International Humanitarian Law Club, Bayero University, Kano. I facilitated sessions on key principles of IHL, the general application of IHL, and how it operates in the international and national contexts. </li>
-    </ol>
-    <p class="text-white text-base md:text-lg max-w-3xl mb-5"> Take a look at some of the projects I have been part so far.</p>
-    
-    <!-- Slider Container -->
-    <div class="relative">
-      <div id="slider6" class="flex overflow-x-auto space-x-6 pb-4 scroll-smooth">
-
-        <!-- Slide 1 -->
-        <div class="w-full md:w-full bg-white rounded-lg shadow-lg p-4 flex-shrink-0 hover:shadow-2xl transition duration-300">
-          <a class="" href="https://solacechambersbuk.com.ng"> <img src="https://i.ibb.co/CKpb0ZZq/IMG-20260319-WA0053-1.jpg" alt="Solace website" class="rounded-lg mb-4 w-full h-40 object-cover">
-            <h3 class="text-lg font-semibold text-gray-800 mb-2"> Pioneer and Co-founder of JURIVEX </h3>
-            <p class="text-gray-600 text-sm"> I pioneered and co-founded Jurivex - a legal platform that challenges, refines, and advances legal thinking and professional growth.</p>
-          </a>
-        </div>
-        <!-- Slide 2 -->
-        <div class="w-full md:w-full bg-white rounded-lg shadow-lg p-4 flex-shrink-0 hover:shadow-2xl transition duration-300">
-          <a class="" href="https://solacechambersbuk.com.ng"> <img src="https://i.ibb.co/YB6WnGNy/reb.png" alt="Solace website" class="rounded-lg mb-4 w-full h-40 object-cover">
-            <h3 class="text-lg font-semibold text-gray-800 mb-2"> Appointment as a Director of Research of the NADRS</h3>
-            <p class="text-gray-600 text-sm"> I served, following my appointment, as the Director of Research III of the NADRS (between 2022 - 2023) where I carried out various ADR-based research work for the Society while equally leading a team of law students across the nation attached under my wings.</p>
-          </a>
-        </div>
-        
-        <!-- Slide 3 -->
-        <div class="w-full md:min-w-[300px] bg-white rounded-lg shadow-lg p-4 flex-shrink-0 hover:shadow-2xl transition duration-300"> <a href="https://www.linkedin.com/posts/qosim-muhibudeen-sabuk-ool-5896a91a8_and-herecomes-theendofmy-tenure-as-the-activity-7437142893615702016-pfX3?utm_source=share&utm_medium=member_android&rcm=ACoAADCDMfkBVdPfeDHOm011BmsJ7cBFj7WZaN8">
-          <img src="https://i.ibb.co/qMMHqLx5/IMG-20260324-WA0013.jpg" alt=" " class="rounded-lg mb-4 w-full h-40 object-cover">
-          <h3 class="text-lg font-semibold text-gray-800 mb-2">Solace Chambers Stakeholder</h3>
-          <p class="text-gray-600 text-sm">I served in several capacities as an executive of Solace Chambers, Faculty of Law, Bayero University Kano and later the Chanbers Head (Attorney General). Throughout my stay, I immensely shaped the Chambers to the best of standards ever.</p></a>
-        </div>
-        
-        <!-- Slide 4 -->
-        <div class="w-full md:min-w-[300px] bg-white rounded-lg shadow-lg p-4 flex-shrink-0 hover:shadow-2xl transition duration-300">
-          <a class="" href="#"><img src="https://i.ibb.co/pvD2XFZ0/nadrs-workshop.png" alt="Image" class="rounded-lg mb-4 w-full h-40 object-cover">
-            <h3 class="text-lg font-semibold text-gray-800 mb-2">NADRS Intership Committee Member and Technical Team, 2023</h3>
-            <p class="text-gray-600 text-sm">I extremely participated in the success of the maiden ADR-driven virtual internship prganised by the National ADR Society under the leadership of Miss. Catherine Amadasun (Esq) </p>
-          </a>
-        </div>
+          </div> -->
         <!-- Add more slides as needed -->
+        <!--  </div> -->
+        
+        <!-- Navigation Arrows -->
+        <!--      <button onclick="scrollSlider('slider4', -1)" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-blue-700 text-white p-3 rounded-full shadow-lg hover:bg-blue-900 transition">&#10094;</button>
+        <button onclick="scrollSlider('slider4', 1)" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-blue-700 text-white p-3 rounded-full shadow-lg hover:bg-blue-900 transition">&#10095;</button> 
+      </div> -->
       </div>
-      
-      <!-- Navigation Arrows -->
-      <button onclick="scrollSlider('slider6', -1)" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-blue-700 text-white p-3 rounded-full shadow-lg hover:bg-blue-900 transition">&#10094;</button>
-      <button onclick="scrollSlider('slider6', 1)" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-blue-700 text-white p-3 rounded-full shadow-lg hover:bg-blue-900 transition">&#10095;</button>
     </div>
-  </div>
-</div>
-
+    
+    
+    
+    <!-- ===== Slider Template for Web Development & Artificial Intelligence Literacy ===== -->
+    <div class="relative mb-20 rounded-lg overflow-hidden text-justify" style="background-image: url('https://i.ibb.co/W1Kw1HD/istockphoto-2212360504-612x612.webp'); background-size: cover; background-position: center;">
+      <div class="absolute inset-0 bg-black bg-opacity-40"></div> <!-- overlay -->
+      
+      <div class="relative z-10 px-6 py-12" id="technical-skills">
+        <h2 class="bg-red-700 mb-5 px-3 w-1/2 md:w-1/5">
+          <p class="text-white font-semibold tracking-widest"> Technical Competency</p>
+        </h2>
+        <h2 class="text-3xl md:text-4xl font-semibold text-white mb-3 ">Web Development & Artificial Intelligence Literacy </h2>
+        <p class="text-white text-base md:text-lg max-w-3xl mb-6 "> I, alongside my team at <a class="text-yellow-300 underline" href="https://rayyantech.sgm.ng/"> Rayyan Technologies</a>, design responsive websites and digital platforms for industries, law firms, businesses, educational institutions, start-ups, etc. I also possess a good use of modern AI tools. </p>
+        <p class="text-white text-base md:text-lg max-w-3xl mb-3"> Experience Highlights:</p>
+        <ol class="pl-2.5 md:pl-5 text-white">
+          <li class="mb-2.5 md:mb-5"> 1) I designed a customised, responsive website for Solace Chambers - a students-based law chambers domiciled in Faculty of Law, Bayero University, Kano. </li>
+          <li class="mb-2.5 md:mb-5">2) I designed a customised, responsive website for Bayero University Law Clinic - a students-based organisation regulated by the Council for Legal Education, Nigeria.</li>
+          <li class="mb-2.5 md:mb-5"> 3) </li>
+        </ol>
+        <p class="text-white text-base md:text-lg max-w-3xl mb-5"> Take a look at some of the projects I have been part so far.</p>
+        
+        <!-- Slider Container -->
+        <div class="relative">
+          <div id="slider5" class="flex overflow-x-auto space-x-6 pb-4 scroll-smooth">
+            <!-- Slide 1 -->
+            <div class="w-full md:w-full bg-white rounded-lg shadow-lg p-4 flex-shrink-0 hover:shadow-2xl transition duration-300">
+              <a class="" href="https://solacechambersbuk.com.ng"> <img src="https://i.ibb.co/G097ZQz/solace-buk.jpg" alt="Solace website" class="rounded-lg mb-4 w-full h-40 object-cover">
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">Solace Chambers Bayero University, Kano, customised website</h3>
+                <p class="text-gray-600 text-sm"> A responsive website designed for Solace Chambers Bayero University, Kano, in 2025.</p>
+              </a>
+            </div>
+            
+            <!-- Slide 2 -->
+            <div class="w-full md:min-w-[300px] bg-white rounded-lg shadow-lg p-4 flex-shrink-0 hover:shadow-2xl transition duration-300"> <a href="https://muhibqosim.github.io/buk-law-clinic/"> <img src="https://i.ibb.co/k3ZPckF/bulc.jpg" alt="Image" class="rounded-lg mb-4 w-full h-40 object-cover">
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">Bayero University Law Clinic customised website</h3>
+                <p class="text-gray-600 text-sm">A responsive website designed for Bayero University Law Clinic in 2023.</p>
+              </a>
+            </div>
+            
+            <!-- Slide 2 -->
+            <div class="w-full md:min-w-[300px] bg-white rounded-lg shadow-lg p-4 flex-shrink-0 hover:shadow-2xl transition duration-300">
+              <a class="" href="https://alqosim.sgm.ng"><img src="https://i.ibb.co/8Y45WdZ/aic.jpg" alt="Image" class="rounded-lg mb-4 w-full h-40 object-cover">
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">Al-Qosim Islamic Center customised website</h3>
+                <p class="text-gray-600 text-sm">A responsive website designed for Al-Qosim Islamic Center in 2023.</p>
+              </a>
+            </div>
+            <!-- Add more slides as needed -->
+          </div>
+          
+          <!-- Navigation Arrows -->
+          <button onclick="scrollSlider('slider5', -1)" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-blue-700 text-white p-3 rounded-full shadow-lg hover:bg-blue-900 transition">&#10094;</button>
+          <button onclick="scrollSlider('slider5', 1)" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-blue-700 text-white p-3 rounded-full shadow-lg hover:bg-blue-900 transition">&#10095;</button>
+        </div>
+      </div>
+    </div>
+    
+    
+    <!-- ===== Slider Template for Strategic Leadership & Institutional Support ===== -->
+    <div class="relative mb-20 rounded-lg overflow-hidden text-justify" style="background-image: url('https://i.ibb.co/pry8sDsp/istockphoto-1133383903-612x612.jpg'); background-size: cover; background-position: center;">
+      <div class="absolute inset-0 bg-black bg-opacity-40"></div> <!-- overlay -->
+      
+      <div class="relative z-10 px-6 py-12">
+        <h2 class="bg-red-700 mb-5 px-3 w-1/2 md:w-1/5">
+          <p class="text-white font-semibold tracking-widest"> Organisational Competency</p>
+        </h2>
+        <h2 class="text-3xl md:text-4xl font-semibold text-white mb-3 ">Strategic Leadership & Institutional Support </h2>
+        <p class="text-white text-base md:text-lg max-w-3xl mb-6 "> I provide structured strategic support to organisations, combining my leadership experience with legal expertise to mentor teams, improve operations, and drive intellectual and organisational growth. </p>
+        <p class="text-white text-base md:text-lg max-w-3xl mb-3"> Experience Highlights:</p>
+        <ol class="pl-2.5 md:pl-5 text-white">
+          <li class="mb-2.5 md:mb-5"> 1) I held various positions in Solace Chambers, Bayero University, Kano, from serving as the Chief Registrar, Deputy Director, to holding the position of Attorney General (Chambers Head), where I immensely contributed to the current renewed and growth-driven structure of the Chambers. </li>
+          <li class="mb-2.5 md:mb-5">2) I made a significant contribution to the establishment and operation of the Editorial Board of the National Alternative Dispute Resolution Society as the Director of Research III. I led a team of fellow law students across the country.</li>
+          <li class="mb-2.5 md:mb-5"> 3) Pioneered the Solace Virtual Mentorship Programme, an annual mentorship platform created to facilitate personal and professional growth of not only members of the Chambers but also growth-focused law students across the country and beyond.</li>
+          <li class="mb-2.5 md:mb-5"> 4) Planned and coordinated the weekly sessions of the International Humanitarian Law Club, Bayero University, Kano. I facilitated sessions on key principles of IHL, the general application of IHL, and how it operates in the international and national contexts. </li>
+        </ol>
+        <p class="text-white text-base md:text-lg max-w-3xl mb-5"> Take a look at some of the projects I have been part so far.</p>
+        
+        <!-- Slider Container -->
+        <div class="relative">
+          <div id="slider6" class="flex overflow-x-auto space-x-6 pb-4 scroll-smooth">
+            
+            <!-- Slide 1 -->
+            <div class="w-full md:w-full bg-white rounded-lg shadow-lg p-4 flex-shrink-0 hover:shadow-2xl transition duration-300">
+              <a class="" href="https://solacechambersbuk.com.ng"> <img src="https://i.ibb.co/CKpb0ZZq/IMG-20260319-WA0053-1.jpg" alt="Solace website" class="rounded-lg mb-4 w-full h-40 object-cover">
+                <h3 class="text-lg font-semibold text-gray-800 mb-2"> Pioneer and Co-founder of JURIVEX </h3>
+                <p class="text-gray-600 text-sm"> I pioneered and co-founded Jurivex - a legal platform that challenges, refines, and advances legal thinking and professional growth.</p>
+              </a>
+            </div>
+            <!-- Slide 2 -->
+            <div class="w-full md:w-full bg-white rounded-lg shadow-lg p-4 flex-shrink-0 hover:shadow-2xl transition duration-300">
+              <a class="" href="https://solacechambersbuk.com.ng"> <img src="https://i.ibb.co/YB6WnGNy/reb.png" alt="Solace website" class="rounded-lg mb-4 w-full h-40 object-cover">
+                <h3 class="text-lg font-semibold text-gray-800 mb-2"> Appointment as a Director of Research of the NADRS</h3>
+                <p class="text-gray-600 text-sm"> I served, following my appointment, as the Director of Research III of the NADRS (between 2022 - 2023) where I carried out various ADR-based research work for the Society while equally leading a team of law students across the nation attached under my wings.</p>
+              </a>
+            </div>
+            
+            <!-- Slide 3 -->
+            <div class="w-full md:min-w-[300px] bg-white rounded-lg shadow-lg p-4 flex-shrink-0 hover:shadow-2xl transition duration-300"> <a href="https://www.linkedin.com/posts/qosim-muhibudeen-sabuk-ool-5896a91a8_and-herecomes-theendofmy-tenure-as-the-activity-7437142893615702016-pfX3?utm_source=share&utm_medium=member_android&rcm=ACoAADCDMfkBVdPfeDHOm011BmsJ7cBFj7WZaN8">
+                <img src="https://i.ibb.co/qMMHqLx5/IMG-20260324-WA0013.jpg" alt=" " class="rounded-lg mb-4 w-full h-40 object-cover">
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">Solace Chambers Stakeholder</h3>
+                <p class="text-gray-600 text-sm">I served in several capacities as an executive of Solace Chambers, Faculty of Law, Bayero University Kano and later the Chanbers Head (Attorney General). Throughout my stay, I immensely shaped the Chambers to the best of standards ever.</p>
+              </a>
+            </div>
+            
+            <!-- Slide 4 -->
+            <div class="w-full md:min-w-[300px] bg-white rounded-lg shadow-lg p-4 flex-shrink-0 hover:shadow-2xl transition duration-300">
+              <a class="" href=" "> <img src="https://i.ibb.co/pvD2XFZ0/nadrs-workshop.png" alt="Image" class="rounded-lg mb-4 w-full h-40 object-cover">
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">NADRS Intership Committee Member and Technical Team, 2023</h3>
+                <p class="text-gray-600 text-sm">I extremely participated in the success of the maiden ADR-driven virtual internship prganised by the National ADR Society under the leadership of Miss. Catherine Amadasun (Esq) </p>
+              </a>
+            </div>
+            <!-- Add more slides as needed -->
+          </div>
+          
+          <!-- Navigation Arrows -->
+          <button onclick="scrollSlider('slider6', -1)" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-blue-700 text-white p-3 rounded-full shadow-lg hover:bg-blue-900 transition">&#10094;</button>
+          <button onclick="scrollSlider('slider6', 1)" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-blue-700 text-white p-3 rounded-full shadow-lg hover:bg-blue-900 transition">&#10095;</button>
+        </div>
+      </div>
+    </div>
+    
+    
+  </section>
   
-</section>
-
-<!-- ===== JS for Slider Navigation ===== -->
-<script>
-  function scrollSlider(sliderId, direction) {
-    const slider = document.getElementById(sliderId);
-    const slideWidth = slider.children[0].offsetWidth + 24; // 24px = space-x-6
-    slider.scrollBy({
-      left: slideWidth * direction,
-      behavior: 'smooth'
-    });
-  }
-</script>
-    
-    
-    
-    
-    
-    
-    
-    <!-- MESSAGE ME  starts here -->
-    <section class="py-16 bg-gray-50
+  <!-- ===== JS for Slider Navigation ===== -->
+  <script>
+    function scrollSlider(sliderId, direction) {
+      const slider = document.getElementById(sliderId);
+      const slideWidth = slider.children[0].offsetWidth + 24; // 24px = space-x-6
+      slider.scrollBy({
+        left: slideWidth * direction,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+  
+  
+  
+  
+  
+  
+  
+  <!-- MESSAGE ME  starts here -->
+  <section class="py-16 bg-gray-50
   md:px-56">
+    <div class="">
+      <h1 class="text-3xl md:text-4xl font-bold text-center"> Contact </h1>
+    </div>
+    <div data-aos="fade-down" class="bg-blue-200 mt-4 md:mt-4 px-4 md:px-10 py-8 rounded-2xl ">
+      <p class="text-2xl md:text-2xl font-bold text-center mb-3"> Send a Message </p>
+      <div class=" ">
+        <form class="mx-auto " action="https://formspree.io/f/mqkvzbyz" method="POST" style="width: ">
+          <label class="inline-block text-sm md:text-base font-semibold" style=""> Your Email</label>
+          <div class="flex items-center justify-center">
+            <input class="shadow-lg mt-2 py-2.5 px-2 md:px-4 inline-block text-sm md:text-base" type="email" name="email" placeholder="your@email.com" style="width: 90vw; height:6vh">
+          </div>
+          <label class="inline-block mt-5 text-sm md:text-base flex items-center justify-between font-semibold"> Your Message </label>
+          <div class="flex items-center justify-center">
+            <textarea class="bg-white p-2 md:text-base mt-2 text-sm md:text-base" placeholder="your message here" name="message" style="height: 32vh; width: 90vw"></textarea>
+          </div>
+          <!-- your other form fields go here -->
+          <div class="flex items-center justify-center">
+            <button class="text-center mt-5 px-4 py-2 Navy-blue text-base md:text-base text-white font-bold uppercase bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg" type="submit" style="width: 90vw; ">Send</button>
+          </div>
+        </form>
+      </div>
+      <!-- WhatsApp quick contact-->
+      <h1 class="font-semibold text-center text-xl md:text-2xl tracking-wider mt-8"> VERY URGENT? </h1>
+      <p class="mb-3 mt-3 font-light text-center text-sm md:text-base"> Let's start conversation on WhatsApp!</p>
       <div class="">
-        <h1 class="text-3xl md:text-4xl font-bold text-center"> Contact </h1>
+        <form class="py-2.5" id="messageForm">
+          <div class="flex items-center justify-center">
+            <textarea class="text-sm p-2 inline-block text-dark" name="message" id="messageInput" placeholder="your message here " style="height:20vh; width: 90vw;  ">  </textarea>
+          </div>
+          <div class="flex items-center justify-center">
+            <button class="text-center items-center mt-5 px-4 py-2 Navy-blue text-base md:text-base text-white font-bold uppercase shadow-lg inline-block mt-5 Navy-blue bg-gradient-to-br from-blue-900 to-blue-600" type="submit" style="width: 90vw; ">Send on WhatsApp</button>
+          </div>
+        </form>
       </div>
-      <div data-aos="fade-down" class="bg-blue-200 mt-4 md:mt-4 px-4 md:px-10 py-8 rounded-2xl ">
-        <p class="text-2xl md:text-2xl font-bold text-center mb-3"> Send a Message </p>
-        <div class=" ">
-          <form class="mx-auto " action="https://formspree.io/f/mqkvzbyz" method="POST" style="width: ">
-            <label class="inline-block text-sm md:text-base font-semibold" style=""> Your Email</label>
-            <div class="flex items-center justify-center">
-              <input class="shadow-lg mt-2 py-2.5 px-2 md:px-4 inline-block text-sm md:text-base" type="email" name="email" placeholder="your@email.com" style="width: 90vw; height:6vh">
-            </div>
-            <label class="inline-block mt-5 text-sm md:text-base flex items-center justify-between font-semibold"> Your Message </label>
-            <div class="flex items-center justify-center">
-              <textarea class="bg-white p-2 md:text-base mt-2 text-sm md:text-base" placeholder="your message here" name="message" style="height: 32vh; width: 90vw"></textarea>
-            </div>
-            <!-- your other form fields go here -->
-            <div class="flex items-center justify-center">
-              <button class="text-center mt-5 px-4 py-2 Navy-blue text-base md:text-base text-white font-bold uppercase bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg" type="submit" style="width: 90vw; ">Send</button>
-            </div>
-          </form>
-        </div>
-        <!-- WhatsApp quick contact-->
-        <h1 class="font-semibold text-center text-xl md:text-2xl tracking-wider mt-8"> VERY URGENT? </h1>
-        <p class="mb-3 mt-3 font-light text-center text-sm md:text-base"> Let's start conversation on WhatsApp!</p>
+    </div>
+  </section>
+  </section>
+  <div>
+    
+    <!-- Footer -->
+    <section class="Navy-blue py-10" id="footer">
+      <article class="pl-4 ">
         <div class="">
-          <form class="py-2.5" id="messageForm">
-            <div class="flex items-center justify-center">
-              <textarea class="text-sm p-2 inline-block text-dark" name="message" id="messageInput" placeholder="your message here " style="height:20vh; width: 90vw;  ">  </textarea>
-            </div>
-            <div class="flex items-center justify-center">
-              <button class="text-center items-center mt-5 px-4 py-2 Navy-blue text-base md:text-base text-white font-bold uppercase shadow-lg inline-block mt-5 Navy-blue bg-gradient-to-br from-blue-900 to-blue-600" type="submit" style="width: 90vw; ">Send on WhatsApp</button>
-            </div>
-          </form>
+          <h1 class="text-white text-center text-lg md:text-3xl font-bold tracking-widest"> Get in Touch</h1>
         </div>
+        <div class="md:mx-44 mx-4">
+          <div class="mx-40 md:mx-96 h-1 bg-white text-lg font-bold bg-gradient-to-br from-gray-300 to-gray-200 shadow-lg text-center mb-4 md:mb-8"> </div>
+        </div>
+        <div class="md:flex md:justify-center  md:gap-60">
+          <div class="md:text-base text-xs  mb-5">
+            <h5 class="text-white text-justify text-base md:text-xl font-semibold "> Contact Me</h5>
+            <p class="text-gray-300 my-2 font-light "> <i class="fas fa-map-marker-alt mr-2"></i> Nigeria</p>
+            <p class="text-gray-300 my-2 font-light "> <i class="fab fa-whatsapp mr-2"> </i> <a class="" href="https://wa.me/2349037074761?text=Hello!?"> +234 903 707 4761</a></p>
+            <p class="text-gray-300 my-2 font-light "> <i class="fas fa-envelope mr-2"> </i> <a class="" href="muhibqosim@gmail.com "> muhibqosim@gmail.com</a></p>
+            <p class="text-gray-300 mt-2 font-light "><i class="fas fa-phone mr-2"></i><a class=" " href=""> (+234) 9037074761 </a> <!--<span class="text-gray-100 font-light"> (Click to call) </span > --> </p>
+          </div>
+          <div class="md:text-base text-xs  ">
+            <h5 class=" text-white text-justify text-base md:text-xl font-semibold "> Quick Links </h5>
+            <p class="text-gray-300 my-2 font-light "> <a class=" " href="index.html"> Home</a></p>
+            <p class="text-gray-300 my-2 font-light "> <a class=" " href="about.html">About</a></p>
+            <p class="text-gray-300 my-2 font-light "> <a class=" " href="services.html">Competencies</a></p>
+            <p class="text-gray-300 my-2 font-light "> <a class=" " href="publications.html"> Publications</a></p>
+            <p class="text-gray-300 my-2 font-light "> <a class=" " href="resources.html"> Free resources</a></p>
+            <p class="text-gray-300 my-2 font-light "> <a class=" " href="#footer"> Contact</a></p>
+          </div>
+        </div>
+      </article>
+      <!-- newsletter -->
+      <div class="pt-6 px-4">
+        <h1 class="text-white text-center text-base md:text-2xl mt-5 font-bold"> Catch Up with my Publications</h1>
+        <div class="md:mx-32">
+          <div class="mx-32 md:mx-96 h-1 bg-white text-lg font-bold bg-gradient-to-br from-gray-300 to-gray-200 shadow-lg text-center mb-4 md:mb-8"> </div>
+        </div>
+        <p class="mt-1 text-sm md:text-base text-center font-light text-gray-300 px-1 md:px-4 md:mb-0"> Stay up to date with latest legal insights, articles and case digest. </p>
       </div>
+      <div class="md:flex justify-center md:mt-0">
+        <form action=" " method=" " class=" mt-3 md:mt-0 px-4 md:px-20 justify-center">
+          <script async data-uid="ea5c74106c" src="https://muhibqosim.ck.page/ea5c74106c/index.js"></script>
+        </form>
+      </div>
+      <!-- horizontal line-->
+      <hr style="background-color: " class="bg-gray-100 font-light mt-20 ">
+      <!-- copyright-->
+      <div class="mt-10 md:mt-20 pt-5">
+        <p class="text-sm text-white font-light text-center md:text-base"> <i class="far fa-copyright md:text-base "></i> <span id="copyright-year"></span> Muhibudeen, Qosim Atanda | All rights reserved.</p>
+      </div>
+      
+      
+      <!-- social handles-->
+      <div class="mt-10 md:mt-20 flex justify-between px-20 text-lg md:px-64 md:text-2xl">
+        <a href="https://x.com/al_qosimiy?t=Mn2u12C1b3VDzYjazF8MfA&s=09" class="text-white hover:text-blue-400" target="_blank" rel="noopener" title="Twitter"> <i class="fab fa-twitter "></i></a>
+        <a href="https://m.facebook.com/muhammadulqoosim.muhiibuddeen" class="text-white hover:text-blue-600" target="_blank" rel="noopener" title="Facebook"> <i class="fab fa-facebook "></i></a>
+        <a href="https://wa.me/2349037074761?text=Hello!" class="text-white hover:text-green-500" target="_blank" rel="noopener" title="WhatsApp">
+          <i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/al.qosim1?igsh=MXRkM2g4ZDhqYzdueQ==" class="text-white hover:text-pink-600" target="_blank" rel="noopener" title="Instagram"> <i class="fab fa-instagram "></i></a>
+        <a href="https://www.linkedin.com/in/qosim-muhibudeen-5896a91a8" class="text-white hover:text-blue-600" target="_blank" rel="noopener" title="LinkedIn"> <i class="fab fa-linkedin "></i></a>
+        <a href="https://github.com/muhibqosim" class="text-white hover:text-gray-600" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github "></i></a>
+      </div>
+      
     </section>
-    </section>
-    <div>
+    
+    <!--js starts here-->
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
+    
+    <script>
+      AOS.init({
+        offset: 100,
+        duration: 900,
+        easing: 'ease-in-sine',
+        delay: 200,
+        once: true
+      });
       
-      <!-- Footer -->
-      <section class="Navy-blue py-10" id="footer">
-        <article class="pl-4 ">
-          <div class="">
-            <h1 class="text-white text-center text-lg md:text-3xl font-bold tracking-widest"> Get in Touch</h1>
-          </div>
-          <div class="md:mx-44 mx-4">
-            <div class="mx-40 md:mx-96 h-1 bg-white text-lg font-bold bg-gradient-to-br from-gray-300 to-gray-200 shadow-lg text-center mb-4 md:mb-8"> </div>
-          </div>
-          <div class="md:flex md:justify-center  md:gap-60">
-            <div class="md:text-base text-xs  mb-5">
-              <h5 class="text-white text-justify text-base md:text-xl font-semibold "> Contact Me</h5>
-              <p class="text-gray-300 my-2 font-light "> <i class="fas fa-map-marker-alt mr-2"></i> Faculty of Law, BUK</p>
-              <p class="text-gray-300 my-2 font-light "> <i class="fab fa-whatsapp mr-2"> </i> <a class="" href="https://wa.me/2349037074761?text=Hello!?"> +234 903 707 4761</a></p>
-              <p class="text-gray-300 my-2 font-light "> <i class="fas fa-envelope mr-2"> </i> <a class="" href="muhibqosim@gmail.com "> muhibqosim@gmail.com</a></p>
-              <p class="text-gray-300 mt-2 font-light "><i class="fas fa-phone mr-2"></i><a class=" " href=""> (+234) 9037074761 </a> <!--<span class="text-gray-100 font-light"> (Click to call) </span > --> </p>
-            </div>
-            <div class="md:text-base text-xs  ">
-              <h5 class=" text-white text-justify text-base md:text-xl font-semibold "> Quick Links </h5>
-              <p class="text-gray-300 my-2 font-light "> <a class=" " href="index.html"> Home</a></p>
-              <!-- <p class="text-gray-300 my-2 font-light "> <a class=" " href="portfolio.html" >Portfolio</a></p>-->
-              <p class="text-gray-300 my-2 font-light "> <a class=" " href="publications.html"> Publications</a></p>
-              <p class="text-gray-300 my-2 font-light "> <a class=" " href="resources.html"> Free resources</a></p>
-              <p class="text-gray-300 my-2 font-light "> <a class=" " href="#footer"> Contact</a></p>
-            </div>
-          </div>
-        </article>
-        <!-- newsletter -->
-        <div class="pt-6 px-4">
-          <h1 class="text-white text-center text-base md:text-2xl mt-5 font-bold"> Catch Up with my Publications</h1>
-          <div class="md:mx-32">
-            <div class="mx-32 md:mx-96 h-1 bg-white text-lg font-bold bg-gradient-to-br from-gray-300 to-gray-200 shadow-lg text-center mb-4 md:mb-8"> </div>
-          </div>
-          <p class="mt-1 text-sm md:text-base text-center font-light text-gray-300 px-1 md:px-4 md:mb-0"> Stay up to date with latest legal insights, articles and case digest. </p>
-        </div>
-        <div class="md:flex justify-center md:mt-0">
-          <form action=" " method=" " class=" mt-3 md:mt-0 px-4 md:px-20 justify-center">
-            <script async data-uid="ea5c74106c" src="https://muhibqosim.ck.page/ea5c74106c/index.js"></script>
-          </form>
-        </div>
-        <!-- horizontal line-->
-        <hr style="background-color: " class="bg-gray-100 font-light mt-20 ">
-        <!-- copyright-->
-        <div class="mt-10 md:mt-20 pt-5">
-          <p class="text-sm text-white font-light text-center md:text-base"> <i class="far fa-copyright md:text-base "></i> <span id="copyright-year"></span> Muhibudeen, Qosim Atanda | All rights reserved.</p>
-        </div>
-        
-        
-        <!-- social handles-->
-        <div class="mt-10 md:mt-20 flex justify-between px-20 text-lg md:px-64 md:text-2xl">
-          <a href="https://x.com/al_qosimiy?t=Mn2u12C1b3VDzYjazF8MfA&s=09" class="text-white hover:text-blue-400" target="_blank" rel="noopener" title="Twitter"> <i class="fab fa-twitter "></i></a>
-          <a href="https://m.facebook.com/muhammadulqoosim.muhiibuddeen" class="text-white hover:text-blue-600" target="_blank" rel="noopener" title="Facebook"> <i class="fab fa-facebook "></i></a>
-          <a href="https://wa.me/2349037074761?text=Hello!" class="text-white hover:text-green-500" target="_blank" rel="noopener" title="WhatsApp">
-            <i class="fab fa-whatsapp"></i></a>
-          <a href="instagram.com/muhibqosim" class="text-white hover:text-pink-600" target="_blank" rel="noopener" title="Instagram"> <i class="fab fa-instagram "></i></a>
-          <a href="https://www.linkedin.com/in/qosim-muhibudeen-5896a91a8" class="text-white hover:text-blue-600" target="_blank" rel="noopener" title="LinkedIn"> <i class="fab fa-linkedin "></i></a>
-          <a href="https://github.com/muhibqosim" class="text-white hover:text-gray-600" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github "></i></a>
-        </div>
-        
-      </section>
-      
-      <!--js starts here-->
-      <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
-      
-      <script>
-        AOS.init({
-          offset: 100,
-          duration: 900,
-          easing: 'ease-in-sine',
-          delay: 200,
-          once: true
-        });
-        
-        document.addEventListener('DOMContentLoaded', function() {
-          var currentYear = new Date().getFullYear();
-          document.getElementById('copyright-year').textContent = currentYear;
-        });
-      </script>
-      <script src="js/main.js"> </script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var currentYear = new Date().getFullYear();
+        document.getElementById('copyright-year').textContent = currentYear;
+      });
+    </script>
+    <script src="js/main.js"> </script>
 </body>
 
 </html>

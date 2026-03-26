@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
 //about the author
 document.addEventListener('DOMContentLoaded', function() {
   // The sentence you want to insert
-  var sentence = "Qosim is a pupil of law at the Faculty of Law, Bayero University, Kano, with proficiency in Web Design, Legal/Content Writing, Legal Research, Case Analysis and Proofreading/Editing. He has a keen interest in Legal Drafting and Research and various aspect of law including Corporate practise, Litigation, Intellectual Property, Tech Law, Data Privacy, Islamic Finance and ADR.";
+  var sentence = "Qosim, a graduate of Common and Islamic Law from the prestegious Faculty of Law, Bayero University, Kano, is an avid legal researcher, Nigerian Law School aspirant and technology enthusiast with expertise in web development and a strong interest in litigation practice, alternative dispute resolution, corporate practice and compliance and Islamic finance.";
 
   // Find the element where the sentence will be inserted
   var container = document.getElementById('about-author');
