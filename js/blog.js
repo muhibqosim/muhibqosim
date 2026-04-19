@@ -1,6 +1,6 @@
 window.onload = function() {
-    const apiKey = 'AIzaSyAjEyj_94p-HFjFn76t6f-sLNdugSF8LhQ';
-    const blogId = '7744757304303679629';
+    const apiKey = 'AIzaSyCzNIB8G-7zAiJHvjUVcY4rZH-xHROaPq8';
+    const blogId = '6304364806382512926';
     const baseUrl = `https://www.googleapis.com/blogger/v3/blogs/${blogId}/posts?key=${apiKey}`;
     
     fetch(baseUrl)
@@ -12,9 +12,9 @@ window.onload = function() {
         }
         
         const sections = {
-          'News': document.getElementById('populate-legal'),
-          'Legalbit': document.getElementById('populate-case'),
-          'Poetrylines': document.getElementById('populate-archive'),
+          'Legal': document.getElementById('populate-legal'),
+          'Case': document.getElementById('populate-case'),
+          'Archive': document.getElementById('populate-archive'),
         };
         
         Object.keys(sections).forEach(label => {
@@ -87,7 +87,7 @@ window.onload = function() {
               <p class="text-sm pt-5 md:text-lg font-semibold text-justify text-gray-600"> ${formatDate(item.published.split('T')[0])} </p>
               <h3 class="text-base md:text-xl py-8 font-bold tracking-tight uppercase">${item.title}</h3>
               <p class="text-sm mb-8 md:text-lg tracking-tight text-justify ">  ${item.content.replace(/<[^>]+>/g, '').split(' ').slice(0, 30).join(' ')}</p>
-              <p class="text-sm md:text-lg text-justify mb-5 text-blue-900 font-semibold "><a href="https://muhibqosim.com.ng/single.html?id=${item.id}" target="_blank" class=""> READ MORE » </a> </p>
+              <p class="text-sm md:text-lg text-justify mb-5 text-blue-900 font-semibold "><a href="https://muhibqosim/single.html?id=${item.id}" target="_blank" class=""> READ MORE » </a> </p>
             </div>
           </article>
       `;
