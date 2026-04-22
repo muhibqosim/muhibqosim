@@ -291,26 +291,9 @@
           <p class="text-sm md:text-base mt-3 text-center tracking-tight"> Explore insightful publications on various aspects including law, technology and Shari'ah governance.</p>
         </div>
         <!--publication samples grid-->
-        <article class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-10 md:mt-16 px-4 mx-auto md:px-32">
+        <div id="populate-Pub" class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-10 md:mt-16 px-4 mx-auto md:px-32">
           
-          <!-- article one -->
-          <div data-aos="fade-down" class="bg-white shadow-lg w-full rounded-lg mb-3">
-            <div class="md:w-full overflow-hidden rounded-t">
-              <img src="https://i.ibb.co/HfDWS60X/my-publication-flyer.jpg" alt="publication caption" class="w-full h-full object-cover object-center">
-            </div>
-            <!--title, abstract & read more-->
-            <div class="px-5 ">
-              <p class="text-sm pt-5 md:text-base font-semibold text-justify text-gray-600"> January 26, 2023 </p>
-              <h3 class="text-base md:text-xl py-8 font-bold tracking-tight uppercase"> POLYGAMOUS MARRIAGE UNDER THE NIGERIAN LAW: WHAT THE LAW HAS TO SAY </h3>
-              <p class="text-sm mb-8 md:text-base tracking-tight text-justify "> Marriage is, indeed, the legitimate means of securing the right to cohabitate between opposite sexes in an "ideal" territory, Nigeria inclusive. And as a matter of fact, in Nigerian law, there are essentially two types of marriage: monogamous (which wholly depicts one man and one wife) and polygamous (which permits more than one wife married to just one man). It is also worth noting that the character...</p>
-              <p class="text-sm md:text-base text-justify mb-5 text-blue-900 font-semibold "><a href="pub-page.html  " class=""> READ MORE » </a> </p>
-            </div>
-            
-            
-            
-            <!-- important div close-->
-          </div>
-        </article>
+        </div>
         <div class="flex justify-center items-center my-12 px-5  ">
           <button class=" text-white pulsate-bck font-bold text-center btn  p-1.5 rounded-lg  text-base md:text-base px-3 Navy-blue text-base font-bold bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg  ">
             <a class="text-white" href="publications.html"> View More <i class="fas fa-arrow-right font-bold"> </i> </a> </button>
@@ -546,11 +529,17 @@
       once: true
     });
     
+  function formatDate(dateString) {
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    return new Date(dateString).toLocaleDateString('en-US', options);
+  }
     document.addEventListener('DOMContentLoaded', function() {
       var currentYear = new Date().getFullYear();
       document.getElementById('copyright-year').textContent = currentYear;
     });
   </script>
+   
+   <script src="js/blog.js"> </script>
   <script src="js/main.js"> </script>
 </body>
 
